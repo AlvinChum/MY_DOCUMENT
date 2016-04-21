@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:6:"ticket";i:2;s:4:"time";i:3;s:3:"uid";i:4;s:5:"gzhid";i:5;s:7:"mediaid";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:7:"int(11)";s:6:"ticket";s:12:"varchar(100)";s:4:"time";s:7:"int(11)";s:3:"uid";s:7:"int(11)";s:5:"gzhid";s:11:"varchar(50)";s:7:"mediaid";s:11:"varchar(64)";}}

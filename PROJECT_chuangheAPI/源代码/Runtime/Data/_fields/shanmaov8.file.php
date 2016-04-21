@@ -1,0 +1,1 @@
+a:9:{i:0;s:7:"file_id";i:1;s:3:"url";i:2;s:8:"original";i:3;s:5:"title";i:4;s:3:"ext";i:5;s:4:"size";i:6;s:4:"time";s:3:"_pk";s:7:"file_id";s:5:"_type";a:7:{s:7:"file_id";s:7:"int(10)";s:3:"url";s:12:"varchar(250)";s:8:"original";s:12:"varchar(250)";s:5:"title";s:12:"varchar(250)";s:3:"ext";s:12:"varchar(250)";s:4:"size";s:7:"int(10)";s:4:"time";s:7:"int(10)";}}

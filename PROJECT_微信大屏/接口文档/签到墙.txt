@@ -1,0 +1,13 @@
+2016年3月28日
+	签到墙接口
+
+
+HTTP协议请求：
+签到墙接口：http://域名/general/signwall
+POST参数："hid":"32位活动ID","page":"从0开始"
+返回接口：{"hid":"32位活动ID","page":"0","sum":"总人数","len":"返回的人数","text":[{"openid":"用户的唯一标识","nickname":"用户昵称","sex":"性别","headimgurl":"用户头像的URL地址"},{"openid":"用户的唯一标识","nickname":"用户昵称","sex":"性别","headimgurl":"用户头像的URL地址"}]}
+
+openid		用户的唯一标识
+nickname	用户昵称
+sex			用户的性别，值为1时是男性，值为2时是女性，值为0时是未知
+headimgurl	用户头像。

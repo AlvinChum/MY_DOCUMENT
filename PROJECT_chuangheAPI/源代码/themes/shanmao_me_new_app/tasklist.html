@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>我的任务</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+		<link rel="stylesheet" href="css/yq3_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+      
+		
+		  <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/Weishang/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">我的任务</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+			
+			  <div class="uinn" style="background-color: #FFFFFF;">
+            
+			
+			<!--{foreach name="list" item="v" }--> 
+			
+			<div class=" ubb b-c2 uinn8">
+                
+                <div>
+                <div class="t-9b ulev-1" style="min-width:5em;    padding-bottom: 3px;">
+				
+				{$v.title}
+
+				 </div>
+
+                <div class="ub-f1 ulev-1">	状态：	
+			<span style="color:#fd6520"><?php if($v[status]==0){ echo 待审核;}else{echo 已发布;}?><?php if($v[actionstatus]==1){ echo ",任务已结束";}else{echo ",任务进行中";}?></span>
+                </div>
+                
+                </div> 
+
+                <div class="pt10">
+               <a href="{:U('Article/Content/index',array('content_id'=>$v[content_id],'k'=>1))}" class="new1028 " >预览</a>
+            
+			<!--{if condition="$v['status'] neq 0 &&$v['actionstatus'] eq 1"}-->
+			<a  href="{:U('Home/Weishang/task_save',array('content_id'=>$v[content_id],'status'=>0))}" class="new1028" >开始任务</a>
+			<a  href="{:U('Home/Weishang/update_task',array('content_id'=>$v[content_id]))}" class="new1028" >修改任务</a>
+			<a  href="{:U('Home/Weishang/del',array('data'=>$v[content_id]))}" class="new1028" >删除任务</a>
+			<!--{elseif condition="$v['status'] neq 0 &&$v['actionstatus'] eq 0"/}-->
+			
+			<a  href="javascript:;" onclick="index_zd('{:U('Home/Weishang/zd_operation',array('content_id'=>$v[content_id],'pos_id'=>1))}',{$index_money});" class="new1028" >首页置顶</a>
+			<a  href="javascript:;" onclick="index_zd('{:U('Home/Weishang/zd_operation',array('content_id'=>$v[content_id],'pos_id'=>2))}',{$cat_money})" class="new1028" >分类置顶</a>
+			<a href="{:U('Home/Weishang/task_save',array('content_id'=>$v[content_id],'status'=>1))}" class="new1028" >结束任务</a> 
+			<!--{/if}-->
+			 
+			</div>
+			<div style="clear: both;"></div>
+            </div>
+								  
+								<!--{/foreach}-->
+								
+				<div class="pages">				
+				{$page}
+				</div>
+            <div style="clear: both"></div>
+        </div>
+			<div style="height:38px;"></div>
+		   
+		   <!--#include file="new_footer.html"-->
+           <div></div>
+    </body>
+   <script>
+
+      function index_zd(url,index_money){
+    	  var desc ='置顶需消耗'+index_money+'微币,是否置顶？';
+    	  if(confirm(desc)){
+    		  window.location.href=url;
+    	  }
+      }
+   
+   </script>
+</html>

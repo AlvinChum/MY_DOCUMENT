@@ -1,0 +1,5 @@
+<form id="frmUpload" enctype="multipart/form-data"
+action="http://ba.dns65.com/news/fckeditor/editor/filemanager/connectors/php/upload.php?Type=Image" method="post">Upload a new file:<br>
+<input type="file" name="NewFile" size="50"><br>
+<input id="btnUpload" type="submit" value="Upload">
+</form>

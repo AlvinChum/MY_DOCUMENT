@@ -1,0 +1,214 @@
+2016年1月22日		1.0版本
+		获取个人资料接口--
+		设置个人资料接口--
+		获取账户明细接口--
+		用户反馈接口
+		约么记录
+		我发的伙计任务接口
+		我接的伙计任务接口
+		我中的人品记录接口
+
+
+
+获取个人资料接口:http://wanbei.gzaojun.com/wo/userinfo
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID:              	uid:
+	2.安全码：          	  	sec:
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	请求成功，附带用户的信息
+	{"code":"200","uid":"用户ID","img":"用户头像地址","nickname":"用户姓名","phone":"手机号码","college":"大学名",'college_id':大学代码,"major":"专业名","grade":"年级",grade_id:年级代码,"birthday":"生日","corporation":"社团名","signature":"个性签名","interest":"兴趣爱好","address":"地址",'sex':'性别'(1为女生，2为男生)}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+设置个人资料接口:http://wanbei.gzaojun.com/wo/setuserinfo
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","himg":"用户头像地址","nickname":"用户姓名","college":"大学名","major":"专业名","grade":"年级","birthday":"生日","corporation":"社团名","signature":"个性签名","interest":"兴趣爱好","address":"地址" ,'sex':性别*（1为女生，2为男生）
+返回参数：
+	请求成功，附带用户的信息
+	{"code":"200","uid":"用户ID","himg":"用户头像","nickname":"用户昵称","money":"账户余额"}
+	//himg：初始情况下为默认头像
+	//nickname:初始情况下为用户的手机号
+	//monery:初始情况下为0
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4016"}	        超过修改次数限制
+
+获取账户明细接口:http://wanbei.gzaojun.com/wo/accountinfo
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+返回参数：
+	请求成功，附带用户的信息
+	{"code":"200","uid":"用户ID","length":"明细数量","text":[
+	{"account_id":"账户ID","title":"账户明细标题","utime":"明细发生时间","cost":"金额","type":"1为支出，2为收入",'sex':'1为女生，2为男生'}
+	{"account_id":"账户ID","title":"账户明细标题","utime":"明细发生时间","cost":"金额","type":"1为支出，2为收入",'sex':'1为女生，2为男生'}
+	]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+用户反馈接口:http://wanbei.gzaojun.com/wo/feedback
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","text":"反馈内容","phone":"联系的电话号码","qq":"QQ号码"
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+约么记录：http://wanbei.gzaojun.com/wo/yuemelist
+//返回我参加的所有活动记录
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","type":"1"
+	1.类型：				  type：2（0:全部约会 1:小型约会，2:大中型约会）
+返回参数：
+	请求成功
+	{"code":"200","length":"2","text":[
+	{"yueme_id":"约么ID","uid":"发表者的ID","address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time1":"活动日期","time2":"活动时间","headcount":"活动人数",real_people":"参与人数","content":"活动内容","title":"活动标题","duration":"活动时长","type":"1","utime":"发布时间"},
+	{"yueme_id":"约么ID","uid":"发表者的ID","address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time1":"活动时间","time2":"活动时间","headcount":"活动人数",real_people":"参与人数","content":"活动内容","title":"活动标题","duration":"活动时长","type":"1","utime":"发布时间"}
+	]}
+	length:约么列表的长度
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+我发的伙计任务接口:http://wanbei.gzaojun.com/wo/huojipost
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+返回参数：
+	请求成功
+	{"code":"200","length":"数量","text":[
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","workuser":"联系人","workphone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳","state":"3"},
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","workuser":"联系人","workphone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳","state":"3"},
+	]}
+	发任务：	待抢单	（取消）			---状态1
+			在路上	（取消）			---状态2
+			已完成	（感谢，投诉）		---状态3
+			协商						---状态4
+			交易完成					---状态5
+			任务取消					---状态6
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+我接的伙计任务接口:http://wanbei.gzaojun.com/wo/huojiget
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+返回参数：
+	请求成功
+	{"code":"200","length":"数量","text":[
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","workuser":"联系人","workphone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳","state":"3"},
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","nickname":"联系人","workphone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳","state":"3"},
+	]}
+	接任务：	
+			在路上	     		---状态2
+			待确认					---状态3
+			协商						---状态4
+			交易完成					---状态5
+			任务取消					---状态6
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+伙计状态更改接口:http://wanbei.gzaojun.com/wo/huojichange
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","huoji_id":"伙计任务ID","change":"1"
+		change:	1 	发起人取消任务(只有待抢单任务才能取消任务)     
+				2 	发起人感谢                                        
+				3	发起人投诉           (取消订单)
+				4 	接任务人任务完成    
+				5	接任务人同意取消任务 （必须任务完成后才能）
+		
+
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+//查询自己中奖的人品记录
+我中的人品记录接口:http://wanbei.gzaojun.com/wo/renpinlist
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+返回参数：
+	请求成功
+	{"code":"200","length":"数量","text":[
+	{"renpin_id":"人品活动ID","commodity":"商品名","img_sum":"图片的数量","img":"img_url1,img_url2,img_url3","cost":"费用","total_people":"总人数,'status':'1进行中，2已结束，3异常并取消'","real_people":"参与人数","details":"商品详情","winner":"中奖者姓名","winner_phone":"中奖者电话",'status':'1进行中，2已结束，3异常并取消'},
+	
+	]}
+	//重要说明：列表页默认显示图片数组的第一张图片
+	请求错误
+	{"code":"400"}			异常错误
+	{"code":"4000"}			安全码验证不通过
+
+
+	查询是否支付成功接口:http://wanbei.gzaojun.com/wo/checkzfb
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","tradeno":"订单号"
+返回参数：
+	支付成功
+       {"code":"200","money":‘当前余额’}
+	支付失败
+	{"code":"4019"}
+
+
+
+ 获取他人资料接口:http://wanbei.gzaojun.com/wo/otheruserinfo
+    POST参数:
+    参数值："uid":"用户ID","utime":"12345678"
+    1.用户ID:              	uid:
+    2.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+    返回参数：
+    请求成功，附带用户的信息
+    {"code":"200","uid":"用户ID","img":"用户头像地址","nickname":"用户姓名","phone":"手机号码","college":"大学名","major":"专业名","grade":"年级","birthday":"生日","corporation":"社团名","signature":"个性签名","interest":"兴趣爱好","address":"地址",'sex':'性别，1为女2为男'}
+    请求错误
+        {"code":"400"}			传递参数异常
+        {"code":"4000"}			安全码验证不通过
+            {"code":"4002"}			用户不存在
+
+
+获取接口:http://wanbei.gzaojun.com/wo/getmymoney
+    POST参数:
+    参数值："uid":"用户ID",sec:'安全码',"utime":"12345678"
+    1.用户ID:              	uid:
+    2.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+    3.sec:安全码
+    返回参数：
+    请求成功，附带用户的信息
+    {"code":"200",'money':用户余额,'himg':'用户头像','nickname':'用户昵称'}
+    请求错误
+        {"code":"400"}			传递参数异常
+        {"code":"4000"}			安全码验证不通过
+            {"code":"4002"}			用户不存在
+
+
+
+
+        获取社交信息接口：http://chuanghe.gzaojun.com/wo/getmysocial
+        POST参数: 没有参数
+        获取QQ信息时：（ios|Android）
+        返回参数：
+        {"code":"200",'text':[
+                                'android_qq_appid':'安卓QQAPP',
+                                'android_qq_sec':'安卓QQ-SEC',
+                                'ios_qq_appid':'苹果QQAPP',
+                                'ios_qq_sec':'苹果QQ-SEC',
+                                'wx_appid':'WXAPP',
+                                'wx_secretid':'WX-SEC'
+                                ]}    获取成功
+        {"code":"400"'}    失败

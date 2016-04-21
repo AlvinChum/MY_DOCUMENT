@@ -1,0 +1,319 @@
+2016年3月21日
+	获取卡片的最新位置信息
+	是否有未读报警信息
+	获取足迹信息
+	用户的报警信息
+	设置报警信息为已读
+	用户的录音信息
+	设置录音信息为已读
+	获取已设卡片列表----初始获取
+	新增卡片
+	删除卡片
+	获取卡片详情
+	设置卡片详情
+	获取成员信息
+	新增成员
+	删除成员
+	获取所有卡片详情
+
+
+
+
+获取卡片的最新位置信息：http://gpscard.gzaojun.com/card/location
+首先读取:是否有未读报警信息/获取已设卡片列表----初始获取
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","cardid":"12345","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.卡号：            	  cardid:用户输入的卡号
+	5.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","cardid":"用户卡号","utime":"最后位置的时间","long":"经度带6位小数","lat":"纬度带6位小数"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+是否有未读报警信息：http://gpscard.gzaojun.com/card/isalarm
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","type":"1"}
+			type:1  	有未读报警信息
+				 2 		没有报警信息	
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+获取足迹信息：http://gpscard.gzaojun.com/card/footmark
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","cardid":"12345","utime":"12345678","date":"20160303"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.卡号：            	  cardid:用户输入的卡号
+	5.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	6.足迹的日期信息：       date:足迹的8位日期信息
+返回参数：
+	请求成功
+	{"code":"200","cardid":"用户卡号","length":"位置数组的长度","text":[{"utime":"时间戳","long":"经度带6位小数","lat":"纬度带6位小数"},{"utime":"时间戳","long":"经度带6位小数","lat":"纬度带6位小数"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+用户的报警信息：http://gpscard.gzaojun.com/card/alarm
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","uid":"用户ID","havavoicealarm":"1","length":"报警信息的总长度","unread":"未读报警信息的长度","text":[{"utime":"时间戳","type":"1",},{"utime":"时间戳","type":"2"}]}
+				havavoicealarm: 1  	有语音报警信息
+								2 	没有语音报警信息
+				type:1 	未读信息
+					 2 	已读信息
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	注：当调取当前接口，所有未读消息设置为已读
+
+
+/* 不需要
+	设置报警信息为已读：http://gpscard.gzaojun.com/card/setalarmread
+	POST参数:
+	参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","text":[{"utime":"UNIX时间戳"},{"utime":"UNIX时间戳"}]
+		1.用户ID：             uid:用户ID
+		2.手机唯一号：          xid:32位(类似UUID)
+		3.用户安全码：			  sec:用户安全码
+		4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+		5.已读的报警时间数组     text:
+	返回参数：
+		请求成功
+		{"code":"200"}
+		请求错误
+		{"code":"400"}			传递参数异常
+		{"code":"4000"}			安全码验证不通过
+	*/
+
+
+
+用户的录音信息：http://gpscard.gzaojun.com/card/voice
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","uid":"用户ID","length":"录音信息的总长度","unread":"未读录音信息的长度","text":[{"utime":"16位安全码","voiceurl":"录音的URL地址","type":"1",},{"utime":"16位安全码","voiceurl":"录音的URL地址","type":"2"}]}
+				type:1 	未读信息
+					 2 	已读信息
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+设置录音信息为已读：http://gpscard.gzaojun.com/card/setvoiceread
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","url":"录音文件的url全路径"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.录音url的全路径     	  url;
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+获取已设卡片列表：http://gpscard.gzaojun.com/card/cardlist
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","uid":"用户ID","sum":"卡的总数","text":[{"cardid":"卡的ID号"},{"cardid":"卡的ID号"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+新增卡片：http://gpscard.gzaojun.com/card/addcard
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","cardid":"卡的ID号"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.卡的ID号：   		  cardid:卡的ID号  
+返回参数：
+	请求成功（返回最新的卡的列表）
+	{"code":"200","uid":"用户ID","sum":"卡的总数","text":[{"cardid":"卡的ID号"},{"cardid":"卡的ID号"}]}所有卡id
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4020"}			输入的卡号异常	
+	{"code":"4000"}			安全码验证不通过
+
+
+删除卡片：http://gpscard.gzaojun.com/card/delcard
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","cardid":"卡的ID号"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.卡的ID号：   		  cardid:卡的ID号  
+返回参数：
+	请求成功（返回最新的卡的列表）所有
+	{"code":"200","uid":"用户ID","sum":"卡的总数","text":[{"cardid":"卡的ID号"},{"cardid":"卡的ID号"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+获取卡片详情：http://gpscard.gzaojun.com/card/getcardinfo
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","cardid":"卡的ID号"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.卡的ID号：   		  cardid:卡的ID号  
+返回参数：
+	请求成功（返回最新的卡的列表）
+	{"code":"200","cardid":"卡的ID号","centername":"中心点名字","long":"中心点经度","lat":"中心点纬度","radius":"半径的米数",'blng':百度的经度，‘blat’：百度的纬度}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+设置卡片详情：http://gpscard.gzaojun.com/card/setcardinfo
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","cardid":"卡的ID号","centername":"中心点名字","long":"中心点经度","lat":"中心点纬度","radius":"半径的米数"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.卡的ID号：   		  cardid:卡的ID号  
+	6.中心点名字 			  centername:"中心点名字" 如果为空则只设置半径
+	7.中心点经度 			  long:"中心点经度"
+	8.中心点纬度 			  lat:"中心点纬度"
+	9.半径的米数 			  radius:"半径的米数" 如果为空则只设置中心点
+	10.							blng：百度的经度坐标
+	11.							blat: 百度的纬度坐标
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+获取成员信息：http://gpscard.gzaojun.com/card/getmembers
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","uid":"用户ID","length":"成员信息的数目","text":[{"name":"名字","phone":"电话号码"},{"name":"名字","phone":"电话号码"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+新增成员：http://gpscard.gzaojun.com/card/addmember
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","name":"名字","phone":"电话号码"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.姓名:				  name:姓名
+	6.电话号码： 			  phone:
+返回参数：
+	请求成功(返回最新的成员列表信息)
+	{"code":"200","uid":"用户ID","length":"成员信息的数目","text":[{"name":"名字","phone":"电话号码"},{"name":"名字","phone":"电话号码"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+删除成员：http://gpscard.gzaojun.com/card/delmember
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","phone":"电话号码"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.电话号码： 			  phone:
+返回参数：
+	请求成功(返回最新的成员列表信息)
+	{"code":"200","uid":"用户ID","length":"成员信息的数目","text":[{"name":"名字","phone":"电话号码"},{"name":"名字","phone":"电话号码"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+ 获取所有卡片的地理位置 http://gpscard.gzaojun.com/card/getallcard
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+返回参数：
+	请求成功
+	{"code":"200","uid":"用户id"，"length":"卡片数组总长度","text":[{"cardid":"卡号",utime":"最后位置的时间","long":"经度带6位小数","lat":"纬度带6位小数"}]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+	获取所有卡片详情	http://gpscard.gzaojun.com/card/getallcardinfo
+POST参数:
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+
+返回参数：
+        请求成功（返回最新的卡的列表）
+        {"code":"200","text":["cardid":"卡的ID号","centername":"中心点名字","lng":"中心点经度","lat":"中心点纬度","utime":记录时间]}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+

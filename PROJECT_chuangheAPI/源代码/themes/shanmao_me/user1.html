@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/user_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+	
+	
+	
+	
+	  <div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn" id="nav-left">
+                   <a href="/">   <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">会员中心</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+	
+	
+	
+	
+        <div class="ub ub-ver ub-fv">
+            <!--content-->
+            <div class="ub ub-ver uinn-squ1">
+                <div class="ub">
+				
+				
+                    <div class="ub-f1 ub ub-ver ub-ac">
+					<a href="{:U('Home/User/profile')}">
+                        <div class="uc-a-squ1 uwh-squ1 c-gre1-squ ub ub-ac ub-pc">
+                            <div class="uc-a-squ1 uwh-squ1 ub-img squIcon1"></div>
+                        </div>
+                        <div class="umar-at1 t-gra7 tx-c ulev-squ">
+                           我的资料
+                        </div>
+						 </a>
+                    </div>
+                   
+					
+					
+					<div class="ub-f1 ub ub-ver ub-ac">
+					<a href="{:U('Home/User/yaoqinglist')}">
+                        <div class="uc-a-squ1 uwh-squ1 c-gra1-squ ub ub-ac ub-pc">
+                            <div class="uc-a-squ1 uwh-squ1 ub-img squIcon3"></div>
+                        </div>
+                        <div class="umar-at1 t-gra7 tx-c ulev-squ">
+                           我的推荐
+                        </div>
+						 </a>
+                    </div>
+					
+					
+                </div>
+                
+                <div class="ub umar-at1">
+                    <div class="ub-f1 ub ub-ver ub-ac">
+                        <div class="uc-a-squ1 uwh-squ1 c-org1-squ ub ub-ac ub-pc">
+                            <div class="uc-a-squ1 uwh-squ1 ub-img squIcon5"></div>
+                        </div>
+                        <div class="umar-at1 t-gra7 tx-c ulev-squ">
+                            消息
+                        </div>
+                    </div>
+                    <div class="ub-f1 ub ub-ver ub-ac">
+					<a href="{:U('Home/Public/dologout')}">
+					
+                        <div class="uc-a-squ1 uwh-squ1 c-org2-squ ub ub-ac ub-pc">
+                            <div class="uc-a-squ1 uwh-squ1 ub-img squIcon6"></div>
+                        </div>
+                        <div class="umar-at1 t-gra7 tx-c ulev-squ">
+                            登出
+                        </div>
+						
+						 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+			<!--#include file="footer.html"-->
+    </body>
+    <script src="js/appcan.js"></script>
+    <script src="js/appcan.control.js"></script>
+    <script>
+        appcan.ready(function() {
+            appcan.initBounce();
+        });
+
+    </script>
+</html>

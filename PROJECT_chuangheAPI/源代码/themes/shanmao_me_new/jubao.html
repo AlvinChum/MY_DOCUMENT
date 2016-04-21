@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<title>信息举报</title>
+<link rel="stylesheet" type="text/css" href="css/content20151022.css">
+ <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+  <div class="hd_main">
+  <div id="div_1">
+  <div id="report">
+<h2>请选择举报原因</h2>
+<div class="ReportReason">
+<ul>
+<li>欺诈 <span class="sel"></span></li>
+<li>色情<span class=""></span></li>
+<li>政治谣言<span class=""></span></li>
+<li>常识性谣言<span></span></li>
+<li>诱导分享<span></span></li>
+<li>恶意营销<span></span></li>
+<li>隐私信息收集<span></span></li>
+<li>抄袭公众号文章<span></span></li>
+<li>其他侵权类（冒名、诽谤、抄袭）<span></span></li>
+<li>违规声明原创<span></span></li>
+</ul>
+</div>
+<div class="Report_sub">
+<div class="next_Report" onclick="document.getElementById('div_1').style.display='none';document.getElementById('div_2').style.display='block'">下一步</div>
+
+</div>
+<script type="text/javascript"></script>
+ 
+</div>
+  </div>
+   <!-----------------------------2开始---------------------------------------------------->
+  <div id="div_2" style="display: none;">
+
+<div id="report" class="report-2">
+<h2>举报描述</h2>
+<div class="ReportText">
+<textarea id="fb_des_content" class="fb-des-content" data-exclude="true" name="issuedesc" maxlength="400" placeholder="请出入举报描述（50字以内）"></textarea>
+</div>
+<div class="Report_sub">
+<div class="next_Report"  id="tijiao" onclick="document.getElementById('div_2').style.display='none';document.getElementById('div_3').style.display='block'">提交</div>
+<div class="pre_Report"  onclick="document.getElementById('div_2').style.display='none';document.getElementById('div_1').style.display='block'">上一步</div>
+</div>
+</div>
+  </div>
+  <!------------------------------3开始------------------------------------------>
+  <div id="div_3" style="display: none; background:rgb(241, 240, 245)">
+  <div id="report_success"> <img src="images/content20151022images/report_success.png" class="img-responsive">
+<h3>举报成功</h3>
+<span>感谢您的参与，我们坚决反对色情、暴力、欺诈等文章内容，我们会认真处理你的举报，维护绿色、健康的阅读环境。</span>
+<div class="link_Report" onclick="history.go(-1)">确定</div>
+  </div>
+  
+  </div>
+  </div>
+
+<script type="text/javascript">
+        //被举报内容id
+        var id = "";
+        //被举报内容标题
+        var title = "";
+        //被举报内容图片地址
+        var imgUrl = "";
+        //举报类型
+        var type = '';
+        //来源地址
+        var ref = '';
+        $(function(){
+            //举报类型选择
+            $(".ReportReason").find("ul li").on("click",function(e){
+                e.preventDefault();
+                if($(this).find("span").hasClass("sel")){
+                    $(this).siblings().find("span").removeClass("sel");
+                    $(this).find("span").removeClass("sel");
+                    type = '';
+                }
+                else{
+                    $(this).siblings().find("span").removeClass("sel");
+                    $(this).find("span").addClass("sel");
+                    type = $.trim($(this).text());
+					
+                }
+            });
+          
+            //提交举报内容
+            $(".next_Report").click(function(){
+                if(type == '' || type == null){
+                   // alert("请选择举报类型");
+                   // return false;
+				   type ='欺诈';
+                }
+				
+             if($(this).attr('id')=='tijiao'){
+			 	$.post("__URL__/jubao",{type:type,content:$("#fb_des_content").val()},function(data){
+							console.log(data);			
+				},'json')
+			 }
+              
+            })
+			
+			
+			
+			
+        })
+    </script>
+
+
+</body>
+</html>

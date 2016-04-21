@@ -1,0 +1,24 @@
+dux_account_log 用户文章分享记录表
+dux_admin_group 管理员用户组管理表
+dux_admin_log  管理员登陆日志
+dux_admin_user 管理员表
+dux_area 地区表
+dux_category 文章栏目表
+dux_category_article 文章内容模板表
+dux_chongzhi_log 提现重置记录
+dux_config 网站配置表
+dux_content 文章标题 文章形象图
+dux_content_article 文章内容表
+dux_content_f_log 用户分享记录
+dux_ext_guestbook 留言表
+dux_ext_jubao    文章举报
+dux_ext_qrcode  二维码图标
+dux_file 本地上传形象图记录
+dux_fragment 广告碎片
+dux_moeny_log 金额提现记录
+dux_pay_log  支付记录
+dux_position 文章推荐 置顶
+dux_users 用户表
+dux_wx_openid 微信唯一码
+dux_wxch_menu 公众号配置
+

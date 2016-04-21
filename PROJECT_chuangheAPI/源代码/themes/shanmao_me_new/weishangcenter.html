@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>微商中心</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content=" jnooo.cn">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+</head>
+<body>
+ <header class="hd_header" style="background: #0a94ff">
+    <div class="shouiyi">微商数据</div>
+    <div class="jifen"><b>{$info.wbfee|default="0"}</b>微币</div>
+    <div class="nav_hd nav_hd_to  bott_bor">
+        <div class="fl">{$data.rwnum|default="0"}<br>任务累计发布</div>
+        <div class="fr">{$data.fxnum|default="0"}<br>任务累计分享</div>
+        <p class="cb"></p>
+    </div>
+    <div class="nav_hd">
+        <div class="fl">{$info.historywb|default="0"}<br>历史总支出</div>
+        <div class="fr">{$data.renum|default="0"}<br>任务累计浏览</div>
+        <p class="cb"></p>
+    </div>
+ </header><!-- /header -->
+ <div class="wdqb_main"> 
+   <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr onClick="window.location.href='{:U('Home/Weishang/task')}'">
+            <td width="60" align="center" valign="middle"><i class="fa fa-share" style="font-size: 30px;color: #0a94ff;"></i></td>
+            <td align="left" valign="middle">发布任务</td>
+            <td width="60" align="right" valign="middle"><i class="fa fa-angle-right" style="font-size: 30px;color: #999;"></i></td>
+         </tr>
+     </table>
+  </div>
+   <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr onClick="window.location.href='{:U('Home/Weishang/tasklist')}'">
+            <td width="60" align="center" valign="middle"><i class="fa fa-map-marker" style="font-size: 30px;color: #3ECBB4;"></i></td>
+            <td align="left" valign="middle">我的任务</td>
+            <td width="60" align="right" valign="middle"><i class="fa fa-angle-right" style="font-size: 30px;color: #999;"></i></td>
+         </tr>
+     </table>
+  </div>
+  <!-- div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="window.location.href='{:U('Home/Huodong/fxhb')}'">
+            <td width="60" align="center" valign="middle"><i class="fa fa-calendar" style="font-size: 30px;color: #2E90D0;"></i></td>
+            <td align="left" valign="middle">分享记录</td>
+            <td width="60" align="right" valign="middle"><i class="fa fa-angle-right" style="font-size: 30px;color: #999;"></i></td>
+         </tr>
+     </table>
+  </div-->
+  <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="window.location.href='{:U('Home/Weishang/chongzhi')}'">
+            <td width="60" align="center" valign="middle"><i class="fa fa-sign-in" style="font-size: 30px;color: #FF0B3E;"></i></td>
+            <td align="left" valign="middle">充值中心</td>
+            <td width="60" align="right" valign="middle"><i class="fa fa-angle-right" style="font-size: 30px;color: #999;"></i></td>
+         </tr>
+     </table>
+  </div>
+  <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="window.location.href='{:U('Home/Weishang/zclist')}'">
+            <td width="60" align="center" valign="middle"><i class="fa fa-dedent" style="font-size: 30px;color: #FE6413"></i></td>
+            <td align="left" valign="middle">支出明细</td>
+            <td width="60" align="right" valign="middle"><i class="fa fa-angle-right" style="font-size: 30px;color: #999;"></i></td>
+         </tr>
+     </table>
+  </div>
+ 
+  <div class="hg100"></div>  
+
+
+
+</div>
+ <!--#include file="new_footer.html"-->
+
+<script>
+
+
+
+</script>
+
+ <!--<script>
+
+ function kaiguan(s,b)
+ {
+
+    for(var k=1;k<4;k++)
+    {
+        document.getElementById('d'+k).className = document.getElementById('d2').className.replace('fd6520', '');
+        document.getElementById('img'+k).src = "images/ic_img"+k+".png";
+     }
+    document.getElementById(b).src = "images/ic_"+b+"_2.png";
+    document.getElementById(s).className='fd6520'
+ }  
+</script>-->   
+
+	
+
+</body>
+</html>

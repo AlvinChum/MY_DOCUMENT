@@ -1,0 +1,77 @@
+2016年1月21日		1.0版本
+		发布伙计任务接口--
+		获取伙计任务详情接口
+		伙计列表接口
+		接任务接口
+
+
+
+发布伙计任务接口   http://wanbei.gzaojun.com/huoji/postmission
+POST参数:
+参数值："uid":"用户ID","sec":"16位安全码","utime":"12345678","title":"任务标题","address":"送货地址","details":"详细地址","nickname":"联系人","phone":"联系电话","cost":"费用","content":"活动内容"
+	1.用户ID：             uid:用户ID
+	2.安全码：          	  sec:16位安全码
+	3.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	4.干啥哟：			  title:
+	5.去哪儿：		  	  address:去哪儿
+	6.详细地址：	  		  details:详细地址
+	7.联系人：	  		  nickname:（默认填写登录用户的）
+	8.联系电话：			  phone:（默认填写登录用户的）
+	9.费用：				  cost:小费金额
+	10.购买要求：			  content:购买要求
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4006"}			含有违禁字符
+	{"code":"4012"}			余额不足
+
+
+
+获取伙计任务详情接口   http://wanbei.gzaojun.com/huoji/info
+POST参数:
+参数值："huoji_id":"伙计任务ID"
+	1.伙计任务ID：             huoji_id
+返回参数：
+	请求成功
+	{"code":"200","huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","nickname":"联系人","phone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳","status":"任务状态值"}
+	请求错误
+	{"code":"400"}			传递参数异常
+
+
+
+伙计列表接口   http://wanbei.gzaojun.com/huoji/huojilist
+POST参数:
+参数值："college":"发布学校名","time":"发布时间","price":"发布价钱"
+	1.发布学校名：         	college：""表示搜索c所有
+	2.发布时间：				time:"1"时间近优先（默认），"2"时间远优先
+	3.发布价钱：				price:"0"不排序 （默认），"1"高价优先，"2"低价优先
+返回参数：
+	请求成功
+	{"code":"200","length":"数量","text":[
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","nickname":"联系人","phone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳"},
+	{"huoji_id":"伙计任务ID","uid":"用户ID","title":"任务标题","address":"送货地址","details":"详细地址","nickname":"联系人","phone":"联系电话","cost":"费用","content":"购买要求","utime":"发布的UNIX时间戳"},
+	]}
+	请求错误
+	{"code":"400"}			传递参数异常
+
+
+
+接任务接口   http://wanbei.gzaojun.com/huoji/accept
+POST参数:
+参数值："uid":"用户ID","sec":"16位安全码","utime":"12345678","huoji_id":"伙计任务ID"
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4008"}			伙计任务已被别人接了
+	{code:4013}      		不能抢自己的伙计任务
+
+
+
+
+

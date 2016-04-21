@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <title>我的钱包</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+</head>
+<body>
+ <header class="hd_header">
+    <div class="shouiyi">我的收益余额</div>
+    <div class="jifen"><b>{$info.money|default="0"}</b>金钱</div>
+    <div class="nav_hd nav_hd_to  bott_bor">
+        <div class="fl">{$info.renwumoney|default="0"}<br>任务累计收益</div>
+        <div class="fr">{$info.fansmoney|default="0"}<br>邀请累计收益</div>
+        <p class="cb"></p>
+    </div>
+    <div class="nav_hd">
+        <div class="fl">{$info.historymoney|default="0"}<br>历史总收益</div>
+        <div class="fr">{$info.fansnum|default="0"}<br>徒弟数量</div>
+        <p class="cb"></p>
+    </div>
+ </header><!-- /header -->
+ <div class="wdqb_main"> 
+   <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr onClick="window.location.href='<?php echo C('subscribeurl'); ?>'">
+            <td width="60" align="center" valign="middle"><img src="images/ic_img_03.png" width="30"></td>
+            <td align="left" valign="middle">关注<?php echo C('site_title'); ?>一起转</td>
+            <td width="60" align="right" valign="middle"><img src="images/ic_img_18.png"></td>
+         </tr>
+     </table>
+  </div>
+  <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="window.location.href='{:U('Home/Huodong/fxhb')}'">
+            <td width="60" align="center" valign="middle"><img src="images/ic_img_07.png" width="30"></td>
+            <td align="left" valign="middle">邀请好友</td>
+            <td width="60" align="right" valign="middle"><img src="images/ic_img_18.png"></td>
+         </tr>
+     </table>
+  </div>
+  <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="alert('关注我们可快速提现');window.location.href='{:U('Home/User/tixian')}'">
+            <td width="60" align="center" valign="middle"><img src="images/ic_img_11.png" width="30"></td>
+            <td align="left" valign="middle">我要提现</td>
+            <td width="60" align="right" valign="middle"><img src="images/ic_img_18.png"></td>
+         </tr>
+     </table>
+  </div>
+  <div class="main_nav mt15">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr  onClick="window.location.href='{:U('Home/User/tixianlist')}'">
+            <td width="60" align="center" valign="middle"><img src="images/ic_img_15.png" width="30"></td>
+            <td align="left" valign="middle">提现记录</td>
+            <td width="60" align="right" valign="middle"><img src="images/ic_img_18.png"></td>
+         </tr>
+     </table>
+  </div>
+ 
+  <div class="hg100"></div>  
+
+
+
+</div>
+ <!--#include file="new_footer.html"-->
+
+ <!--<script>
+
+ function kaiguan(s,b)
+ {
+
+    for(var k=1;k<4;k++)
+    {
+        document.getElementById('d'+k).className = document.getElementById('d2').className.replace('fd6520', '');
+        document.getElementById('img'+k).src = "images/ic_img"+k+".png";
+     }
+    document.getElementById(b).src = "images/ic_"+b+"_2.png";
+    document.getElementById(s).className='fd6520'
+ }  
+</script>-->   
+
+	
+
+</body>
+</html>

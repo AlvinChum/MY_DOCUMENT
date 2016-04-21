@@ -1,0 +1,16 @@
+@charset "utf-8";
+body,html,a,img,div,form,select,input,ul,ol,ul,li,h1,h2,h3,h4,h5,h6,dd,dl,dt,p,label,em,span{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body{font-size:12px;font-family:'Microsoft YaHei', sans-serif; color:#666}
+a{color:#666;*color:#666;text-decoration:none}
+a:hover{text-decoration:none;color:#ff4a00}
+ol,ul,li{list-style:none}
+em,i{font-style:normal}
+img{border:none;vertical-align:middle;}
+.fl { float:left}
+.fr { float:right}
+.cb { clear:both}
+ 
+ body,html { height:100%}
+
+
+

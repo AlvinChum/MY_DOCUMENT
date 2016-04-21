@@ -1,0 +1,111 @@
+<h3>用户列表</h3>
+<admin:panel >
+  <admin:tabletool filter="true" keyword="{$pageMaps.keyword}">
+  		<!--<select name="class_id" id="class_id" class="form-element">
+          	<option value="0">==栏目==</option>
+            <foreach name="categoryList" item="vo">
+            	<option value="{$vo.class_id}"
+                <if condition="$pageMaps['class_id'] == $vo['class_id']"> selected="selected" </if>
+                <if condition="$vo['type'] == 0 || $vo['app'] != MODULE_NAME "> style="background-color:#CCC" disabled="disabled" </if>
+                >{$vo.cname}
+                </option>
+            </foreach>
+          </select>
+          <select name="position_id" id="position_id" class="form-element" >
+          	<option value="0">==推荐位==</option>
+            <foreach name="positionList" item="vo">
+            	<option value="{$vo.position_id}"
+                <if condition="$pageMaps['position_id'] == $vo['position_id']"> selected="selected" </if>
+                >{$vo.name}
+                </option>
+            </foreach>
+          </select>-->
+         <admin:select name="type"  item="==类型==,积分,余额" value="0,jifen,money" selected="$pageMaps['type']" />
+           <admin:select name="order_by"  item="升,降" value="asc,desc" selected="$pageMaps['order_by']" />     
+     <admin:select name="subscribe"  item="==请选择==,未关注,已关注" value="0,2,1" selected="$pageMaps['subscribe']" />
+  	<admin:select name="status"  item="==状态==,正常,未验证,禁止" value="0,1,2,3" selected="$pageMaps['status']" />
+  </admin:tabletool>
+  <admin:table id="table" show="选择|30,编号|30,子用户查看,性别,昵称,头像,积分,余额,微币余额,地区,微信,手机,最后登陆,注册时间,状态,会员等级,操作|130">
+    <foreach name="list" item="vo">
+      <tr>
+        <td>
+        	<input type="checkbox" name="id[]" value="{$vo.id}" />
+        </td>
+        <td>{$vo.id}</td>
+       <!-- <td><a href="javascript:;" >{$vo.user_login}</a></td>-->
+        <td><a href="{:U('',array('pid'=>$vo['id']))}" >子用户查看({$vo.fscount})</a></td>
+		<td><a href="javascript:;" > 
+		<if condition="$vo['sex'] eq 1">
+		男
+		<elseif condition="$vo['sex'] eq 2" />
+		女
+		<elseif condition="$vo['sex'] eq 3" />
+		
+		其他
+		</if>
+		</a></td>
+        <td><a href="javascript:;" >{$vo.user_nicename}</a></td>
+        <td>
+        <if condition="$vo['avatar']">
+		<img src="{$vo.avatar}" width="40">
+		<else />
+		
+		</if>
+          <!--<if condition="$vo['status']"> <span class="u-badge u-badge-success">发布</span>
+            <else />
+            <span class="u-badge u-badge-danger">草稿</span> </if>-->
+        </td>
+		<td>{$vo.jifen}</td>
+		<td>{$vo.money}</td>
+		<td>{$vo.wbfee}</td>
+		<td>{$vo.country}{$vo.province}{$vo.city}</td>
+		
+		<td>{$vo.weixin}</td>
+		<td>{$vo.user_tel}</td>
+		 <td>{$vo.last_login_time|date="Y-m-d H:i:s",###}</td>
+		  <td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+        <td>
+		
+          <if condition="$vo['user_status'] eq 1"> <span class="u-badge u-badge-success">正常</span>
+            <elseif condition="$vo['user_status'] eq 2" />
+			  <span class="u-badge u-badge-danger">未验证</span>
+			<else />
+            <span class="u-badge u-badge-danger">禁止登陆</span> </if>
+        </td>
+        <td>{$user_rank[$vo['user_rank']]['rank_name']}</td>
+        <td>
+        <a class="u-btn u-btn-primary  u-btn-small" href="{:U('edit',array('id'=>$vo['id']))}">修改</a>
+        <a class="u-btn u-btn-danger  u-btn-small del" href="javascript:;" data="{$vo.id}">删除</a></td>
+      </tr>
+    </foreach>
+  </admin:table>
+  <admin:tablefoot  />
+</admin:panel>
+<script type="text/javascript" charset="utf-8">
+	Do.ready('base',function() {
+		//移动操作
+		$('#selectAction').change(function() {
+			var type = $(this).val();
+			if(type == 3){
+				$(this).after($('#class_id').clone());
+			}else{
+				$(this).nextAll('select').hide();
+			}
+		});
+		//表格处理
+		$('#table').duxTable({
+			actionUrl : "{:U('batchAction')}",
+			deleteUrl: "{:U('del')}",
+			actionParameter : function(){
+				return {'class_id' : $('#selectAction').next('#class_id').val()};
+			}
+		});
+	});
+</script>
+
+
+
+
+
+
+

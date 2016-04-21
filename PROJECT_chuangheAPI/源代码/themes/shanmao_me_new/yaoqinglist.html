@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+		<link rel="stylesheet" href="css/yq3_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+      
+		
+		  <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/User/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">我的推荐列表</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+			
+			
+			  <div class="uinn">
+            
+			
+			<!--{foreach name="list" item="v" }--> 
+			
+			<div class="ub ubb b-c2 uinn8">
+                <div class="t-9b ulev-1" style="min-width:5em;">
+				
+				<?php if($v[user_nicename]) echo $v[user_nicename];else echo $v[user_login]; ?>
+				
+				
+			
+				 </div>
+                <div class="ub-f1 ulev-1">
+				
+				<span style="color:#0000FF">
+				<?php if($v[st_status]==1) echo '已申请试听';elseif($v[st_status]==2) echo '已报试听'; ?>
+				</span>
+				<span style="color:#FF0000">
+				<?php if($v[bb_status]==1) echo '已提交占座申请';elseif($v[bb_status]==2) echo '已占座';elseif($v[bb_status]==3) echo '已报班'; ?>
+				</span>	
+					
+                   注册时间：{$v.create_time|date="y-m-d H:i:s",###}
+                </div>
+            </div>
+								  
+								<!--{/foreach}-->
+								
+								
+				{$page}
+            
+        </div>
+			
+		
+		   <!--#include file="new_footer.html"-->
+    </body>
+   
+</html>

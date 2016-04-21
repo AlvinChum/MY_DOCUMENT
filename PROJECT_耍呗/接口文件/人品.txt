@@ -1,0 +1,46 @@
+2016年1月22日		1.0版本
+		人品任务列表接口
+		人品任务详情接口--
+		参与人品接口
+
+
+人品任务列表接口   http://wanbei.gzaojun.com/renpin/renpinlist
+//只显示正在进行中的人品活动
+POST参数:
+参数值：无参数
+返回参数：
+	请求成功
+	{"code":"200","length":"数量","text":[
+	{"renpin_id":"人品活动ID","commodity":"商品名","img":",分割的图片地址","price":"商品价值","total_people":"总人数","real_people":"参与人数","details":"商品详情","winner":"中奖者姓名","winner_phone":"中奖者电话"},
+	{"renpin_id":"人品活动ID","commodity":"商品名","img":",分割的图片地址","price":"商品价值","total_people":"总人数","real_people":"参与人数","details":"商品详情","winner":"中奖者姓名","winner_phone":"中奖者电话"}
+	]}
+	//重要说明：列表页默认显示图片数组的第一张图片
+	请求错误
+	{"code":"400"}			异常错误
+
+
+人品任务详情接口   http://wanbei.gzaojun.com/renpin/info
+POST参数:
+参数值："renpin_id":"人品活动ID"
+返回参数：
+	请求成功
+	{"code":"200","renpin_id":"人品活动ID","commodity":"商品名","img":",分割的图片地址","price":"商品价值","total_people":"总人数","real_people":"参与人数","details":"商品详情","winner":"中奖者姓名","winner_phone":"中奖者电话"}
+	请求错误
+	{"code":"400"}			异常错误
+
+
+参与人品接口   http://wanbei.gzaojun.com/renpin/accept
+POST参数:
+参数值："uid":"用户ID","sec":"16位安全码","utime":"12345678","renpin_id":"人品ID"
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4009"}			参与人数已满
+	{"code":"4014"}			人品任务已结束
+	{"code":"4012"}			余额不足
+	{"code":"4015"}			不能重复参加
+
+

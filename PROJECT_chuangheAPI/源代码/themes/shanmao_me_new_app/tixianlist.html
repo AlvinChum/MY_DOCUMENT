@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+		<link rel="stylesheet" href="css/yq3_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+      
+		
+		  <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/User/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">{$media.title}</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+			
+			
+			  <div class="uinn">
+            
+			
+			<!--{foreach name="list" item="v" }--> 
+			
+			<div class="ub ubb b-c2 uinn8">
+                <div class="t-9b ulev-1" style="min-width:5em;">
+				<span style="color:#333; line-height:30px;">{$v.body}<span style="color:#FF0000"><?php if($v[fee]!=0) echo $v[fee];?></span></span><br/>
+				{$v.time|date="y-m-d H:i:s",###}
+
+				 </div>
+                <div class="ub-f1 ulev-1" style="padding-left: 5px; line-height:47px;">	
+                <span style="color:#fd6520;float: right; font-size:2.0rem">	 <?php if($v['status']==1){ echo '成功';}elseif($v['status']==2){echo '待审核';}else{ echo '失败';}?></span>	
+
+                </div>
+            </div>
+								  
+								<!--{/foreach}-->
+								
+				<div class="pages">				
+				{$page}
+				</div>
+            <div style="clear: both"></div>
+        </div>
+			
+		<div style="height:100px;"></div>
+		   <!--#include file="new_footer.html"-->
+    </body>
+   
+</html>

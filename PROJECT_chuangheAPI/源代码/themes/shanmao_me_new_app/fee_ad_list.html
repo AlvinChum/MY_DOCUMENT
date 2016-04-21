@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+		<link rel="stylesheet" href="css/yq3_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    <style type="text/css">
+     .zs_tflb ul li {line-height: 20px;float: left; padding-right: 17px;}
+     .cb:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+    </style>
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+      
+		
+		  <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/ad/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">{$media.title}</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+			
+			  <div class="uinn" style="background-color: #FFFFFF;">
+            
+			
+			<!--{foreach name="list" item="v" }--> 
+			
+			<div class=" ubb b-c2 uinn8">
+                
+                <div>
+                <div class="t-9b ulev-1" style="min-width:5em;    padding-bottom: 3px;">
+				
+			     <img src="{$v.ad_img}"  width="100%" />
+
+				 </div>
+
+           
+                <div class="ub-f1 ulev-1 zs_tflb cb">
+                <ul>
+					<li>广告名：<span style="color:#fd6520">  {$v.ad_name} </span></li> 
+					<li>广告位：<span style="color:#fd6520">{$v.class_name}</span></li>
+					<li>单价：<span style="color:#fd6520">{$v.dj_fee}</span></li>
+					<li>预算：<span style="color:#fd6520">{$v.ys_fee}</span></li>
+					<li>状态：<span style="color:#fd6520">{$v.status}</span></li>
+					<li>点击量：<span style="color:#fd6520">{$v.click}</span></li>
+					<li>无效点击量：<span style="color:#fd6520">{$v.no_click}</span></li>
+					<li>投放时间：<span style="color:#fd6520">{$v.add_time|date="Y-m-d",###}</span></li>
+					
+				</ul>	
+                </div>
+                
+                </div> 
+
+                <div class="pt10">
+
+			<!--{if condition="$v['status'] eq 1 "}-->
+			<a  href="{:U('Home/Ad/fee_save',array('id'=>$v[id],'status'=>2))}" class="new1028" style="padding:6px 6px;"  >下架</a>
+			<!--{else /}-->
+			<a  href="{:U('Home/Ad/fee_del',array('id'=>$v[id]))}" class="new1028" style="padding:6px 6px;" >删除投放</a>
+			<!--{/if}-->
+			 
+			</div>
+			<div style="clear: both;"></div>
+            </div>
+								  
+								<!--{/foreach}-->
+								
+				<div class="pages">				
+				{$page}
+				</div>
+            <div style="clear: both"></div>
+        </div>
+			<div style="height:38px;"></div>
+		   
+		   <!--#include file="new_footer.html"-->
+           <div></div>
+    </body>
+
+</html>

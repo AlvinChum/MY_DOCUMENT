@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link href="css/common.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+		<link rel="stylesheet" href="css/yq3_content/css/main.css">
+		
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+      
+		
+		  <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/Index/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">文章列表</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+			
+			
+			  <div class="uinn">
+            
+			
+		<!--{foreach name="pageList" item="vo" }--> 
+			
+			<div class="ub ubb b-c2 uinn8">
+                <div class="t-9b ulev-1" style="min-width:5em;">
+				
+				<a href="{$vo.aurl}" style="color:#3766c8">{$vo.title}</a>
+				
+				
+			
+				 </div>
+				 
+                <div class="ub-f1 ulev-1" style="padding-left: 20px;">
+				
+				
+					
+                   发布时间：{$vo.time|format_time='Y-m-d'}
+                </div>
+            </div>
+								  
+							<!--{/foreach}-->
+								
+								
+				{$page}
+            
+        </div>
+			
+		<!--#include file="footer.html"-->
+    </body>
+   
+</html>

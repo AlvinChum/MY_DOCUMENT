@@ -1,0 +1,239 @@
+执行日期：20160106141531
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106141531&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106141531
+
+ mysign=1cd13437bb28274bcf96807b53935a33 
+
+执行日期：20160106142121
+
+ buildRequestForm 
+
+执行日期：20160106142121
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106142121&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106142121
+
+ mysign=1da26476c7ab76c7e1f473dc6b050fd8 
+
+执行日期：20160106142414
+
+ buildRequestForm 
+
+执行日期：20160106142414
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106142414&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106142414
+
+ mysign=437dcd8583032fb8d8ca2ac4843ca629 
+
+执行日期：20160106144805
+
+ buildRequestForm 
+
+执行日期：20160106144805
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106144805&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106144805
+
+ mysign=42d6da919f408192a6ea560fba36f058 
+
+执行日期：20160106145114
+
+ buildRequestForm 
+
+执行日期：20160106145114
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106145114&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106145114
+
+ mysign=e79028d10dc2e852386e2d2ea10eba1a 
+
+执行日期：20160106145500
+
+ buildRequestForm 
+
+执行日期：20160106145500
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106145500&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106145500
+
+ mysign=91ff92a631b36ca643b7fb5b564194ed 
+
+执行日期：20160106150046
+
+ buildRequestForm 
+
+执行日期：20160106150046
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106150046&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106150046
+
+ mysign=61b920f5a765143ad18ce203c22d4765 
+
+执行日期：20160106150159
+
+ buildRequestForm 
+
+执行日期：20160106150159
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106150159&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106150159
+
+ mysign=14794d03ac28f114e1765e299a3558bb 
+
+执行日期：20160106150357
+
+ buildRequestForm 
+
+执行日期：20160106150357
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106150357&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106150357
+
+ mysign=3cbcd5d585978911d7a7663d758b6c0d 
+
+执行日期：20160106150731
+
+ buildRequestForm 
+
+执行日期：20160106150731
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106150731&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106150731
+
+ mysign=0d01a969f0f324b0330aa15252dd03d7 
+
+执行日期：20160106150943
+
+ buildRequestForm 
+
+执行日期：20160106150943
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106150943&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106150943
+
+ mysign=d00cb3c783574122f7d4367fae05920b 
+
+执行日期：20160106151410
+
+ buildRequestForm 
+
+执行日期：20160106151410
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106151410&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106151410
+
+ mysign=cc77bb6fb74d014607a0e896c8d4e6e9 
+
+执行日期：20160106152519
+
+ buildRequestForm 
+
+执行日期：20160106152519
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106152519&partner=2088911648469578&payment_type=1&return_url=http://888.shanmao.me/v8/AlipayAPI/return_url.php&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106152519
+
+ mysign=8af8271bb5dddbfe1a95d37014850dbb 
+
+执行日期：20160106153440
+
+ buildRequestForm 
+
+执行日期：20160106153440
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/notifyzfb.php&out_trade_no=MCHID20160106153440&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106153440
+
+ mysign=dccb00bca55bb26e63e0bc826b139f92 
+
+执行日期：20160106154535
+
+ buildRequestForm 
+
+执行日期：20160106154535
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/AlipayAPI/notify_url.php&out_trade_no=MCHID20160106154535&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106154535
+
+ mysign=262b0915ecb2855ed6999f495ea5ea6c 
+
+执行日期：20160106155135
+
+ buildRequestForm 
+
+执行日期：20160106155135
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/notifyzfb.php&out_trade_no=MCHID20160106155135&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106155135
+
+ mysign=8f410ef503dd4d4b77c2a8d62e306831 
+
+执行日期：20160106155857
+
+ buildRequestForm 
+
+执行日期：20160106155857
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/notifyzfb.php&out_trade_no=MCHID20160106155857&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160106155857
+
+ mysign=d68f341b01fca293f94b8be65dfaa8e3 
+
+执行日期：20160106155909
+out_trade_no=MCHID20160106155857,支付成功
+
+执行日期：20160108034704
+out_trade_no=,支付失败
+
+执行日期：20160108155319
+
+ buildRequestForm 
+
+执行日期：20160108155319
+
+ prestr=_input_charset=utf-8&notify_url=http://888.shanmao.me/v8/notifyzfb.php&out_trade_no=MCHID20160108155319&partner=2088911648469578&payment_type=1&seller_id=2088911648469578&service=alipay.wap.create.direct.pay.by.user&subject=平台充值&total_fee=0.01 
+
+执行日期：20160108155319
+
+ mysign=dd33471de5dddf1582f10388edf4db58 
+
+执行日期：20160112144624
+out_trade_no=,支付失败
+
+执行日期：20160112144641
+out_trade_no=,支付失败
+
+执行日期：20160112144657
+out_trade_no=,支付失败
+
+执行日期：20160113221539
+out_trade_no=,支付失败
+
+执行日期：20160114095800
+out_trade_no=MCHID20160114095747,支付成功
+
+执行日期：20160116034330
+out_trade_no=,支付失败
+
+执行日期：20160122144350
+out_trade_no=,支付失败
+

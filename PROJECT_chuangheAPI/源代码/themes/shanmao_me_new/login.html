@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/reg2_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+	<form action="index.php?s=/Home/Public/dologin" method="post" id="btn2f">
+	  <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="/"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">登录</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+            <!--header结束-->
+	
+	
+        <div class="c-wh uinnh5">
+		
+		
+		
+            <div class="uba uc-a1 bc-border">
+                <div class="ub uinn5 bc-border ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        手机号码
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="请输入您常用的手机号码" name="log" type="text" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+                
+               <div class="ub uinn5 bc-border ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        输入密码
+                    </div>
+                    <div class="ub ub-ac  ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="输入密码" name="pwd"  type="password" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+				
+				
+				<div class="ub uinn5">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        输入验证码
+                    </div>
+                    <div class="ub ub-ac  ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input type="text"
+							name="vcode" value="" class="login-code" style="width:65%"> <img
+							src="{:U('Home/Site/verifyCode','','')}" id="code"
+							onclick="imgCode()" height="32"  />
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+			
+			
+			    
+            </div>
+			
+			
+            
+            <div class="uinn-at1">
+                <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="btn2">
+                    登录
+                </div>
+            </div>
+			
+			
+			
+			<div class="ub ub-pe uinn umar-a ulev-1">
+                <span class="t-21"></><a href="{:U('Home/Public/reg')}">还没有账号，去注册</a></span>
+            </div>
+        </div>
+  </form>
+  
+  
+  
+  
+     
+   <!--#include file="footer.html"-->
+   
+<script>
+$("#btn2").click(function(){
+	$("#btn2f").submit();
+})
+
+function imgCode(){
+          
+		 var charactors="ab1cd2ef3gh4ij5kl6mn7opq8rst9uvw0xyz";
+		 var value='',i;
+		 for(j=1;j<=4;j++){
+		 	i = parseInt(35*Math.random()); 　
+		 	value = value + charactors.charAt(i);
+		 }
+		 var url ="{:U('Home/Public/verifyCode')}&"+value;
+		// alert(url);
+		 document.getElementById("code").src=url;
+			
+		}
+
+</script>
+   
+    </body>
+   
+</html>

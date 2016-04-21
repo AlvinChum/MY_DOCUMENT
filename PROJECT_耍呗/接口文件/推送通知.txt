@@ -1,0 +1,8 @@
+推送类型：
+type:1	约么
+	id	约么的ID
+type:2	伙计
+	id  伙计任务的ID
+type:3  人品
+	id 	人品任务的ID
+type:4  费用详情页面

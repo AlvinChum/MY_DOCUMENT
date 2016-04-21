@@ -1,0 +1,1 @@
+a:8:{i:0;s:7:"data_id";i:1;s:4:"type";i:2;s:6:"jbdesc";i:3;s:6:"jbname";i:4;s:3:"uid";i:5;s:4:"time";s:3:"_pk";s:7:"data_id";s:5:"_type";a:6:{s:7:"data_id";s:7:"int(10)";s:4:"type";s:12:"varchar(250)";s:6:"jbdesc";s:12:"varchar(250)";s:6:"jbname";s:12:"varchar(250)";s:3:"uid";s:12:"varchar(250)";s:4:"time";s:7:"int(10)";}}

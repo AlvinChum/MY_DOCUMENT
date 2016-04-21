@@ -1,0 +1,147 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta name="keywords" content="关健词">
+<meta name="description" content="描述">
+<title><?php echo ($media["title"]); ?></title>
+<link rel="stylesheet" type="text/css" href="css/app/css.css">
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/wx_dl_zc.js"></script>
+
+
+</head>
+
+<body>
+  <div class="hd_main">
+     <header class="dl_scd_header">
+     	<a href="/" class="fl pl10"><img src="images/app/youjiantou_new.png" width="10" alt="">返回</a>
+     	<a href="<?php echo U('login');?>" class="fr pr10">登录</a>
+     	注册
+     	<div class="cb"></div>
+     </header>
+     <!-- /header -->
+     <div class="wx_dl_scd ply20">
+     <!-- 注册第一步开始 -->
+    <div id="zczh1" ><!-- style="display: none" -->
+        <div class="hg30"></div>
+         <!-- 输入账号 -->
+       <div class="wei_input ">
+            <input type="text" class="wei_input_si fl" placeholder="请输入有效的手机号" id="tel" name="user_login">
+       </div>
+        <!--错误警告 -->
+         <div class="hg30">
+          <p></p>
+        </div>
+        <!--错误警告 -->
+
+         <!-- 密码域 -->
+            <div class="wei_input k_msg" id="yangjing3">
+            <input type="password" class="wei_input_si fl pwd" name="password" placeholder="请输入6-20个字符的密码" id="zc_an1">
+             <!-- a class="fr yanjing" onclick="mima_1()"><img src="images/app/yanjing.png" height="27" width="50"></a -->
+            </div>
+            <div class="wei_input mt30 " id="yangjing4" style="display:none">
+            <input type="text" class="wei_input_si fl pwd" placeholder="请输入6-20个字符的密码" id="zc_ming2">
+             <a class="fr yanjing" onclick="mima_2()"><img src="images/app/yanjing_2.png" height="27" width="50"></a>
+            </div>
+          <!--错误警告 -->
+         <div class="hg30">
+          <p class="p_msg_2 msg"></p>
+        </div>
+        <!--错误警告 -->
+         <!-- 密码域 -->
+            <div class="wei_input k_msg" id="yangjing">
+            <input type="password" class="wei_input_si fl m_pwd" name="m_password" placeholder="再次确认密码" id="zc_an">
+             <!-- a class="fr yanjing" onclick="mima()"><img src="images/app/yanjing.png" height="27" width="50"></a-->
+            </div>
+            <div class="wei_input mt30 " id="yangjing2" style="display:none">
+            <input type="text" class="wei_input_si fl m_pwd" placeholder="再次确认密码" id="zc_ming">
+             <a class="fr yanjing" onclick="mima0()"><img src="images/app/yanjing_2.png" height="27" width="50"></a>
+            </div>
+          <!--错误警告 -->
+         <div class="hg30">
+          <p class="p_msg"></p>
+        </div>
+        <!-- 协议 -->
+        <p style="height:30px; line-height: 30px;"><input type="checkbox" checked name="test" style="position: relative; top:2px; margin-right:5px;margin-left:5px;">同意并愿意遵守 <a href="javascript:;" class="color269eff">会员注册协议</a> </p>
+       
+    
+        <!-- 登录按钮 -->
+        <a class="wx_scd_dl_xiayibu mt10"  onclick="next(<?php echo ($is_tel_check); ?>)">下一步</a>
+      
+      </div> 
+     <!-- 注册第一步结束 -->
+     <!-- 2开始 -->
+         <div id="zczh2"  style="display: none"><!-- style="display: none" -->
+        <div class="hg30"></div>
+        <p class="fasong" style="height:55px; line-height: 55px;">我们已发送验证短信至<span></span></p>
+         <!-- 输入账号 -->
+      <!-- 获取 -->
+       <div>
+           <div class="wei_input_new fl">
+                <input type="text" class="wei_input_si fl" name="code" placeholder="请输入手机验证码">
+          </div>
+           <div class="fl" style="width:30%">
+                <!-- <a class="fr huoqu_scd" onclick="mima_1()">点击获取</a>  -->
+                <input  class="fr huoqu_scd" type="button" style="background:#e4e4e4; color: #333" value="验证码"  placeholder="点击获取" id="huoqu">
+                
+               <!-- <a class="fr huoqu_scd" onclick="mima_1()" style="background:#e4e4e4; color: #333">重新发送</a>
+           --> </div>
+           <div class="cb"></div>
+       </div>
+       <!-- 获取 -->
+        <!-- 警告 -->
+            <div class="hg30">
+              <p class="yzm_msg" id="tel_msg"></p>
+            </div>
+            <!-- 警告 -->
+        <!-- 登录按钮 -->
+        <a class="wx_scd_dl_xiayibu mt10" onclick="reg()">下一步</a>
+      
+      </div> 
+     <!-- 2结束 -->
+     <!-- 3开始 -->
+    <div id="zczh3" style="display: none"><!-- style="display: none" -->
+       
+        <p class="fasong" style="height:55px; line-height: 55px;">请在此处填写邀请人的邀请码<i>（非必填）</i></p>
+         <!-- 输入账号 -->
+         <div class="wei_input">
+            <input type="text" class="wei_input_si fl" name="yqm" placeholder="请输入邀请码" value="<?php echo $_COOKIE["yq"]; ?>">
+         </div>
+         <div class="hg30"><p class="yqm_msg"></p></div>
+        <a class="wx_scd_dl_xiayibu mt2t0" onclick="yqm()">下一步</a>
+       <div class="hg30"><a class="fr tguo"  onclick="document.getElementById('zczh4').style.display='block';document.getElementById('zczh3').style.display='none'">跳过</a></div>
+      </div> 
+     <!-- 3结束 -->
+     <!-- 4开始 -->
+      <div id="zczh4"  style="display: none" >
+     <div class="hg30"></div>
+        
+         
+         <p class="wenan_xiugcg">注册成功！</p>
+    
+        <!-- 登录按钮 -->
+         <a class="wx_scd_dl_button mt20" href="<?php echo U('reg_login');?>" id="denglu" >登 录</a>
+         <div class="hg30"></div>
+      
+
+
+    </div>
+     <!-- 4结束 -->
+     </div>
+
+
+
+
+     
+  </div>
+<script src="js/ajax.js"></script>
+<div id="loading" style="display: none;"><div class="loading-div"></div><img src="themes/shanmao_me_new_app/images/jiazai.gif" class="loading-img"></div>
+</body>
+</html>

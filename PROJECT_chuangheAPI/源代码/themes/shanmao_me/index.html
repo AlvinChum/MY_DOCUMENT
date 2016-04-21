@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta content="telephone=no" name="format-detection" />
+<title>{$media.title}</title>
+<meta name="keywords" content="{$media.keywords}" />
+<meta name="description" content="{$media.description}" />
+<meta name="applicable-device" content="mobile">
+<link href="css/common.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+<div id="wrap">
+
+  <div id="header">
+  
+    <div class="islider">
+      <ul class="islides">
+       <!--{dux:list app="DuxCms" label="contentList" limit="5" item="vo" pos_id="4" }-->
+        <li class="islide"><a href="{$vo.aurl}"><img src="{$vo.image}"></a></li>		
+		 <!--{/dux:list}-->
+      </ul>
+    </div>
+
+
+    <div class="inews">
+      <div id="igg">
+        <ul>
+		<!--{foreach name="ulist" item="vo" }--> 
+          <li>{$vo.user_login}于{$vo.create_time|date="Y-m-d H:i:s",###}成功关注</li>
+		  <!--{/foreach}-->
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="mainer">
+    
+    <div class="inav">
+      <ul>
+        <li class="li1"><a href="javascript:alert('开发中');"><b>考试系统</b><br>
+        <span>趣味考试问答</span></a></li>
+        <li class="li2"><a href="{:U('Home/User/yaoqing',array('u'=>$uinfo[id],'type'=>2))}"><b>我要推荐</b><br>
+        <span>推荐好友获得好友收益分成</span></a></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    
+ 
+	<div class="ibtn1"><a href="{:U('Home/Index/index2')}">分享文章送红包</a></div>
+	
+	<div class="ibtn1"><a href="{:U('Home/Huodong/yaoyiyao')}">进入摇红包</a></div>
+    
+    <div class="iftext">山猫IT互联  专注微信开发</div>
+  
+  </div>
+  
+   <!--#include file="footer.html"-->
+  <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.glide.js"></script>
+  <script>
+$('.islider').glide({
+  animationTime:500,
+  arrows:false,
+  nav:true,
+  navCenter:false,
+  navClass:"islider-nav",
+  navItemClass:"islider-nav-item",
+  navCurrentItemClass:"islider-nav-item-current"
+});
+</script>
+  
+
+</div>
+
+</body>
+</html>

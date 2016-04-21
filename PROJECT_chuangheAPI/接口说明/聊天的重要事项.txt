@@ -1,0 +1,28 @@
+后台
+http://www.xiyuxin.cn/index.php?s=/Admin
+test888
+test123456789
+
+
+
+APP名字：创河微赚
+这个版本不考虑第三方登录的问题，暂时只能手机登录实现。
+我--》联系我们   做成WEB页，方便用户随时更改内容
+顶部栏目动态显示==》不是写死,后台可控制
+http://www.xiyuxin.cn/index.php?s=/Home/Huodong/yaoyiyao.html   这个是摇一摇的网址
+唤醒徒弟，一天只能唤醒一次，一天只允许发一条推送，而且时间是早上八点到晚上10点
+
+
+
+
+
+分享链接的地址：其中89为用户的ID号。
+http://www.xiyuxin.cn/index.php?s=/Home/Huodong/fxhb/u/89/gowxurl/999.html
+分享直接注册，然后下载APP
+
+
+
+
+
+
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>修改任务</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/ucentr.html_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+		<style>#files img{
+		 width:85px; height:85px;	
+		}</style>
+    </head>
+ 
+    <body class="um-vp bc-bg" ontouchstart>
+
+    
+	
+	<form  action="{:U('Home/Weishang/update_task')}" method="post" id="pform">
+		
+	  <div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/Weishang/tasklist')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">修改任务</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+
+  
+
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    文章栏目：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <select name="class_id">
+                        	<!--{foreach name="categoryList" item="vo" }--> 
+                        	
+                        <option  <!--{if condition="$info.class_id eq $vo.class_id " }-->selected<!--{/if}-->  value="{$vo.class_id}">{$vo.cname}</option>
+                        	<!--{/foreach}--> 
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    封面图片：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                    
+                    <input id="fileupload" type="file" name="files[]" style="display:none;">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn" onclick="fileuploadshow()">上传图片</div> <br/>
+                    <div id="files" class="files">
+                    <img src="{$info.image}">
+                    <input type="hidden" name="image" value="{$info.image}">
+                     </div>
+                    
+                    </div>
+                </div>
+            </div>
+             <!-- div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    插入图片：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn">上传图片</div>&nbsp; &nbsp;<div class="btn ub ub-ac bc-text-head ub-pc bc-btn" onclick="selImg(img.value)">点击插入</div> 
+                    </div>
+                </div>
+            </div-->
+             
+              <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    标题：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                     <input placeholder="文章标题" name="title"  type="text" class="ub-f1"  value="{$info.title}">
+                    </div>
+                </div>
+            </div>
+             <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    推广网址：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                    <textarea name="wxurl"  placeholder="粘贴您要推广的网址（手机网页）">{$info.wxurl}</textarea>
+                    </div>
+                </div>
+            </div>
+			
+			 <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                   分享佣金：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                   
+                      <input name="Fieldset_fxyj" placeholder="本篇每个用户分享消耗的佣金" type="text" class="ub-f1"  value="<?php if($info['fxyj'] ==-1 ) echo 0; else echo $info['fxyj']; ?>"/>
+                    </div>
+                </div>
+            </div>
+			
+			
+              <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    浏览佣金：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      <input name="Fieldset_r_money" placeholder="本篇每个用户文章浏览消耗的佣金" type="text" class="ub-f1"  value="{$info.r_money}"/>
+                    </div>
+                </div>
+            </div>
+      
+       <?php if(C('sj_mod')){  ?>
+              <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                        赏金：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      <input name="Fieldset_sj_money" placeholder="发布本篇每个用户文章浏览的赏金" type="text" class="ub-f1"  value="{$info.sj_money}"/>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+   
+   
+           <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    预算佣金：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      <input name="Fieldset_actionyj" placeholder="本篇文章预消耗的总佣金" type="text" class="ub-f1"  value="{$info.actionyj}"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    地区：
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      <input name="Fieldset_area" type="text" class="ub-f1" placeholder="如（福建,厦门）多个请用,隔开。"  value="{$info.area}"/>
+                    </div>
+                </div>
+            </div>  
+             <!--div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      <input  type="checkbox" name="position[]" style="width: 20px; height: 20px;" value="4">&nbsp;首页置顶 &nbsp; &nbsp;&nbsp; &nbsp;<input  type="checkbox" style="width: 20px; height: 20px;"  name="position[]" value="5">&nbsp;分类置顶
+                    </div>
+                </div>
+            </div-->       
+            
+            <div class="ub ub-ver">
+                
+                <div class="uinn-at1">
+                <input type="hidden" name="status" value="1">
+                <input type="hidden" name="actionstatus" value="1">
+                <input type="hidden" name="time" value="{$time}">
+                 <input type="hidden" name="content_id" value="{$info.content_id}">
+                
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="submit">
+                        提交修改
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		</form>
+    </body>
+    
+       <!--#include file="new_footer.html"-->
+   <script>
+$("#submit").click(function(){
+	$("#pform").submit();
+})
+
+
+
+</script>
+
+<script src="__ROOT__/upimg/js/vendor/jquery.ui.widget.js"></script>
+
+<script src="__ROOT__/upimg/js/jquery.iframe-transport.js"></script>
+
+<script src="__ROOT__/upimg/js/jquery.fileupload.js"></script>
+
+
+<script>
+/*jslint unparam: true */
+/*global window, $ */
+$(function () {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = window.location.hostname === 'blueimp.github.io' ?
+                '//jquery-file-upload.appspot.com/' : '__ROOT__/upimg/server/php/';
+    $('#fileupload').fileupload({
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+           
+            $.each(data.result.files, function (index, file) {
+            	  $('#files').html('<img src="'+file.url+'" > <input type="hidden" name="image" value="'+file.url+'"> ');
+              //  $('<p/>').html('<img src="'+file.url+'" width="300" height="250"> <a href="javascript:;"  class="fbxcks_c delimg">删除</a><input type="hidden" name="imgarr[]" value="'+file.url+'">').appendTo('#files');
+            });
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .progress-bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+		
+$(".delimg").live("click",function(){
+	$(this).parent("p").remove();								   
+})
+
+});
+
+function fileuploadshow(){
+	//$("#fileupload").show();
+	$("#fileupload").click();
+	}
+</script>
+
+
+</html>

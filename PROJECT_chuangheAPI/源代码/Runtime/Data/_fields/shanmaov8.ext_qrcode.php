@@ -1,0 +1,1 @@
+a:6:{i:0;s:7:"data_id";i:1;s:4:"name";i:2;s:3:"url";i:3;s:6:"is_use";s:3:"_pk";s:7:"data_id";s:5:"_type";a:4:{s:7:"data_id";s:7:"int(10)";s:4:"name";s:12:"varchar(250)";s:3:"url";s:12:"varchar(250)";s:6:"is_use";s:12:"varchar(250)";}}

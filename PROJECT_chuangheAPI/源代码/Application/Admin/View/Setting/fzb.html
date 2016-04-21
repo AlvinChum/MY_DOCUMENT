@@ -1,0 +1,79 @@
+<h3>防作弊设置</h3>
+<admin:panel >
+  <admin:form url="{:U('site')}" method="post" id="form" class="m-form-horizontal" >
+
+
+  <admin:formrow title="不在区域内浏览" tip="不在分享区域内的浏览不算佣金，关闭则不管什么区域浏览都计算佣金，防作弊规则不变" >
+      <admin:radio name="viewinarea"  item="开启,关闭" value="1,0" checked="$info['viewinarea']" />
+    </admin:formrow>
+  
+  <admin:formrow title="扣量设置" tip="设置扣量时间段,多个用逗号隔开，0表示关闭。例如设置2,则是每分钟的10-20秒内所有浏览不计算佣金" >
+      <admin:text name="kl_time"  value="{$info.kl_time}" len="250" />
+    </admin:formrow>
+
+ 
+    <admin:formrow title="广告显示设置" tip="开启则内容页总是展示广告 否则分享后才展示广告" >
+      <admin:radio name="set_ad"  item="开启,关闭" value="1,0" checked="$info['set_ad']" />
+    </admin:formrow>
+
+	 <admin:formrow title="浏览停留时间设置" tip="浏览内容页必须停留的时间,小于设置的时间则不发放佣金,最少3秒起" >
+      <admin:text name="set_view_time"  value="{$info.set_view_time}" len="250" />秒
+    </admin:formrow>
+
+
+    <admin:formrow title="会员点击不计算佣金" tip="会员点击不计算佣金" >
+      <admin:radio name="is_get_hy"  item="开启,关闭" value="1,0" checked="$info['is_get_hy']" />
+    </admin:formrow>
+    
+     <admin:formrow title="微信群分享点击不计算佣金" tip="微信群分享点击不计算佣金v8开启js分享接口有效" >
+      <admin:radio name="is_get_wxq"  item="开启,关闭" value="1,0" checked="$info['is_get_wxq']" />
+    </admin:formrow>
+  
+    
+    
+	  <admin:formrow title="每日分享" tip="每日分享不得超过此设置值，超过则分享佣金为0" >
+      <admin:text name="ererydayfx"  value="{$info.ererydayfx}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="分享间隔" tip="分享和上一次分享间隔不超过以下设置的时间，则无佣金。浏览也无佣金。" >
+      <admin:text name="ererydayfxbet"  value="{$info.ererydayfxbet}" len="250" />(秒)
+    </admin:formrow>
+    
+	
+	 <admin:formrow title="分享给单人" tip="分享给单个好友佣金。这里区分分享到朋友圈。" >
+      <admin:text name="shareone"  value="{$info.shareone}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="有效浏览次数" tip="一个人分享这篇文章有效浏览次数，超过此数不计佣金。" >
+      <admin:text name="bigview"  value="{$info.bigview}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="IP浏览有效" tip="3小时内，一个ip 浏览同一个用户的文章 有效次数，超过此数不计佣金。" >
+      <admin:text name="ipviews"  value="{$info.ipviews}" len="250" />
+    </admin:formrow>
+	
+	 <admin:formrow title="IP高级防作弊" tip="浏览者和分享者ip前N段相同不计佣金（1-4）段。0为不限制。建议开启为3" >
+      <admin:text name="ipn"  value="{$info.ipn}" len="250" />
+    </admin:formrow>
+	
+	
+	
+	 <admin:formrow title="提现限制1" tip="分享超过浏览以下倍数封号处理,不填默认100倍" >
+      <admin:text name="txbei"  value="{$info.txbei}" len="250" />
+    </admin:formrow>
+	
+	 <admin:formrow title="提现限制2" tip="分享数超过浏览以下设置倍数，无法提现。不填默认10倍" >
+      <admin:text name="txwbei"  value="{$info.txwbei}" len="250" />
+    </admin:formrow>
+	
+	
+	
+
+    <admin:formsubmit/>
+  </admin:form>
+</admin:panel>
+<script>
+Do.ready('base', function() {
+	$('#form').duxForm();
+});
+</script> 

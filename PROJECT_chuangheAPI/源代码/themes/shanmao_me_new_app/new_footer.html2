@@ -1,0 +1,27 @@
+<script src="{$css_path}js/jquery-1.8.0.min.js"></script>
+<link href="{$css_path}css/font-awesome.min.css" rel="stylesheet"/>
+<style>
+.footer_hd { position: fixed; bottom: 0px; right: 0px; width: 100%; padding: 1px 0px; border-top: #dfdfdf solid 1px;background: #f2f2f2;font-family: "microsoft yahei","华文细黑",Verdana,Arial,Helvetica,sans-serif}
+.footer_hd a { width: 25%; float: left; display: block; line-height: 18px;font-size: 1.2rem; color: rgb(113, 196, 255); text-align: center;    height: 42px;}
+.footer_hd .fd6520 {color: #0191F8}
+.footer_hd a img {width:30px; padding-top:5px;  }
+.footer_hd .fa {    font-size: 2.0rem;    margin-top: 3px;}
+.footer_hd .fd6520 .fa  {color: #0191F8}
+html{font-size:10px;}
+
+</style>
+
+<div class="footer_hd">
+    <a id="d1" onClick="window.location.href='__ROOT__/index.html'" <?php if($act=='index3'){ ?>class="fd6520" <?php } ?>  ><i class="fa fa-home"></i><br>任务大厅</a>   
+    <!-- <a id="d3" onClick="window.location.href='{:U('Home/User/mymoney')}'" <?php if($act=='mymoney'){ ?>class="fd6520" <?php } ?> ><i class="fa fa-cc-visa"></i><br>我的钱包</a> -->
+    <a id="d3" onClick="window.location.href='{:U('Home/Huodong/fxhb')}'" <?php if($act=='mymoney'){ ?>class="fd6520" <?php } ?> ><i class="fa  fa-share-alt-square"></i><br>我要收徒</a>
+    <a id="d4"  onClick="window.location.href='{:U('Home/User/index2')}'" <?php if($act=='index2'){ ?>class="fd6520" <?php } ?> ><i class="fa fa-user"></i><br>个人中心</a>
+     <?php if(C('isweis')==1){?>    
+     <a id="d2" onClick="window.location.href='__ROOT__/index.php?s=/Home/Weishang/index.html'" <?php if($act=='weishang'){ ?>class="fd6520" <?php } ?> ><i class="fa fa-money"></i><br>微商中心</a>
+     <?php }else{ ?>
+      <a id="d2" onClick="window.location.href='<?php echo C('subscribeurl'); ?>'" <?php if($act=='index4'){ ?>class="fd6520" <?php } ?> ><i class="fa fa-plus-circle"></i><br>关注我们</a>
+     <?php } ?>
+      
+</div>
+
+ <div style="display: none"><?php echo C('site_statistics'); ?></div>

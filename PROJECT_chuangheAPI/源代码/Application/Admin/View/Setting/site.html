@@ -1,0 +1,143 @@
+<h3>站点信息</h3>
+<admin:panel >
+  <admin:form url="{:U('site')}" method="post" id="form" class="m-form-horizontal" >
+    <admin:formrow title="站点标题" tip="网站标题栏处显示" >
+      <admin:text name="site_title"  value="{$info.site_title}" len="250" datatype="*"  />
+    </admin:formrow>
+    <admin:formrow title="站点副标题" tip="站点标题后面显示的副标题" >
+      <admin:text name="site_subtitle"  value="{$info.site_subtitle}" len="250" />
+    </admin:formrow>
+    <admin:formrow title="站点关键词" tip="搜索引擎所收录的关键词" >
+      <admin:text name="site_keywords"  value="{$info.site_keywords}" len="250" />
+    </admin:formrow>
+    <admin:formrow title="自定义关注回复。" tip="自定义关注回复，链接不要用双引号，用单引号。" >
+      <admin:textarea name="diygzhf" rows="5" >{$info.diygzhf}</admin:textarea>
+    </admin:formrow>
+	   <admin:formrow title="A.菜单域名" tip="菜单域名，独立设置，可防止微信菜单生成需24小时的问题。菜单处填写：http://{$info.cdsite_url}/index.php?gocdurl=999 (论坛必看教程：http://bbs.jnooo.cn/thread-74-1-1.html)" >
+      <admin:text name="cdsite_url"  value="{$info.cdsite_url}" len="250" />
+    </admin:formrow>		
+    <admin:formrow title="B.站点域名" tip="当前网站的主域名，和微信授权域名同步" >
+      <admin:text name="site_url"  value="{$info.site_url}" len="250" />
+    </admin:formrow>
+	<?php $gurl = U('Home/Public/wxlogin',array('gowxurl'=>999));?>
+	   <admin:formrow title="菜单跳转网址" tip="菜单点击则会跳转到这个网址,请确保你能正确打开这个网址。参考设置：http://{$info.site_url}{$gurl}" >
+      <admin:text name="cdtzurl"  value="http://{$info.site_url}{$gurl}" len="250" />
+    </admin:formrow>
+	
+	 <admin:formrow title="公众号" tip="公众号英文如 shanmaome" >
+      <admin:text name="gzhcode"  value="{$info.gzhcode}" len="250" />
+    </admin:formrow>
+    
+	 <admin:formrow title="管理员OPENID" tip="重要通知发送到管理员微信号！" >
+      <admin:text name="adminopenid"  value="{$info.adminopenid}" len="250" />
+    </admin:formrow>
+    
+	
+	
+ 
+    
+
+    <admin:formrow title="自定义token" tip="微信后台token接口，默认为 shanmaowxin 。备注：token网址为：http://{$info.site_url}{:U('Home/Weixin/index')}" >
+      <admin:text name="wxtoken"  value="{$info.wxtoken}" len="250" />
+    </admin:formrow>
+    
+    
+    
+	<admin:formrow title="APPID" tip="主微信APPID，一般有微信支付的服务号" >
+      <admin:text name="APPID"  value="{$info.APPID}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="SCRETID" tip="微信AppSecret" >
+      <admin:text name="SCRETID"  value="{$info.SCRETID}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="MCHID" tip="微信商户id" >
+      <admin:text name="MCHID"  value="{$info.MCHID}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="KEY" tip="微信商户key，微信支付设置教程：http://bbs.jnooo.cn/thread-43-1-2.html" >
+      <admin:text name="MCKEY"  value="{$info.MCKEY}" len="250" />
+    </admin:formrow>
+    
+
+    
+     <admin:formrow title="只在微信内打开" tip="是否只允许前台网站只在微信内打开" >
+     <admin:radio name="onlywx"  item="是,否" value="1,0" checked="$info['onlywx']" />
+    </admin:formrow>
+	
+	 <admin:formrow title="积分通知" tip="积分通知模板id" >
+     <admin:text name="jifenmb"  value="{$info.jifenmb}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="资金变动通知" tip="资金变动通知模板id" >
+     <admin:text name="moneymb"  value="{$info.moneymb}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="APPID_jsapi" tip="当分享接口失效时。应急分享接口appid" >
+      <admin:text name="APPID_jsapi"  value="{$info.APPID_jsapi}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="SCRETID_jsapi" tip="当分享接口失效时。应急分享接口AppSecret" >
+      <admin:text name="SCRETID_jsapi"  value="{$info.SCRETID_jsapi}" len="250" />
+    </admin:formrow>
+    
+    
+    <admin:formrow title="短信账号" tip="短信账号（http://www.dxton.com/申请）" >
+     <admin:text name="mobaccount"  value="{$info.mobaccount}" len="250" />
+    </admin:formrow>
+    
+    <admin:formrow title="短信密码" tip="短信密码" >
+     <admin:text name="mobpass"  value="{$info.mobpass}" len="250" />
+    </admin:formrow>
+    
+      <admin:formrow title="阿里大鱼短信appkey" tip="短信接口appkey（申请教程:http://bbs.jnooo.cn/thread-63-1-1.html）" >
+     <admin:text name="dy_appkey"  value="{$info.dy_appkey}" len="250" />
+    </admin:formrow>
+    
+    <admin:formrow title="阿里大鱼短信secretKey" tip="短信接口secretKey" >
+     <admin:text name="dy_secretkey"  value="{$info.dy_secretkey}" len="250" />
+    </admin:formrow>
+    
+    <admin:formrow title="阿里大鱼短信模板ID" tip="阿里大鱼短信模板ID" >
+     <admin:text name="dy_mid"  value="{$info.dy_mid}" len="250" />
+    </admin:formrow>
+	
+    <admin:formrow title="支付宝合作身份者id" tip="合作身份者id，以2088开头的16位纯数字" >
+     <admin:text name="alipay_config_partner"  value="{$info.alipay_config_partner}" len="250" />
+    </admin:formrow>
+    <admin:formrow title="收款支付宝账号" tip="收款支付宝账号，一般情况下收款账号就是签约账号" >
+     <admin:text name="alipay_config_seller_id"  value="{$info.alipay_config_seller_id}" len="250" />
+    </admin:formrow>
+    <admin:formrow title="支付宝查询安全校验码(key)" tip="查询安全校验码(key)" >
+     <admin:text name="alipay_config_key"  value="{$info.alipay_config_key}" len="250" />
+    </admin:formrow>
+    
+	 <admin:formrow title="微信JS分享接口" tip="确保您的js分享接口正常，是否启用微信js分享接口。开启则公众号js授权域名必须为上面域名B。下面多域名设置C,D按需求填写。(论坛必看教程：http://bbs.jnooo.cn/thread-74-1-1.html)" >
+     <admin:radio name="iswxjsfx"  item="是,否" value="1,0" checked="$info['iswxjsfx']" />
+    </admin:formrow>
+	
+	
+    <admin:formrow title="C.多域名设置" tip="分享前域名，一个域名一行，泛域名用类似：*.shanmao.me(请确保你的域名没有被微信拦截)" >
+      <admin:textarea name="moredomai"  rows="5" >{$info.moredomai}</admin:textarea>
+    </admin:formrow>
+	
+	  <admin:formrow title="D.多域名设置" tip="分享后域名，一个域名一行，泛域名用类似：*.shanmao.me。最好上CDN" >
+      <admin:textarea name="moredomaifxh"  rows="5" >{$info.moredomaifxh}</admin:textarea>
+    </admin:formrow>
+	
+
+       <admin:formrow title="站点统计" tip="用于统计代码调用" >
+      <admin:textarea name="site_statistics"  rows="5" >{$info.site_statistics}</admin:textarea>
+    </admin:formrow>
+	
+	
+	
+    
+    <admin:formsubmit/>
+  </admin:form>
+</admin:panel>
+<script>
+Do.ready('base', function() {
+	$('#form').duxForm();
+});
+</script> 

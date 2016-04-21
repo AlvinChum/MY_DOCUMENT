@@ -1,0 +1,1 @@
+a:5:{i:0;s:11:"fieldset_id";i:1;s:5:"table";i:2;s:4:"name";s:3:"_pk";s:11:"fieldset_id";s:5:"_type";a:3:{s:11:"fieldset_id";s:7:"int(10)";s:5:"table";s:12:"varchar(250)";s:4:"name";s:12:"varchar(250)";}}

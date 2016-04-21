@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/ucentr.html_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+	<style>
+	.button{width:200px;  height:40px; border-radius: 5px;background-color:#3FA9F5; border:0px #3FA9F5 solid; cursor: pointer;  color:white;  font-size:16px; }
+	</style>
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+	<div id="header" class="uh bc-text-head ub bc-head">
+	    <div class="nav-btn" id="nav-left">
+	       <a href="{:U('Home/Weishang/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+	    </div>
+	    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">充值中心</h1>
+	    <div class="nav-btn nav-bt" id="nav-right"></div>
+	</div>
+
+	
+	 <script type="text/javascript">
+	//调用微信JS api 支付
+	function jsApiCall()
+	{
+		WeixinJSBridge.invoke(
+			'getBrandWCPayRequest',
+			{$jspay},
+			function(res){
+				//WeixinJSBridge.log(res.err_msg);
+				if(res.err_msg.indexOf('ok')>0){
+						window.location.href='{:U("Home/Weishang/index",array("paytype"=>1))}';
+					}
+				//alert(res.err_code+res.err_desc+res.err_msg);
+			}
+		);
+	}
+
+	function callpay()
+	{
+		if (typeof WeixinJSBridge == "undefined"){
+		    if( document.addEventListener ){
+		        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+		    }else if (document.attachEvent){
+		        document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+		        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+		    }
+		}else{
+		    jsApiCall();
+		}
+	}
+
+/*	window.onload = function(){
+		if (typeof WeixinJSBridge == "undefined"){
+		    if( document.addEventListener ){
+		        document.addEventListener('WeixinJSBridgeReady', editAddress, false);
+		    }else if (document.attachEvent){
+		        document.attachEvent('WeixinJSBridgeReady', editAddress); 
+		        document.attachEvent('onWeixinJSBridgeReady', editAddress);
+		    }
+		}else{
+			editAddress();
+		}
+	};*/
+	
+	</script>
+	
+	
+	<div align="center">
+	<Br><Br>
+	本订单支付：{$fee} 元。
+	<Br><Br><Br>
+	<!--{if condition="$paytype eq 1"}-->
+		<button style="width:200px;  height:40px; border-radius: 5px;background-color:#3FA9F5; border:0px #3FA9F5 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay()" >微信支付</button>
+	<!--{else /}-->
+		{$html_text}
+	<!--{/if}-->
+		
+		</div>
+    </body>
+    
+       <!--#include file="new_footer.html"-->
+  
+</html>

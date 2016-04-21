@@ -1,0 +1,110 @@
+2016年1月18日		1.0版本
+		发布小型约会接口--
+		发布大型约会接口--
+		约么列表接口--
+		约么横幅广告接口--
+		参加约会活动接口--
+
+
+发表小型约会接口   http://wanbei.gzaojun.com/yueme/postsmall
+POST参数:
+参数值："uid":"用户ID","sec":"16位安全码","utime":"12345678","address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time":"活动时间","headcount":"活动人数","content":"活动内容","type":"1"
+	1.用户ID：             uid:用户ID
+	2.安全码：          	  sec:16位安全码
+	3.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	4.小型活动地址：		  address:活动地址
+	5.小型活动详细地址：	  details:活动详细地址
+	6.性别要求：	  		  sex:0:任意 1:女生 2:男生
+	7.费用：				  cost:1.AA制 2：我买单
+	8.活动时间：	  		  time:4位年+2位月+2位日+2位24小时制=10位字符串
+	9.活动人数：			  headcount:加判断，人数不能超过8位
+	10.活动内容：			  content:活动内容
+	11.类型：				  type：1（1:小型约会，2:大中型约会）
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4006"}			含有违禁字符
+	code : 4018        超过发布次数
+
+
+发表中大型约会接口   http://wanbei.gzaojun.com/yueme/postbig
+POST参数:,"utime":"12345678"
+参数值："uid":"用户ID","sec":"16位安全码","address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time":"活动时间","headcount":"活动人数","content":"活动内容","title":"活动标题","duration":"活动时长","type":"2"
+	1.用户ID：             	uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+	4.活动地址：		  		address:活动地址
+	5.活动详细地址：	  		details:活动详细地址
+	6.性别要求：	  		  	sex:0:任意 1:女生 2:男生
+	7.费用：				  	cost:1.AA制 2：我买单
+	8.活动时间：	  		  	time:4位年+2位月+2位日=8位字符串
+	9.活动人数：			  	headcount:加判断，大于等于8人
+	10.活动内容：			  	content:活动内容
+	11.活动标题：			  	title:活动标题
+	12.发布时长：			  	duration：1：1天  2：2天   3：3天
+	13.类型：				  	type：2（1:小型约会，2:大中型约会）
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4006"}			含有违禁字符
+
+	code : 4018        超过发布次数
+
+约么列表接口：http://wanbei.gzaojun.com/yueme/yuemelist
+//第一版本一次返回所有没有过期的约么数据
+POST参数:
+参数值："type":"1"
+	1.类型：				  type：2（0:全部约会 1:小型约会，2:大中型约会）
+返回参数：
+	请求成功
+	{"code":"200","length":"2","text":[
+	{"yueme_id":"约么ID","uid":"发表者的ID",,'u_img':'用户头像','u_nickname':'用户昵称'"address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time1":"活动日期","time2":"活动时间","headcount":"活动人数",real_people":"参与人数","content":"活动内容","title":"活动标题","duration":"活动时长","type":"1","utime":"发布时间"},
+	{"yueme_id":"约么ID","uid":"发表者的ID",,'u_img':'用户头像','u_nickname':'用户昵称'"address":"活动地址","details":"活动详细地址","sex":"性别要求","cost":"费用","time1":"活动时间","time2":"活动时间","headcount":"活动人数",real_people":"参与人数","content":"活动内容","title":"活动标题","duration":"活动时长","type":"1","utime":"发布时间"}
+	]}
+	length:约么列表的长度
+	请求错误
+	{"code":"400"}			传递参数异常
+	
+
+约么横幅广告接口：http://wanbei.gzaojun.com/yueme/banner
+不传递参数
+返回参数：
+	请求成功
+	{"code":"200","length":"3","text":[
+	{"yuemebanner_id":"约么横幅ID","img":"横幅广告的图片地址","url":"http地址(广告地址)"},
+	{"yuemebanner_id":"约么横幅ID","img":"横幅广告的图片地址","url":"http地址"},
+	{"yuemebanner_id":"约么横幅ID","img":"横幅广告的图片地址","url":"http地址"}
+	]}
+	length:约么横幅广告的数量
+	请求错误
+	{"code":"400"}			传递参数异常
+
+
+
+参加约会活动接口：http://wanbei.gzaojun.com/yueme/accept
+POST参数:
+参数值："uid":"用户ID","sec":"16位安全码","utime":"12345678","yueme_id":"约么ID"
+返回参数：
+	请求成功
+	{"code":"200"}
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4009"}			活动人数已满
+	{"code":"4017"}		您已经参加过该活动
+	{'code':'4022'}     性别不符合
+
+
+
+ 查看约么详细信息
+     * url http://wanbei.gzaojun.com/yueme/details
+     * params uid:用户id sec:安全码 utime:时间戳 yueme_id:约么id
+     * return array code:200 text:约么详细信息数组
+     * return array code:4021 没有约么数据
+     * return array code:400 参数错误

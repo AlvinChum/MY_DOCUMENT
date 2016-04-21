@@ -1,0 +1,53 @@
+<h3>列表</h3>
+<admin:panel >
+ <admin:tabletool filter="false"  keyword="{$pageMaps.keyword}">
+<input name="keyword" type="hidden" value="{$pageMaps.keyword}"/>
+   </admin:tabletool>
+  <admin:table id="table" show="选择|30,编号,aid,uid,用户名|100,有效浏览次数,总浏览次数,ip,ip2,类型,分享时间|130">
+    <foreach name="list" item="vo">
+      <tr>
+        <td>
+        	<input type="checkbox" name="id[]" value="{$vo.id}" />
+        </td>
+        <td>{$vo.id}</td>
+		<td>{$vo.aid}</td>
+        <td>{$vo.uid}</td>
+        <td>{$vo.user_login}</td>
+        <td>{$vo.view}</td>
+        <td>{$vo.allview}</a></td>
+        <td>{$vo.ip}</a></td>
+        <td>{$vo.ip2}</a></td>
+		 <td>{$vo.type}</a></td>
+		<td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+       
+      </tr>
+    </foreach>
+  </admin:table>
+  <admin:tablefoot />
+</admin:panel>
+<script type="text/javascript" charset="utf-8">
+	Do.ready('base',function() {
+		//移动操作
+		$('#selectAction').change(function() {
+			var type = $(this).val();
+			if(type == 3){
+				$(this).after($('#class_id').clone());
+			}else{
+				$(this).nextAll('select').hide();
+			}
+		});
+		//表格处理
+		$('#table').duxTable({
+			actionUrl : "{:U('batchAction')}",
+			deleteUrl: "{:U('del')}",
+			actionParameter : function(){
+				return {'class_id' : $('#selectAction').next('#class_id').val()};
+			}
+		});
+	});
+</script>
+
+
+
+
+

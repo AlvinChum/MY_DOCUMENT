@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="height = device-height,width=device-width,initial-scale = 1.0,user-scalable=no">
+    <title>{$media.title}</title>
+<meta name="keywords" content="{$media.keywords}" />
+<meta name="description" content="{$media.description}" />
+<style>
+.color_bg_000{background-color: #F75B5C;}
+.color_bg_001{background-color: #FF9C00;}
+.color_bg_002{background-color: #79A5FE;}
+.color_bg_003{background-color: #3BC999;}
+.color_bg_004{background-color: #FF4979;}
+.color_bg_005{background-color: #CB88FB;}
+
+
+</style>
+<link href="images/fz/comm.css" rel="stylesheet" type="text/css">
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	
+</head><body>
+
+
+	<div style="background: white;">
+		<div class="" style="width: 100%;  position: relative;" id="topTitleDiv">
+			<div class="articletopTitle" >{$contentInfo.title}</div>
+
+			
+			<div style="clear: both;"></div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="article_tip">
+			<span class="article_tip_spn">&nbsp;{$contentInfo.time|format_time='Y-m-d'}</span>
+			<span class="article_tip_spn" style="margin-left: 15px; font-size: 1.1rem"><a href="<?php echo C('subscribeurl'); ?>" style="color: #607fa6;text-decoration: underline;"><?php echo C('site_title'); ?></a></span>
+		</div>
+		<div style="clear: both;"></div>
+		<legend style="max-width: 100%; color: rgb(0, 0, 0); padding: 15px 0 0 4%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="word-break: normal; line-height: 21px; font-size: 14px; max-width: 100%; font-family: 微软雅黑; word-wrap: break-word !important; box-sizing: border-box !important;"><strong style="max-width: 100%; color: rgb(102, 102, 102); box-sizing: border-box !important; word-wrap: break-word !important;"><span style="word-break: normal; max-width: 100%; color: rgb(255, 255, 255); padding: 4px 10px; background-color: rgb(99, 181, 74); box-shadow: rgb(165, 165, 165) 4px 4px 2px; border-top-right-radius: 2em 4em; border-bottom-left-radius: 2em 4em; border-top-left-radius: 2em 0.5em; border-bottom-right-radius: 2em 0.5em; word-wrap: break-word !important; box-sizing: border-box !important;">提醒:点上方&nbsp;&nbsp;&nbsp;&nbsp;↑【<?php echo C('site_title'); ?>】。</span></strong></span></legend>
+		
+		<div style="clear: both;"></div>
+		
+		<div class="bdsharebuttonbox" style="margin:10px 3% 0% 0%;margin-left:5%;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+		
+
+		
+					
+		
+			
+		
+		<div style="clear: both;"></div>
+		<!-- 文章内容start -->
+		<div id="listDiv" style="width: 92%;padding:4% 4% ; font-size:1rem ; float: left;">
+		
+		{$contentInfo.content}
+		
+			</div>
+		<!-- 文章内容end -->
+		<div style="clear: both;height: 10px;"></div>
+	</div>
+	
+	<!-- 精彩推荐start -->
+	<div style="width: 92%;padding:1% 0 1% 4%;margin-top:0px ;float: left;letter-spacing: 2px;font-size: 0.8rem">
+		 精彩推荐 
+	</div>
+	<div style="width:100%;float: left;letter-spacing: 2px;font-size: 1rem;background: white;">
+		<div style="width:92%;padding:2% 4%;float: left;letter-spacing: 2px;font-size: 1.1rem;background: white;font-weight: bold;">
+			 <ul>
+			 <!--{dux:list app="DuxCms" label="contentList" limit="10" item="list" pos_id="2" order="rand()"}-->
+				<li class="article_tj" style="line-height: 50px"><a href="{$list.aurl}" ><img src="{$list.image}" width="50" height="50" style="float: left; margin-right: 3px;">{$list.title}</a></li>
+				 <!--{/dux:list}-->
+				
+						 </ul> 
+		</div>	
+	</div>	
+	<!-- 精彩推荐end -->
+	<div style="clear: both; "></div>	
+	
+	
+	<!-- 微信二维码start -->
+	<div style="width: 92%;padding:1% 0 1% 4%;margin-top:0px ;float: left;letter-spacing: 2px;font-size: 0.8rem">
+		关注我们 
+	</div>
+	<div style="width:100%;float: left;letter-spacing: 2px;font-size: 1.1rem;background: white;">
+		<div style="width:92%;padding:2% 4%;float: left;letter-spacing: 2px;font-size: 1rem;background: white;font-weight: bold;color: #333333;">
+			
+			<div style="" align="center">
+				<!--{dux:echo app="DuxCms" label="fragment" mark="ewmzw" /}-->
+			</div>
+		</div>	
+	</div>	
+	<!-- 微信二维码end -->
+	
+	<!-- 搜啊 -->
+	
+
+	<!-- 火热招商start -->
+
+	<div style="width:100%;float: left;letter-spacing: 2px;font-size: 1rem;background: white;">
+			
+				<!--{dux:echo app="DuxCms" label="fragment" mark="nrad1" /}-->
+	</div>	
+	<!-- 火热招商end -->	
+	
+	<div id="zsdiv1" style="display: ;">
+	<div style="clear: both;height: 80px;"></div>
+	
+	<div id="footDown">
+			<!--{dux:echo app="DuxCms" label="fragment" mark="nrad2" /}-->
+	</div>
+	
+	</div>
+	
+	
+		<!--{dux:echo app="DuxCms" label="fragment" mark="nrad3" /}-->
+	
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	   
+<script>
+var aid ='{$contentInfo.content_id}';
+var times = '{$timestamp}';
+var suplink = '{$contentInfo.fxurl}';
+var links = '{:U("Article/Content/index",array("content_id"=>$contentInfo[content_id],"uid"=>$uinfo[id],"time"=>$timestamp,"fxapi"=>1))}';
+var imgurl = '{$contentInfo.image}';
+var stitle = '{$contentInfo.title}';
+var sdesc = '{$media.title}';
+if(imgurl==''){
+	imgurl = '<!--{dux:echo app="DuxCms" label="fragment" mark="ewmurl" /}-->';	
+}
+var fulllink = 'http://'+window.location.host+links;
+if(suplink) fulllink = suplink;
+var fullimgurl = 'http://'+window.location.host+imgurl;
+wx.config({
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '{$appid}', // 必填，公众号的唯一标识
+    timestamp: '{$timestamp}', // 必填，生成签名的时间戳
+    nonceStr: '{$nonceStr}', // 必填，生成签名的随机串
+    signature: '{$signature}',// 必填，签名，见附录1
+    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+});
+
+wx.ready(function(){
+//alert(window.location.href)
+
+wx.onMenuShareTimeline({
+    title: stitle, // 分享标题
+    link: fulllink, // 分享链接  window.location.href
+    imgUrl:fullimgurl, // 分享图标
+    success: function () { 
+        // 用户确认分享后执行的回调函数
+		//alert(1111);
+		fxfunc('all');
+    },
+    cancel: function () { 
+        // 用户取消分享后执行的回调函数
+		//alert("您取消了分享");
+		//alert(window.location.href)
+    }
+});
+
+
+
+wx.onMenuShareAppMessage({
+    title: stitle, // 分享标题
+    desc: sdesc, // 分享描述
+    link: fulllink, // 分享链接  window.location.href
+    imgUrl: fullimgurl, // 分享图标
+    type: 'link', // 分享类型,music、video或link，不填默认为link
+    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+    success: function () { 
+        // 用户确认分享后执行的回调函数
+		fxfunc('one');
+    },
+    cancel: function () { 
+	//alert(stitle);
+	//alert(window.location.href)
+	//alert("您取消了分享");
+        // 用户取消分享后执行的回调函数
+    }
+});
+    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+});
+  
+function removeHTMLTag(str) {
+            str = str.replace(/<\/?[^>]*>/g,''); //去除HTML tag
+            str = str.replace(/[ | ]*\n/g,'\n'); //去除行尾空白
+            //str = str.replace(/\n[\s| | ]*\r/g,'\n'); //去除多余空行
+            str=str.replace(/&nbsp;/ig,'');//去掉&nbsp;
+            return str;
+    }  
+    
+    
+function fxfunc(type){
+	var kzid = '{$categoryInfo.fieldset_id}';
+	$.post("{:U('Home/Huodong/fx_hb')}",{aid:aid,times:times,type:type,kzid:kzid},function(data){
+		if(data!=1){
+			alert(data);
+			/*
+			if(confirm(data)){
+				window.location.href='<?php echo C('subscribeurl'); ?>';
+			}*/
+		}
+	},'text')	
+}
+
+function get_click(){
+	$.get('{:U("Article/Content/index",array("content_id"=>$contentInfo[content_id],"uid"=>$_GET[uid],"time"=>$_GET[time],"d"=>1,"now"=>$timestamp))}')
+}
+
+
+
+$(function(){
+	$("#listDiv p").attr("style",'');
+	setTimeout("get_click()",3000);
+	var isweixin = '{$isweixin}';
+	if(isweixin!=1) window.history.replaceState(null, document.title,'http://'+window.location.host+links);
+})  
+</script> 
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":stitle,"bdUrl":fulllink,"bdMini":"2","bdMiniList":false,"bdPic":fullimgurl,"bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+ <div style="display: none">  <?php echo C('site_statistics'); ?>  </div>
+</body>
+
+</html>

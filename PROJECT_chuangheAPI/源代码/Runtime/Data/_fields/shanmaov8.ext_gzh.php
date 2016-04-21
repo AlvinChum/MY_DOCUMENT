@@ -1,0 +1,1 @@
+a:8:{i:0;s:7:"data_id";i:1;s:4:"fxyj";i:2;s:4:"area";i:3;s:6:"areayj";i:4;s:8:"actionyj";i:5;s:7:"r_money";i:6;s:8:"sj_money";s:5:"_type";a:7:{s:7:"data_id";s:7:"int(10)";s:4:"fxyj";s:13:"decimal(10,2)";s:4:"area";s:12:"varchar(250)";s:6:"areayj";s:12:"varchar(250)";s:8:"actionyj";s:12:"varchar(250)";s:7:"r_money";s:12:"varchar(250)";s:8:"sj_money";s:12:"varchar(250)";}}

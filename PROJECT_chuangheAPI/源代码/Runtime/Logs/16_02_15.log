@@ -1,0 +1,3040 @@
+[ 2016-02-15T00:00:10+08:00 ] 139.196.128.183 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455465609/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:01:40+08:00 ] 139.196.128.141 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455465700/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:10:00+08:00 ] 139.196.128.139 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455466200/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:21:33+08:00 ] 139.196.128.189 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455466892/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:25:12+08:00 ] 139.196.128.150 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467112/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:25:15+08:00 ] 139.196.128.170 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467115/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:25:46+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467146/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:25:46+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467146/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:25:47+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467146/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:28:29+08:00 ] 139.196.128.145 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455467309/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:34:54+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:34:56+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:28+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:31+08:00 ] 139.196.128.190 /index.php?s=/Article/Content/index/uid/35/content_id/1051/hash/644eefeabcdbe4885b01f2544c462d25/fxapi3/2/time/1455467791/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:33+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:37+08:00 ] 139.196.128.146 /index.php?s=/Article/Content/index/uid/35/content_id/1047/hash/02cf05dff2dd040fd91e28435ffd10e7/fxapi3/2/time/1455467797/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:50+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:54+08:00 ] 139.196.128.191 /index.php?s=/Article/Content/index/uid/35/content_id/1043/hash/b451581b34da7505de523324a46a6300/fxapi3/2/time/1455467814/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:36:59+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:37:01+08:00 ] 139.196.128.155 /index.php?s=/Article/Category/index.html&p=2&ajax=1&class_id=15
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:37:02+08:00 ] 139.196.128.191 /index.php?s=/Article/Category/index.html&p=3&ajax=1&class_id=15
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:37:06+08:00 ] 139.196.128.134 /index.php?s=/Article/Content/index/uid/35/content_id/1007/hash/495eb69d1bfa2c95ca48db18e5907359/fxapi3/2/time/1455467825/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:37:10+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:38:05+08:00 ] 101.200.101.60 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455467884/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:38:05+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455467884/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:38:46+08:00 ] 139.196.128.143 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455467926/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:49:36+08:00 ] 139.196.128.140 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455468576/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:49:36+08:00 ] 101.226.33.208 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455468576/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:53:26+08:00 ] 139.196.128.146 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455468805/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:53:26+08:00 ] 180.153.214.178 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455468805/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T00:57:43+08:00 ] 139.196.128.184 /index.php?s=/Article/Content/index/uid/19/content_id/1034/hash/d8249bddb943b8cf503deae8aec1b5a4/time/1455469063/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:08:58+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:00+08:00 ] 139.196.128.134 /index.php?s=/Home/Index/index.html&p=4&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:02+08:00 ] 139.196.128.177 /index.php?s=/Home/Index/index.html&p=5&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:04+08:00 ] 139.196.128.146 /index.php?s=/Home/Index/index.html&p=6&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:06+08:00 ] 139.196.128.174 /index.php?s=/Home/Index/index.html&p=7&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:08+08:00 ] 139.196.128.171 /index.php?s=/Home/Index/index.html&p=8&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:09+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:17+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:21+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:28+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:09:45+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:36:45+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:37:30+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:37:47+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:37:48+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:46:19+08:00 ] 139.196.128.137 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455471978/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:46:19+08:00 ] 139.196.128.137 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455471978/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:49:47+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:49:49+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:50:35+08:00 ] 139.196.128.141 /index.php?s=/Article/Content/index/uid/75/content_id/1013/hash/acfea775eb57d86c760705345c98b53e/time/1455472235/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T01:54:19+08:00 ] 101.200.101.62 /index.php?s=/Article/Content/index/uid/75/content_id/1013/hash/acfea775eb57d86c760705345c98b53e/time/1455472459/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T02:10:13+08:00 ] 101.200.101.58 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455473412/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T02:10:13+08:00 ] 101.200.101.58 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455473412/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T02:25:08+08:00 ] 101.226.33.203 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455474307/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T02:25:08+08:00 ] 139.196.128.139 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455474307/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:30:14+08:00 ] 101.200.101.20 /index.php?s=/Article/Content/index/content_id/51/time/1453755729/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:30:41+08:00 ] 101.200.101.26 /index.php?s=/Article/Content/index/content_id/41/time/1453755192/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:36:55+08:00 ] 101.200.101.3 /index.php?s=/Article/Content/index/content_id/41/time/1455478241/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:38:27+08:00 ] 101.200.101.3 /index.php?s=/Article/Content/index/content_id/51/time/1455478214/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:40:39+08:00 ] 101.200.101.37 /index.php?s=/Article/Content/index/content_id/51/time/1455478707/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:41:05+08:00 ] 101.200.101.24 /index.php?s=/Article/Content/index/content_id/41/time/1455478615/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:44:10+08:00 ] 101.200.101.63 /index.php?s=/Article/Content/index/content_id/51/time/1455478839/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:44:28+08:00 ] 101.200.101.18 /index.php?s=/Article/Content/index/content_id/41/time/1455478865/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:50:14+08:00 ] 101.200.101.46 /index.php?s=/Article/Content/index/content_id/41/time/1455479068/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:50:40+08:00 ] 101.200.101.28 /index.php?s=/Article/Content/index/content_id/51/time/1455479050/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:54:10+08:00 ] 101.200.101.12 /index.php?s=/Article/Content/index/content_id/41/time/1455479414/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T03:55:10+08:00 ] 101.200.101.14 /index.php?s=/Article/Content/index/content_id/51/time/1455479440/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:01:47+08:00 ] 101.200.101.2 /index.php?s=/Article/Content/index/content_id/51/time/1455479710/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:02:09+08:00 ] 101.200.101.22 /index.php?s=/Article/Content/index/content_id/41/time/1455479650/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:04:40+08:00 ] 101.200.101.58 /index.php?s=/Article/Content/index/content_id/51/time/1455480107/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:05:12+08:00 ] 101.200.101.24 /index.php?s=/Article/Content/index/content_id/41/time/1455480129/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:09:12+08:00 ] 101.200.101.42 /index.php?s=/Article/Content/index/content_id/51/time/1455480280/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:09:49+08:00 ] 101.200.101.42 /index.php?s=/Article/Content/index/content_id/41/time/1455480312/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:14:46+08:00 ] 101.200.101.21 /index.php?s=/Article/Content/index/content_id/51/time/1455480552/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:15:57+08:00 ] 101.200.101.28 /index.php?s=/Article/Content/index/content_id/41/time/1455480589/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:19:17+08:00 ] 101.200.101.38 /index.php?s=/Article/Content/index/content_id/41/time/1455480957/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:20:07+08:00 ] 101.200.101.62 /index.php?s=/Article/Content/index/content_id/51/time/1455480886/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:24:28+08:00 ] 101.200.101.59 /index.php?s=/Article/Content/index/content_id/51/time/1455481207/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:24:47+08:00 ] 101.200.101.55 /index.php?s=/Article/Content/index/content_id/41/time/1455481157/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:29:37+08:00 ] 101.200.101.19 /index.php?s=/Article/Content/index/content_id/41/time/1455481487/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:29:39+08:00 ] 101.200.101.23 /index.php?s=/Article/Content/index/content_id/51/time/1455481468/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:35:09+08:00 ] 101.200.101.56 /index.php?s=/Article/Content/index/content_id/51/time/1455481779/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:35:49+08:00 ] 101.200.101.36 /index.php?s=/Article/Content/index/content_id/41/time/1455481777/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T04:39:27+08:00 ] 101.200.101.43 /index.php?s=/Article/Content/index/content_id/41/time/1455482149/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T05:01:27+08:00 ] 139.196.128.160 /index.php?s=/Article/Content/index/content_id/897/time/1454943203/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:08:18+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455491297/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:08:18+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455491297/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:08:38+08:00 ] 139.196.128.182 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455491318/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:33:00+08:00 ] 101.200.101.60 /index.php?s=/Article/Content/index/content_id/766/time/1454575520/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:33:03+08:00 ] 139.196.128.170 /index.php?s=/Article/Content/index/uid/19/content_id/1031/hash/29b81104bffdf3f34d9fbdc4fa27235f/time/1455492783/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:33:32+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/uid/19/content_id/1031/hash/29b81104bffdf3f34d9fbdc4fa27235f/time/1455492812/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:51:41+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T07:51:52+08:00 ] 139.196.128.182 /index.php?s=/Article/Content/index/uid/59/content_id/1051/hash/e4d5074ae06fa8c17342c431248c2338/fxapi3/2/time/1455493912/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:17:48+08:00 ] 139.196.128.153 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455495468/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:30:57+08:00 ] 139.196.128.139 /index.php?s=/Article/Content/index/uid/16/content_id/1051/hash/3cb573438ffcd58f96438b646a8f3d53/time/1455496257/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:33:43+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496423/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:33:43+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496423/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:33:43+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496423/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:35:06+08:00 ] 139.196.128.169 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496506/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:35:34+08:00 ] 139.196.128.184 /index.php?s=/Article/Content/index/uid/16/content_id/1051/hash/3cb573438ffcd58f96438b646a8f3d53/time/1455496534/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:35:46+08:00 ] 139.196.128.156 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496545/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:37:29+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496649/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:40:27+08:00 ] 139.196.128.137 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455496826/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:56:39+08:00 ] 139.196.128.136 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455497799/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:56:40+08:00 ] 139.196.128.136 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455497799/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:57:51+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455497870/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:57:52+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455497870/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T08:59:01+08:00 ] 139.196.128.160 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455497940/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:00:03+08:00 ] 101.200.101.9 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455498003/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:00:03+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455498003/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:10:50+08:00 ] 139.196.128.174 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455498649/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:17:58+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:17:58+08:00 ] 139.196.128.129 /index.php?s=/Article/AdminContent/add.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:21:08+08:00 ] 139.196.128.178 /index.php?s=/Article/Content/index/content_id/1106/time/1455499078/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:28:03+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:28:03+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:28:52+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:28:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:29:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:29:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:29:26+08:00 ] 101.200.101.18 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:30:45+08:00 ] 101.200.101.18 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:32:16+08:00 ] 139.196.128.156 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/fxapi3/2/time/1455499936/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:32:46+08:00 ] 139.196.128.154 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455499966/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:32:48+08:00 ] 139.196.128.138 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455499967/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:37:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:37:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:38:25+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:38:25+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:38:37+08:00 ] 139.196.128.157 /index.php?s=/Article/Content/index/uid/83/content_id/1106/hash/0906652ccff6780cb02ad11b8f6f722a/fxapi3/2/time/1455500317/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:41:00+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:42:53+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:42:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:45:54+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:46:56+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:46:58+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:49:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:49:16+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:49:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:49:17+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:50:05+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:50:06+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:50:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:53:17+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:53:20+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:53:22+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:55:03+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:56:33+08:00 ] 111.20.248.74 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:59:11+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T09:59:14+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:01:07+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:01:10+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:01:46+08:00 ] 59.56.69.195 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:06:09+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:06:11+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:07:32+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:07:34+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:07:47+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:08:22+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:08:25+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:16+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:17+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:17+08:00 ] 101.200.101.61 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:18+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:18+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:09:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:27+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:34+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:44+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:44+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:44+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:15:44+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:16:13+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:21:27+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:22:06+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:23:21+08:00 ] 65.49.54.70 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:26:24+08:00 ] 139.196.128.188 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455503183/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:26:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:26:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:26:36+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:26:37+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:31:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:31:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:31:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:31:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:39:20+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:39:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:41:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:41:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:41:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:41:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:54+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:54+08:00 ] 139.196.128.136 /index.php?s=/Article/Content/index/uid/60/content_id/1031/hash/2156d4d540c3427271f8ef541c075694/time/1455504474/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:54+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:54+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:54+08:00 ] 139.196.128.136 /index.php?s=/Article/Content/index/uid/60/content_id/1031/hash/2156d4d540c3427271f8ef541c075694/time/1455504474/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:47:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:48:35+08:00 ] 139.196.128.191 /index.php?s=/Article/Content/index/uid/60/content_id/1031/hash/2156d4d540c3427271f8ef541c075694/time/1455504515/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:48:35+08:00 ] 139.196.128.191 /index.php?s=/Article/Content/index/uid/60/content_id/1031/hash/2156d4d540c3427271f8ef541c075694/time/1455504515/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:48:39+08:00 ] 139.196.128.150 /index.php?s=/Article/Content/index/uid/60/content_id/1031/hash/2156d4d540c3427271f8ef541c075694/time/1455504519/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:53:40+08:00 ] 101.200.101.61 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455504820/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T10:54:05+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455504844/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:02:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:02:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:02:09+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:02:10+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:03:15+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:03:15+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:04:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:04:16+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:15:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:15:55+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:16:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:18:39+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:18:39+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:20:21+08:00 ] 101.200.101.50 /index.php?s=/Article/Content/index/content_id/798/time/1454660144/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:20:52+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:20:52+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:22:23+08:00 ] 123.125.71.72 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:22:23+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:22:54+08:00 ] 139.196.128.155 /index.php?s=/Article/Category/index.html&p=2&ajax=1&class_id=15
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:22:58+08:00 ] 139.196.128.191 /index.php?s=/Article/Category/index.html&p=3&ajax=1&class_id=15
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:23:17+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/fxapi3/2/time/1455506597/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:23:36+08:00 ] 139.196.128.155 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455506616/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:24:24+08:00 ] 139.196.128.146 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455506664/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:25:51+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455506750/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:25:51+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:25:52+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:30:02+08:00 ] 139.196.128.132 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455507001/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:30:02+08:00 ] 139.196.128.132 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455507001/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:30:30+08:00 ] 101.200.101.57 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:31:04+08:00 ] 101.200.101.62 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:31:12+08:00 ] 139.196.128.137 /index.php?s=/Article/Category/index.html&p=2&ajax=1&class_id=8
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:31:47+08:00 ] 101.200.101.41 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:31:53+08:00 ] 139.196.128.155 /index.php?s=/Article/Category/index.html&p=2&ajax=1&class_id=15
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:32:03+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:33:43+08:00 ] 139.196.128.169 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455507223/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:35:07+08:00 ] 139.196.128.143 /index.php
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:36:00+08:00 ] 139.196.128.146 /index.php?s=/Article/Content/index/uid/54/content_id/660/hash/4cbef456f93bf30003e7e66ff90a599c/time/1455507357/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:37:52+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:38:31+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:38:31+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:18+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:18+08:00 ] 139.196.128.140 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455507918/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:18+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:19+08:00 ] 139.196.128.140 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455507918/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:19+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:45:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:46:05+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:46:05+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:49:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:49:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:52:59+08:00 ] 139.196.128.164 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455508378/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:53:56+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:53:56+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:57:36+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455508656/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T11:58:01+08:00 ] 139.196.128.159 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455508681/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:05:07+08:00 ] 110.23.113.221 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:05:31+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455509131/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:05:31+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455509131/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:05:31+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:05:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:06:12+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:06:12+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:06:12+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:06:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:09:49+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:09:49+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:10:32+08:00 ] 139.196.128.167 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455509431/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:14:11+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:14:11+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455509651/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:14:11+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:14:12+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455509651/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:14:26+08:00 ] 139.196.128.173 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455509661/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:16:31+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455509790/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:16:31+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455509790/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:18:53+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:20:30+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:20:37+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:20:37+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:20:47+08:00 ] 139.196.128.134 /index.php?s=/Article/Content/index/uid/60/content_id/1106/hash/4e3e651a84dcfcc540d4b3d3eeea1452/time/1455510047/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:21:14+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:21:18+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:21:37+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:21:53+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:22:13+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:24:15+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:24:48+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:25:17+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:25:43+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:26:34+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:28:49+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:29:19+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:29:37+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:28+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:28+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:29+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:29+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:29+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:35+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:33:39+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:34:56+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:34:56+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:36:56+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:36:56+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:37:03+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/36/content_id/1031/hash/d8d48a6f757bf3f77c026bd75242cfb0/time/1455511023/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:37:03+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/36/content_id/1031/hash/d8d48a6f757bf3f77c026bd75242cfb0/time/1455511023/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:37:04+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/36/content_id/1031/hash/d8d48a6f757bf3f77c026bd75242cfb0/time/1455511023/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:43:29+08:00 ] 123.125.71.84 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:45:47+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/75/content_id/1013/hash/acfea775eb57d86c760705345c98b53e/time/1455511547/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:46:37+08:00 ] 123.125.71.81 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:47:02+08:00 ] 139.196.128.188 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455511621/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:49:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:49:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:49:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:49:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:51:22+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:51:22+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:52:26+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:52:26+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:52:26+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:52:26+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:56:38+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:56:38+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:56:38+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T12:56:38+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:06:05+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:06:05+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:06:05+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:06:06+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:07:05+08:00 ] 139.196.128.139 /index.php?s=/Article/Content/index/uid/8/content_id/1031/hash/d8baaa96b29ba9eaee548edec4970ab5/time/1455512825/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:11:39+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:11:40+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:12:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:12:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:12:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:12:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:17:26+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:17:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:17:27+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455513446/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:17:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:17:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:20:22+08:00 ] 101.200.101.16 /index.php?s=/Article/Content/index/uid/75/content_id/1013/hash/acfea775eb57d86c760705345c98b53e/time/1455513622/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:27:49+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:27:59+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:28:02+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:32:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:32:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:32:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:32:56+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:42:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T13:42:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:04:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:04:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:04:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:04:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:06:01+08:00 ] 103.242.202.196 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:07:17+08:00 ] 103.242.202.196 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:08:42+08:00 ] 111.20.248.74 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:10:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:10:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:10:40+08:00 ] 111.20.248.74 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:11:00+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:11:00+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:13:52+08:00 ] 59.56.69.195 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:17:04+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:17:05+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:23:28+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:23:28+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:23:28+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:23:28+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:30:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:30:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:33:51+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:33:51+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:42:30+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:45:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:45:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:50:20+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:50:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:51:10+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:51:10+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:51:10+08:00 ] 139.196.128.151 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455519070/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:51:11+08:00 ] 139.196.128.151 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455519070/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:55:42+08:00 ] 101.200.101.27 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455519341/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:58:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T14:58:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:00:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:00:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:06:52+08:00 ] 139.196.128.180 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455520011/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:09:12+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:09:12+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:09:13+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:09:13+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:21:18+08:00 ] 139.196.128.186 /index.php?s=/Article/Content/index/content_id/37/time/1453755275/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:22:38+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:22:39+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:22:39+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:22:50+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:24:11+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:24:12+08:00 ] 139.196.128.143 /index.php?s=/Article/Content/index/content_id/37/time/1455520878/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:24:12+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:25:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:25:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:25:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:25:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:29:36+08:00 ] 139.196.128.175 /index.php?s=/Article/Content/index/content_id/37/time/1455521052/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:35:27+08:00 ] 139.196.128.132 /index.php?s=/Article/Content/index/content_id/37/time/1455521376/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:39:39+08:00 ] 139.196.128.153 /index.php?s=/Article/Content/index/content_id/37/time/1455521727/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:41:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:41:20+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:49:17+08:00 ] 220.181.108.83 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:49:20+08:00 ] 220.181.108.106 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:50:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:50:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:50:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:50:07+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:50:13+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/content_id/37/time/1455521979/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T15:52:13+08:00 ] 139.196.128.168 /index.php?s=/Article/Content/index/uid/75/content_id/1013/hash/acfea775eb57d86c760705345c98b53e/time/1455522733/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:01:43+08:00 ] 139.196.128.154 /index.php?s=/Article/Content/index/content_id/37/time/1455522613/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:04:40+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:04:41+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:07:30+08:00 ] 139.196.128.171 /index.php?s=/Article/Content/index/content_id/37/time/1455523303/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:14+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:14+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455523693/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:14+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:08:42+08:00 ] 111.20.248.74 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:09:11+08:00 ] 139.196.128.165 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455523751/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:11:01+08:00 ] 139.196.128.151 /index.php?s=/Article/Content/index/content_id/37/time/1455523650/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:14:21+08:00 ] 139.196.128.141 /index.php?s=/Article/Content/index/content_id/37/time/1455523861/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:17:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:17:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:17:19+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:19:16+08:00 ] 139.196.128.179 /index.php?s=/Article/Content/index/content_id/37/time/1455524061/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:24:34+08:00 ] 139.196.128.163 /index.php?s=/Article/Content/index/content_id/37/time/1455524356/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:29:15+08:00 ] 139.196.128.153 /index.php?s=/Article/Content/index/content_id/37/time/1455524674/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:31:21+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:31:21+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:31:21+08:00 ] 139.196.128.161 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455525081/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:35:07+08:00 ] 139.196.128.144 /index.php?s=/Article/Content/index/content_id/37/time/1455524955/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:35:28+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:35:30+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:35:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:35:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:36:52+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:39:00+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:39:03+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:39:11+08:00 ] 139.196.128.152 /index.php?s=/Article/Content/index/content_id/37/time/1455525307/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:39:50+08:00 ] 101.200.101.3 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455525589/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:42:16+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:42:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:43:41+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:43:43+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:43:45+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:44:35+08:00 ] 139.196.128.141 /index.php?s=/Article/Content/index/content_id/37/time/1455525551/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:44:51+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:44:53+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:49:31+08:00 ] 139.196.128.148 /index.php?s=/Article/Content/index/content_id/37/time/1455525875/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:54:16+08:00 ] 139.196.128.184 /index.php?s=/Article/Content/index/content_id/37/time/1455526171/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T16:59:30+08:00 ] 139.196.128.189 /index.php?s=/Article/Content/index/content_id/37/time/1455526456/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:04:35+08:00 ] 139.196.128.168 /index.php?s=/Article/Content/index/content_id/37/time/1455526770/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:10:04+08:00 ] 139.196.128.188 /index.php?s=/Article/Content/index/content_id/37/time/1455527075/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:14:29+08:00 ] 139.196.128.177 /index.php?s=/Article/Content/index/content_id/37/time/1455527404/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:19:25+08:00 ] 139.196.128.133 /index.php?s=/Article/Content/index/content_id/37/time/1455527669/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:24:33+08:00 ] 139.196.128.159 /index.php?s=/Article/Content/index/content_id/37/time/1455527965/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:29:14+08:00 ] 139.196.128.152 /index.php?s=/Article/Content/index/content_id/37/time/1455528273/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:34:39+08:00 ] 139.196.128.147 /index.php?s=/Article/Content/index/content_id/37/time/1455528554/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:39:19+08:00 ] 139.196.128.169 /index.php?s=/Article/Content/index/content_id/37/time/1455528879/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:44:12+08:00 ] 139.196.128.176 /index.php?s=/Article/Content/index/content_id/37/time/1455529159/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:50:39+08:00 ] 139.196.128.151 /index.php?s=/Article/Content/index/content_id/37/time/1455529452/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:53:35+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:54:44+08:00 ] 139.196.128.190 /index.php?s=/Article/Content/index/content_id/37/time/1455529839/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:58:23+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T17:59:13+08:00 ] 139.196.128.164 /index.php?s=/Article/Content/index/content_id/37/time/1455530084/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T18:47:26+08:00 ] 42.156.136.102 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:29+08:00 ] 42.156.139.102 /index.php?s=/Article/Content/index/content_id/1019/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:31+08:00 ] 42.156.137.102 /index.php?s=/Article/Content/index/content_id/1033/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:36+08:00 ] 42.156.138.102 /index.php?s=/Article/Content/index/content_id/1034/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:38+08:00 ] 42.120.160.102 /index.php?s=/Article/Content/index/content_id/1022/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:42+08:00 ] 42.156.136.102 /index.php?s=/Article/Content/index/content_id/1037/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:44+08:00 ] 42.120.161.102 /index.php?s=/Article/Content/index/content_id/1010/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:49+08:00 ] 42.156.138.102 /index.php?s=/Article/Content/index/content_id/1036/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:24:52+08:00 ] 42.120.160.102 /index.php?s=/Article/Content/index/content_id/1020/time/1455359147/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:25:28+08:00 ] 42.156.137.102 /index.php?s=/Article/Content/index/content_id/499/time/1454148285/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:25:38+08:00 ] 42.120.160.102 /index.php?s=/Article/Content/index/content_id/799/time/1454666844/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:25:46+08:00 ] 42.156.137.102 /index.php?s=/Article/Content/index/content_id/949/time/1455185240/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:25:49+08:00 ] 42.120.160.102 /index.php?s=/Article/Content/index/content_id/1033/time/1455358009/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:25:58+08:00 ] 42.156.139.102 /index.php?s=/Article/Content/index/content_id/928/time/1455185240/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:26:17+08:00 ] 42.156.139.102 /index.php?s=/Article/Content/index/content_id/1042/time/1455358009/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:26:25+08:00 ] 42.156.138.102 /index.php?s=/Article/Content/index/content_id/851/time/1454753745/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:26:25+08:00 ] 42.120.160.102 /index.php?s=/Article/Content/index/content_id/948/time/1455185240/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:26:43+08:00 ] 42.156.136.102 /index.php?s=/Article/Content/index/content_id/847/time/1454753745/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:26:48+08:00 ] 42.156.137.102 /index.php?s=/Article/Content/index/content_id/721/time/1454493898/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:34:22+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:36:07+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:37:18+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:38:03+08:00 ] 139.196.128.177 /index.php?s=/Home/Index/index.html&p=5&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:38:40+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:38:45+08:00 ] 139.196.128.177 /index.php?s=/Home/Index/index.html&p=5&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:38:53+08:00 ] 139.196.128.146 /index.php?s=/Home/Index/index.html&p=6&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:38:54+08:00 ] 139.196.128.174 /index.php?s=/Home/Index/index.html&p=7&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:49:20+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:49:22+08:00 ] 139.196.128.177 /index.php?s=/Home/Index/index.html&p=5&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:50:56+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:51:17+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:51:24+08:00 ] 139.196.128.177 /index.php?s=/Home/Index/index.html&p=5&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:51:52+08:00 ] 139.196.128.146 /index.php?s=/Home/Index/index.html&p=6&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:52:03+08:00 ] 139.196.128.146 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/fxapi3/2/time/1455537123/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:52:46+08:00 ] 101.200.101.2 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455537164/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T19:54:13+08:00 ] 139.196.128.161 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455537253/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:04:44+08:00 ] 139.196.128.129 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455537882/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:04:45+08:00 ] 101.200.101.26 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455537882/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:14:57+08:00 ] 139.196.128.166 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455538497/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:19:12+08:00 ] 139.196.128.179 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455538751/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:25:08+08:00 ] 139.196.128.145 /index.php?s=/Home/Index/index.html&p=3&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:25:12+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:25:28+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:25:31+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:29:15+08:00 ] 139.196.128.148 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455539354/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:29:26+08:00 ] 139.196.128.138 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455539366/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:29:58+08:00 ] 139.196.128.141 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455539398/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:30:24+08:00 ] 139.196.128.130 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455539424/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:32:06+08:00 ] 139.196.128.189 /index.php?s=/Article/Content/index/uid/42/content_id/927/hash/3461af7d0be80f34705cf26d2452284b/time/1455539526/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:34:18+08:00 ] 101.200.101.29 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539657/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:34:37+08:00 ] 139.196.128.184 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539677/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:56+08:00 ] 139.196.128.150 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539756/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:57+08:00 ] 101.200.101.18 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539757/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:57+08:00 ] 139.196.128.143 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539757/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:57+08:00 ] 139.196.128.143 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539757/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:57+08:00 ] 139.196.128.150 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539756/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:35:58+08:00 ] 101.200.101.18 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539757/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:36:22+08:00 ] 139.196.128.129 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539782/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:37:46+08:00 ] 101.200.101.51 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539866/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:37:54+08:00 ] 139.196.128.137 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455539873/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:40:34+08:00 ] 101.200.101.53 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540034/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:41:01+08:00 ] 101.200.101.50 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540060/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:41:30+08:00 ] 139.196.128.192 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html&from=timeline&isappinstalled=0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:43:03+08:00 ] 139.196.128.191 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540183/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:44:37+08:00 ] 139.196.128.130 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:44:38+08:00 ] 101.200.101.41 /index.php?s=/Article/Category/index/class_id/15.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:44:40+08:00 ] 139.196.128.134 /index.php?s=/Article/Category/index/class_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:44:42+08:00 ] 139.196.128.163 /index.php?s=/Article/Content/index/content_id/1052/time/1455540280/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:44:42+08:00 ] 139.196.128.163 /index.php?s=/Article/Content/index/content_id/1052/time/1455540280/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:45:05+08:00 ] 139.196.128.164 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540304/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:45:13+08:00 ] 139.196.128.163 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540312/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:45:17+08:00 ] 139.196.128.186 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540316/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:45:17+08:00 ] 139.196.128.186 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540316/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:47:49+08:00 ] 139.196.128.176 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540469/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:50:07+08:00 ] 101.200.101.23 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455540607/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T20:54:54+08:00 ] 139.196.128.186 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455540893/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:06:11+08:00 ] 139.196.128.131 /index.php?s=/Article/Content/index/uid/58/content_id/1047/hash/c5f29e0ca63027c492ca7fb1eac053c6/time/1455541571/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:14:08+08:00 ] 139.196.128.135 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455542048/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:15:11+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:15:11+08:00 ] 139.196.128.129 /index.php?s=/Article/AdminContent/add.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:17:50+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:17:50+08:00 ] 139.196.128.129 /index.php?s=/Article/AdminContent/add.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:17:53+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:18:04+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:18:04+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:18:50+08:00 ] 139.196.128.187 /index.php?s=/DuxCms/AdminFormData/index/fieldset_id/8.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:21:25+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:21:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:21:30+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:30+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:35+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:47+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:47+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:47+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:22:49+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:23:37+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:25:44+08:00 ] 103.242.202.196 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:27:16+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:27:18+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:27:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:27:39+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:27:42+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:28:12+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:28:15+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:28:57+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:29:04+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:30:15+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:30:15+08:00 ] 139.196.128.129 /index.php?s=/Article/AdminContent/add.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:30:17+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:31:54+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:31:56+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:32:23+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:32:23+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:32:23+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:32:24+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:33:41+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:33:44+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:34:08+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:34:08+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:37:29+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:37:33+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:37:35+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:37:36+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:37:57+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:00+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:09+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:17+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:19+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:27+08:00 ] 139.196.128.169 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455543506/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:27+08:00 ] 139.196.128.169 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455543506/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:38:28+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:39:16+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:40:18+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:40:20+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:40:21+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:41:26+08:00 ] 139.196.128.192 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html&from=timeline&isappinstalled=0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:41:26+08:00 ] 101.200.101.18 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html&from=timeline&isappinstalled=0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:41:37+08:00 ] 139.196.128.192 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html&from=timeline&isappinstalled=0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:42:40+08:00 ] 139.196.128.138 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455543759/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:43:43+08:00 ] 139.196.128.138 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455543823/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:46:44+08:00 ] 139.196.128.164 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455544004/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:52:13+08:00 ] 101.200.101.58 /index.php?s=/Article/Content/index/content_id/862/time/1454871937/fxapi2/1.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:53:15+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:53:18+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:53:19+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:54:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:54:53+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:57:15+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:57:17+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:57:56+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T21:57:58+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:01:59+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:01+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:07+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:08+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:08+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:08+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:33+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:02:33+08:00 ] 139.196.128.129 /index.php?s=/Article/AdminContent/add.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:06:41+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:06:44+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:06:52+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:09+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:11+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:13+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:24+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:26+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:08:27+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:09:44+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:09:45+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:10:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:10:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:10:48+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:10:51+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:34+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:34+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:35+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:36+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:38+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:46+08:00 ] 139.196.128.134 /index.php?s=/Home/Index/index.html&p=4&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:46+08:00 ] 139.196.128.174 /index.php?s=/Home/Index/index.html&p=7&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:13:46+08:00 ] 139.196.128.146 /index.php?s=/Home/Index/index.html&p=6&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:14:14+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:15:58+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:16:00+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:16:04+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:17+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:19+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:54+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:54+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:17:55+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:18:01+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:19:38+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:20:29+08:00 ] 139.196.128.134 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455546029/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:08+08:00 ] 139.196.128.180 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455546067/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:08+08:00 ] 139.196.128.180 /index.php?s=/Article/Content/index/uid/42/content_id/1031/hash/e0cee7350f56c2ca39a51e540bc7e43a/time/1455546067/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:13+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:18+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:38+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:21:40+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:23:04+08:00 ] 139.196.128.141 /index.php?s=/Home/Index/index.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:23:07+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:23:46+08:00 ] 139.196.128.178 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455546226/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:25:55+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:25:55+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:34:17+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:34:17+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:34:17+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:34:17+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:41:07+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:41:08+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:42:18+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:42:21+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:52:14+08:00 ] 139.196.128.133 /index.php?s=/Home/Index/index.html&p=2&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:55:28+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:55:28+08:00 ] 139.196.128.192 /index.php?s=/Article/Content/index/content_id/1106/time/1455539108/fxapi2/1.html&from=timeline&isappinstalled=0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:55:28+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:56:20+08:00 ] 59.56.69.195 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:56:45+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:56:45+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:56:45+08:00 ] 139.196.128.129 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455548204/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:57:17+08:00 ] 101.200.101.5 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455548237/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:57:18+08:00 ] 139.196.128.170 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455548237/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:57:18+08:00 ] 139.196.128.170 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455548237/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:58:40+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T22:58:40+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:22+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:23+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:23+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:23+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:23+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:24+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:24+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:01:24+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:02:11+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:02:11+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:06:22+08:00 ] 139.196.128.153 /index.php?s=/Home/Index/index3.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:06:37+08:00 ] 139.196.128.133 /index.php?s=/Home/Index/index.html&p=2&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:12:41+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:12:41+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:21:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:21:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:23:16+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:23:16+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:26:13+08:00 ] 139.196.128.132 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455549973/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:07+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:26+08:00 ] 139.196.128.176 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455550286/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:27+08:00 ] 139.196.128.176 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455550286/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:41+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455550301/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:31:42+08:00 ] 139.196.128.181 /index.php?s=/Article/Content/index/uid/70/content_id/1018/hash/26d5c9ec767d01f64ec6e8fe2a0e0cf9/time/1455550301/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:33:21+08:00 ] 139.196.128.180 /index.php?s=/Article/Content/index/uid/19/content_id/1047/hash/879aad0a5fb53d8b4a29f7565b306264/time/1455550401/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:33:21+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:33:21+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:33:47+08:00 ] 139.196.128.183 /index.php?s=/Article/Content/index/uid/19/content_id/1047/hash/879aad0a5fb53d8b4a29f7565b306264/time/1455550427/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:33:48+08:00 ] 139.196.128.183 /index.php?s=/Article/Content/index/uid/19/content_id/1047/hash/879aad0a5fb53d8b4a29f7565b306264/time/1455550427/gowxurl/999.html
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:34:36+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:34:36+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:34:36+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:34:37+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:40:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:40:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:40:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:40:06+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:44:06+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:44:06+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:48:41+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:48:41+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:51:32+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:51:32+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:52:02+08:00 ] 139.196.128.138 /0
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:52:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:52:30+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:52:31+08:00 ] 139.196.128.172 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:52:33+08:00 ] 101.200.101.42 /
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+
+[ 2016-02-15T23:53:37+08:00 ] 139.196.128.133 /index.php?s=/Home/Index/index.html&p=2&ajax=1
+ERR: 1146:Table 'shanmaov8.dux_field_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dux_field_data`
+

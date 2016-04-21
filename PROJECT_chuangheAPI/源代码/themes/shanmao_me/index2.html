@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, -ms-touch-action: none">
+        <meta name="apple-mobile-web-app-capable" content="yes"> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="format-detection" content="telephone=no"> 
+        <title>{$media.title}</title>	
+        <link href="css/list.css" rel="stylesheet">   
+        <style> 
+        body { background: #e9e9e9; }
+        #top2{ color: #fff; font-size: 16px; float: left; width: 25%; padding:18px 0 0 5px }
+        .top .topright{ width:100%;  font-size: 0.8rem; color:#fff; padding: 10px;}
+     	.top { height: auto; background: #444444}
+     	.footba{ background: #428bca; width:30%; height: 50px; position: fixed; bottom: 10px; right:5px;text-align: center; z-index: 999}
+     	.footba a{ color: #fff;  line-height: 50px; font-size: 0.9rem;}
+         </style>
+    </head> 
+    <body> 
+    <div class="footba">
+    	<a href="{:U('Home/User/index')}">我的收入>></a>
+    </div>
+                <div id="bod">
+			<div class="top">
+			
+			
+			<div class="topright">
+				<?php echo C('site_description');?>
+			</div>
+			</div>
+            <div class="container main-container" style="margin-top:10px;">
+                    <div class="categories"> 
+					
+				  <!--{dux:list app="DuxCms" label="categoryList" limit="20" parent_id="0" item="list" }-->
+          <a href="{$list.curl}"  class="btn  <!--{if condition="$list['class_id']==$topCategoryInfo['class_id']"}--> btn-primary <!--{/if}-->  ">{$list.name}</a>
+        <!--{/dux:list}-->                     
+                    </div> 
+					
+					
+                    <div class="categories_xiala">
+					
+					  <!--{dux:list app="DuxCms" label="categoryList" limit="20" parent_id="19" item="list" }-->
+          <a href="{$list.curl}"  class="btn  <!--{if condition="$list['class_id']==$topCategoryInfo['class_id']"}--> btn-primary <!--{/if}-->  ">{$list.name}</a>
+        <!--{/dux:list}-->   			
+                    
+                    </div>
+					
+					
+					
+					
+                                    <div class="media">	
+									
+									<div  style="text-align:center;background:#fff;overflow: hidden;">
+									<!--{dux:echo app="DuxCms" label="fragment" mark="list_ad1" /}-->
+									</div>
+									
+									
+									                   
+							<!--{foreach name="list1" item="vo" }--> 
+									     <div class="media_link"> 
+	                            <a href="{:U('Article/Content/index',array('content_id'=>$vo[content_id]))}" target="_blank" style="display: block;"> 
+	                                <div class="media-body " style=" float: right; padding: 15px 10px 0 0"> 
+	                                    <h4 class="media-heading media-middle">{$vo.title}</h4> 
+	                                </div> 
+	                                <div class="media-right" style="float: left; padding:8px 0 0 10px"> 
+	                                    <img width="64" height="64"  src="{$vo.image}"> 
+	                                        </div> 
+	                                    </a> 
+	                                </div>   	 
+									
+										<!--{/foreach}-->
+									
+									
+									  </div>
+									
+										
+									
+									
+									<div  style="text-align:center;background:#fff; overflow: hidden;">
+									<?php if(date("H",time())>19 || date("H",time())<6){?>
+									<!--{dux:echo app="DuxCms" label="fragment" mark="list_cps" /}-->
+									<?php   }else{  ?>
+									<!--{dux:echo app="DuxCms" label="fragment" mark="list_ad2" /}-->
+									<?php }?>
+									</div>
+									
+									
+									
+									
+									                <div id="ad_item"></div>
+                <nav style="padding-bottom: 60px;"> 
+                
+                
+                    <ul class="pager" style="margin-bottom: 10px;"> 
+                    {$page}
+                       
+                    </ul> 
+                </nav>
+            </div>
+        </div>
+        
+        <!--{dux:echo app="DuxCms" label="fragment" mark="nrad3" /}-->
+        <script src="js/jquery-1.8.2.min.js"></script>
+		<script>
+		$(function(){
+			$(".categories .btn").click(function(){
+				if($(this).text()=='更多'){
+				$(".categories_xiala").toggle();
+				 return false;
+				 }
+			})
+			$(".pager .num,.pager .current,.pager .end").hide();
+		})
+		</script>        
+    <div style="display: none"><?php echo C('site_statistics'); ?></div>
+</body></html>

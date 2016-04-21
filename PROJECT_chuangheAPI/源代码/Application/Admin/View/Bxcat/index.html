@@ -1,0 +1,26 @@
+<h3>保险分类</h3>
+<admin:panel >
+  <admin:table id="table" show="编号|50,名称,前台是否显示|80,排序|80,操作|130"  class="m-table-border">
+    <foreach name="list" item="vo">
+      <tr>
+      	<td>{$vo.class_id}</td>
+        <td><a href="javascript:;" >{$vo.cname}</a></td>
+        <td>
+        <if condition="$vo['show'] eq 1"> <span class="u-badge u-badge-success">显示</span>          
+			<else />
+            <span class="u-badge u-badge-danger">不显示</span> </if>
+        </td>
+        <td>{$vo.sequence}</td>
+        <td>
+        <a class="u-btn u-btn-primary u-btn-small" href="{:U('Admin/Bxcat/edit',array('class_id'=>$vo['class_id']))}">修改</a>
+        <a class="u-btn u-btn-danger u-btn-small del" href="javascript:;" url="{:U('Admin/Bxcat/del')}" data="{$vo.class_id}">删除</a>
+        </td>
+      </tr>
+    </foreach>
+  </admin:table>
+</admin:panel>
+<script>
+Do.ready('base',function() {
+	$('#table').duxTable({});
+});
+</script> 

@@ -1,0 +1,9 @@
+2016年3月28日
+	获取嘉宾列表接口
+
+
+
+HTTP协议请求：
+获取嘉宾列表接口：http://域名/general/getuserlist
+POST参数："hid":"32位活动ID"
+返回接口：{"hid":"32位活动ID","length":"总人数","text":[{"himg":"用户头像","name":"用户名","title":"用户头衔","text":"用户的描述信息"},{"himg":"用户头像","name":"用户名","title":"用户头衔","text":"用户的描述信息"}]}

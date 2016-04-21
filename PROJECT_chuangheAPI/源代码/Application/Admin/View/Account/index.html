@@ -1,0 +1,55 @@
+<h3>列表</h3>
+<admin:panel >
+ <admin:tabletool filter="true"  keyword="{$pageMaps.keyword}">
+ <admin:select name="type"  item="==类型==,关注,邀请,发送失败转余额,摇一摇变动,分享文章,签到,提现,粉丝变动,置顶,分享用户文章,浏览用户文章" value="0,1,2,3,4,5,6,7,8,10,11,12" selected="$pageMaps['type']" />
+<input name="keyword" type="hidden" value="{$pageMaps.keyword}"/>
+   </admin:tabletool>
+  <admin:table id="table" show="选择|30,编号,uid,用户名|100,变动积分,变动金钱,类型,ie,ip,描述,文章id,创建时间|130">
+    <foreach name="list" item="vo">
+      <tr>
+        <td>
+        	<input type="checkbox" name="id[]" value="{$vo.id}" />
+        </td>
+        <td>{$vo.id}</td>
+        <td>{$vo.uid}</td>
+        <td>{$vo.user_login}</td>
+        <td>{$vo.jifen}</td>
+        <td>{$vo.money}</a></td>
+        <td>{$type[$vo['type']]}</a></td>
+		<td>{$vo.ie}</a></td>
+        <td>{$vo.ip}</a></td>
+        <td>{$vo.desc}</a></td>
+        <td>{$vo.aid}</a></td>
+		<td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+       
+      </tr>
+    </foreach>
+  </admin:table>
+  <admin:tablefoot />
+</admin:panel>
+<script type="text/javascript" charset="utf-8">
+	Do.ready('base',function() {
+		//移动操作
+		$('#selectAction').change(function() {
+			var type = $(this).val();
+			if(type == 3){
+				$(this).after($('#class_id').clone());
+			}else{
+				$(this).nextAll('select').hide();
+			}
+		});
+		//表格处理
+		$('#table').duxTable({
+			actionUrl : "{:U('batchAction')}",
+			deleteUrl: "{:U('del')}",
+			actionParameter : function(){
+				return {'class_id' : $('#selectAction').next('#class_id').val()};
+			}
+		});
+	});
+</script>
+
+
+
+
+

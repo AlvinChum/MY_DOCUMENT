@@ -1,0 +1,18 @@
+2016年3月28日
+	微信大屏信息接口
+
+
+通过websocket协议连接8000端口。
+初始连接时传递{"hid":"32位活动ID","type":"dq"}
+返回数据 {"hid":"32位活动ID","type":"dq","sum":"大屏消息的总数","text":[{"headimgurl":"用户头像的地址","nickname":"用户昵称","type":"1","msg":"消息内容","img":""},{"headimgurl":"用户头像的地址","nickname":"用户昵称","type":"2","msg":"","img":"图片的URL地址"}]}
+
+headimgurl	用户头像
+nickname 	用户昵称
+type		1:文本信息
+			2:图片
+msg 		文本消息内容
+img 		图片消息地址
+
+
+有新数据传递过来
+{"hid":"32位活动ID","type":"dq","sum":"大屏消息的总数","text":[{"headimgurl":"用户头像的地址","nickname":"用户昵称","type":"1","msg":"消息内容","img":""},{"headimgurl":"用户头像的地址","nickname":"用户昵称","type":"2","msg":"","img":"图片的URL地址"}]}

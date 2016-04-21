@@ -1,0 +1,17 @@
+
+邀请码为用户的ID
+
+返回：
+分享链接的地址：其中89为用户的ID号。
+http://[随机url]/index.php?s=/Home/Huodong/fxhb/u/[用户的uid]/gowxurl/999.html
+
+
+
+我的分享链接接口：http://chuanghe.gzaojun.com/wo/shareurl
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+返回参数：
+	{"uid":"用户ID","url":'分享的连接'}

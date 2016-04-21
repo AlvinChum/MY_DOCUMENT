@@ -1,0 +1,141 @@
+2016年2月25日		1.0版本
+	我的信息接口
+	我的提现接口
+	我的提现记录接口
+	转客排行接口
+	修改密码接口
+	收入明细接口
+	微信要一摇接口------》暂时没写
+	我的徒弟接口
+	我的徒弟提醒接口
+
+
+我的信息接口：http://chuanghe.gzaojun.com/wo/info
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+返回参数：
+	{"uid":"用户ID","money_all":"余额","money_today":"今天收入","money_yesterday":"昨天收入","student_sum":"徒弟数目","student_money":"徒弟进贡金额"，"history_money":“历史收入”}
+参数说明：	"uid":"用户ID"
+			"money_all":"余额"
+			"money_today":"今天收入"
+			"money_yesterday":"昨天收入"
+			"student_sum":"徒弟数目"
+			"student_money":"徒弟进贡金额"
+			"history_money":“历史收入”
+
+
+我的提现接口：http://chuanghe.gzaojun.com/wo/getmoney
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","type":"提现类型","money":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+	4.提现类型：			type:	1 	微信
+								2 	支付宝
+	5.提现金额：			money:
+	6.支付宝账号：			zfbid:支付宝账号（只有支付宝提现时传值，微信提现时传""）
+	7.收款人姓名：			name:支付宝姓名（只有支付宝提现时传值，微信提现时传""）
+返回参数：
+	{"code":"200"} 	接口调用成功
+	{"code":"4011"} 	没有关注微信号
+	{"code" : "4012"}	    账号余额不足
+	{"code" : "4013"}	    还有一笔未处理的提现请求
+
+注释：该接口为提现申请接口，如系统后台设置为红包提现，直接打钱到绑定的微信端、否则为提交提现申请，转为人工审核，返回code：200。
+
+
+我的提现记录接口：http://chuanghe.gzaojun.com/wo/getmoneylist
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","length":"提现记录的长度","text":[{"utime":"提现的UNIX时间戳","state":"状态值","money":"提现的金额"},{"utime":"提现的UNIX时间戳","state":"状态值","money":"提现的金额"},{"utime":"提现的UNIX时间戳","state":"状态值","money":"提现的金额"}]}
+
+
+
+
+
+修改密码接口：http://chuanghe.gzaojun.com/wo/changepwd
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","pwd":"密码的MD5值"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+	4.修改的密码：			pwd:密码的MD5值
+返回参数：
+	{"code":"200"}
+
+
+
+收入明细接口：http://chuanghe.gzaojun.com/wo/profitlist
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","page":"页码"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+	4.页码：				page:页码值
+返回参数：
+	{"code":"200","page":"页码值","length":"返回的收入记录数","text":[{"id":"收入ID编号","name":"名字","utime":"收入发生的时间","money":"收入的金额"},{"id":"收入ID编号","name":"名字","utime":"收入发生的时间","money":"收入的金额"}]}
+重要说明：
+	根据UNIX时间戳,获取用户的日期
+
+
+
+我的徒弟接口：http://chuanghe.gzaojun.com/wo/student
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678","page":"页码"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+	4.页码：				page:页码值
+返回参数：
+	{"code":"200","page":"页码值","length":"返回的收入记录数","text":[{"phone":"徒弟的电话号码","money":"进贡收益"},{"phone":"徒弟的电话号码",'uid':用户的id,"money":"进贡收益"},{"phone":"徒弟的电话号码","money":"进贡收益"}]}
+重要说明：
+	根据UNIX时间戳,获取用户的日期
+	排名一定是从大道小排序
+
+
+
+我的徒弟提醒接口：http://chuanghe.gzaojun.com/wo/studentpush
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200"}
+	4060        今天已经推送了
+
+
+转客排行接口：http://chuanghe.gzaojun.com/wo/rankinglist
+POST参数:
+参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+	1.用户ID：          	uid:用户ID
+	2.安全码：			sec:用户安全码
+	3.UNIX时间戳：       	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","length":"转客排行记录的长度","text":[{"phone":"转客的手机号码",‘uid’:用户的id,'money':总金额}]}
+重要说明：
+	手机号码只返回7位：例如13312345678只返回1335678，显示时，中间4位以*填充
+
+
+
+    每日签到接口：http://chuanghe.gzaojun.com/wo/qiandao
+    POST参数:
+    参数值："uid":"用户ID","sec":"安全码","utime":"12345678"
+    1.用户ID：          	uid:用户ID
+    2.安全码：			sec:用户安全码
+    3.UNIX时间戳：       	utime:发送的UNIX时间戳
+
+    返回参数：
+    {"code":"200"'}    签到成功
+    {"code":"4008"'}    签到失败
+
+
+
+

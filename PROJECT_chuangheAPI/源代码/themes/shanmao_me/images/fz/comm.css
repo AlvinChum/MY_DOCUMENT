@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+* {	
+	margin:0px;
+	padding:0px;
+}
+a {color:#818181;text-decoration:none;border-style:none;  -webkit-tap-highlight-color:rgba(0,0,0,0);} 
+img{
+	border: 0px;
+	border-color: white;
+	border: none;
+	max-width: 100%;
+}
+body {
+	font-size: 0.7rem;
+	font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti,MingLiu;
+	background-color: #eee;
+	color: #818181;
+	min-width: 320px;
+}
+li{list-style: none;}
+
+#main{width: 100%;background:url(../img/bj.jpg);text-align: center;height: 50px;overflow: hidden;}
+#main ul{list-style-type:none; margin:0;width:100%;}
+.headMenu{width:16%; float:left;line-height: 52px;font-size:1.2em;color: #B9B5AB;}
+.headMenuActive{width:16%; float:left;line-height: 52px;font-size:1.2em;color: white;}
+.adC{width: 98%;text-align: center;padding: 2px 1%}
+
+.input{	border:1px solid #D9DCE1;padding: 3px 4px }
+.vpng{transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-o-transform:rotate(-90deg); -ms-transform:rotate(-90deg);-moz-transform:rotate(-90deg) ;width:17px;}
+.vpngtop{transform:rotate(-180deg);-webkit-transform:rotate(-180deg);-o-transform:rotate(-180deg); -ms-transform:rotate(-180deg);-moz-transform:rotate(-180deg) ;width:17px;}
+.blackFont{color: black;}
+
+.articleList{	width: 92%;height: 70px;margin: 2% 2%;padding:2% 2%;background:white;position: relative;}
+.articleList_vip{	width: 92%;height: 70px;margin: 2% 2%;padding:2% 2%;background:#efffff url(../img/icon_vip.png) no-repeat 10px 21px;background-size:70px;}
+.vipClass{position: absolute;right: -1px;top: 0px;}
+
+.articleList_img{	float: right;width:97px;height:70px;margin-right: 0px;}
+.articleList_cotent{	float: left;height: 70px;margin-left: 2%;width: 60%;position: relative;}
+.articleList_title{float: left;color:#343434;font-size: 0.9rem;font-weight: bold;}
+.articleList_info{float: left;margin-top: 9px;color:#818181;}
+.articleList_price{float: left;margin-left: 5px;color:#818181;}
+.articleList_priceNum{ color: orange;font-size:0.8rem;margin-left: 0px; display: inline-block;width: 70px;text-align: left;}
+.articleList_type{ margin-left: 40px; color:#818181;}
+.articleList_tip{ float: left; font-size: 0.7rem; position: absolute; bottom:0px;left:0px ;color:#818181;overflow: hidden;white-space: nowrap;width: 100%;text-overflow:ellipsis;text-align: left;}
+.articleList_tip_img{width: 17px;margin-bottom: -2px;}
+.articleList_tip_spn{width: 30%;display: inline-block;}
+.articletopTitle {color: black;float: left;font-size:1.2rem ;font-weight: bold;letter-spacing: 5px;text-align: left;vertical-align: middle;width: 90%;padding: 5% 5% 2% 5%}
+.article_tip{ float: left; font-size: 0.8rem;margin-left:4%;margin-top:10px ;color:black;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;text-align: left;}
+.article_tip_spn{display: inline-block;}
+.article_share{ font-size: 0.7rem; color:white;}
+.article_share_button{border: 1px solid white;padding: 3px 10px;font-size: 0.9rem;border-radius:5px}
+.article_tj{overflow: hidden;text-overflow: ellipsis; white-space: nowrap;border-bottom: 1px solid #eee;padding: 6px 0px 8px 0px;}
+.article_tj_a{color:#333;}
+
+#footDown {background-color: #333;     bottom: 0;     height: 10%;     left: 0;     opacity: 0.8;     position: fixed;     text-align: center;     width: 100%; }
+.schoolBlock{margin-top: 15px;background: white;}
+.schoolHead{ font-size: 1rem;font-weight:bold ;padding: 4%;width: 92%;border-bottom: 1px solid #ccc; }
+.schoolContent{ font-size: 0.9rem;padding: 4%;width: 92%;letter-spacing: 1px;line-height: 20px;display: none}
+.schoolContent hr{margin: 15px 0px;border:0;background-color:#ccc;height:1px; }
+
+.feedbackList{	width: 92%;min-height:70px;height:auto;margin: 2% 2%;padding:2% 2% 5% 2%;background:white;}
+.feedbackList_cotent{	float: left;height: 100%;margin-left: 2%;width: 100%;position: relative;}
+.feedbackList_title{float: left;color:#343434;font-size: 0.9rem;font-weight: bold;width: 90%}
+.feedbackList_info{height: 100%;font-size: 0.9rem;width: 90%;margin-top: 5px;}
+.feedbackList_head{font-size: 0.9rem;width: 90%;}
+.feedbackList_head_left{float: left;padding: 10px 0;}
+.feedbackList_head_right{float: right;padding: 10px 0;}
+
+/* 分享朋友圈mask */
+.mask_share_py{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: url("../wx/images/background/bg_ap_black_85.png") repeat 0px 0px;
+	z-index: 9999999;
+}
+.mask_share_py div{
+	width: 100%;
+	height: 100%;
+	background: url("../wx/images/icons/icon_cm_share_tips.png") no-repeat right top;
+	background-size: 25% auto;
+}

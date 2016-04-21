@@ -1,0 +1,70 @@
+每个活动生产一个唯一个活动ID,32位字符串（创建时间+随机数，求MD5值）
+活动访问地址：http://域名/hid/32位活动ID
+
+功能名：	name=dq		微信大墙（默认）
+http://域名/hid/32位活动ID/name/dq	(以下类似)（get请求）
+		name=cj 	抽奖
+		name=ddp 	对对碰
+		name=tm		弹幕
+		name=xydzp 	幸运大转盘
+		name=xys 	许愿树
+		name=qdq	签到墙
+		name=3dqdq 	3D签到墙
+		name=yyy	摇一摇
+		name=yhb 	摇红包
+		name=jbzs 	嘉宾展示
+		name=ewm 	二维码
+		name=tp		投票
+		name=ds 	打赏
+
+
+产品WEBSOCKET接口统一连接8000端口,通过type字段来区分不同的服务。
+
+
+
+----------------------微信授权页----------------------
+
+微信网页授权获取用户基本信息（PHP后台）
+存储以下4项内容
+http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html
+openid	用户的唯一标识
+nickname	用户昵称
+sex	用户的性别，值为1时是男性，值为2时是女性，值为0时是未知
+headimgurl	用户头像，最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空。若用户更换头像，原有头像URL将失效。
+
+
+
+OAuth2.0网页授权演示 <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx6668a266b6ecdf30&redirect_uri=http://weixinweb.gzaojun.com/Home/Oauth/get_oauth&response_type=code&scope=snsapi_userinfo&state=234#wechat_redirect">点击这里体验</a> 
+
+
+
+
+微信网页支付JS代码 （JS前端）
+http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html#.E5.8F.91.E8.B5.B7.E4.B8.80.E4.B8.AA.E5.BE.AE.E4.BF.A1.E6.94.AF.E4.BB.98.E8.AF.B7.E6.B1.82
+https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=7_1
+
+
+
+微信现金红包接口（PHP后台）
+https://pay.weixin.qq.com/wiki/doc/api/tools/cash_coupon.php?chapter=13_1
+
+-----------------------------------------------------
+
+MYSQL设计注意事项：
+1.LOGO可以自定义修改
+2.网站版权可以修改
+3.开通商户时，有权限选择，有时间，参与人数和功能的权限设置。（总后台可以临时开通和关闭功能）
+4.后台每个应用都有开关功能
+5.上墙消息要敏感词过滤或者能够人工审核。
+6.主题，背景将来做成可更换
+
+
+
+
+
+
+
+
+
+
+

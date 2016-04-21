@@ -1,0 +1,15 @@
+<style>
+.footer_hd { position: fixed; bottom: 0px; right: 0px; width: 100%; height: 65px; border-top: #dfdfdf solid 1px;background: #f2f2f2;font-family: "microsoft yahei","华文细黑",Verdana,Arial,Helvetica,sans-serif}
+.footer_hd a { width: 25%; float: left; display: block; line-height: 18px;font-size: 16px; color: #666; text-align: center;}
+.footer_hd .fd6520 {color: #fd6520}
+.footer_hd a img {width:30px; padding-top:10px;  }
+</style>
+
+<div class="footer_hd">
+    <a id="d1" onClick="window.location.href='{:U('Home/Index/index3')}'" <?php if($act=='index3'){ ?>class="fd6520" <?php } ?>  ><img id="img1" src="images/ic_img1.png"><br>任务大厅</a>   
+    <a id="d3" onClick="window.location.href='{:U('Home/User/mymoney')}'" <?php if($act=='mymoney'){ ?>class="fd6520" <?php } ?> ><img id="img3" src="images/ic_img3.png"><br>我的钱包</a>
+    <a id="d4"  onClick="window.location.href='{:U('Home/User/index2')}'" <?php if($act=='index2'){ ?>class="fd6520" <?php } ?> ><img id="img4" src="images/ic_img4.png"><br>个人中心</a>
+     <a id="d2" onClick="window.location.href='<?php echo C('subscribeurl'); ?>'" <?php if($act=='index3'){ ?>class="fd6520" <?php } ?> ><img id="img2" src="images/ic_img2.png"><br>关注我们</a>
+</div>
+
+ <div style="display: none"><?php echo C('site_statistics'); ?></div>

@@ -1,0 +1,84 @@
+<h3>微商中心设置</h3>
+<admin:panel >
+  <admin:form url="{:U('site')}" method="post" id="form" class="m-form-horizontal" >
+  
+  
+  
+  <admin:formrow title="开启微商中心" tip="是否开启微商中心(v8有效)" >
+      <admin:radio name="isweis"  item="开启,关闭" value="1,0" checked="$info['isweis']" />
+    </admin:formrow>
+ 
+    <admin:formrow title="意向分成" tip="设置通过用户分享意向后,客户提交意向订单,分享者所获取的意向佣金分成(v8有效)" >
+      <admin:text name="wyxfc"  value="{$info.wyxfc}" len="250" />%
+    </admin:formrow>
+  
+   <admin:formrow title="开启赏金模块" tip="开启赏金模块(v8有效)" >
+      <admin:radio name="sj_mod"  item="开启,关闭" value="1,0" checked="$info['sj_mod']" />
+    </admin:formrow>
+    
+    <admin:formrow title="领赏次数" tip="一天内领取赏金次数(v8有效)" >
+      <admin:text name="sj_num"  value="{$info.sj_num}" len="250" />
+    </admin:formrow>
+    
+    <admin:formrow title="赏金倒计时时间" tip="赏金倒计时时间(v8有效)" >
+      <admin:text name="sj_time"  value="{$info.sj_time}" len="250" />
+    </admin:formrow>
+    
+	<admin:formrow title="植入广告同ip点击无效时间" tip="设置相同 ip,第二次点击广告,多长时间后再点击才有效(v8有效)" >
+      <admin:text name="ad_click_time"  value="{$info.ad_click_time}" len="250" />小时
+    </admin:formrow>
+	
+	
+	 <admin:formrow title="任务结束隐藏开关" tip="任务结束隐藏任务开关(v8有效)" >
+      <admin:radio name="set_task_hide"  item="开启,关闭" value="1,0" checked="$info['set_task_hide']" />
+    </admin:formrow> 
+ 
+   <admin:formrow title="任务审核开关" tip="开启后，前台发布任务必须审核才展示(v8有效)" >
+      <admin:radio name="set_task"  item="开启,关闭" value="1,0" checked="$info['set_task']" />
+    </admin:formrow> 
+  
+   <admin:formrow title="微币限额" tip="发布文章用户所需最低微币(v8有效)" >
+      <admin:text name="min_money"  value="{$info.min_money}" len="250" />
+    </admin:formrow>
+  
+   <admin:formrow title="置顶时间" tip="文章置顶之后多少小时,才可再次置顶(v8有效)" >
+      <admin:text name="zd_time"  value="{$info.zd_time}" len="250" />小时
+    </admin:formrow>
+    
+    <admin:formrow title="分类置顶佣金" tip="分类置顶所需佣金(v8有效)" >
+      <admin:text name="cat_money"  value="{$info.cat_money}" len="250" />
+    </admin:formrow>
+    
+    <admin:formrow title="首页置顶佣金" tip="首页置顶所需佣金(v8有效)" >
+      <admin:text name="index_money"  value="{$info.index_money}" len="250" />
+    </admin:formrow>
+
+	 <admin:formrow title="平台充值收费" tip="充值金额百分比(v8有效)" >
+      <admin:text name="weisczfee"  value="{$info.weisczfee}" len="250" />
+    </admin:formrow>
+
+
+<admin:formrow title="微商中心公告" tip="滚动公告，可支持HTML标签。(v8有效)" >
+     <admin:textarea name="wscentergg" rows="5" >{$info.wscentergg}</admin:textarea>
+    </admin:formrow>
+	
+	<admin:formrow title="商务合作网址" tip="商务合作网址(v8有效)" >
+     <admin:textarea name="wsswhz" rows="5" >{$info.wsswhz}</admin:textarea>
+    </admin:formrow>
+
+	
+	<admin:formrow title="微商新手指引" tip="微商新手指引网址。(v8有效)" >
+     <admin:textarea name="wsxszy" rows="5" >{$info.wsxszy}</admin:textarea>
+    </admin:formrow>
+    
+    
+    
+    
+    <admin:formsubmit/>
+  </admin:form>
+</admin:panel>
+<script>
+Do.ready('base', function() {
+	$('#form').duxForm();
+});
+</script> 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/ucentr.html_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" >
+	
+	<form  action="{:U('Home/Weishang/dopay')}" method="post" id="pform">
+	
+	  <div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn" id="nav-left">
+                   <a href="{:U('Home/Weishang/index')}"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">充值中心</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+	
+	
+	
+        <div class="ub ub-ver uinn-a1">
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac">
+                <div class="ulev-app1 umw4">
+                   充值
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <input placeholder="输入您要充值的金额" name="money" id="money" type="text" class="ub-f1"  value="<?php echo C('min_money'); ?>">（微币）
+                    </div>
+                </div>
+            </div>
+			
+			
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                   平台使用费
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1" style="padding-left: 20px;" id="ptfee">
+                        0
+                    </div>
+                </div>
+            </div>
+			
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    支付方式
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                      &nbsp; &nbsp;<label><input name="type" type="radio" style="width: 20px; height: 20px;"  checked="true" value="wxpay"/>微信支付 </label>   
+					  
+	<!--	&nbsp; &nbsp;<label> <input name="type" type="radio"  value="zhifubao" onclick="alert('支付宝还未开发')"  style="width: 20px; height: 20px;"/>支付宝</label> -->
+                  
+				   </div>
+                </div>
+            </div>
+            
+            
+            <div class="ub ub-ver">
+                
+                <div class="uinn-at1">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="submit">
+                        提交充值
+                    </div>
+                </div>
+            </div>
+			
+			
+			    <div class="ub ub-ver">
+                
+                <div class="uinn-at1" onclick="window.location.href='{:U('Home/Weishang/chongzhilist')}'">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn">
+                        查看充值记录
+                    </div>
+                </div>
+            </div>
+			
+			
+            <div class="ub ub-ver">
+                
+                <div class="uinn-at1">
+                    <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  onclick="window.location.href='{:U('Home/Weishang/zwb')}'">
+                        金钱转微币
+                    </div>
+                </div>
+            </div>
+			
+			
+			
+        </div>
+		
+		</form>
+    </body>
+    
+       <!--#include file="new_footer.html"-->
+   <script>
+   var setptfee = Number(<?php echo C('weisczfee');?>);
+   var money = $("#money").val();
+   var ptusefee = money*setptfee/100;
+  $("#ptfee").text(ptusefee);
+   var allmoney = Number(money) +Number(ptusefee);
+   
+   $("#money").blur(function(){
+   		var money1 = $("#money").val();
+		  var ptusefee1 = money1*setptfee/100;
+  $("#ptfee").text(ptusefee1);
+   });
+  // alert(ptusefee)
+$("#submit").click(function(){
+	var allmoney1 =Number($("#money").val()) +Number($("#ptfee").text());	
+	if(!confirm("您将充值："+$("#money").val()+"微币，平台使用费为"+$("#ptfee").text()+"。需支付费用："+allmoney1+"")){
+		return false;
+	}
+	$("#pform").submit();
+})
+</script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>绑定注册</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/reg2_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+	
+	  <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+                 <div class="nav-btn" id="nav-left">
+                   <a href="javascript:history.go(-1);"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">绑定注册</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+            <!--header结束-->
+	<form action="index.php?s=/Home/Public/dobind" method="post" onSubmit="return checkf();" id="btn2f">
+	
+        <div class="c-wh uinnh5">
+
+            <div class="uba uc-a1 bc-border">
+                <div class="ub uinn5 bc-border ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        手机号码
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="请输入您常用的手机号码" id="mobile_phone" name="arr[user_login]" type="text" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+				
+				  <div class="ub uinn5 b-d8 ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        手机验证码
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="手机验证码" id="vcode" name="vcode" type="number" class="ub-f1" style="width:65%;"> <input class="ub-f1" type="button"  onClick="send_mobyzm(this)" value="点击获取验证码" style="color:red">
+                        </div>
+                    </div>
+                </div>
+				
+         <div class="ub uinn5 b-d8 ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        设置密码
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="输入6~20位字符" id="pass" name="arr[user_pass]" type="password" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="ub uinn5 b-d8 ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        确认密码
+                    </div>
+                    <div class="ub ub-ac  ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="再次输入设置的密码" id="pass2" type="password" name="" class="ub-f1">
+                        </div>
+                    </div>
+                </div>-->
+				
+				
+				<div class="ub uinn5">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                        邀请码
+                    </div>
+                    <div class="ub ub-ac  ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="邀请码" type="text" name="yaoqing" <!--{if condition="$regdata['parent_id']"}-->readonly<!--{/if}--> value="{$regdata.parent_id}" class="ub-f1">
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uinn-at1">
+                <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="btn2">
+                     确 &nbsp;定
+                </div>
+            </div>
+            <br>
+            <p>&nbsp;&nbsp;问：为什么要绑定手机？</p><br>
+            <p>&nbsp;&nbsp;答：1.这是你独一无二的账号。</p><br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.确保提现资金到账正确。<br><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.可以找回密码。</p>
+
+			
+        </div>
+		
+		
+		</form>
+    </body>
+   
+   <!--#include file="new_footer.html"-->
+   
+<script>
+$("#btn2").click(function(){
+	$("#btn2f").submit();
+})
+function checkf(){
+	if($("#pass").val()!=$("#pass2").val()){
+	//alert("两次密码输入不一致！");
+	//return false;
+	}
+}
+
+
+
+
+function send_mobyzm(thiss){
+	var mobnum = $("#mobile_phone").val();
+	if(!mobnum || mobnum.length!=11){
+	 alert('请输入正确的手机号');
+	 return false;
+	 }
+$.post("{:U('Home/Public/getvcode')}",{mob:mobnum},function(data){
+if(data==1){
+settime(thiss);
+}else{
+alert(data);
+}
+});
+}
+
+
+var countdown=60; 
+function settime(val) { 
+if (countdown == 0) { 
+val.removeAttribute("disabled");	
+val.value="获取短信验证码";
+countdown=60; 
+return false; 
+} else { 
+val.setAttribute("disabled", true); 
+val.value="重新发送(" + countdown + ")"; 
+countdown--; 
+} 
+setTimeout(function() { 
+settime(val) 
+},1000) 
+} 
+
+
+</script>
+ 
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+    <style>
+        .new-header {
+            width: 100%;
+            height: 75px;
+            padding: 10px 0;
+            background: #e12634;
+            position: relative;
+            border-bottom: 1px solid #fff;
+        }
+
+            .new-header a {
+                margin: 0 auto;
+                height: 100%;
+            }
+        .new-gonggao {
+            width: 100%;
+            height: 35px;
+            padding: 10px 0;
+            background: #e12634;
+            position: relative;
+            border-bottom: 1px solid #fff;
+        }
+
+            .new-goonggao a {
+                margin: 0 auto;
+                height: 100%;
+            }
+
+
+        @media screen and (max-width:640px) {
+            .new-header {
+                width: 100%;
+                padding: 7px 0;
+                background: #e12634;
+                height: 40px;
+            }
+
+                .new-header img {
+                    height: 100%;
+                }
+        }
+    .STYLE1 {color: #FFFFFF}
+    </style>
+ 
+</head>
+<body>
+    <header> 
+        <div class="new-header">
+            <a href="{:U('Home/Index/index3')}" style="color: #fff; font-size:18px"><?php echo C('site_title'); ?></a>
+        </div>
+    </header>
+    <div class="money" style="overflow:hidden;">
+        <p>会员UID <big>{$uinfo.id}</big>的收益余额 </p>
+        <div class="balance" style="width:40%; margin-left:10px; float:left; text-align:center;font-size:38px;">{$info.money|default="0"}<span style="font-size:16px;">元</span></div>
+        <div style="width:40%;float:right;text-align:right; margin-right:10px;"><img src="images/qiandao.png" id="qiandao" onclick="alert('签到成功')"></div>
+    </div>
+    <div class="detailed">
+        <div class="left">
+            <p>
+                个人累计收益（元）
+            </p>
+            <p>
+                {$info.historymoney|default="0"}元
+            </p>
+            <p>
+                <a href="<?php echo C('subscribeurl'); ?>">收藏平台</a> </p>
+        </div>
+        <div class="right">
+            <p>
+                邀请累计收益（元）
+            </p>
+            <p>
+                {$info.fansmoney|default="0"}元
+            </p>
+            <p>
+                <a id="out" href="{:U('Home/Public/dologout')}">注销</a>
+            </p>
+        </div>
+    </div>
+	        <div class="new-gonggao">
+              <div align="center"><a class="STYLE1" href="<?php echo C('newsubscribeurl'); ?>">新注册会员请看这里!!!</a></div>
+        </div>
+    <div style="height:5px;line-height:10px;"></div>
+    <div class="common-wrapper">
+        <ul class="menu-list">
+            <li>
+                <a href="{:U('Home/User/profile')}"> 
+                    <img src="images/7.gif">
+                    <p>
+                        账户设置
+                    </p>
+                </a>
+            </li>
+			        <li>
+                <a href="javascript:;" onClick="alert('关注我们可快速提现');window.location.href='{:U('Home/User/tixian')}'">
+                    <img src="images/4.gif">
+                    <p>
+                        申请提现
+                    </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="{:U('Home/Index/index3')}">
+                    <img src="images/2.gif">
+                    <p>
+                        开始赚钱
+                    </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="{:U('Home/User/yaoqinglist')}">
+                    <img src="images/1.gif">
+                    <p>
+                        新手学堂
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Home/User/yaoqinglist')}">
+                    <img src="images/myyq.png">
+                    <p>
+                        师徒信息
+                    </p>
+                </a>
+            </li>
+                <li>
+                <a href="{:U('Home/Huodong/fxhb')}">
+                    <img src="images/3.gif">
+                    <p>
+                        邀请好友
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Home/User/moneylist')}">
+                    <img src="images/5.gif">
+                    <p>
+                        收入明细
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{:U('Home/Form/lyb')}">
+                    <img src="images/6.gif">
+                    <p>
+                        问题反馈
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p><br> <br> <br></p>
+	
+	
+ <!--#include file="new_footer.html"-->
+
+ 
+</body></html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/reg2_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" style="font-size:20px">
+	
+	  <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+                 <div class="nav-btn" id="nav-left">
+                   <a href="/"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">{$media.title}</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+            <!--header结束-->
+	<form action="{:U('DuxCms/Form/push')}" method="post" AutoComplete="off"  id="btn2f">
+	
+        <div class="c-wh uinnh5">
+		
+		
+		
+            <div class="uba uc-a1 bc-border">
+			
+			
+			
+			
+                <div class="ub uinn5 ">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                      支付宝账号
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="支付宝账号" name="Fieldset_zfb" value="" type="text" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+                
+                   <div class="ub uinn5 ">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                      支付宝姓名
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="支付宝姓名" name="Fieldset_zfbuname" value="" type="text" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 <div class="ub uinn5 ">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                      手机号
+                    </div>
+                    <div class="ub ub-ac ub-f1">
+                        <div class="uinput ub ub-f1">
+                            <input placeholder="有问题可联系此手机" name="Fieldset_mob" value="" type="text" class="ub-f1">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ub uinn5 bc-border ubb">
+                    <div class="ub ub-ac uw-reg ulev-app1">
+                       留言内容
+                    </div>
+                    <div class="ub ub-ac  ub-f1">
+                        <div class="uinput ub ub-f1">
+                              <textarea name="Fieldset_content" placeholder="填写您的留言" type="text" class="ub-f1"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                    <div class="umar-t-ec2">
+                <div class="triangle3 umar-l-ec2"></div>
+                <div class="c-wh uinn-ec1 uh-ect">
+                    <div class=" uinput ub ub-f1">
+                      
+                    </div>
+                 
+                </div>
+            </div>
+				
+				
+				
+            </div>
+            
+            <div class="uinn-at1">
+                <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="btn2">
+                    提交
+                </div>
+            </div>
+        </div>
+		<input name="table" type="hidden" value="tixian">
+		<input name="Fieldset_uid" type="hidden" value="{$uinfo.id}">
+		<input name="Fieldset_money" type="hidden" value="{$usinfo.money}">
+       <input name="token" type="hidden" value=' <!--{dux:echo app="DuxCms" label="formToken" table="tixian" /}--> '>
+		
+		</form>
+    </body>
+   <br>  <br>  <br>
+   <!--#include file="new_footer.html"-->
+   
+<script>
+
+
+
+$("#btn2").click(function(){
+	var yue = Number('{$usinfo.money}');
+var txqi = Number('<?php echo C("txqi"); ?>');
+if(yue<txqi){
+	alert("您的余额没有达到提现标准！"+txqi+'元');
+	return false;	
+}
+	
+	
+	
+	$("#btn2f").submit();
+})
+
+</script>
+ 
+</html>

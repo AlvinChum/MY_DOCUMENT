@@ -1,0 +1,98 @@
+<h3>app设置</h3>
+<admin:panel >
+  <admin:form url="{:U('site')}" method="post" id="form" class="m-form-horizontal" >
+  
+    	
+	 <admin:formrow title="APP网址" tip="自定义app打开的网址http://开头" >
+     <admin:text name="appurl"  value="{$info.appurl}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="APP下载网址" tip="app下载网址http://开头" >
+     <admin:text name="appdownurl"  value="{$info.appdownurl}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="QQ分享appid" tip="QQ分享appid" >
+     <admin:text name="qq_appid"  value="{$info.qq_appid}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="QQ分享secretid" tip="QQ分享appid" >
+     <admin:text name="qq_secretid"  value="{$info.qq_secretid}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="微信分享appid" tip="微信分享appid申请教程http://bbs.jnooo.cn/thread-75-1-1.html" >
+     <admin:text name="wx_appid"  value="{$info.wx_appid}" len="250" />
+    </admin:formrow>
+    
+     <admin:formrow title="微信分享secretid" tip="微信分享appid" >
+     <admin:text name="wx_secretid"  value="{$info.wx_secretid}" len="250" />
+    </admin:formrow>
+	
+	<admin:formrow title="安卓组播push_tag" tip="组播push_tag,不懂的找客服要" >
+     <admin:text name="android_tagname"  value="{$info.android_tagname}" len="250" />
+    </admin:formrow>
+	
+    <admin:formrow title="安卓组播通知标题" tip="安卓组播通知标题(中文字符超过18个，后面的字符将不显示)" >
+     <admin:text name="android_group_title"  value="{$info.android_group_title}" len="250" />
+    </admin:formrow>
+	
+    <admin:formrow title="安卓组播通知文字描述" tip="安卓组播通知文字描述(中文字符超过18个，后面的字符将不显示)" >
+     <admin:text name="android_group_text"  value="{$info.android_group_text}" len="250" />
+    </admin:formrow>
+	
+    <admin:formrow title="安卓组播跳转url" tip="通知栏点击后跳转的URL，要求以http或者https开头" >
+     <admin:text name="android_group_url"  value="{$info.android_group_url}" len="250" />
+	  <a href="javascript:check();">点击推送</a>
+    </admin:formrow>
+	
+    <admin:formsubmit/>
+  </admin:form>
+</admin:panel>
+<script>
+Do.ready('base', function() {
+	$('#form').duxForm();
+});
+function check(){
+	var android_tagname = $('#android_tagname').val();
+	if(android_tagname == ""){
+		alert('安卓组播push_tag不能为空');
+		$('#android_tagname').focus();
+		return false;
+	}
+	var android_group_title = $('#android_group_title').val();
+	if(android_group_title == ""){
+		alert('安卓组播通知标题不能为空');
+		$('#android_group_title').focus();
+		return false;
+	}
+	var android_group_text = $('#android_group_text').val();
+	if(android_group_text == ""){
+		alert('安卓组播通知文字描述不能为空');
+		$('#android_group_text').focus();
+		return false;
+	}
+	var android_group_url = $('#android_group_url').val();
+	if(android_group_url == ""){
+		alert('安卓组播跳转url不能为空');
+		$('#android_group_url').focus();
+		return false;
+	}
+	//window.location.href="";
+	$.post(
+		"{:U('Home/Api2/sendAndroidGroupcastByAdmin')}",
+		{
+			android_tagname:android_tagname,
+			android_group_title:android_group_title,
+			android_group_text:android_group_text,
+			android_group_url:android_group_url
+		},
+		function(data){
+			if(data.ret == "SUCCESS"){
+				alert('推送成功!');
+			} else {
+				alert(data.ret);
+			}
+		},
+		'json'
+	);
+}
+</script> 

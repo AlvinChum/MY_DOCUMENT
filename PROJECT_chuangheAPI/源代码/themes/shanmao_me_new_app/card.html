@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>{$media.title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/reg2_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg" >
+	
+	  <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+               <div class="nav-btn" id="nav-left">
+                   <a href="/"> <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">卡卷测试</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+            <!--header结束-->
+	
+	
+     
+			
+			
+            
+            <div class="uinn-at1">
+                <div class="btn ub ub-ac bc-text-head ub-pc bc-btn"  id="batchAddCard">
+                   点击测试
+                </div>
+            </div>
+			
+			
+			
+			
+        </div>
+ 
+  
+  
+  
+  
+     
+   <!--#include file="new_footer.html"-->
+   
+<script>
+var readyFunc = function onBridgeReady() {
+document.querySelector('#batchAddCard').addEventListener('click',
+function(e) {
+WeixinJSBridge.invoke('batchAddCard', {
+"card_list": [
+{$carddata}
+]
+},
+function(res) {
+
+});
+}); }
+if (typeof WeixinJSBridge === "undefined") {
+document.addEventListener('WeixinJSBridgeReady', readyFunc, false);
+} else {
+readyFunc(); }
+</script>
+   
+</body>   
+</html>

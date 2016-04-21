@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>{$media.title}</title>
+<meta name="keywords" content="{$media.keywords}" />
+<meta name="description" content="{$media.description}" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/uinfo_content/css/main.css">
+		<link href="css/common.css" rel="stylesheet" />
+    </head>
+    <body class="um-vp bc-bg ub-ver" ontouchstart>
+	
+	<div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn" id="nav-left">
+                   <a href="/">   <div class="fa fa-angle-left fa-2x"></div></a>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">会员中心</h1>
+                <div class="nav-btn nav-bt" id="nav-right"></div>
+            </div>
+	
+	
+        <div class="ub ub-ver uinn-out">
+            <div class="ub ub-f1 t-bla ub-ac uinn-out">
+                <div onClick="window.location.href='{:U('Home/User/profile')}'" class="ub-img res-avator umwh-avator uc-a2 ub-a2"<?php if($usinfo[avatar]) {?>  style="background:url(<?php echo $usinfo[avatar]; ?>)" <?php }?> ></div>
+                <div class="ub-f1 ub ub-ver uinn-avator">
+                    <div class="ut-s ub-f1">
+                        {$usinfo.user_nicename}
+                    </div>
+                    <div class="ub t-686 umar-avator">
+                        <div class="ulev-1">
+                            奖金：<span>{$usinfo.money}</span>
+                        </div>
+                        <div class="ulev-1 umar-lname">
+                            积分：<span>{$usinfo.jifen}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ub ub-f1 c-bad bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/User/yaoqinglist')}'">
+			
+                <div class="ub-img res-order umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                  我的粉丝
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+				
+            </div>
+            <div class="ub ub-f1 c-faa bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/User/profile')}'">
+                <div class="ub-img res-wallet umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                  我的资料
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+            </div>
+            <div class="ub ub-f1 c-ffe bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/User/jifenlist')}'">
+                <div class="ub-img res-message umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                   积分变动明细
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+            </div>
+            <div class="ub ub-f1 c-00a bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/User/moneylist')}'">
+                <div class="ub-img res-favorite umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                   资金变动明细(关注我们快速提现)
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+            </div>
+            <div class="ub ub-f1 c-4e6 bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/Huodong/yaoyiyao')}'">
+                <div class="ub-img res-pwdprotection umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                   摇红包 (摇一次消耗<?php echo C('yaojf');?>积分)
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+            </div>
+			
+			<div class="ub ub-f1 c-faa bc-text-head ub-ac uinn-m umar-b" onClick="window.location.href='{:U('Home/Public/dologout')}'">
+                <div class="ub-img res-wallet umwh-m"></div>
+                <div class="ub-f1 uinn-mtxt ut-s">
+                  退出登录
+                </div>
+                <div class="ub-img res-arrow umw1 umh1"></div>
+            </div>
+        </div>
+      
+	  	<!--#include file="footer.html"-->
+</html>
