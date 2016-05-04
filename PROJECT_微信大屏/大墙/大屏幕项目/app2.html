@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  type="text/css" rel="stylesheet" href="./style/reset.css" />
+    <link  type="text/css" rel="stylesheet" href="./style/app2.css" />
+</head>
+<body>
+        <div class="container">
+            <ul>
+            <li class="start ">
+                <div class="header">
+                    <b>52</b>
+                </div>
+                <div class="content  ">
+                   <div><a href="javascript:void(0)" class="btn" >开始倒计时</a></div>
+                </div>
+                <div class="time hidden">
+                    <div class="bg">
+                        <div class=" hold">
+                        </div>
+                        <div class=" hold">
+                        </div>
+                        <div class="text">5</div>
+                    </div>
+                </div>
+            </li>
+            <li class="proceed hidden">
+                <div class="paiming">
+                    <div class="header"></div>
+                    <div class="content">
+                        <div class="progressbar"><ul>
+                            <li></li><li><img src="./img/0.jpg"/></li><li class="text"></li><li></li><li class="pre"></li>
+                        </ul></div>
+                        <div class="progressbar"><ul>
+                            <li></li><li><img src="./img/0.jpg"/></li><li class="text"></li><li></li><li class="pre"></li>
+                        </ul></div>
+                        <div class="progressbar"><ul>
+                            <li></li><li><img src="./img/0.jpg"/></li><li class="text"></li><li></li><li class="pre"></li>
+                        </ul></div>
+                        <div class="progressbar"><ul>
+                            <li></li><li><img src="./img/0.jpg"/></li><li class="text"></li><li></li><li class="pre"></li>
+                        </ul></div>
+                        <div class="progressbar"><ul>
+                            <li></li><li><img src="./img/0.jpg"/></li><li class="text"></li><li></li><li class="pre"></li>
+                        </ul></div>
+                    </div>
+                </div>
+            </li>
+                <li class="end hidden">
+                    <a href="javascript:void(0)" class="btn"></a>
+                <div class="one">
+                         <span>
+                            <strong>丑丑丑22222</strong>
+                        </span>
+                </div>
+                <div class="two">
+                         <span>
+                            <strong>丑丑丑22222</strong>
+                        </span>
+                </div>
+                <div class="three">
+                         <span>
+                            <strong>丑丑丑22222</strong>
+                        </span>
+                </div>
+                <div class="remain">
+                    <ul>
+                        <li>
+                            <span>
+                            <strong>丑丑丑22222</strong>
+                            </span>
+                            <b>第四名</b>
+                        </li>
+                        <li>
+                            <span>
+                                <strong>丑丑丑22222</strong>
+                            </span>
+                            <b>第五名</b>
+                        </li>
+                        <li>
+                            <span>
+                            <strong>丑丑丑22222</strong>
+                        </span>
+                            <b>第六名</b>
+                        </li>
+                        <li><span>
+                            <strong>丑丑丑22222</strong>
+                        </span>
+                            <b>第七名</b>
+                        </li>
+                        <li><span>
+                            <strong>丑丑丑22222</strong>
+                        </span><b>第八名</b>
+                        </li>
+                        <li>
+                            <span>
+                            <strong>丑丑丑22222</strong>
+                        </span><b>第九名</b>
+                        </li>
+                    </ul>
+                </div>
+               </li>
+            </ul>
+        </div>
+<script src="./js/jquery-1.8.0.min.js"></script>
+<script src="js/app2.js"></script>
+<script>
+    var $start=$('.start');
+    var $proceed=$('.proceed');
+    var $end=$('.end');
+    var $time=$('.time');
+    var $hold=$time.find('.hold');
+    var time=5;
+    var  $header=$proceed.find('.header');
+    var activeTime=120;
+    var $close=$end.find('.btn');
+    $start.find('.btn').click(function(){
+        $start.find('.content').addClass('hidden');
+        $time.removeClass('hidden');
+        $hold.addClass('on');
+        (function daojishi(element,i,callback){
+            var i=i;
+            var callback=callback;
+            element.text(i);
+            if(i==0){
+                callback();
+                return;
+            }
+            i--;
+            setTimeout(function(){
+                daojishi(element,i,callback);
+            },1000);
+        })($time.find('.text'),time,function(){
+            $hold.removeClass('on');
+            $start.addClass('hidden');
+            $time.addClass('hidden');
+            $proceed.removeClass('hidden');
+            (function active(element,i,callback){
+                var element=element;
+                var callback=callback;
+                var i=i;
+                element.text(i);
+                if(i==0){
+                    callback();
+                    return;
+                }
+                i--;
+                setTimeout(function(){
+                    active(element,i,callback)
+                },1000)
+            })($header,activeTime,function(){
+                $proceed.addClass('hidden');
+                $end.removeClass('hidden');
+                $close.click(function(){
+                    $end.addClass('hidden');
+                    $start.removeClass('hidden');
+                    $start.find('.content').removeClass('hidden');
+                })
+            })
+            start_YYY({
+                text:['11111','222222','333333','44444444','55555555'],
+                id:['1','2','3','4','5'],
+                vote:['90','80','70','60','50'],
+                img:['https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+                    'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg',
+                    'https://p1.ssl.qhimg.com/t0117eb6fc9c8ab3999.jpg'
+                ]
+            });
+            setTimeout(function(){
+                start_YYY({
+                    text:['333333','11111','55555555','222222','44444444'],
+                    id:['3','1','5','2','4'],
+                    vote:['90','80','70','60','50'],
+                    img:[
+                        'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg',
+                        'https://p1.ssl.qhimg.com/t0117eb6fc9c8ab3999.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+                        'https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg']
+                })
+            },2000)
+        });
+    })
+   // parent.app_load()
+</script>
+</body>
+</html>

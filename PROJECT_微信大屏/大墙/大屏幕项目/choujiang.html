@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style/choujiang.css"/>
+<body>
+<div><img src="" class="pice" >
+    <span id="text"></span>
+</div>
+<div>
+    <button id="count">总数</button>
+    <button id="start">抽奖</button>
+    <button id="anew">重置</button>
+</div>
+<select id="auto" >
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8" >8</option>
+</select>
+<div id="place"></div>
+</body>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/choujiang.js"></script>
+<script>
+    $(function(){
+    $('#start').choujian({
+        count:$('#count'),
+        anew:$('#anew'),
+        place:$('#place'),
+        auto:$('#auto'),
+        pice:$('.pice').eq(0),
+        data:['https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+            'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg',
+            'https://p2.ssl.qhimg.com/t015a108774f236160d.jpg'],
+        txt:['wowowowow','111111111','d43534534da','54334534535sd','dasdadasd'],
+        text:$('#text')
+    })
+    })
+</script>
+</html>

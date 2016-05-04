@@ -1,0 +1,131 @@
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #EFEFF4;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.9rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: #12B8F6;
+  color: #ffffff;
+  z-index: 2;
+}
+#header:after {
+  content: '个人信息设置';
+}
+#header span {
+  background: transparent url(../image/icon_close.png) no-repeat left center / 15px 25px;
+  position: absolute;
+  left: 2.5rem;
+  width: 40px;
+  height: 100%;
+}
+.content {
+  margin-top: 54px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  color: #666666;
+}
+.content li {
+  padding: 1rem 2.5rem;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  outline: none;
+}
+.content span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 10rem;
+  background: #666666;
+  margin-left: 2.7rem;
+  overflow: hidden;
+}
+.content span img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.content li:nth-child(1) {
+  margin-top: 2rem;
+}
+.content li:nth-child(4),
+.content li:nth-child(6) {
+  margin: 1rem 0 1rem 0;
+}
+.content li:nth-child(2) {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.content li:nth-child(4):before {
+  font-size: 1.4rem;
+  content: '身份证正面照片:';
+  color: #b9b8b8;
+}
+.content li:nth-child(5):before {
+  color: #b9b8b8;
+  font-size: 1.4rem;
+  content: '身份证反面照片:';
+}
+.content li:nth-child(6):before {
+  color: #b9b8b8;
+  font-size: 1.4rem;
+  content: '手持身份证照片:';
+}
+.content > div {
+  text-align: center;
+}
+.content strong {
+  font-weight: normal;
+  color: #666666;
+}
+.content .btn {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  height: 3.6rem;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  width: 80%;
+}
+.content .slidedown {
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  background: #ffffff url(../image/icon_slidedown.png) no-repeat right center / 25px 15px;
+}

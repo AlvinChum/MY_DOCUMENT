@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="style/app9.css" type="text/css"/>
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container fixed">
+        <div class="wait_page ">
+            <ul>
+                <li></li>
+                <li class="qrcode"></li>
+                <li><a href="javascript:void(0)" class="btn"></a></li>
+            </ul>
+        </div>
+        <div class="time_page hidden">
+            <div class="bg">
+                <div class=" hold">
+                </div>
+                <div class=" hold">
+                </div>
+                <div class="text">5</div>
+            </div>
+        </div>
+        <div class="start_page hidden">
+            <div>
+                <span class="all_money">200</span>
+                <a href="javascript:void(0)" class="btn">停止</a>
+            </div>
+        </div>
+        <div class="end_page hidden">
+            <ul>
+                <li><span>出手最快</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>我哦我哦我哦我</span><span>22234</span></li>
+                <li><span>手气最佳</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>5645645</span><span>22</span></li>
+                <li><span>第二名</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>456456</span><span>22</span></li>
+                <li><span>第三名</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>6456456</span><span>22</span></li>
+                <li><span>第四名</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>64564564</span><span>22</span></li>
+                <li><span>第四名</span><span><img src="https://p2.ssl.qhimg.com/t01127517c70ef2f6e0.jpg"/></span><span>64564564</span><span>22</span></li>
+            </ul>
+            <a href="javascript:void(0)" class="btn">再来一波</a>
+        </div>
+    </div>
+    <div  id='hongbao' class="" >
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</body>
+<script >
+    var $qrcode= $('.qrcode').eq(0);
+    $qrcode.qrcode({
+        render:'canvas',
+        width:271,
+        height:270,
+        text:'http://www.baidu.com',
+        foreground:'#000',
+        background:'#fff'
+    });
+    $(function(){
+        var $time=$('.time_page');
+        $('.wait_page .btn').eq(0).click(function(){
+            var $this=$('.wait_page');
+                $this.addClass('hidden');
+                $time.removeClass('hidden').find('.hold').addClass('on');
+            (function daojishi(element,i,callback){
+                var i=i;
+                var callback=callback;
+                element.text(i);
+                if(i==0){
+                    callback();
+                    return;
+                }
+                i--;
+                setTimeout(function(){
+                    daojishi(element,i,callback);
+                },1000);
+            })($time.find('.text'),5,function(){
+                $time.addClass('hidden').find('.hold').removeClass('on');
+                $('.start_page').removeClass('hidden');
+                time=setInterval(function(){
+                    creater_element($('#hongbao ul'),'wawawaaw',8);
+                },300)
+            })
+        })
+        $('.start_page .btn').click(function(){
+            $('#hongbao ul').empty();
+            $('.start_page').addClass('hidden')
+            $('.end_page').removeClass('hidden');
+            clearInterval(time);
+        });
+        $('.end_page .btn').click(function(){
+            $('.end_page').addClass('hidden');
+            $('.wait_page').removeClass('hidden');
+        })
+        /*浏览器宽度，浏览器高度，容器，随机大小的组合，红包宽度，可以几列；名字，钱*/
+        var width=window.screen.width-164;
+        var height=window.screen.height;
+        var $ul=$('#hongbao ul');
+        var scale=[];
+        var $li_width=$ul.find('li').eq(0).width()?$ul.find('li').eq(0).width():164;
+        var column=Math.round(width/$li_width);
+        function creater_element(parent,text,money){
+            var money=money;
+            var text=text;
+            var parent=parent;
+            var time=time?time:5000;
+            var i=parseInt(Math.random()*scale.length);
+            var li=$('<li class='+scale[i]+ '> <span>'+text+'</span><span>'+money+'</span></li>');
+                  parent.append(li)
+            li.css('left',column*Math.random()*$li_width).animate({'top':height},time,function(){
+                        this.remove();
+              })
+        }
+       // parent.app_load();
+    })
+</script>
+</html>

@@ -1,0 +1,133 @@
+html,
+body {
+  background: #ffffff;
+}
+.textLine {
+  word-wrap: break-word;
+  word-break: normal;
+}
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+}
+.content .fwlx {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.content .fwlx:before {
+  font-size: 2.5rem;
+  content: '服务类型:';
+}
+.content .fwlx span {
+  text-indent: 4rem;
+}
+.content .infoRegion {
+  width: 100%;
+  height: auto;
+}
+.content .infoRegion ul {
+  padding: 1rem 2rem;
+}
+.content .infoRegion li {
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content .infoRegion li span {
+  word-wrap: break-word;
+  word-break: normal;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.content .infoRegion input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  outline: none;
+}
+.content .infoRegion li:before {
+  width: 12rem;
+}
+.content .infoRegion li:nth-child(1):before {
+  content: '发件人姓名:';
+}
+.content .infoRegion li:nth-child(2):before {
+  content: '发件人电话:';
+}
+.content .infoRegion li:nth-child(3):before {
+  content: '发件人地址:';
+}
+.content .infoRegion li:nth-child(4):before {
+  content: '收件人姓名:';
+}
+.content .infoRegion li:nth-child(5):before {
+  content: '收件人电话:';
+}
+.content .infoRegion li:nth-child(6):before {
+  content: '收件人地址:';
+}
+.content .wpInfo,
+.content .psAsk {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content .wpInfo textarea,
+.content .psAsk textarea {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: 12rem;
+  resize: none;
+  outline: none;
+}
+.content .wpInfo:before {
+  width: 12rem;
+  content: '物品信息:';
+}
+.content .psAsk:before {
+  width: 12rem;
+  content: '配送要求:';
+}
+.content .btn {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.content .btn a {
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  padding: 1.5rem 0;
+  width: 80%;
+}

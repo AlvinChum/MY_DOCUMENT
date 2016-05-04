@@ -1,0 +1,144 @@
+.radius(@a){
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  border-radius:@a;
+}
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,body{
+  background:#EFEFF4;
+}
+.textLine{
+  word-wrap: break-word;
+  word-break: normal;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.9rem;
+  text-align:center;
+  position: fixed;
+  top:0;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'订单详情';
+  }
+  span{
+    background:transparent url(../image/icon_close.png) no-repeat left center/15px 25px ;
+    position:absolute;
+    left:2.5rem;
+    width:40px;
+    height:100%;
+  }
+}
+.content{
+  margin-top:54px;
+  position:relative;
+  width:100%;
+  height:auto;
+  ul{
+    font-size:1.5rem;
+    color:#666666;
+    li{
+     .flex;
+     padding:.5em 2.5rem .5em 2.5rem;
+      background:#ffffff;
+      span {
+        .textLine;
+        .flex-con;
+        display:inline-block;
+      }
+    }
+    li:nth-child(1),li:nth-child(3),li:nth-child(6),li:nth-child(9),li:nth-child(13){
+      margin-top:1rem;
+      border-top:1px solid #e2e3e8;
+    }
+    li:nth-child(2),li:nth-child(5),li:nth-child(8),li:last-child{
+      border-bottom:1px solid #e2e3e8;
+    }
+    li:before{
+      width:9rem;
+    }
+    li:before{
+      display:inline-block;
+      width:10rem;
+    }
+    li:nth-child(1):before{
+    content:'订单状态:';
+    }
+    li:nth-child(2):before{
+      content:'服务类型:';
+    }
+    li:nth-child(3):before{
+      content:'发件人姓名:';
+    }
+    li:nth-child(4):before{
+      content:'发件人电话:';
+    }
+    li:nth-child(5):before{
+      content:'发件人地址:';
+    }
+    li:nth-child(6):before{
+      content:'收件人姓名:';
+    }
+    li:nth-child(7):before{
+      content:'收件人电话:';
+    }
+    li:nth-child(8):before{
+      content:'收件人地址:';
+    }
+    li:nth-child(9):before{
+      content:'配送要求:';
+    }
+    li:nth-child(10):before{
+      content:'距离:';
+    }
+    li:nth-child(11):before{
+      content:'费用:';
+    }
+    li:nth-child(12):before{
+      content:'支付方式:';
+    }
+    li:last-child{
+      margin-bottom:5rem;
+    }
+  }
+}
+footer{
+  text-align:center;
+  font-size:1.5rem;
+  margin-bottom:20px;
+  padding:0 2.5rem;
+  span{
+    display:inline-block;
+    width:50%;
+    height:50px;
+  }
+  a{
+    display:inline-block;
+    width:90%;
+    height:36px;
+    line-height:36px;
+    background:transparent;
+    color:#12B8F6;
+    .radius(3px);
+    border:2px solid #12B8F6;
+  }
+  .accept:before{
+    content:'接单';
+  }
+  .cancel:before{
+    content:'取消订单';
+  }
+  .active{
+    background:#12B8F6;
+    color:#ffffff;
+  }
+}

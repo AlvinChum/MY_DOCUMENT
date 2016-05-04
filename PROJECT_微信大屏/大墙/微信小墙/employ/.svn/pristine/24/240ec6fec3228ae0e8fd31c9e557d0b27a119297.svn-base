@@ -1,0 +1,106 @@
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #EFEFF4;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: fixed;
+  position: relative;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '个人信息设置';
+}
+#header span {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 100%;
+}
+.content {
+  width: 100%;
+  height: auto;
+  font-size: 1.6rem;
+}
+.content li {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  outline: none;
+}
+.content span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 50px;
+  background: red;
+}
+.content li:nth-child(1) {
+  margin-top: 2rem;
+}
+.content li:nth-child(4),
+.content li:nth-child(6) {
+  margin: 2rem 0 2rem 0;
+}
+.content li:nth-child(2) {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+.content li:nth-child(3):before {
+  content: '车牌类型';
+}
+.content li:nth-child(4):before {
+  content: '身份证正面照片:';
+}
+.content li:nth-child(5):before {
+  content: '身份证反面照片:';
+}
+.content li:nth-child(6):before {
+  content: '手持身份证照片:';
+}
+.content > div {
+  text-align: center;
+}
+.content .btn {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  padding: 1.5rem 0;
+  width: 80%;
+}

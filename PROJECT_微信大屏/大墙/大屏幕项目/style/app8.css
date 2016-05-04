@@ -1,0 +1,289 @@
+.container {
+  width: 960px;
+  height: 503px;
+  overflow: hidden;
+}
+.container .left {
+  box-shadow: 0px 0px 10px  3px #E8023C;
+  float: left;
+  width: 454px;
+  margin: 3px;
+  height: 496px;
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container .left .header {
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 33px;
+  color: #FFFFFF;
+  background: #e8023c;
+}
+.container .left .header:before {
+  content: '最新打赏';
+}
+.container .left .content {
+  width: 100%;
+  box-sizing: border-box;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.container .left .content li {
+  height: 84px;
+  border-bottom: 1px solid #DD89A3;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 18px 0 23px;
+}
+.container .left .content li span {
+  display: inline-block;
+  float: left;
+  line-height: 76px;
+}
+.container .left .content li span:nth-child(1) {
+  width: 68px;
+  height: 68px;
+  border: 2px solid #FFFFFF;
+  overflow: hidden;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+}
+.container .left .content li span:nth-child(1) img {
+  width: 68px;
+  height: 68px;
+  border: none;
+}
+.container .left .content li span:nth-child(2) {
+  width: 220px;
+  height: 100%;
+  color: #875263;
+  font-size: 22px;
+  text-indent: 16px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .left .content li span:nth-child(3) {
+  color: #e8023c;
+  float: right;
+  font-size: 33px;
+  width: 100px;
+  text-align: right;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .left .content li span:nth-child(3):after {
+  content: '元';
+}
+.container .left .content li:nth-last-child(1) {
+  border-bottom: none;
+}
+.container .right {
+  width: 470px;
+  height: 100%;
+  float: right;
+}
+.container .right .lunbo {
+  width: 470px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.container .right .lunbo ul {
+  position: absolute;
+}
+.container .right .lunbo ul li {
+  width: 470px;
+  height: 250px;
+  float: left;
+}
+.container .right .lunbo ul li span:nth-child(1) {
+  display: block;
+  margin: 0 auto;
+  width: 210px;
+  height: 210px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .right .lunbo ul li span:nth-child(1) img {
+  width: 210px;
+  height: 210px;
+}
+.container .right .lunbo ul li span:nth-child(2) {
+  display: block;
+  margin: 0 auto;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #e4e4e4;
+  text-align: center;
+}
+.container .right .lunbo a {
+  width: 40px;
+  height: 72px;
+  display: inline-block;
+  margin-top: 69px;
+  position: absolute;
+  z-index: 2;
+}
+.container .right .pre {
+  cursor: pointer;
+  left: 10px;
+  z-index: 20;
+  background: url(../app8/img/icon_pre.png) center center no-repeat;
+  -webkit-animation: sway 2s ease infinite;
+  -o-animation: sway 2s ease infinite;
+  animation: sway 2s ease infinite;
+}
+.container .right .next {
+  cursor: pointer;
+  z-index: 20;
+  right: 10px;
+  background: url(../app8/img/icon_next.png) center center no-repeat;
+  -webkit-animation: sways 2s ease infinite;
+  -o-animation: sways 2s ease infinite;
+  animation: sways 2s ease infinite;
+}
+.container .right .btn {
+  display: block;
+  box-shadow: 0px 0px 10px  3px #E8023C;
+  width: 454px;
+  margin: 3px;
+  height: 70px;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  text-indent: 25px;
+  color: #E8023C;
+  line-height: 70px;
+  font-size: 50px;
+}
+.container .right .btn:before {
+  font-size: 30px;
+  color: #4f0019;
+  padding-right: 50px;
+}
+.container .right .btn:after {
+  content: '元';
+  font-size: 50px;
+}
+.container .right .total {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.container .right .total:before {
+  font-size: 30px;
+  content: '打赏金额 :';
+}
+.container .right .number:before {
+  content: '打赏人数 :';
+}
+@-webkit-keyframes sway {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-10px, 0);
+    -moz-transform: translate(-10px, 0);
+    -ms-transform: translate(-10px, 0);
+    -o-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+  }
+}
+@-moz-keyframes sway {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-10px, 0);
+    -moz-transform: translate(-10px, 0);
+    -ms-transform: translate(-10px, 0);
+    -o-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+  }
+}
+@keyframes sway {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-10px, 0);
+    -moz-transform: translate(-10px, 0);
+    -ms-transform: translate(-10px, 0);
+    -o-transform: translate(-10px, 0);
+    transform: translate(-10px, 0);
+  }
+}
+@-webkit-keyframes sways {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(10px, 0);
+    -moz-transform: translate(10px, 0);
+    -ms-transform: translate(10px, 0);
+    -o-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
+}
+@-moz-keyframes sways {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(10px, 0);
+    -moz-transform: translate(10px, 0);
+    -ms-transform: translate(10px, 0);
+    -o-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
+}
+@keyframes sways {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(10px, 0);
+    -moz-transform: translate(10px, 0);
+    -ms-transform: translate(10px, 0);
+    -o-transform: translate(10px, 0);
+    transform: translate(10px, 0);
+  }
+}

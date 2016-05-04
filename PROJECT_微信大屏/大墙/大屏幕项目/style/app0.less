@@ -1,0 +1,86 @@
+html,body{
+  height:100%;
+  background:transparent;
+  overflow:hidden;
+}
+body{
+  width:100%;
+}
+.radius(@number){
+  -webkit-border-radius: @number;
+  -moz-border-radius: @number;
+  border-radius: @number;;
+}
+#slide {
+  width:960px;
+  height:463px;
+  overflow: hidden;
+  list-style:none;
+  background:transparent;
+  li{
+    width:960px;
+    height:156px;
+    overflow: hidden;
+    .info{
+      margin-top:18px;
+      width:102px;
+      padding-right:14px;
+      height:150px;
+      float:left;
+      .header{
+        display:block;
+        width:101px;
+        height:101px;
+        overflow: hidden;
+        background:url(../liuyan_img/header_head.png) no-repeat center center;
+         background-size:100% 100%;
+        div {
+          margin: 4px auto;
+          width:92px;
+          height:92px;
+          overflow:hidden;
+          img {
+            width: 92px;
+            height: 92px;
+            .radius(50%);
+          }
+        }
+      }
+      .name{
+        display:block;
+        width:102px;
+        text-align:center;
+        height:36px;
+        line-height:36px;
+        font-size:24px;
+        color:#FFFFFF;
+      }
+    }
+    .content{
+      width:752px;
+      height:156px;
+      background:url(../liuyan_img/message_border.png) no-repeat center center;
+      background-size:100% 100%;
+      float:left;
+      overflow:hidden;
+      line-height:156px;
+      padding-left:60px;
+      .text{
+        width:700px;
+        font-size:30px;
+        font-weight:bold;
+        color:#E80361;
+        white-space:nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        img{
+          height:124px;
+          max-width:700px;
+          margin-top:16px;
+          border:none;
+        }
+      }
+    }
+  }
+}

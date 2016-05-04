@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="./css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"></header>
+	<div class="loginRegion">
+	<ul >
+	<li class="phone"><input type="number" placeholder="请输入手机号码" name="phone" /> </li>
+	<li class="password"><input type="password" placeholder="请输入密码" name="pass" /></li>
+	<li class="forgetPass" >忘记密码?</li>
+	</ul>
+	<div class="login"><a href="javascript:void(0)" class="btn" tapmode="active">登录</a></div>
+	<div class="register" ><a  href="javascript:void(0)" class="btn" tapmode="active">用户注册</a></div>
+	</div>
+</body>
+<script type="text/javascript" src="./script/api.js"></script>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+	var close=function(){
+		api.closeWin({name:api.winName });}
+	var toast=function(msg){api.toast({
+			    msg: msg?msg:'网络错误',
+			    duration: 2000,
+			    location: 'middle'});}
+	var ajax=function(url,method,timeout,data,calllback){
+	api.ajax({
+	    url:url,
+	    method:method?method:'post',
+	    timeout:timeout?timeout:30,
+	    returnAll:false,
+	    dataType:'json',
+	     data: {
+        values:data
+    }
+    },function(ret,err){
+    	//coding...
+    	if(err.code==1){
+    		toast('网络错误');
+    	}
+    });
+    }
+	var phone=document.getElementsByName('phone')[0];
+	var pass=document.getElementsByName('pass')[0];
+	$('.login').click(function(){
+	if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(phone.value)){
+	toast('手机号码不对,请重写');
+	return;
+	};
+	if(!pass.value){
+	toast('密码不能为空');
+	return;
+	}
+	api.openWin({
+	    name: 'index',
+	    url: 'index.html'
+    });
+	})
+	//到注册页
+	$('.register').click(function(){
+		api.openWin({
+	        name: 'register',
+	        url: './html/register.html'
+        });
+	});
+	//到忘记密码页
+	$('.forgetPass').click(function(){
+	api.openWin({
+	        name: 'register',
+	        url: './html/forgetPass.html'
+        });
+	})
+	};
+</script>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>打赏</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/dashang.css"/>
+    <link rel="stylesheet" type="text/css" href="style/iSlider.css"/>
+    <style type="text/css" id="zoom">
+    </style>
+    <script src="js/zepto.min.js">
+    </script>
+    <script src="js/iSlider.js">
+    </script>
+    <script src="js/iSlider.plugin.button.js">
+    </script>
+</head>
+<body>
+        <div class="zoom">
+            <div class="loading "><div class="loading_rotate loading_animte"><div class="loading_clip"></div></div><div class="loading_text">100%</div></div>
+            <div class="loading_out loading_animte"></div>
+            <div class="error_dialog hidden">
+                <img alt="" src="shangqiang/img/error.png">
+                <p></p>
+            </div>
+            <div class="container">
+                <div class="logo"></div>
+                <div class="activeName">
+                    <p>欢迎来到打赏</p>
+                    <div class="fgx">
+                        <img src="shangqiang/img/fgx.png" />
+                    </div>
+                </div>
+                <div class="showChose">
+                    <div id="sildeChose"></div>
+                </div>
+                <div class="control">
+                <div class="con_title">我要打赏(元)</div>
+                 <div class="con_content">
+                     <div class="line1 ">
+                         <a href="javascript:void(0)" onclick="dashang(this.dataset)" data-count="1.0" class="dsje">1.0</a>
+                         <a href="javascript:void(0)" onclick="dashang(this.dataset)" data-count="10.0" class="dsje" >10.0</a>
+                         <a href="javascript:void(0)" onclick="dashang(this.dataset)" data-count="50.0" class="dsje" >50.0</a>
+                         <a class="otherCount" href="javascript:void(0)">其他金额</a>
+                     </div>
+                     <div class="line2 hidden">
+                         <input type="text" class="otherJine" placeholder="金额(元)" >
+                         <a href="javascript:void(0)" class="otherCountje">打赏</a>
+                     </div>
+                 </div>
+                </div>
+                <div class="ds_success hidden">
+                    <div class="line1">
+                        <span></span>
+                        打赏成功
+                    </div>
+                    <div class="line2">
+                        <a href="javascript:void(0);">继续打赏</a>
+                    </div>
+                </div>
+                <div style="height:20px"></div>
+                <div style="height:160px;width:100%"></div>
+                <div class="menulist">
+                    <div class="menu_item1">
+                        <span></span>
+                        <a href="javascript:void(0)">
+                            <img src="shangqiang/img/item1.png" />
+                            <s>上墙</s>
+                        </a>
+                    </div>
+                    <div class="menu_item3">
+                        <span></span>
+                        <a href="vote.html">
+                            <img src="shangqiang/img/item3.png" />
+                            <s>投票</s>
+                        </a>
+                    </div>
+                    <div class="menu_item4">
+                        <span></span>
+                        <a href="shake.html">
+                            <img src="shangqiang/img/item4.png" />
+                            <s>摇一摇</s>
+                        </a>
+                    </div>
+                    <div class="menu_item5">
+                        <span></span>
+                        <a href="hongbao.html">
+                            <img src="shangqiang/img/item5.png" />
+                            <s>抢红包</s>
+                        </a>
+                    </div>
+                    <div class="menu_item2">
+                        <a href="dashang.html">
+                            <img src="shangqiang/img/item2.png" />
+                            <s>打赏</s>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="showVote hidden">
+                    <div class="showVote1">投票活动尚未开始</div>
+                    <div class="showVote2">
+                        <p class="p1">投票活动尚未开始</p>
+                        <p class="p2">请留意主持人的活动安排</p>
+                    </div>
+                    <a href="javascript:void(0)">返回</a>
+                </div>
+                <div class="showShake hidden">
+                    <div class="showShake1">
+                        摇一摇活动尚未开启
+                    </div>
+                    <div class="showShake2">
+                        <p class="p1">摇一揺互动还未开启</p>
+                        <p class="p2">要留意年会主持人安排</p>
+                    </div>
+                    <a href="javascript:void(0);">返回</a>
+                </div>
+                <div class="showHb hidden">
+                    <div class="showHb1">
+                        红包活动尚未开启
+                    </div>
+                    <div class="shwoHb2">
+                        <p class="p1">红包活动互动还未开启</p>
+                        <p class="p2">要留意年会主持人安排</p>
+                    </div>
+                    <a href="javascript:void(0);">返回</a>
+                </div>
+                <div class="showDs1 hidden">
+                    <div class="showShake1">
+                        打赏活动尚未开启
+                    </div>
+                    <div class="showShake2">
+                        <p class="p1">打赏活动互动还未开启</p>
+                        <p class="p2">要留意年会主持人安排</p>
+                    </div>
+                    <a href="javascript:void(0);">返回</a>
+                </div>
+            </div>
+
+        </div>
+</body>
+    <script>
+        /*加载前期*/
+        var loading=$('.loading');
+        var loading_text=loading.find('.loading_text');
+        var loading_out=$('.loading_out');
+        var errordialog=$('.error_dialog');
+        var otherCount=$('.otherCount');//其他金额按钮
+        var otherCountje=$('.otherCountje');
+        errordialog.click(function(){
+            $(this).addClass('hidden');
+        })
+        var error=function(text){
+            errordialog.removeClass('hidden').find('p').text(text);
+            setTimeout(function(){
+                errordialog.addClass('hidden')
+            },2000);
+        }
+        setTimeout(function(){
+            loading.addClass('hidden').find('.loading_animte').removeClass('loading_animte');
+            loading_out.removeClass('loading_animte').addClass('hidden')
+        },2000);
+        otherCount.click(function(){
+            var $this=$(this);
+            var line2=$this.parent().next();
+            line2.hasClass('hidden')?line2.removeClass('hidden'):line2.addClass('hidden');
+        });
+        otherCountje.click(function(){
+            var $this=$(this);
+            if($this.hasClass('disable')){
+                error('正在支付中');
+                return ;
+            }else{
+               if(!(/^[0-9]+(.[0-9]{1})?$/).test($this.prev().val())){
+                   error('金额不对');
+                   return ;
+               }else{
+                   $('.dsje').addClass('disable');
+                   $this.addClass('disable');
+               }
+            }
+        })
+        function dashang(amount){
+            var $this=$(event.target);
+            var amount=amount.count;
+            var dsjg=$('.dsje');
+            var otherCountje=$('.otherCountje');
+            if($this.hasClass('disable')){
+                error('正在支付中');
+                return ;
+            }else{
+                    otherCountje.addClass('disable');
+                    dsjg.addClass('disable');
+            }
+        }
+        lists=[{'content':'<img src="dashang/img/0f0ec659-2af9-4738-b1bf-9a938d87fd96.jpg" />'},{'content':'<img src="dashang/img/0f1a9528-4f1c-41f0-8aa8-e5b6b2a796e6.jpg" />'}
+        ,{'content':'<img src="dashang/img/5c0835cd-4028-4603-9517-2c0e6c2be8e5.jpg" />'},{'content':'<img src="dashang/img/8b22df44-24fc-4008-bf2c-ebf1f9ee7ba2.jpg" />'}
+        ,{'content':'<img src="dashang/img/94ff72a6-e33c-4131-923d-8430e7bc0819.jpg" />'},{'content':'<img src="dashang/img/0f0ec659-2af9-4738-b1bf-9a938d87fd96.jpg" />'}]
+            new iSlider({
+                data: lists,
+                dom:document.getElementById('sildeChose'),
+                plugins: ['button']
+            })
+        $(function(){
+            var W=$(window).width();//屏幕宽度
+            var max_width=800;//最大宽度
+            var page_width=750;//实际宽度
+            var zoom=W>max_width?1:parseFloat(W/page_width);
+            $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+            $(window).resize(function(){
+                var W=$(window).width();
+                var zoom=W>max_width?1:parseFloat(W/page_width);
+                $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+            })
+        })
+    </script>
+</html>

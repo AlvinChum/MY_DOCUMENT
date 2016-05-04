@@ -1,0 +1,150 @@
+.textLine {
+  word-wrap: break-word;
+  word-break: normal;
+}
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #EFEFF4;
+}
+#header {
+  z-index: 2;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.9rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '我的账户';
+}
+#header span {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+}
+#header .close {
+  background: transparent url(../image/icon_close.png) no-repeat left center / 15px 25px;
+  left: 2.5rem;
+}
+#header .tx {
+  right: 2.5rem;
+  font-size: 1.5rem;
+}
+.content {
+  margin-top: 44px;
+  font-size: 1.5rem;
+}
+.content .moneyAmount {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid #e2e3e8;
+}
+.content .moneyAmount:before {
+  display: inline-block;
+  margin-top: 8px;
+  color: #666666;
+  content: '账户余额:';
+}
+.content .moneyAmount b {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  color: #323232;
+  font-size: 2.4rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.content .moneyAmount b:after {
+  content: '.00元';
+}
+.content .title {
+  margin-top: 10px;
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 1.3rem 0;
+  font-size: 1.8rem;
+  color: #666666;
+  border-bottom: 1px solid #e2e3e8;
+}
+.content .title:before {
+  content: '收入明细';
+}
+.content .fl {
+  width: 100%;
+  height: auto;
+  color: #666666;
+  font-size: 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e3e8;
+}
+.content .fl ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+.content .fl li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #e4e4e4;
+}
+.content .fl li:last-child {
+  border: none;
+}
+.content .fl li:nth-child(1):before {
+  content: '时间';
+}
+.content .fl li:nth-child(2):before {
+  content: '项目';
+}
+.content .fl li:nth-child(3):before {
+  content: '金额';
+}
+.content .listBox {
+  width: 100%;
+  height: auto;
+}
+.content .listBox ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content .listBox ul li {
+  text-align: center;
+  padding: 1rem 0;
+  word-wrap: break-word;
+  word-break: normal;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 33%;
+}

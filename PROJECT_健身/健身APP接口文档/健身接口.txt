@@ -1,0 +1,88 @@
+2016年4月27日
+		获取锻炼计划列表接口---
+		获取每天锻炼动作列表接口---
+		获取动作的信息接口---
+		提交训练动作的信息接口---
+
+
+
+重要说明：当一个锻炼计划完成后，系统产生新的锻炼计划
+
+
+
+
+获取锻炼计划列表接口：http://域名/exercise/7days
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","uid":"用户ID","len":"训练计划的总数量","text":[{"dlid":"锻炼计划的ID","type":"1","img":"锻炼计划的图标地址","text":"文本信息","state":"1","extra":"+5,+50KG"},{"dlid":"锻炼计划的ID","type":"2","img":"锻炼计划的图标地址","text":"文本信息","state":"1","extra":"+5,+50KG"}]}	
+	说明：	1.训练计划的总数量可能会大于7，因为中间存在热身计划
+			2.训练计划类型：	type:	1	主训练计划
+										2 	辅助训练计划
+			2.状态值 state:	1	未完成
+							2 	已完成
+							3	超额了	（额外信息才有效）
+							4 	无状态值（辅助训练计划）
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+获取每天锻炼动作列表接口：http://域名/exercise/oneday
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","dlid":"锻炼计划的ID","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.锻炼计划的ID:				dlid:锻炼计划的ID
+	4.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","uid":"用户ID","len":"训练动作的总数量","text":[{"dzid":"动作的ID","img":"动作的图片地址","text":"动作名字","difficulty":"2","state":"1","extra":"+5,+50KG"},{"dzid":"动作的ID","img":"动作的图片地址","text":"文本信息","difficulty":"2","state":"1","extra":"+5,+50KG"}]}	
+	说明：	1.状态值 state:	1	未完成
+							2 	已完成
+							3	超额了	（额外信息才有效）
+			2.难度等级	difficulty：几代表几星
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+
+获取动作的信息接口：http://域名/exercise/myaction
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","dzid":"动作的ID","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.动作的ID:					dzid:动作的ID
+	4.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","dzid":"动作的ID","text":"动作名字","imgurl":"gif的URL地址","weight":"重量值","frequency":"需要的次数"}
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+提交训练动作的信息接口：http://域名/exercise/postactioninfo
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","dzid":"动作的ID","factweight":"实际重量值","factfrequency":"实际的次数","facttime":"锻炼的时间","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.动作的ID:					dzid:动作的ID
+	4.实际重量值： 				factweight:实际重量值
+	5.实际的次数：				factfrequency:实际的次数
+	6.锻炼的时间：				facttime:锻炼的时间
+	4.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200"}			成功
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+
+

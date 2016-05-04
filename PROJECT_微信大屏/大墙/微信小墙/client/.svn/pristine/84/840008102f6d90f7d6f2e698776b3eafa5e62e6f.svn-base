@@ -1,0 +1,73 @@
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+#wrap{
+ height:100%;
+  .flex;
+  .flex-vertical
+}
+#header{
+  width:100%;
+  height:44px;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  line-height:44px;
+  ul{
+    width:100%;
+  }
+  li{
+    width:100%;
+    text-align:center;
+    font-size:2rem;
+    position:absolute;
+    left:0;
+    top:0;
+    font-weight: bold;
+  }
+  li:nth-child(1):before{
+    content:'呼叫骑手';
+  }
+  li:nth-child(2):before{
+    content:'我的订单';
+  }
+  li:nth-child(3):before{
+    content:'个人中心';
+  }
+  .findQS{
+    position:absolute;
+    right:2rem;
+    font-size:1.2rem;
+    color:#ffffff;
+  }
+}
+#main{
+  height:auto;
+  .flex-con;
+  width:100%;
+}
+footer{
+  width:100%;
+  background:#12B8F6;
+  color:#ffffff;
+  ul{
+    .flex;
+    font-size:1.2rem;
+    li{
+      .flex-con;
+      padding-top:32px;
+      text-align:center;
+      cursor: pointer;
+    }
+  }
+}
+.active{
+ color:red;
+}
+.hidden{
+  display:none!important;
+}

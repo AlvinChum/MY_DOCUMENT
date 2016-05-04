@@ -1,0 +1,31 @@
+.textLine{
+  word-wrap: break-word;
+  　　word-break: normal;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.6rem;
+  text-align:center;
+  position: fixed;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'关于我们';
+  }
+  span{
+    position:absolute;
+    left:0;
+    width:60px;
+    height:100%;
+  }
+}
+.content{
+  box-sizing: border-box;
+  height:auto;
+  font-size:1.6rem;
+  padding:3rem 2rem 2rem 2rem;
+  .textLine
+}

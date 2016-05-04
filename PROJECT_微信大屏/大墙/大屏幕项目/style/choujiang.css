@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+.pice {
+  width: 150px;
+  height: 120px;
+}
+.pice span {
+  display: block;
+  width: 200px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  overflow: hidden;
+}
+button {
+  width: 200px;
+  height: 100px;
+}
+#place span {
+  display: inline-block;
+  padding: 10px;
+}

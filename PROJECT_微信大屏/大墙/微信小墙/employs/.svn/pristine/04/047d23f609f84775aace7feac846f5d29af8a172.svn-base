@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/changePass.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"><span class="close"></span></header>
+	<div class="changePass">
+	<ul >
+	<li class="password"><input type="password" placeholder="请输入新密码" name="pass" required="required" /> </li>
+	<li class="password2"><input type="password" placeholder="确认密码"  name="pass1" required="required" /></li>
+	</ul>
+	<div><a href="javascript:void(0)" class="changeBtn" >确定</a></div>
+
+	</div>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+	var toast=function(msg){api.toast({
+				    msg: msg?msg:'网络错误',
+				    duration: 2000,
+				    location: 'middle'
+					});}
+		var ajax=function(url,method,timeout,data,calllback){
+		api.ajax({
+		    url:url,
+		    method:method?method:'post',
+		    timeout:timeout?timeout:30,
+		    returnAll:false,
+		    dataType:'json',
+		     data: {
+	        values:data
+	    }
+	    },function(ret,err){
+	    	//coding...
+	    	if(err.code==1){
+	    		toast('网络错误');
+	    	}
+	    });
+	    }
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+		$('.changeBtn').click(function(){
+			var pass=document.getElementsByName('pass')[0];
+			var pass1=document.getElementsByName('pass1')[0];
+			if(!/^(\w){6,20}$/.test(pass.value)){
+			toast('不符合密码规范');
+			return;
+			}
+			if(pass.value!==pass1.value){
+			toast('密码不一致');
+			return;
+			}
+			toast('修改密码成功');
+		})
+	};
+</script>
+</html>

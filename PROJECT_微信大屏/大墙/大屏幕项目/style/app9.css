@@ -1,0 +1,582 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-height: 768px) {
+  .container.fixed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -384px;
+    margin-left: -480px;
+  }
+}
+.container {
+  width: 960px;
+  height: 768px;
+  margin: 0 auto;
+}
+.container .wait_page {
+  margin-top: 100px;
+  font-weight: bold;
+  color: #FFE100;
+}
+.container .wait_page ul {
+  background: url(../app9/img/icon_wait_bg.png) no-repeat center / 100% 100%;
+  width: 960px;
+  height: 503px;
+  margin: 0 auto;
+}
+.container .wait_page li {
+  margin: 10px auto;
+  text-align: center;
+}
+.container .wait_page li:nth-child(1):before {
+  display: block;
+  text-align: center;
+  content: '摇一摇';
+  font-size: 36px;
+}
+.container .wait_page li:nth-child(1):after {
+  display: block;
+  content: '抢红包';
+  font-size: 100px;
+}
+.container .wait_page li:nth-child(2) {
+  padding: 4px;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  max-width: 275px;
+}
+.container .wait_page li:nth-child(3) a {
+  display: inline-block;
+  width: 218px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #F09F0F;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: -moz-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0b70f), color-stop(100%, rgba(240, 183, 15, 0.8)));
+  background: -webkit-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -o-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -ms-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: linear-gradient(to bottom, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+}
+.container .wait_page li:nth-child(3) a:before {
+  font-size: 19px;
+  color: #BA121A;
+  content: '开始抢红包';
+}
+.container .time_page {
+  top: 50%;
+  margin: 0 auto;
+  margin-top: -170px;
+  position: relative;
+  width: 340px;
+  height: 341px;
+  padding-top: 44px;
+  background-image: url(../app2/img/icon_time_big.png), url(../app2/img/icon_time_small.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, 270px 50px;
+}
+.container .time_page .bg {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 340px;
+  background-color: #CB2E30;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: -4px;
+}
+.container .time_page .text {
+  width: 280px;
+  height: 280px;
+  margin: 30px 0 0 30px;
+  background-color: #F9F1C2;
+  border-radius: 280px;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  line-height: 300px;
+  font-size: 100px;
+  border: 2px solid #EBC50D;
+  color: #333333;
+}
+.container .time_page .hold {
+  width: 170px;
+  height: 340px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 0 340px 340px 0;
+  background: #ffffff;
+  -o-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+.container .time_page .hold:nth-child(1) {
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  right: 0;
+}
+.container .time_page .hold:nth-child(2) {
+  left: 0;
+  border-radius: 340px 0 0 340px;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+}
+.container .time_page .on {
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: initial;
+  animation-direction: initial;
+  animation-play-state: initial;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: initial;
+  -webkit-animation-direction: initial;
+  -webkit-animation-play-state: initial;
+}
+.container .time_page .on:nth-child(1) {
+  animation-name: rect1;
+  animation-delay: 0s;
+  -webkit-animation-name: rect1;
+  -webkit-animation-delay: 0s;
+}
+.container .time_page .on:nth-child(2) {
+  animation-name: rect2;
+  animation-delay: 2.5s;
+  -webkit-animation-name: rect2;
+  -webkit-animation-delay: 2.5s;
+}
+.container .start_page {
+  margin-top: 100px;
+  width: 960px;
+  height: 503px;
+  background: url(../app9/img/icon_start_bg.png) no-repeat center;
+  position: relative;
+  z-index: 1;
+}
+.container .start_page div {
+  z-index: 5;
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  left: 370px;
+}
+.container .start_page div span {
+  display: inline-block;
+  color: #FFE100;
+  font-size: 60px;
+  margin: 10px 0;
+}
+.container .start_page div span:after {
+  content: '元';
+}
+.container .start_page div a {
+  margin: 0 auto;
+  display: block;
+  width: 218px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #F09F0F;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #BA121A;
+  background: -moz-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0b70f), color-stop(100%, rgba(240, 183, 15, 0.8)));
+  background: -webkit-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -o-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: -ms-linear-gradient(top, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+  background: linear-gradient(to bottom, #f0b70f 0%, rgba(240, 183, 15, 0.8) 100%);
+}
+.container .end_page {
+  overflow: hidden;
+  width: 960px;
+  height: 503px;
+  margin-top: 100px;
+  position: relative;
+}
+.container .end_page .btn {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  border: 2px solid #fbd020;
+  color: #FFFFFF;
+  background: #e24136;
+  display: inline-block;
+  width: 20px;
+  padding: 5px;
+  font-size: 19px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .end_page ul {
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+  width: 470px;
+  margin: 0 auto;
+  border: 5px solid #F7E788;
+  padding: 0 20px;
+  background: #e24136;
+  height: 503px;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container .end_page ul:before {
+  color: #fbd020;
+  display: block;
+  font-size: 35px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  content: '抢红包排行榜';
+}
+.container .end_page li:nth-child(1) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.container .end_page li:nth-child(2) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.container .end_page li:nth-child(3) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.container .end_page li {
+  display: table;
+  color: #FFFFFF;
+  font-size: 19px;
+  text-align: left;
+}
+.container .end_page li span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.container .end_page li span:nth-child(1) {
+  padding-left: 40px;
+  display: inline-block;
+  line-height: 60px;
+  color: #F7E788;
+  width: 100px;
+  text-align: center;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .end_page li span:nth-child(1):after {
+  content: ':';
+}
+.container .end_page li span:nth-child(2) {
+  width: 50px;
+  text-align: center;
+}
+.container .end_page li span:nth-child(2) img {
+  border: 4px solid #CE3433;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.container .end_page li span:nth-child(3) {
+  display: inline-block;
+  width: 150px;
+  text-indent: 5px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .end_page li span:nth-child(4) {
+  display: inline-block;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: right;
+  width: 80px;
+  font-size: 19px;
+  color: #F7E788;
+}
+.container .end_page li span:nth-child(4):after {
+  content: '元';
+}
+#hongbao {
+  width: 100%;
+  height: 100%;
+}
+#hongbao ul {
+  width: 100%;
+  height: 100%;
+}
+#hongbao .scale5 {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+#hongbao .scale6 {
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#hongbao .scale7 {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+}
+#hongbao .scale8 {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+#hongbao .scale9 {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+#hongbao .scale10 {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#hongbao .scale11 {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#hongbao .scale12 {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#hongbao .scale13 {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+#hongbao .scale14 {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+#hongbao li {
+  z-index: 4;
+  top: -110px;
+  padding-left: 110px;
+  position: absolute;
+  width: 164px;
+  height: 60px;
+  padding-top: 40px;
+  background: url(../app9/img/icon_hongbao_bg.png) no-repeat center center / 100% 100%;
+}
+#hongbao li span {
+  display: inline-block;
+  width: 164px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#hongbao li span:nth-child(1) {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+#hongbao li span:nth-child(2) {
+  margin-top: -5px;
+  color: #FFE100;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+#hongbao li span:nth-child(2):before {
+  content: '抢到了';
+  color: #FFFFFF;
+  font-size: 20px;
+}
+#hongbao li span:nth-child(2):after {
+  content: '元';
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.hidden {
+  display: none!important;
+}
+@keyframes scale_ {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale_ {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes rect1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rect1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rect2 {
+  0% {
+    background-color: #CB2E30;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    background-color: #CB2E30;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0px;
+  }
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0px;
+  }
+}
+@-webkit-keyframes rect2 {
+  0% {
+    background-color: #CB2E30;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    background-color: #CB2E30;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0px;
+  }
+}

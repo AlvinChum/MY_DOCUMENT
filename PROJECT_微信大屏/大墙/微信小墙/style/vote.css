@@ -1,0 +1,247 @@
+.container {
+  background: url(../vote/img/bg.jpg) no-repeat center / 800px 100%;
+}
+.voteTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #ffde00;
+  font-size: 48px;
+  padding-top: 66px;
+  font-weight: bold;
+}
+.zanTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 32px 0;
+  overflow: hidden;
+}
+.votelist {
+  position: relative;
+  width: 678px;
+  margin: 0 36px;
+}
+.votelist li {
+  position: relative;
+  width: 317px;
+  float: left;
+  border-radius: 11px;
+  margin-bottom: 60px;
+  min-height: 350px;
+}
+.votelist .itemBox {
+  position: absolute;
+  width: 341px;
+  height: 372px;
+  left: -12px;
+  top: -13px;
+  z-index: 1000;
+}
+.votelist .itemBox img {
+  width: 100%;
+  border: none;
+}
+.votelist .itemBox .yizan {
+  position: absolute;
+  display: block;
+  width: 66px;
+  height: 66px;
+  right: 11px;
+  bottom: -1px;
+}
+.votelist li:nth-of-type(odd) {
+  margin-right: 44px;
+}
+.votelist .itemImg {
+  position: relative;
+  width: 100%;
+  height: 222px;
+  overflow: hidden;
+  z-index: 1200;
+}
+.votelist .itemImg img {
+  width: 100%;
+  border-radius: 11px 11px 0 0 ;
+}
+.votelist .itemInfo {
+  position: relative;
+  width: 100%;
+  z-index: 1200;
+}
+.votelist .itemInfo a {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: block;
+  right: 0;
+  top: 14px;
+  z-index: 15300;
+  background: url(../vote/img/notzan.png) no-repeat center;
+}
+.votelist .itemInfo .itemName {
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  padding: 18px 0 20px 20px;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.votelist .itemInfo .vote_num {
+  position: relative;
+  font-size: 26px;
+  color: #fff;
+  padding-left: 57px;
+}
+.votelist .itemInfo .vote_num b {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  left: 20px;
+  top: 4px;
+}
+.votelist .itemInfo .vote_num .vote_all {
+  font-size: 26px;
+  color: #fff;
+}
+.menulist {
+  position: fixed;
+  width: 750px;
+  height: 130px;
+  left: 50%;
+  margin-left: -375px;
+  bottom: 0;
+  z-index: 11000;
+}
+.menulist .menu_item1,
+.menulist .menu_item2,
+.menulist .menu_item3,
+.menulist .menu_item4,
+.menulist .menu_item5 {
+  border-top: 6px solid  #920020;
+  position: relative;
+  width: 150px;
+  float: left;
+  height: 150px;
+  background: #920020;
+}
+.menulist a {
+  position: relative;
+  width: 150px;
+  display: inline-block;
+  height: 150px;
+  text-align: center;
+}
+.menulist s {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 0;
+  top: 80px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.menulist img {
+  margin-top: 8px;
+  width: 70px;
+  height: 70px;
+  border: none;
+}
+.menulist .menu_item3 {
+  border-color: #ffcf0d;
+}
+.menulist div span {
+  position: absolute;
+  display: inline-block;
+  height: 130px;
+  width: 5px;
+  right: 0;
+  top: 0;
+  background: url(../shangqiang/img/item_fgx.png) no-repeat;
+}
+.showVote,
+.showShake,
+.showHb,
+.showDs {
+  display: none;
+  position: fixed;
+  width: 690px;
+  height: 360px;
+  left: 30px;
+  top: 50%;
+  margin-top: -180px;
+  z-index: 25500;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.showVote .showVote1,
+.showShake .showVote1,
+.showHb .showVote1,
+.showDs .showVote1,
+.showVote .showShake1,
+.showShake .showShake1,
+.showHb .showShake1,
+.showDs .showShake1,
+.showVote .showHb1,
+.showShake .showHb1,
+.showHb .showHb1,
+.showDs .showHb1,
+.showVote .showDs1,
+.showShake .showDs1,
+.showHb .showDs1,
+.showDs .showDs1 {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background: #888;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.showVote p,
+.showShake p,
+.showHb p,
+.showDs p {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  color: #555;
+  font-size: 32px;
+  text-align: center;
+}
+.showVote .p1,
+.showShake .p1,
+.showHb .p1,
+.showDs .p1 {
+  margin-top: 30px;
+}
+.showVote a,
+.showShake a,
+.showHb a,
+.showDs a {
+  position: relative;
+  display: inline-block;
+  background: #f4a711;
+  width: 230px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  margin-top: 35px;
+  margin-left: 230px;
+  border-radius: 10px;
+}
+.zan {
+  background: url(../vote/img/zan.png) no-repeat center / 68px 68px !important;
+}

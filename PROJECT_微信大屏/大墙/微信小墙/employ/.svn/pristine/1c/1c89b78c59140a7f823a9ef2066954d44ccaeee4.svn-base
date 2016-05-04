@@ -1,0 +1,81 @@
+.textLine{
+  word-wrap: break-word;
+  　　word-break: normal;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  border-radius:@a;
+}
+html,body{
+  background:#ffffff;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.6rem;
+  text-align:center;
+  position: fixed;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'投诉与建议';
+  }
+  span{
+    position:absolute;
+    left:0;
+    width:60px;
+    height:100%;
+  }
+}
+.suggestRegion{
+  font-size:2rem;
+  width:100%;
+  height:auto;
+  ul{
+    width:100%;
+    height:auto;
+  }
+  &>div{
+    text-align:center;
+  }
+  li{
+    padding:1rem 2rem;
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+  }
+  li:nth-child(1){
+    margin-top:3rem;
+    padding-left:5.6rem;
+  }
+  li:nth-child(2){
+    padding-left:5.6rem;
+    margin-top:-1px;
+    margin-bottom:20px;
+  }
+  input{
+    width:100%;
+    outline: none;
+  }
+  textarea{
+    width:100%;
+    height:7rem;
+    outline: none;
+    resize: none;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+    .btn{
+      margin-top:5rem;
+      margin-bottom:2rem;
+      .radius(3px);
+      border:2px solid #12B8F6;
+      color:#ffffff;
+      background:#12B8F6;
+      display:inline-block;
+      padding:1.5rem 0;
+      width:80%;
+    }
+}

@@ -1,0 +1,139 @@
+.radius(@a){
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  border-radius:@a;
+}
+html,body{
+  background:#EFEFF4;
+}
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.content {
+  margin-top:20px;
+  top:2rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  ul {
+    font-size: 1.6rem;
+    li {
+      padding-left: 2rem;
+      background: #ffffff;
+      line-height: 3rem;
+      height: 3rem;
+    }
+    li:nth-child(1), li:nth-child(3), li:nth-child(6), li:nth-child(9), li:nth-child(13) {
+      margin-top: 2rem;
+    }
+    li:before {
+      width: 10rem;
+    }
+    li:nth-child(1):before {
+      content: '订单状态:';
+    }
+    li:nth-child(2):before {
+      content: '服务类型:';
+    }
+    li:nth-child(3):before {
+      content: '发件人姓名:';
+    }
+    li:nth-child(4):before {
+      content: '发件人电话:';
+    }
+    li:nth-child(5):before {
+      content: '发件人地址:';
+    }
+    li:nth-child(6):before {
+      content: '收件人姓名:';
+    }
+    li:nth-child(7):before {
+      content: '收件人电话:';
+    }
+    li:nth-child(8):before {
+      content: '收件人地址:';
+    }
+    li:nth-child(9):before {
+      content: '配送要求:';
+    }
+    li:nth-child(10):before {
+      content: '距离:';
+    }
+    li:nth-child(11):before {
+      content: '费用:';
+    }
+    li:nth-child(12):before {
+      content: '支付方式:';
+    }
+    li:nth-child(14) {
+      border-top: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+    }
+    li:nth-child(15), li:nth-child(14) {
+      height: 4rem;
+      line-height: 4rem;
+    }
+  }
+  .btn{
+    margin-top:5rem;
+    margin-bottom:2rem;
+    width:100%;
+    text-align:center;
+    font-size:1.6rem;
+    a{
+      margin-bottom:2rem;
+      .radius(3px);
+      border:2px solid #12B8F6;
+      color:#ffffff;
+      background:#12B8F6;
+      display:inline-block;
+      padding:1.5rem 0;
+      width:60%;
+      min-width:10rem;
+    }
+  }
+}
+.pjRegion{
+  position:fixed;
+  top:50%;
+  margin-top:-7.5rem;
+  left:10%;
+  width:80%;
+  height:15rem;
+  padding:0 10%;
+  box-sizing: border-box;
+  h1{
+    margin-top:1rem;
+    line-height:4rem;
+    height:4rem;
+    font-size:1.6rem;
+  }
+  ul{
+    height:6rem;
+    width:100%;
+    text-align:center;
+    li{
+      display: inline-block;
+      width:15%;
+      height:6rem;
+    }
+  }
+  span{
+    display:inline-block;
+    width:50%;
+    text-align:center;
+    a{
+      font-size:1.6rem;
+      width:80%;
+      height:4rem;
+      line-height:4rem;
+      background:#12B8F6;
+      color:#ffffff;
+      .radius(3px;);
+    }
+  }
+}

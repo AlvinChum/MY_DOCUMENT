@@ -1,0 +1,99 @@
+html,
+body {
+  background: #EFEFF4;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: fixed;
+  position: relative;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '订单详情';
+}
+#header span {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 100%;
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.content ul {
+  font-size: 1.6rem;
+}
+.content ul li {
+  padding-left: 2rem;
+  background: #ffffff;
+  line-height: 3rem;
+  height: 3rem;
+}
+.content ul li:nth-child(1),
+.content ul li:nth-child(3),
+.content ul li:nth-child(6),
+.content ul li:nth-child(9),
+.content ul li:nth-child(13) {
+  margin-top: 2rem;
+}
+.content ul li:before {
+  width: 10rem;
+}
+.content ul li:nth-child(1):before {
+  content: '订单状态:';
+}
+.content ul li:nth-child(2):before {
+  content: '服务类型:';
+}
+.content ul li:nth-child(3):before {
+  content: '发件人姓名:';
+}
+.content ul li:nth-child(4):before {
+  content: '发件人电话:';
+}
+.content ul li:nth-child(5):before {
+  content: '发件人地址:';
+}
+.content ul li:nth-child(6):before {
+  content: '收件人姓名:';
+}
+.content ul li:nth-child(7):before {
+  content: '收件人电话:';
+}
+.content ul li:nth-child(8):before {
+  content: '收件人地址:';
+}
+.content ul li:nth-child(9):before {
+  content: '配送要求:';
+}
+.content ul li:nth-child(10):before {
+  content: '距离:';
+}
+.content ul li:nth-child(11):before {
+  content: '费用:';
+}
+.content ul li:nth-child(12):before {
+  content: '支付方式:';
+}
+.content ul li:nth-child(14):before {
+  content: '发件人暗号:';
+}
+.content ul li:nth-child(15):before {
+  content: '收件人暗号:';
+}
+.content ul li:nth-child(14) {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid  #CCCCCC;
+}
+.content ul li:nth-child(15),
+.content ul li:nth-child(14) {
+  height: 4rem;
+  line-height: 4rem;
+}

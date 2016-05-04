@@ -1,0 +1,141 @@
+html,body{
+  width:100%;
+  height:100%;
+  min-height:100%;
+}
+.text_clip(){
+  white-space:nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.transform_rotate(@deg){
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+.container{
+  width: 100%;
+  max-width: 800px;
+  min-height:100%;
+  margin: 0 auto;
+  background:url(../Startpage/img/bg.jpg) no-repeat center center;
+}
+.header{
+  width:100%;
+  text-align:center;
+  padding:30px 0;
+  p{
+    font-size:50px;
+    font-weight: bold;
+    text-align:center;
+    color:#ffffff;
+    .text_clip;
+  }
+}
+.content{
+  position: relative;
+  width: 680px;
+  background: rgba(255,255,255,.7);
+  border-radius: 10px;
+  margin-left: 35px;
+  .info {
+    border-bottom: 1px solid #e9e1e2;
+    ul{
+      position:relative;
+      padding-top:32px;
+      width:100%;
+      li{
+        position: relative;
+        float: left;
+        line-height: 60px;
+        color: #222;
+        font-size: 28px;
+       .text_clip;
+      }
+      li:nth-child(odd){
+        width: 190px;
+        font-weight: bold;
+        text-align: right;
+      }
+      li:nth-child(even){
+        width: 490px;
+        text-align: left;
+      }
+    }
+  }
+.details{
+  width:100%;
+  ul{
+    margin-top:20px;
+  }
+  li{
+    position: relative;
+    color: #222;
+    font-size: 28px;
+    padding-bottom: 40px;
+    div:nth-child(1){
+      position: relative;
+      width: 230px;
+      padding-left: 20px;
+      font-size: 32px;
+      float: left;
+      color: #974e01;
+    }
+    div:nth-child(2){
+      position: relative;
+      width: 410px;
+      font-size: 28px;
+      float: left;
+      color: #444;
+      text-align: left;
+    }
+  }
+}
+}
+.btn{
+  display: block;
+  width: 270px;
+  height: 94px;
+  line-height: 94px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 36px;
+  color: #fff;
+  background: #f4a711;
+  margin:60px auto 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 -4px 6px rgba(219,115,32,0.7) inset,0px 2px 1px rgba(255,255,255,0.5) inset;
+}
+@-moz-keyframes loading_rotate {
+  0%{
+    .transform_rotate(0deg)
+  }
+  100%{
+    .transform_rotate(360deg)
+  }
+}
+@-webkit-keyframes loading_rotate{
+  0%{
+    .transform_rotate(0deg)
+  }
+  100%{
+    .transform_rotate(360deg)
+  }
+}
+@keyframes loading_rotate {
+  0%{
+    .transform_rotate(0deg)
+  }
+  100%{
+    .transform_rotate(360deg)
+  }
+}
+.hidden{
+  display:none !important;
+}
+.clear{
+  clear:both;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  type="text/css" rel="stylesheet" href="./style/reset.css" />
+    <link  type="text/css" rel="stylesheet" href="./style/app7.css" />
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <div class="header">
+                    <span class="count">
+                        520
+                    </span>
+        </div>
+        <div class="content">
+                       <span class="pice1">
+                           <span ><img src=""/></span>
+                           <span class="text "></span>
+                       </span>
+                       <span class="pice2">
+                           <span><img src=""/></span>
+                           <span class="text "></span>
+                       </span>
+                    <span class="choudui">
+                       <a href="javascript:void(0)">开始对对碰</a>
+                    </span>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header">
+                    <span class="ranking">
+                        0
+                    </span>
+        </div>
+        <div class="title"></div>
+        <div style="width:100%;height:325px;">
+            <ul class="place">
+            </ul>
+        </div>
+        <div class="bth_group">
+                <a class="anew">重新抽取</a>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./js/jquery-1.8.0.min.js"></script>
+<script src="js/app7.js"></script>
+<script>
+    $(function(){
+        $('.place').on('mouseover',function(event) {
+            if (event.target != this && event.target.tagName.toLowerCase()!='li'){
+                $(event.target).parent().find('.close').show()
+            }else{
+                return;
+            }
+            return false;
+        });
+        var arr1=['https://p1.ssl.qhimg.com/t0117eb6fc9c8ab3999.jpg','https://p3.ssl.qhimg.com/t011c4d217ecd036b5c.jpg',
+            'https://p2.ssl.qhimg.com/t011f7f6a085d72f99e.jpg','https://p2.ssl.qhimg.com/t0127f7cdfe4ceff310.jpg','https://p2.ssl.qhimg.com/t0139fafb54659c0acf.jpg'];
+        var arr2=['https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+            'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg','https://p3.ssl.qhimg.com/t013c5ef21d3ebff786.jpg'
+        ]
+        $('.container .choudui a').eq(0).duiduipeng({
+            sex1:arr1,
+            sex2:arr2,
+            pice1:$(' .pice1 img').eq(0),
+            pice2:$(' .pice2 img').eq(0),
+            place:$(' .place'),
+            anew:$(' .anew'),
+            count:$(' .count'),
+            txt1:['12222','22222','22223','222224','sdsadasda'],
+            txt2:['6','7','8','9','10'],
+            text1:$(' .pice1 .text').eq(0),
+            text2:$(' .pice2 .text').eq(0),
+            ranking:$(' .ranking').eq(0)
+        })
+       // parent.app_load();
+    })
+</script>
+</html>

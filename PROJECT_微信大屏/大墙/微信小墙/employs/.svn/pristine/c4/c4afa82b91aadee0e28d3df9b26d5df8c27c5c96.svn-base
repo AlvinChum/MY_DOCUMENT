@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/setInfo.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"><span class="close"></span></header>
+	<div class="content">
+	<ul>
+	<li><input type="text" placeholder="请输入姓名"  name="name" /></li>
+	<li><input type="text" placeholder="请输入身份证号码" name="sfz" /></li>
+	<li ><strong>车牌类型</strong><b class="slidedown"></b></li>
+	<li><span class="sfzphoto"></span></li>
+	<li><span class="sfzphoto" ></span></li>
+	<li><span class="sfzphoto"></span></li>
+	</ul>
+	<div><a href="javascrit:void(0)" class="btn" >确定</a></div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript" src="../script/ajaxToAPICoud.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		window.appId='A6904850308837';
+		window.appKey='2C5BFDD9-3C32-4D8A-E0B8-4EA57C411A67';
+		window.Class='photo';
+		var progress=function(title,text){
+		api.showProgress({
+		    style: 'default',
+		    animationType: 'fade',
+		    title: title?title:'努力加载中...',
+		    text: text?text:'',
+		    modal: true
+		});
+		}
+		var toast=function(msg){api.toast({
+			    msg: msg?msg:'网络错误',
+			    duration: 2000,
+			    location: 'middle'});}
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+		var name=document.getElementsByName('name')[0];
+		var sfz=document.getElementsByName('sfz')[0];
+		$('.btn').click(function(){
+			if(name.value.length<1){
+			toast('姓名不对');
+			return;
+			}
+			if(!/^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/.test(sfz.value)){
+			toast('身份证输入不正确');
+			}
+		})
+		/*图片上传函数*/
+var imgUpload=function(){
+		//图片获取
+		var $this=$(this);
+	  api.getPicture({
+    sourceType: 'library',
+    encodingType:'png',
+    mediaValue: 'pic',
+    allowEdit: true,
+    quality: 70,
+    targetWidth: $('sfzphoto').width(),
+    targetHeight: $('sfzphoto').height(),
+    saveToPhotoAlbum: true
+}, function( ret, err ){ 
+    if( ret ){
+      callback(ret.data);
+    }else{
+    toast('上传失败');
+    }
+});
+var callback=function(path){
+		progress('正在上传中','图片正在上传');
+		var path=path;
+        var method = "post";
+        var classInfo = {
+              className:window.Class,
+            fields: [{name:'photo', value: path,type: "file"}]}
+        ajaxToAPICloud(window.appId,window.appKey, method, classInfo,function(ret,err){
+        api.hideProgress();
+        if(ret){
+       		 toast('上传成功');
+        	var image_url=ret.body.photo.url;
+        	var img=new Image();
+        	img.src=image_url;
+        	$this.append($(img));
+        	}
+        if(err){
+        	toast('上传失败');
+        	}})
+    }
+};
+$('.sfzphoto').click(imgUpload);
+$('.btn').click(function(){
+api.closeToWin({
+    name: 'index',
+    animation: {
+        type: 'flip',
+        subType: 'from_bottom',
+        duration: 500
+    }
+});
+})
+}
+</script>
+</html>

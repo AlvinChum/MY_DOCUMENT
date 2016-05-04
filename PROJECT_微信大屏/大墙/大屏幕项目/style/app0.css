@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+#slide {
+  width: 960px;
+  height: 463px;
+  overflow: hidden;
+  list-style: none;
+  background: transparent;
+}
+#slide li {
+  width: 960px;
+  height: 156px;
+  overflow: hidden;
+}
+#slide li .info {
+  margin-top: 18px;
+  width: 102px;
+  padding-right: 14px;
+  height: 150px;
+  float: left;
+}
+#slide li .info .header {
+  display: block;
+  width: 101px;
+  height: 101px;
+  overflow: hidden;
+  background: url(../liuyan_img/header_head.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+#slide li .info .header div {
+  margin: 4px auto;
+  width: 92px;
+  height: 92px;
+  overflow: hidden;
+}
+#slide li .info .header div img {
+  width: 92px;
+  height: 92px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#slide li .info .name {
+  display: block;
+  width: 102px;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+#slide li .content {
+  width: 752px;
+  height: 156px;
+  background: url(../liuyan_img/message_border.png) no-repeat center center;
+  background-size: 100% 100%;
+  float: left;
+  overflow: hidden;
+  line-height: 156px;
+  padding-left: 60px;
+}
+#slide li .content .text {
+  width: 700px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E80361;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#slide li .content .text img {
+  height: 124px;
+  max-width: 700px;
+  margin-top: 16px;
+  border: none;
+}

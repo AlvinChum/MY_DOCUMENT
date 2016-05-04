@@ -1,0 +1,116 @@
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  border-radius:@a;
+}
+.btn{
+  text-align:center;
+  display:inline-block;
+  .radius(3px);
+}
+html,body{
+  background:#EFEFF4;
+}
+#header{
+  width:100%;
+  background:#ffffff;
+ &:before{
+   content:'是否上班:';
+   font-size: 1.6rem;
+   display:inline-block;
+   height:50px;
+   line-height:50px;
+   padding-left:2rem;
+ }
+  .control{
+    position:relative;
+    top:5px;
+    left:20px;
+    display:inline-block;
+    height:25px;
+    width:50px;
+    border-radius:12.5px;
+    background:#8ECFE7;
+    transition: all 1s;
+   // background:#4CD964;
+  }
+  span{
+    display:inline-block;
+    position:relative;
+    width:25px;
+    height:25px;
+    border-radius:12.5px;
+    background:#ffffff;
+    transition: all 1s;
+    left:0;
+  }
+  .active{
+    background:#7eea19;
+  }
+  .on{
+    left:25px;
+  }
+}
+#content{
+  width:100%;
+  height:auto;
+  font-size:1.6rem;
+  box-sizing:border-box;
+  color:#919191;
+
+  &>div{
+    .flex;
+    height:100%;
+    padding-left:2rem;
+   background:#ffffff;
+    margin-top:2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  ul{
+    .flex-con;
+  }
+  li{
+    width:auto;
+    line-height:3rem;
+    height:3rem;
+  }
+  ul li:before{
+    text-align:left;
+    display:inline-block;
+    width: 6rem;
+  }
+  ul li:nth-child(1):before{
+    content:'订单号:';
+  }
+  ul li:nth-child(2):before{
+
+    content:'发件人:';
+  }
+  ul li:nth-child(3):before{
+    content:'收件人:';
+  }
+  ul li:nth-child(4):before{
+    content:'费用:';
+  }
+  span{
+    display:inline-block;
+  }
+  .btn{
+    padding:1rem 2.5rem;
+    color:#ffffff;
+    background:#12B8F6;
+  }
+  .openOrder{
+    width:5rem;
+    height:10rem;
+    background:transparent url(../image/icon_next.png) no-repeat center center /36px 36px ;
+  }
+}
+

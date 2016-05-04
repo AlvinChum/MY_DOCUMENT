@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>签到</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/qiandao.css"/>
+    <!-- S zoom -->
+    <style type="text/css" id="zoom"></style>
+    <script src="js/zepto.min.js">
+    </script>
+</head>
+<body>
+<div class="zoom">
+    <div class="loading "><div class="loading_rotate loading_animte"><div class="loading_clip"></div></div><div class="loading_text">100%</div></div>
+    <div class="loading_out loading_animte"></div>
+    <div class="error_dialog hidden">
+        <img alt="" src="shangqiang/img/error.png">
+        <p></p>
+    </div>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="activeName">
+            <p>欢迎参加</p>
+            <p>今年年会大酬宾</p>
+        </div>
+        <div class="head_box">
+            <div class="headbox">
+                <img src="shangqiang/img/headbox.png" />
+            </div>
+            <img src="shangqiang/img/0.jpg"/>
+        </div>
+        <div class="text">
+            <p>留下您的信息，让我们记住您</p>
+        </div>
+        <div class="info">
+            <div class="phone">
+                <input type="text" name="phone" placeholder="手机号" value="" maxlength="13" />
+                <div class="clear"></div>
+            </div>
+            <div class="department"  >
+                <input type="text" placeholder="公司部门" maxlength="20" name=" department_name" />
+                <div class="clear"></div>
+            </div>
+        </div>
+        <a href="startpage.html" class="btn ">签到</a>
+    </div>
+    </div>
+</body>
+
+<script>
+    var loading=$('.loading');
+    var loading_text=loading.find('.loading_text');
+    var loading_out=$('.loading_out');
+    var phone=document.getElementsByName('phone')[0];
+    var department_name=document.getElementsByName('department_name')[0];
+    var errordialog=$('.error_dialog');
+    var qiangdao_btn=$('.btn');
+    var head_box=$('.head_box');//个人头像放置地址
+    errordialog.click(function(){
+        $(this).addClass('hidden');
+    })
+    qiangdao_btn.click(function() {
+        if (!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(phone.value)) {
+            errordialog.removeClass('hidden').find('p').text('手机号码错误');
+            setTimeout(function () {
+                errordialog.addClass('hidden')
+            }, 2000)
+            return;
+        }
+        if (department_name.value) {
+            errordialog.removeClass('hidden').find('p').text('部门不能为空');
+            setTimeout(function () {
+                errordialog.addClass('hidden')
+            }, 2000)
+            return;
+        }
+    })
+    setTimeout(function(){
+        loading.addClass('hidden').find('.loading_animte').removeClass('loading_animte');
+        loading_out.removeClass('loading_animte').addClass('hidden')
+    },2000);
+    $(function(){
+        var W=$(window).width();//屏幕宽度
+        var max_width=800;//最大宽度
+        var page_width=750;//实际宽度
+        var zoom=W>max_width?1:parseFloat(W/page_width);
+        $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        $(window).resize(function(){
+            var W=$(window).width();
+            var zoom=W>max_width?1:parseFloat(W/page_width);
+            $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        })
+    })
+</script>
+</html>

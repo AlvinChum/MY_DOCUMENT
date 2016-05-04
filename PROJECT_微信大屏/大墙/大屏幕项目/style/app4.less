@@ -1,0 +1,92 @@
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+}
+.rotate(@rotate:0deg){
+  -webkit-transform: rotate(@rotate);
+  -moz-transform:  rotate(@rotate);
+  -ms-transform: rotate(@rotate);
+  -o-transform:  rotate(@rotate);
+  transform:  rotate(@rotate);
+}
+.container {
+  width: 960px;
+  height: 503px;
+  .btn{
+    width:150px;
+    height:302px;
+    position:absolute;;
+    background: transparent url(../app4/img/icon_rotate.png) no-repeat top center;
+    left: 50%;
+    margin-left: -75px;
+    top:40px;
+    z-index:3;
+    -webkit-transform-origin:75px 210px;
+    -moz-transform-origin:75px 210px;
+    -ms-transform-origin:75px 210px;
+    -o-transform-origin:75px 210px;
+    transform-origin:75px 210px;
+    .rotate(0deg);
+  }
+}
+#out{
+ background:#9C0213;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -250px;
+  border-radius: 100%;
+  z-index:1;
+  /*
+  -webkit-animation:rotateAuto 1s  linear infinite;;
+  -o-animation:rotateAuto 1s linear infinite;;
+  animation:rotateAuto 1s linear infinite;
+  */
+}
+#inside {
+  background-color: white;
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  left: 50%;
+  margin-left: -210px;
+  top: 50%;
+  margin-top: -210px;
+  border-radius: 100%;
+  z-index:2;
+  transform:rotate(0deg);
+  border:1px solid #FFEC58;
+}
+.start{
+  -webkit-animation:rotateAuto 1s  linear infinite;;
+  -o-animation:rotateAuto 1s linear infinite;;
+  animation:rotateAuto 1s linear infinite;
+}
+@-moz-keyframes rotateAuto {
+  0%{
+    .rotate(0deg);
+  }
+  100%{
+    .rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateAuto {
+  0%{
+    .rotate(0deg);
+  }
+  100%{
+    .rotate(360deg);
+  }
+}
+@keyframes rotateAuto {
+  0%{
+    .rotate(0deg);
+  }
+  100%{
+    .rotate(360deg);
+  }
+}

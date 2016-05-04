@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/frame0XQ.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"><span class="close"></span></header>
+	<div class="content">
+	<ul>
+	<li><span></span></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	</ul>
+	</div>
+	<footer>
+	</span><span><a href="javascript:void(0)" class="accept" tapmode="active" ></a></span>
+	</footer>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+	//弹出框
+		var toast=function(msg){api.toast({
+			    msg: msg?msg:'网络错误',
+			    duration: 2000,
+			    location: 'middle'
+				});}
+				//请求地址,类型,超时,数据,回调函数
+	var ajax=function(url,method,timeout,data,calllback){
+	api.ajax({
+	    url:url,
+	    method:method?method:'post',
+	    timeout:timeout?timeout:30,
+	    returnAll:false,
+	    dataType:'json',
+	     data: {
+        values:data
+    }
+    },function(ret,err){
+    	//coding...
+    	if(err.code==1){
+    		toast('网络错误');
+    	}
+    });
+    }
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+		$('.accept').click(function(){
+		toast('接单成功');
+		//回调删除
+		api.execScript({
+	    name:api.pageParam.win,
+	    frameName:'frame0',
+	    script:'removes();'
+		});
+		//close();
+		})
+	};
+</script>
+</html>

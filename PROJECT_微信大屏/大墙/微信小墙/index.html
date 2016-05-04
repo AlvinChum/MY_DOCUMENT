@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>微俱聚有娱演示年会</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="http://static.resource.youyu.weijuju.com//css/mobile/nianhui/index.css?v=20160318211811" /><!-- S zoom -->
+    <style type="text/css" id="_zoom"></style>
+    <!-- E zoom -->
+    <style type="text/css">
+        .menulist .menu_item2{
+            border-top: 6px solid rgb(255,207,13);
+        }
+        .swipe { overflow: hidden; visibility: hidden; position: relative; width: 100%; }
+        .swipe-wrap { overflow: hidden; width: 100%; position: relative; }
+        .swipe-wrap>div { width: 100%; height:110px; float: left; position: relative; }
+
+        #image img { width: 100%; border: 0; margin: 0; padding: 0; }
+        #image .swipe-item img{ display: inline-block; width:100px;height:100px;margin-left:12px;margin-top:10px;border-radius:100px;}
+        .ui-swipeslide-bullets { line-height: 0px; display:none;}
+        .dashang .menulist .menu_item2{
+            border-top: 6px solid rgb(255,207,13);
+        }
+    </style>
+</head>
+<body onload="showPage();">
+<div id="container">
+    <div class="zoom">
+        <div id="J_loading" class="mp_loading"><div class="mp_loading_clip"><div class="mp_loading_bar"></div></div><div id="J_precent" class="mp_loading_txt">0%</div></div>
+        <div class="cover"></div>
+        <div class='loading' id='loading'></div>
+        <div class="error_dialog">
+            <img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/error.png">
+            <p></p>
+        </div>
+        <script type="text/javascript" src="http://static.resource.youyu.weijuju.com//js/plugin/zepto.min.js?v=20160318211811">
+        </script><script type="text/javascript" src="http://static.resource.youyu.weijuju.com//js/mobile/nianhui/index.js?v=20160318211811"></script>
+        <link rel="stylesheet" href="http://static.resource.youyu.weijuju.com//css/plugin/swipeslide.css?v=20160318211811" />
+        <script type="text/javascript" src="http://static.resource.youyu.weijuju.com//js/plugin/swipeslide.js?v=20160318211811"></script>
+        <div class="wrapper dashang" style="background-repeat:repeat;">
+        <div class="showList" >
+            <div class="showTab">
+
+                <div id="image" class="swipe" style="visibility: visible;">
+                    <div class="swipe-wrap" id="swipe_wrap" data-id="0">
+                        <div class="swipe-item">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/5c0835cd-4028-4603-9517-2c0e6c2be8e5.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/94ff72a6-e33c-4131-923d-8430e7bc0819.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/0f1a9528-4f1c-41f0-8aa8-e5b6b2a796e6.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/8b22df44-24fc-4008-bf2c-ebf1f9ee7ba2.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/c67c422e-d364-458b-afd6-812c8b70297c.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/cabd3a04-80c7-42c0-9376-20922a134205.jpg" alt="图片无法显示">
+                        </div>
+                        <div class="swipe-item">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/0f0ec659-2af9-4738-b1bf-9a938d87fd96.jpg" alt="图片无法显示">
+                            <img class="img" src="http://7xp6et.com2.z0.glb.qiniucdn.com/2016/0/nianhui/3/800850d2-212f-44d8-94cc-c59368a63279.jpg" alt="图片无法显示">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="fgx"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/fgx.png"></div>
+        </div>
+        <div class="showChose" >
+            <a id="choseLeft" href="javascript:void(0);"></a>
+            <a id="choseRight" href="javascript:void(0);"></a>
+            <div class="sliderChose" id="sliderChose">
+                <ul>
+                </ul>
+            </div>
+            <div id="tabMark" class="tabMark">
+            </div>
+        </div>
+
+        <div class="control" >
+            <div class="con_title">我要打赏(元)</div>
+            <div class="con_content">
+                <div class="line1">
+                    <a  href="javascript:void(0);" onclick="dashang(this.dataset)" data-count=1.0 class="dsje ">1.0</a>
+                    <a  href="javascript:void(0);" onclick="dashang(this.dataset)" data-count=10.0 class="dsje ">10.0</a>
+                    <a  href="javascript:void(0);" onclick="dashang(this.dataset)" data-count=50.0 class="dsje ">50.0</a>
+                    <a class="otherCount" href="javascript:void(0);">其他金额</a>
+                </div>
+                <div class="line2">
+                    <input type="text" class="otherJine" placeholder="金额（元）"><a  href="javascript:void(0);" class="otherCountJe">打赏</a>
+                </div>
+            </div>
+        </div>
+        <div class="toggle"></div>
+        <div class="ds_success">
+            <div class="line1"><span></span>打赏成功</div>
+            <div class="line2"><a href="javascript:void(0);" class="jxds">继续打赏</a></div>
+        </div>
+        <div style="width:100%;height:160px;"></div>
+        <div class="menulist">
+            <div class="menu_item1"><span></span>
+                <a href="/mobile/nianhui/gowall.jsp?aid=f3kf5R1PkFE%3D"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/bottomMenu/item1.png"><s>上墙</s></a></div>
+
+            <div class="menu_item3"><span></span>
+                <a href="/mobile/nianhui/vote.jsp?aid=f3kf5R1PkFE%3D"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/bottomMenu/item3.png"><s>投票</s></a></div>
+            <div class="menu_item4"><span></span>
+                <a href="/mobile/nianhui/yaohb2.jsp?aid=f3kf5R1PkFE%3D"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/bottomMenu/item4.png"><s>摇一摇</s></a></div>
+            <div class="menu_item5"><span></span>
+                <a href="/mobile/nianhui/qhb2.jsp?aid=f3kf5R1PkFE%3D"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/bottomMenu/item5.png"><s>抢红包</s></a></div>
+            <div class="menu_item2">
+                <a href="/mobile/wxpay/dashang.jsp?aid=f3kf5R1PkFE%3D"><img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/bottomMenu/item2.png"><s>打赏</s></a></div>
+            <div class="clear"></div>
+        </div>
+        <div class="showVote">
+            <div class="showVote1">投票活动尚未开启</div>
+            <div class="showVote2">
+                <p class="p1">投票活动还未开启</p>
+                <p class="p2">要留意年会主持人的安排哦！</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <div class="showShake">
+            <div class="showShake1">摇一摇活动尚未开启</div>
+            <div class="showShake2">
+                <p class="p1">摇一摇活动还未开启</p>
+                <p class="p2">要留意年会主持人的安排哦！</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <div class="showHb">
+            <div class="showHb1">红包活动尚未开启</div>
+            <div class="showHb2">
+                <p class="p1">红包活动还未开启</p>
+                <p class="p2">要留意年会主持人的安排哦！</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <div class=showDs>
+            <div class="showDs1">打赏活动尚未开启</div>
+            <div class="showDs2">
+                <p class="p1">打赏活动还未开启</p>
+                <p class="p2">要留意年会主持人的安排哦！</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                $(".voteNotOpen").bind("click",function(){
+                    $(".showVote").show();
+                    $(".cover").show();
+                });
+                $(".showVote a").bind("click",function(){
+                    $(".showVote").hide();
+                    $(".cover").hide();
+                });
+                $(".hbNotOpen").bind("click",function(){
+                    $(".showHb").show();
+                    $(".cover").show();
+                });
+                $(".showHb a").bind("click",function(){
+                    $(".showHb").hide();
+                    $(".cover").hide();
+                });
+                $(".shakeNotOpen").bind("click",function(){
+                    $(".showShake").show();
+                    $(".cover").show();
+                });
+                $(".showShake a").bind("click",function(){
+                    $(".showShake").hide();
+                    $(".cover").hide();
+                });
+                $(".dsNotOpen").bind("click",function(){
+                    $(".showDs").show();
+                    $(".cover").show();
+                });
+                $(".showDs a").bind("click",function(){
+                    $(".showDs").hide();
+                    $(".cover").hide();
+                });
+            });
+        </script></div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    var aid = "109";
+    var maxMoney="10000.0"*1;
+    var minMoney="0.01"*1;
+    $(".otherCount").bind("click",function(){
+        $(".con_content .line2 ").toggle();
+    });
+    var item = $("#tabMark .active");
+    var choseLeft = $("#choseLeft");
+    var choseRight = $("#choseRight");
+    var control = $(".control");
+    var success = $(".ds_success");
+    var jxds = $(".jxds");
+    var otherJine =$(".otherJine");
+
+    $(".jxds").live("click",function(){
+        $(".ds_success").hide();
+        otherJine.val("");
+        choseLeft.show();
+        choseRight.show();
+        control.show();
+    });
+    function wxPay(money,orderId,successCallback,failCallback){
+        var orderIdStr = "NIANHUI_"+aid+"_"+orderId;
+        $.ajax({
+            url: '/mobile/wxpay/getWxpayData',
+            type: 'post',
+            dataType: 'json',
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: {
+                "goodsName":"微俱聚有娱演示年会年会打赏",
+                "money":money,
+                "orderId":orderIdStr
+            },
+            success: function(data){
+                var payData = data.model.wxPayData;
+                try{
+                    WeixinJSBridge.invoke('getBrandWCPayRequest',{
+                        "appId" :  payData.appId, //公众号名称，由商户传入
+                        "timeStamp" : payData.timeStamp, //时间戳
+                        "nonceStr" : payData.nonceStr, //随机串
+                        "package" : payData.packageStr,//扩展包
+                        "signType" :  payData.signType, //微信签名方式:1.sha1
+                        "paySign" :  payData.sign //微信签名
+                    },function(res){
+                        if(res.err_msg == "get_brand_wcpay_request:ok" ) {
+                            successCallback&successCallback();
+                        } else {//认为是取消了支付
+                            failCallback&failCallback();
+                        }
+                    });
+                }catch(e){
+                    alert(e.message);
+                }
+            }
+        });
+    }
+    $(".otherCountJe").live("click",function(){
+        var $btn = $(this);
+        if($btn.hasClass("disabled")) return;
+        if(isNaN($(".otherJine").val())){
+            $btn.removeClass("disabled");
+            $(".error_dialog p").html("请输入数字金额！");
+            $(".error_dialog").show();
+            setTimeout(function(){$(".error_dialog").hide()},3000);
+            return;
+        }
+        if(($(".otherJine").val()=="")||($(".otherJine").val()=="null")){
+            $btn.removeClass("disabled");
+            $(".error_dialog p").html("打赏金额不能为空！");
+            $(".error_dialog").show();
+            setTimeout(function(){$(".error_dialog").hide()},3000);
+            return;
+        }
+        if($(".otherJine").val()<minMoney){
+            $btn.removeClass("disabled");
+            $(".error_dialog p").html("打赏金额不能低于"+minMoney+"元！");
+            $(".error_dialog").show();
+            setTimeout(function(){$(".error_dialog").hide()},3000);
+            return;
+        }
+        if($(".otherJine").val()>maxMoney){
+            $btn.removeClass("disabled");
+            $(".error_dialog p").html("打赏金额不能高于"+maxMoney+"元！");
+            $(".error_dialog").show();
+            setTimeout(function(){$(".error_dialog").hide()},3000);
+            return;
+        }
+        $btn.addClass("disabled");
+        $.ajax({
+            url: '/mobile/nianhui/dashang',
+            type: 'post',
+            dataType: 'json',
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: {
+                "aid":"109",
+                "itemId":$("#tabMark .active").data("id"),
+                "count":$(".otherJine").val()
+            },
+            //WeixinJSBridge
+            success: function(data){
+                var res="";
+                if (data.ret == 0) {
+                    var order = data.model.order;
+                    wxPay($(".otherJine").val(),order.id,function(){
+                        $btn.removeClass("disabled");
+                        choseLeft.hide();
+                        choseRight.hide();
+                        control.hide();
+                        $(".ds_success").show();
+                    },function(){
+                        $btn.removeClass("disabled");
+                        $(".error_dialog p").html("支付已经取消");
+                        $(".error_dialog").show();
+                        setTimeout(function(){$(".error_dialog").hide()},2000);
+                    });
+                }else{
+                    $(".error_dialog p").html(data.msg);
+                    $(".error_dialog").show();
+                    setTimeout(function(){$(".error_dialog").hide()},3000);
+                    return;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                if(textStatus=="abort"){
+                    //window.location.reload();
+                }else{
+                    alert("XMLHttpRequest.status:"+XMLHttpRequest.status+"。XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"。textStatus："+textStatus);
+                }
+// 				alert("XMLHttpRequest.status:"+XMLHttpRequest.status+"。XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"。textStatus："+textStatus);
+            }
+        });
+    });
+
+    function dashang(obj){
+        var $btn =$(".control .line1");
+        if($btn.hasClass("disabled")) return;
+        $btn.addClass("disabled");
+
+        $.ajax({
+            url: '/mobile/nianhui/dashang',
+            type: 'post',
+            dataType: 'json',
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: {
+                "aid":"109",
+                "itemId":$("#tabMark .active").data("id"),
+                "count":obj.count
+            },
+            success: function(data){
+                var res="";
+                if (data.ret == 0) {
+                    var order = data.model.order;
+                    wxPay(obj.count,order.id,function(){
+                        $btn.removeClass("disabled");
+                        choseLeft.hide();
+                        choseRight.hide();
+                        control.hide();
+                        $(".ds_success").show();
+                    },function(){
+                        $btn.removeClass("disabled");
+                        $(".error_dialog p").html("支付已取消");
+                        $(".error_dialog").show();
+                        setTimeout(function(){$(".error_dialog").hide()},2000);
+                    });
+                }else{
+                    $(".error_dialog p").html(data.msg);
+                    $(".error_dialog").show();
+                    setTimeout(function(){$(".error_dialog").hide()},3000);
+                    return;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                if(textStatus=="abort"){
+                    //window.location.reload();
+                }else{
+                    alert("XMLHttpRequest.status:"+XMLHttpRequest.status+"。XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"。textStatus："+textStatus);
+                }
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    var oIco = document.getElementById("tabMark");
+    var aBtn = oIco.getElementsByTagName("a");
+    var oSlide = document.getElementById("sliderChose");
+    var oUl = oSlide.getElementsByTagName("ul");
+    var aLi = oUl[0].getElementsByTagName("li");
+    var oBtnLeft = document.getElementById("choseLeft");
+    var oBtnRight = document.getElementById("choseRight");
+    var swipe =document.getElementById("swipe_wrap");
+    var item=swipe.getElementsByTagName("img");
+    var baseWidth = 400;
+    $(function(){
+        var lock = false;
+        if (lock) {return;}
+        lock = true;
+        $.ajax({
+            url: '/mobile/nianhui/dsItem',
+            type: 'post',
+            dataType: 'json',
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: {
+                "aid":"109"
+            },
+            success: function(data){
+                var res="",tes="";
+                lock = false;
+                if (data.ret == 0) {
+                    $.each(data.model.results, function(i, mb){
+                        if((mb.picture!=null)&&(mb.picture!="")){
+                            res= '<li  data-id='+mb.id+'>'+'<div class="headbox1">'+'<img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/headbox.png">'+'</div>'+
+                                    '<img alt="" src="http://7xp6et.com2.z0.glb.qiniucdn.com/'+mb.picture+'">'+'<p>'+mb.name+'</p>'+'</li>';
+                        }else{
+                            res= '<li  data-id='+mb.id+'>'+'<div class="headbox1">'+'<img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/headbox.png">'+'</div>'+
+                                    '<img alt="" src="http://static.resource.youyu.weijuju.com/image/mobile/nianhui/ds_default.png">'+'<p>'+mb.name+'</p>'+'</li>';
+                        }
+                        if(i==0){
+                            tes='<a href="javascript:void(0);" data-id='+mb.id+' class="active" disabled="disabled">'+'</a>';
+                        }else{
+                            tes='<a href="javascript:void(0);" data-id='+mb.id+' disabled="disabled">'+'</a>';
+                        }
+                        $('.sliderChose ul').append(res);
+                        $('.tabMark').append(tes);
+
+                    });
+                    oUl[0].style.width = baseWidth * aLi.length + "px";
+                }
+                else{
+                    $(".error_dialog p").html(data.msg);
+                    $(".error_dialog").show();
+                    setTimeout(function(){$(".error_dialog").hide()},3000);
+                    return;
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                if(textStatus=="abort"){
+                    //window.location.reload();
+                }else{
+                    alert("XMLHttpRequest.status:"+XMLHttpRequest.status+"。XMLHttpRequest.readyState:"+XMLHttpRequest.readyState+"。textStatus："+textStatus);
+                }
+            }
+        });
+
+        oUl[0].style.width = baseWidth * aLi.length + "px";
+        var iNow = 0;
+        for(var i=0;i<aBtn.length;i++) {
+            aBtn[i].index = i;
+            aBtn[i].onclick = function() {
+                move(this.index);
+            }
+        }
+        for(var i=0;i<item.length;i++) {
+            item[i].index = i;
+            item[i].onclick = function() {
+                move(this.index);
+            }
+        }
+        oBtnLeft.onclick = function() {
+            iNow ++;
+            move(iNow);
+        }
+        oBtnRight.onclick = function() {
+            iNow --;
+            move(iNow);
+        }
+
+        function change() {
+            if(curIndex == aBtn.length) {
+                curIndex =0;
+            } else {
+                move(curIndex);
+                curIndex += 1;
+            }
+        }
+        function move(index) {
+
+            if(index>aLi.length-1) {
+                index = 0;
+            }
+            if(index<0) {
+                index = aLi.length - 1;
+            }
+            iNow = index;
+            for(var n=0;n<aBtn.length;n++) {
+                aBtn[n].className = "";
+            }
+            aBtn[index].className = "active";
+            oUl[0].style.left = -index * baseWidth + "px";
+            //触发手机页面重绘，兼容部分手机
+            $(".toggle").toggle();
+        }
+
+    });
+</script>
+</body>
+<script type="text/javascript">
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('#image').swipeSlide({
+            autoPlay:3,
+            delay:0.4
+        });
+    });
+</script>
+</html>

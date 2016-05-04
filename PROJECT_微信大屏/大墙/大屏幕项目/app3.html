@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/app3.css" />
+    <script src="js/jquery-1.8.0.min.js" ></script>
+    <script src="js/jquery.danmu.js"  ></script>
+</head>
+<body>
+    <div class="container">
+        <div id="danmu" ></div>
+    </div>
+</body>
+<script>
+    $(function() {
+        var acc = {"text": "999999993", "color": "blue", "size": "1", "position": "0", "time": 50};
+        $('#danmu').danmu({
+            left: 0,
+            top: 0,
+            height: $('#danmu').height(),
+            zindex: 100,
+            width: window.screen.width+100,
+            speed: 30000,
+            sumtime: 90000,
+            danmuss: {},
+            default_font_color: '#FFFFFF',
+            font_size_small: 24,
+            font_size_big: 28,
+            opacity: '0.7',
+            top_botton_danmu_time: 4000
+        });
+        $('#danmu').danmu('danmu_start');
+        function danmu_reponse(text) {
+            var text = text;
+            var color = ['pink','#279AEC','red','blue','green','#FFCE42'];
+            var size = "1";
+            var position = "0";
+            var time = $('#danmu').data('nowtime') + 5;//弹幕运行时间
+            var obj = {
+                "text": text,
+                "color": color[Math.round(Math.random()*5)],
+                "size": size,
+                "position": position,
+                "time": time,
+                'img': 'https://p3.ssl.qhimg.com/t0117e9f5dc288d8026.jpg',
+                'isnew': ''
+            };
+            $('#danmu').danmu("add_danmu", obj);
+        }
+
+        setInterval(function () {
+            danmu_reponse(11111111);
+        }, 1000)
+    })
+/*
+        function webSocket(host, request, callback) {
+            var host = host;
+            var request = request;
+            if (window.WebSocket) {
+                host = host.replace('http:', 'ws:');
+                var socket = new WebSocket(host);
+                socket.onopen = function (e) {
+                    console.log('链接服务器成功');
+                    socket.send(request);
+                }
+                socket.onclose = function (e) {
+                    console.log('服务器关闭');
+                    //arguments.callee(host,request);
+                }
+                socket.onerror = function () {
+                    console.log('链接出错');
+                    socket.close();
+                }
+                socket.onmessage = function (e) {
+                    danmu_reponse(e.data);
+                }
+
+            }
+        }
+
+        webSocket('http://127.0.0.1:8888', 'game2');
+    });
+    */
+    //parent.app_load()
+</script>
+</html>

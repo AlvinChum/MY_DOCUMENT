@@ -1,0 +1,38 @@
+.textLine{
+  word-wrap: break-word;
+  　　word-break: normal;
+}
+html,body{
+  background:#ffffff;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.9rem;
+  text-align:center;
+  position: fixed;
+  top:0;
+  background:#12B8F6;
+  z-index:2;
+  color:#ffffff;
+  &:after{
+    content:'关于我们';
+  }
+  span{
+    background:transparent url(../image/icon_close.png) no-repeat left center/15px 25px ;
+    position:absolute;
+    left:2.5rem;
+    width:40px;
+    height:100%;
+  }
+}
+.content{
+  margin-top:69px;
+  position:relative;
+  padding:0 2.5rem;
+  height:auto;
+  .textLine;
+  font-size:1.5rem;
+  color:#d8d8d8;
+}

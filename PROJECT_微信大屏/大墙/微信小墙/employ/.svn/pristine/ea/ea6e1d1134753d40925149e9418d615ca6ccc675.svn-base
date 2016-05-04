@@ -1,0 +1,110 @@
+.textLine{
+  word-wrap: break-word;
+  　　word-break: normal;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  border-radius:@a;
+}
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,body{
+  background:#EFEFF4;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.6rem;
+  text-align:center;
+  position: fixed;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'我的账户';
+  }
+  span{
+    position:absolute;
+    width:60px;
+    height:100%;
+  }
+  .close{
+    left:0;
+  }
+  .tx{
+    right:0;
+  }
+}
+.content {
+  width: 100%;
+  height: auto;
+  .moneyAmount {
+    background: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    .flex;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    &:before {
+      content: '账户余额:';
+    }
+    b {
+      .flex-con;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      &:after {
+        content: '.00元';
+      }
+    }
+  }
+  .title{
+    margin-top:20px;
+    background:#ffffff;
+    width:100%;
+    text-align:center;
+    padding:2rem 0;
+    font-size:2rem;
+    color:#e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+    &:before{
+      content:'收入明细';
+    }
+  }
+  .fl{
+    width:100%;
+    height:auto;
+    font-size:1.6rem;
+    background:#ffffff;
+    ul{
+      .flex;
+      width:100%;
+      height:auto;
+      padding:1rem 0;
+    }
+    li{
+      .flex-con;
+      text-align:center;
+      border-right:1px solid #e4e4e4;
+    }
+    li:last-child{
+      border:none;
+    }
+    li:nth-child(1):before{
+      content:'时间';
+    }
+    li:nth-child(2):before{
+      content:'项目';
+    }
+    li:nth-child(3):before{
+      content:'金额';
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #ffffff;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.9rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:before {
+  content: '商家登录';
+}
+.loginRegion {
+  margin-top: 7rem;
+  padding: 0 2.5rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+.loginRegion ul {
+  width: 100%;
+  color: #b9b8b8;
+}
+.loginRegion li {
+  padding: 1.5rem 0 1.5rem 4rem;
+  border-bottom: 1px solid #eaebed;
+}
+.loginRegion .phone {
+  background: url(../image/icon_phone.png) no-repeat 5px center / 25px 25px;
+}
+.loginRegion .password {
+  background: url(../image/icon_pass.png) no-repeat 5px center / 25px 25px;
+}
+.loginRegion li:last-child {
+  text-align: right;
+  padding-right: 1.3rem;
+  border: none;
+  color: #12B8F6;
+}
+.loginRegion input {
+  width: 100%;
+  outline: none;
+}
+.loginRegion > div {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.loginRegion .login {
+  margin-top: .6rem;
+}
+.loginRegion .btn {
+  line-height: 3.6rem;
+  height: 3.6rem;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  width: 80%;
+}

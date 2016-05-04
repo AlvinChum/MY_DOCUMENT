@@ -1,0 +1,105 @@
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.textLine{
+  word-wrap: break-word;
+  word-break: normal;
+}
+html,body{
+  background:#EFEFF4;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  border-radius:@a;
+}
+.btn{
+  text-align:center;
+  display:inline-block;
+  .radius(3px);
+}
+#header{
+  width:100%;
+  background:#ffffff;
+  padding:1.3rem 0;
+  .flex;
+  text-align:center;
+  font-size:1.6rem;
+  color:#666666;
+  div{
+    .flex-con;
+  }
+  div:nth-child(1){
+    border-right:1px solid #e4e4e4;
+  }
+}
+#content{
+  width:100%;
+  height:auto;
+  font-size:1.4rem;
+  box-sizing:border-box;
+  color:#666666;
+
+  &>div{
+    .flex;
+    height:100%;
+    padding-left:2.5rem;
+    background:#ffffff;
+    margin-top:1rem;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid #e2e3e8;
+    border-bottom:1px solid #e2e3e8;
+  }
+  ul{
+    .flex-con;
+  }
+  li{
+    width:auto;
+    padding:.5rem 0;
+    .flex;
+    span{
+      .textLine;
+    }
+  }
+  ul li:before{
+    text-align:left;
+    display:inline-block;
+    height:auto;
+    width: 6rem;
+    color:#666666;
+    letter-spacing: 1px;
+  }
+  ul li:nth-child(1):before{
+    content:'订单号:';
+  }
+  ul li:nth-child(2):before{
+
+    content:'发件人:';
+  }
+  ul li:nth-child(3):before{
+    content:'收件人:';
+  }
+  ul li:nth-child(4):before{
+    content:'费用:';
+  }
+  span{
+    display:inline-block;
+  }
+  .btn{
+    width:90px;
+    height:30px;
+    color:#ffffff;
+    background:#12B8F6;
+    line-height:30px;
+    fong-size:13px;
+  }
+  .openOrder{
+    width:5rem;
+    height:10rem;
+    background:transparent url(../image/icon_next.png) no-repeat center center /15px 25px ;
+  }
+}

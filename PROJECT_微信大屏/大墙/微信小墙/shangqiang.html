@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/shangqiang.css"/>
+    <!-- S zoom -->
+    <!--zoom-->
+    <script src="js/zepto.min.js">
+    </script>
+    <style type="text/css" id="zoom">
+    </style>
+</head>
+<body>
+<div class="zoom">
+    <div class="loading hidden"><div class="loading_rotate "><div class="loading_clip"></div></div><div class="loading_text">100%</div></div>
+    <div class="loading_out hidden"></div>
+    <div class="error_dialog hidden">
+        <img alt="" src="shangqiang/img/error.png">
+        <p></p>
+    </div>
+    <div class="cover hidden"></div>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="activeName">
+            <p>今年年会大酬宾</p>
+            <div class="fgx">
+                <img src="shangqiang/img/fgx.png" />
+            </div>
+        </div>
+        <div class="signIn">
+            <div class="head_box">
+                <div class="headbox">
+                    <img src="shangqiang/img/headbox.png" />
+                </div>
+                <img src="shangqiang/img/0.jpg"/>
+            </div>
+            <div class="username">罗俊坚</div>
+        </div>
+        <div class="send_word">
+        <p>上墙留言:</p>
+            <div class="sendword">
+                <textarea name="info" placeholder="请输入留言" maxlength="70"></textarea>
+            </div>
+            <div class="sendbtn">
+                <div class="sendimg">
+                    <a id="upload" href="javascript:void(0);">
+                        <img src="shangqiang/img/upload_img.png" />
+                    </a>
+                </div>
+                <div class="fasong"><a href="javascript:void(0)" id="sendMessage" >发送</a></div>
+            </div>
+            <div class="clear"></div>
+            <input type='file' style="display:none;" name='photo' id='photo' />
+         <P>留言记录:</P>
+         <div class="info_gather">
+                <div class="list" >
+                    <!--
+                    留言记录<div class=word_record><span>已上墙</span><p>2016-03-18 21:00:22</p> <div>哇哇哇哇啊</div>
+                    -->
+                        <div class="word_record">
+                            <span>已上墙</span>
+                            <p>2016-03-18 21:00:22</p>
+                            <div>哇哇哇哇啊</div>
+                        </div>
+                        <div class="word_record">
+                            <span>已上墙</span>
+                            <p>2016-03-18 21:00:22</p>
+                            <div>哇哇哇哇啊</div>
+                        </div>
+                        <div class="word_record">
+                            <span>已上墙</span>
+                            <p>2016-03-18 21:00:22</p>
+                            <div>哇哇哇哇啊</div>
+                        </div>
+                        <div class="word_record">
+                            <span>已上墙</span>
+                            <p>2016-03-18 21:00:22</p>
+                            <div>哇哇哇哇啊</div>
+                        </div>
+                        <div class="word_record">
+                            <span>已上墙</span>
+                            <p>2016-03-18 21:00:22</p>
+                            <div><img src="shangqiang/img/icon_bg.png"/></div>
+                        </div>
+                </div>
+         </div>
+        </div>
+        <div style="height:20px"></div>
+        <div style="height:160px;width:100%"></div>
+        <div class="menu ">
+        <ul>
+           <li>许愿树</li>
+            <li>许愿树</li>
+            <li>许愿树</li>
+        </ul>
+        </div>
+        <div class="menu1">
+            <ul>
+                <li style="background:yellow"></li>
+                <li style="background:orange"></li>
+                <li style="background:darkred"></li>
+            </ul>
+        </div>
+        <div class="menulist">
+            <div class="menu_item1">
+                <span></span>
+                <a href="javascript:void(0)">
+                    <img src="shangqiang/img/item1.png" />
+                    <s>上墙</s>
+                </a>
+            </div>
+            <div class="menu_item3">
+                <span></span>
+                <a href="vote.html">
+                    <img src="shangqiang/img/item3.png" />
+                    <s>投票</s>
+                </a>
+            </div>
+            <div class="menu_item4">
+                <span></span>
+                <a href="shake.html">
+                    <img src="shangqiang/img/item4.png" />
+                    <s>摇一摇</s>
+                </a>
+            </div>
+            <div class="menu_item5">
+                <span></span>
+                <a href="javascript:void(0)">
+                    <img src="shangqiang/img/item5.png" />
+                    <s>抢红包</s>
+                </a>
+            </div>
+            <div class="menu_item2">
+                <a href="javascript:void(0)">
+                    <img src="shangqiang/img/item2.png" />
+                    <s>打赏</s>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="showVote hidden">
+            <div class="showVote1">投票活动尚未开始</div>
+            <div class="showVote2">
+                <p class="p1">投票活动尚未开始</p>
+                <p class="p2">请留意主持人的活动安排</p>
+            </div>
+            <a href="javascript:void(0)">返回</a>
+        </div>
+        <div class="showShake hidden">
+            <div class="showShake1">
+                摇一摇活动尚未开启
+            </div>
+            <div class="showShake2">
+                <p class="p1">摇一揺互动还未开启</p>
+                <p class="p2">要留意年会主持人安排</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <div class="showHb hidden">
+            <div class="showHb1">
+                红包活动尚未开启
+                </div>
+            <div class="shwoHb2">
+                <p class="p1">红包活动互动还未开启</p>
+                <p class="p2">要留意年会主持人安排</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        <div class="showDs hidden">
+            <div class="showDs1">
+               打赏活动尚未开启
+            </div>
+            <div class="showDs2">
+                <p class="p1">打赏活动互动还未开启</p>
+                <p class="p2">要留意年会主持人安排</p>
+            </div>
+            <a href="javascript:void(0);">返回</a>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    $('.menu_item2').click(function() {
+    $(this).parent().hide();
+    $('.cover').removeClass('hidden')
+    $('.menu ').addClass('on').click(function(){
+        $(this).removeClass('on');
+        $('.menulist').show();
+        $('.cover').addClass('hidden')
+    });
+    })
+    $('.menu_item5').click(function() {
+        $(this).parent().hide();
+        $('.cover').removeClass('hidden')
+        $('.menu1 ').addClass('on1').click(function(){
+            $(this).removeClass('on1');
+            $('.menulist').show();
+            $('.cover').addClass('hidden')
+        });
+    })
+    var loading=$('.loading');
+    var loading_text=loading.find('.loading_text');
+    var loading_out=$('.loading_out');
+    var phone=document.getElementsByName('phone')[0];
+    var errordialog=$('.error_dialog');//错误显示
+    var head_box=$('.head_box');//个人头像放置地址
+    var username=$('.username');//用户名字
+    var sendword=document.getElementsByName('info')[0]//文本框
+    var sendMessage=$('#sendMessage');//提交文本按钮
+    sendMessage.click(function(){
+        var $this=$(this);
+        if($this.hasClass('disabled')) return;
+        $this.addClass('disabled');
+        if(!sendword.value||sendword.value==null){
+            errordialog.removeClass('hidden').find('p').text('留言不能为空');
+            $this.removeClass('disabled');
+        }
+    })
+    errordialog.click(function(){
+        $(this).addClass('hidden');
+    });
+    /*
+    setTimeout(function(){
+        loading.addClass('hidden').find('.loading_animte').removeClass('loading_animte');
+        loading_out.removeClass('loading_animte').addClass('hidden')
+    },2000);
+    */
+    $(function(){
+        var W=$(window).width();//屏幕宽度
+        var max_width=800;//最大宽度
+        var page_width=750;//实际宽度
+        var zoom=W>max_width?1:parseFloat(W/page_width);
+        $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        $(window).resize(function(){
+            var W=$(window).width();
+            var zoom=W>max_width?1:parseFloat(W/page_width);
+            $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        })
+    })
+    // 对Date的扩展，将 Date 转化为指定格式的String
+    // 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符，
+    // 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)
+    // 例子：
+    // (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423
+    // (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18
+    Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "h+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+    var time2 = new Date().Format("yyyy-MM-dd HH:mm:ss");
+    //上墙格式
+   var fragment=document.createDocumentFragment();
+    //上墙的记录
+    function record(data){
+        var list=$('.list');
+        var data=data;
+        var leng=data.length;
+        var fragment=$(document.createDocumentFragment());
+        var text=data.text?data.text:'<img src='+data.img+'/>';
+        for(var i=0;i<leng;i++) {
+            var element = $('<div class="word_record"><span>已上墙</span><p>' + new Data().Format("yyyy-MM-dd HH:mm:ss") + '</p><div>' +text+ '</div></div>');
+            element.appendTo(fragment);
+        }
+        fragment.appendTo(list);
+    }
+    $('#upload').click(function(){
+        var $this=$(this)
+        if($this.hasClass('disabled'))
+            return;
+        $this.addClass('disabled');
+        $('#photo').get(0).click();
+    });
+</script>
+</html>

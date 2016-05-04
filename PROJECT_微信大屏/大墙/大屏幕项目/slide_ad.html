@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        ul{
+            overflow:hidden;
+        }
+        ul li{
+            width:auto;
+            height:50px;
+            line-height: 50px;;
+        }
+    </style>
+</head>
+<body>
+<ul id="slide_text" style="width:auto;height:50px;margin:0 auto">
+    <li>广告一</li>
+    <li>广告二</li>
+    <li>广告三</li>
+    <li>广告四</li>
+</ul>
+</body>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/slide_ad.js"></script>
+<script>
+    $('#slide_text').slide_ad('margin-top','-50',2000)
+</script>
+</html>

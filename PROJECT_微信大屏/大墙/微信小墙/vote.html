@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>投票</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/vote.css"/>
+    <!-- S zoom -->
+    <style type="text/css" id="zoom"></style>
+    <script src="js/zepto.min.js">
+    </script>
+</head>
+<body>
+    <div class="zoom">
+        <div class="loading "><div class="loading_rotate loading_animte"><div class="loading_clip"></div></div><div class="loading_text">100%</div></div>
+        <div class="loading_out loading_animte"></div>
+        <div class="error_dialog hidden">
+            <img alt="" src="shangqiang/img/error.png">
+            <p></p>
+        </div>
+        <div class="container">
+        <p class="voteTitle">年会大酬宾投票活动</p>
+         <p class="zanTitle" >给你喜欢的节目点赞</p>
+        <div class="votelist">
+        <ul>
+            <li>
+                <div class="itemBox">
+                    <img alt src="./vote/img/item_border.png"/>
+                    <span class="yizan hidden">
+                        <img src="./vote/img/yizan.png" />
+                    </span>
+                </div>
+                <div class="itemImg">
+                    <img src="./vote/img/jiemu.jpg" />
+                </div>
+                <div class="itemInfo">
+                    <a href="javascript:void(0)"></a>
+                    <p class="itemName">签到墙</p>
+                    <p class="vote_num">
+                        <b><img src="./vote/img/mzan1.png" /></b>
+                        <span class="vote_all">73</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="itemBox">
+                    <img alt src="./vote/img/item_border.png"/>
+                    <span class="yizan hidden">
+                        <img src="./vote/img/yizan.png" />
+                    </span>
+                </div>
+                <div class="itemImg">
+                    <img src="./vote/img/jiemu.jpg" />
+                </div>
+                <div class="itemInfo">
+                    <a href="javascript:void(0)"></a>
+                    <p class="itemName">签到墙</p>
+                    <p class="vote_num">
+                        <b><img src="./vote/img/mzan1.png" /></b>
+                        <span class="vote_all">73</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="itemBox">
+                    <img alt src="./vote/img/item_border.png"/>
+                    <span class="yizan hidden">
+                        <img src="./vote/img/yizan.png" />
+                    </span>
+                </div>
+                <div class="itemImg">
+                    <img src="./vote/img/jiemu.jpg" />
+                </div>
+                <div class="itemInfo">
+                    <a href="javascript:void(0)"></a>
+                    <p class="itemName">签到墙</p>
+                    <p class="vote_num">
+                        <b><img src="./vote/img/mzan1.png" /></b>
+                        <span class="vote_all">73</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="itemBox">
+                    <img alt src="./vote/img/item_border.png"/>
+                    <span class="yizan hidden">
+                        <img src="./vote/img/yizan.png" />
+                    </span>
+                </div>
+                <div class="itemImg">
+                    <img src="./vote/img/jiemu.jpg" />
+                </div>
+                <div class="itemInfo">
+                    <a href="javascript:void(0)"></a>
+                    <p class="itemName">签到墙</p>
+                    <p class="vote_num">
+                        <b><img src="./vote/img/mzan1.png" /></b>
+                        <span class="vote_all">73</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="itemBox">
+                    <img alt src="./vote/img/item_border.png"/>
+                    <span class="yizan hidden">
+                        <img src="./vote/img/yizan.png" />
+                    </span>
+                </div>
+                <div class="itemImg">
+                    <img src="./vote/img/jiemu.jpg" />
+                </div>
+                <div class="itemInfo">
+                    <a href="javascript:void(0)"></a>
+                    <p class="itemName">签到墙</p>
+                    <p class="vote_num">
+                        <b><img src="./vote/img/mzan1.png" /></b>
+                        <span class="vote_all">73</span>
+                    </p>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+        </div>
+            <div style="height:160px;width:100%"></div>
+            <div class="menulist">
+                <div class="menu_item1">
+                    <span></span>
+                    <a href="javascript:void(0)">
+                        <img src="shangqiang/img/item1.png" />
+                        <s>上墙</s>
+                    </a>
+                </div>
+                <div class="menu_item3">
+                    <span></span>
+                    <a href="vote.html">
+                        <img src="shangqiang/img/item3.png" />
+                        <s>投票</s>
+                    </a>
+                </div>
+                <div class="menu_item4">
+                    <span></span>
+                    <a href="shake.html">
+                        <img src="shangqiang/img/item4.png" />
+                        <s>摇一摇</s>
+                    </a>
+                </div>
+                <div class="menu_item5">
+                    <span></span>
+                    <a href="hongbao.html">
+                        <img src="shangqiang/img/item5.png" />
+                        <s>抢红包</s>
+                    </a>
+                </div>
+                <div class="menu_item2">
+                    <a href="dashang.html">
+                        <img src="shangqiang/img/item2.png" />
+                        <s>打赏</s>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="showVote hidden">
+                <div class="showVote1">投票活动尚未开始</div>
+                <div class="showVote2">
+                    <p class="p1">投票活动尚未开始</p>
+                    <p class="p2">请留意主持人的活动安排</p>
+                </div>
+                <a href="javascript:void(0)">返回</a>
+            </div>
+            <div class="showShake hidden">
+                <div class="showShake1">
+                    摇一摇活动尚未开启
+                </div>
+                <div class="showShake2">
+                    <p class="p1">摇一揺互动还未开启</p>
+                    <p class="p2">要留意年会主持人安排</p>
+                </div>
+                <a href="javascript:void(0);">返回</a>
+            </div>
+            <div class="showHb hidden">
+                <div class="showHb1">
+                    红包活动尚未开启
+                </div>
+                <div class="shwoHb2">
+                    <p class="p1">红包活动互动还未开启</p>
+                    <p class="p2">要留意年会主持人安排</p>
+                </div>
+                <a href="javascript:void(0);">返回</a>
+            </div>
+            <div class="showDs hidden">
+                <div class="showDs1">
+                    打赏活动尚未开启
+                </div>
+                <div class="showDs2">
+                    <p class="p1">打赏活动互动还未开启</p>
+                    <p class="p2">要留意年会主持人安排</p>
+                </div>
+                <a href="javascript:void(0);">返回</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        var loading=$('.loading');
+        var loading_text=loading.find('.loading_text');
+        var loading_out=$('.loading_out');
+        var errordialog=$('.error_dialog');
+        errordialog.click(function(){
+            $(this).addClass('hidden');
+        })
+        setTimeout(function(){
+            loading.addClass('hidden').find('.loading_animte').removeClass('loading_animte');
+            loading_out.removeClass('loading_animte').addClass('hidden')
+        },2000);
+        var votelist=$('.votelist');
+        var zan_btn=votelist.find('a');
+        zan_btn.click(function(){
+            var $this=$(this);
+            if(votelist.find('.zan').length>3){
+                errordialog.removeClass('hidden').find('p').text('您的票数已经没了');
+                setTimeout(function(){
+                    errordialog.addClass('hidden')
+                },10000);
+            }else{
+                $this.addClass('zan').parents('li').find('.yizan').removeClass('hidden');
+            }
+        })
+        var W=$(window).width();//屏幕宽度
+        var max_width=800;//最大宽度
+        var page_width=750;//实际宽度
+        var zoom=W>max_width?1:parseFloat(W/page_width);
+        $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        $(window).resize(function(){
+            var W=$(window).width();
+            var zoom=W>max_width?1:parseFloat(W/page_width);
+            $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        })
+    })
+</script>
+</html>

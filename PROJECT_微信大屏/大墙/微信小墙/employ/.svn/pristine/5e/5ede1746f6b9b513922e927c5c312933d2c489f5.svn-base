@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/frame0.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header">
+	<div class="control">
+	<span></span>
+	</div>
+	</header>
+	<div id="content" tapmode="hover" >
+		<div>
+		<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		</ul>
+		<span style="" ><a href="javascript:void(0)" class="btn" >接单</a></span>
+		<span class="openOrder"  ></span>
+		</div>
+		<div>
+		<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		</ul>
+		<span style="" ><a href="javascript:void(0)" class="btn" >接单</a></span>
+		<span class="openOrder"  ></span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+$('#header .control').click(function(){
+		var $this=$(this);
+		var $on=$this.find('span');
+		if($on.hasClass('on')){
+			$on.removeClass('on');
+			$this.removeClass('active');
+		}else{
+		$this.addClass('active');
+		$on.addClass('on');
+		}
+		})
+	apiready = function(){
+		
+	};
+</script>
+</html>

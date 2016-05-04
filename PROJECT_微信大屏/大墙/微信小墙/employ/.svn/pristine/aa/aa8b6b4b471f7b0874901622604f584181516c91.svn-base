@@ -1,0 +1,77 @@
+.radius(@a){
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  border-radius:@a;
+}
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,body{
+  background:#ffffff;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.6rem;
+  text-align:center;
+  position: fixed;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'忘记密码';
+  }
+  span{
+    position:absolute;
+    left:0;
+    width:60px;
+    height:100%;
+  }
+}
+.changePass{
+  margin-top:3rem;
+  padding:0 2rem;
+  font-size:2rem;
+  box-sizing: border-box;
+  ul{
+    width:100%;
+  }
+  li{
+    padding:1rem 0 1rem 3.6rem;
+    border-bottom:1px solid #e4e4e4;
+    .flex;
+  }
+  input{
+    width:100%;
+    outline: none;
+    .flex-con;
+  }
+  &>div{
+    text-align:center;
+  }
+  .validateBtn{
+    display:inline-block;
+    padding:0 1rem;
+    font-size:1.2rem;
+    border:1px solid #12B8F6;
+    line-height:180%;
+    color:#12B8F6;
+    box-shadow:0 0 5px 1px #12B8F6;
+  }
+  .registerBtn{
+    margin-top:5rem;
+    margin-bottom:2rem;
+    .radius(3px);
+    border:2px solid #12B8F6;
+    color:#ffffff;
+    background:#12B8F6;
+    display:inline-block;
+    padding:1.5rem 0;
+    width:80%;
+  }
+}

@@ -1,0 +1,76 @@
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #ffffff;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: fixed;
+  position: relative;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '骑手登录';
+}
+#header span {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 100%;
+}
+.loginRegion {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+.loginRegion ul {
+  width: 100%;
+}
+.loginRegion li {
+  padding: 1rem 0 1rem 3.6rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.loginRegion li:last-child {
+  text-align: right;
+  border: none;
+  color: #12B8F6;
+}
+.loginRegion input {
+  width: 100%;
+  outline: none;
+}
+.loginRegion > div {
+  text-align: center;
+}
+.loginRegion .btn {
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  padding: 1.5rem 0;
+  width: 80%;
+}

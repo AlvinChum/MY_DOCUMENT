@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"></header>
+	<div class="loginRegion">
+	<ul >
+	<li class="phone"><input type="number" placeholder="请输入手机号码" /> </li>
+	<li class="password"><input type="password" placeholder="请输入密码"  /></li>
+	<li >忘记密码?</li>
+	</ul>
+	<div class="login"><a href="javascript:void(0)" class="btn" >登录</a></div>
+	<div class="register" ><a style=" background:transparent;color:#12B8F6" href="javascript:void(0)" class="btn">用户注册</a></div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		
+	};
+</script>
+</html>

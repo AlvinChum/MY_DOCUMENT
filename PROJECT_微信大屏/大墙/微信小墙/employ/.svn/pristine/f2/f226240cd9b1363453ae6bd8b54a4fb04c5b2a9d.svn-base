@@ -1,0 +1,76 @@
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+#wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  position: relative;
+  background: #12B8F6;
+  color: #ffffff;
+  line-height: 44px;
+}
+#header ul {
+  width: 100%;
+}
+#header li {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+#main {
+  height: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+footer {
+  width: 100%;
+  background: #12B8F6;
+  color: #ffffff;
+}
+footer ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 1.2rem;
+}
+footer ul li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  padding-top: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.active {
+  color: red;
+}
+.hidden {
+  display: none!important;
+}

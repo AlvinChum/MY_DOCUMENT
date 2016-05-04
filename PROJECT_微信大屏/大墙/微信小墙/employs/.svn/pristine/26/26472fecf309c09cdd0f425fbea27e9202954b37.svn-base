@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/frame2Suggest.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"><span class="close"></span></header>
+	<div class="suggestRegion">
+	<ul >
+	<li class="QQ"><input type="text" placeholder="请输入QQ号码"  name="QQ" /></li>
+	<li class="phone"><input type="text" placeholder="请输入手机号码" name="phone"  /> </li>
+	<li ><textarea rows="5" maxlength="150" placeholder="请输入您宝贵的意见" name="content" ></textarea></li>
+	</ul>
+	<div><a href="javascript:void(0)" class="btn"  >提交</a></div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		var progress=function(title,text){
+		api.showProgress({
+		    style: 'default',
+		    animationType: 'fade',
+		    title: title?title:'努力加载中...',
+		    text: text?text:'',
+		    modal: true
+		});
+		}
+			var toast=function(msg){api.toast({
+			    msg: msg?msg:'网络错误',
+			    duration: 2000,
+			    location: 'middle'});}
+			var ajax=function(url,method,timeout,data,calllback){
+		api.ajax({
+		    url:url,
+		    method:method?method:'post',
+		    timeout:timeout?timeout:30,
+		    returnAll:false,
+		    dataType:'json',
+		     data: {
+	        values:data
+	    }
+	    },function(ret,err){
+	    	//coding...
+	    	if(err.code==1){
+	    		toast('网络错误');
+	    	}
+	    });}
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+		$('.btn').click(function(){
+			var QQ=document.getElementsByName('QQ')[0];
+			var phone=document.getElementsByName('phone')[0];
+			var content=document.getElementsByName('content')[0];
+			if(!/^[1-9]\d{4,14}$/.test(QQ.value)){
+					toast('QQ号码不对');
+					return;
+			}
+			if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(phone.value)){
+					toast('手机号码不对,请重写');
+					return;
+			};
+			if(!content.value.length){
+			toast('建议不能为空');
+			return;
+			}
+			close();
+			})
+	};
+</script>
+</html>

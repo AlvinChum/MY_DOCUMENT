@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        html, body{width:100%;height:100%;padding:0;margin:0;}
+        body{font-family:"微软雅黑","华文细黑",Arial, Helvetica, sans-serif;font-size:14px;color:#fff;user-select:none;-webkit-user-select:none;-webkit-text-size-adjust: none;background-color:#999;}
+
+        .game_time{width:100px;height:100px;position:absolute;top:30%;left:40%;text-align:center;}
+
+        /* time scroll*/
+        .pie{width:200px;height:200px;background-color:blue;border-radius:100px;position:absolute;}
+        .pie1{clip:rect(0px,200px,200px,100px);-o-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);background-color:#fff;
+            -webkit-animation:rect1 5s linear  1 forwards;
+            -o-animation:rect1 5s linear 1 forwards;
+            animation:rect1 5s linear 1 forwards;
+        }
+        .pie2{clip:rect(0px,100px,200px,0px);-o-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);background-color:#fff;
+            -webkit-animation:rect2 5s linear 5s 1 forwards;
+            -o-animation:rect2 5s linear 5s 1 forwards;
+            animation:rect2 5s linear 5s 1 forwards;
+        }
+        .hold{width:200px;height:200px;position:absolute;z-index:1;}
+        .bg{width:200px;height:200px;border-radius:200px;position:absolute;background-color:#d13c36;}
+        .time{width:160px;height:160px;margin:20px 0 0 20px;background-color:#e45534;border-radius:160px;position:absolute;z-index:1;text-align:center;line-height:160px;font-size:30px;}
+        @keyframes rect1{
+            0%{
+                -webkit-transform: rotate(0deg);
+                -moz-transform:rotate(0deg) ;
+                -ms-transform:rotate(0deg) ;
+                -o-transform:rotate(0deg) ;
+                transform:rotate(0deg) ;
+            }
+            100%{
+                -webkit-transform: rotate(180deg);
+                -moz-transform:rotate(180deg) ;
+                -ms-transform:rotate(180deg) ;
+                -o-transform:rotate(180deg) ;
+                transform:rotate(180deg) ;
+            }
+        }
+        @keyframes  rect2{
+            0%{
+                background:#D13C36;
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+            100%{
+                background:#D13C36;
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="game_time">
+    <div class="hold">
+        <div class="pie pie1"></div>
+    </div>
+    <div class="hold">
+        <div class="pie pie2"></div>
+    </div>
+
+    <div class="bg"> </div>
+
+    <div class="time"></div>
+
+</div>
+</body>
+<script  src="js/jquery-1.8.0.min.js"></script>
+<script>
+
+</script>
+</html>

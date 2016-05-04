@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  rel="stylesheet" type="text/css" href="style/duiduipeng.css" />
+</head>
+<body>
+    <div class="contair">
+    <ul class="pair">
+        <li><div ><img src="" class="loading " data-sex="sex1" /></div><span class="text"></span></li>
+        <li><div> <img src="" class="loading"  data-sex="sex2" /> </div><span class="text"></span></li>
+       <li><button class="start" id="a" data-sex=""></button></li>
+    </ul>
+    </div>
+    <div class="contair">
+        <ul id="place">
+        </ul>
+        <button id="anew">重来</button>
+    </div>
+</body>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/app7.js"></script>
+<script>
+    $(function(){
+        var place=$('#place');
+        var anew=$('#anew');
+        //place是容器 anew重新分配
+        var arr1=['https://p1.ssl.qhimg.com/t0117eb6fc9c8ab3999.jpg','https://p3.ssl.qhimg.com/t011c4d217ecd036b5c.jpg',
+                'https://p2.ssl.qhimg.com/t011f7f6a085d72f99e.jpg','https://p2.ssl.qhimg.com/t0127f7cdfe4ceff310.jpg'
+        ];
+        var arr2=['https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+                    'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg',
+                'https://p2.ssl.qhimg.com/t015a108774f236160d.jpg'
+        ]
+        $('#a').duiduipeng({
+            sex1:arr1,
+            sex2:arr2,
+            pice1:$('img').eq(0),
+            pice2:$('img').eq(1),
+            place:$('#place'),
+            anew:$('#anew')
+        })
+    })
+</script>
+</html>

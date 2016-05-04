@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/mricode.pagination.css"/>
+    <link rel="stylesheet" type="text/css" href="style/app5.css" />
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/mricode.pagination.js"></script>
+</head>
+<body style="background:transparent">
+        <div class="container">
+            <ul>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="header_wrap">
+                            <span class="header"></span>
+                            <span class="name">丑丑丑22222</span>
+                    </span>
+                </li>
+            </ul>
+            <div id="page"></div>
+        </div>
+</body>
+<script>
+    $(function(){
+        $('#page').pagination({
+            pageSize:4,
+            total:100,
+            showFirstLastBtn:false,
+            prevBtnText:'上一页',
+            nextBtnText:'下一页',
+        })
+
+        $('#page').on('pageClicked',function(event,data){
+            console.log($(this).pagination('getPageIndex'));
+            console.log(data.pageIndex)
+        })
+        /*
+        $("#page").pagination({
+            pageSize: 18,
+            remote:{
+                url:null,
+                pageParams:{},
+                success:function(data){},
+                beforeSend:function(){},
+                complete:null,
+                totalName:'total'
+            },
+            showFirstLastBtn:false,
+            prevBtnText:'上一页',
+            nextBtnText:'下一页',
+        });
+        $('#page').on('pageClicked',function(event,data){
+
+        })
+        */
+        //parent.app_load()
+    })
+</script>
+</html>

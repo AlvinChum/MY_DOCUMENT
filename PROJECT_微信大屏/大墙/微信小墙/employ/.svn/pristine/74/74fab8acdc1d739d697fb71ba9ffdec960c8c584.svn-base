@@ -1,0 +1,98 @@
+.flex-con{     -webkit-box-flex: 1;     -webkit-flex: 1;    flex: 1;}
+.flex-vertical{ -webkit-box-orient: vertical;-webkit-flex-flow: column;flex-flow: column;}
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  border-radius:@a;
+}
+.btn{
+  line-height: 3rem;
+  text-align:center;
+  display:inline-block;
+  border:1px solid #000000;
+  .radius(3px);
+}
+#header{
+  width:100%;
+ height:auto;
+ &:before{
+   content:'是否上班';
+   font-size: 1.6rem;
+   line-height:50px;
+ }
+  .control{
+    display:inline-block;
+    height:50px;
+    width:100px;
+    border-radius:25px;
+    background:rgba(0,0,0,.5);
+    transition: all 1s;
+   // background:#4CD964;
+  }
+  span{
+    display:inline-block;
+    position:relative;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    background:#ffffff;
+    transition: all 1s;
+    left:0;
+  }
+  .active{
+    background:#7eea19;
+  }
+  .on{
+    left:50px;
+  }
+}
+#main{
+  width:100%;
+  height:auto;
+  font-size:1.6rem;
+  box-sizing:border-box;
+  padding:2rem;
+  &>div{
+    border:1px solid #4c4c4c;
+    padding:1rem 0;
+    .flex;
+  }
+  ul{
+    .flex-con;
+  }
+  li{
+    width:auto;
+    line-height:2.5rem;
+    height:2.5rem;
+  }
+  ul li:before{
+    display:inline-block;
+    width: 6rem;
+  }
+  ul li:nth-child(1):before{
+    content:'订单号:';
+  }
+  ul li:nth-child(2):before{
+
+    content:'发件人:';
+  }
+  ul li:nth-child(3):before{
+    content:'收件人:';
+  }
+  ul li:nth-child(4):before{
+    content:'费用:';
+  }
+  span{
+    height:100%;
+    width:5rem;
+  }
+  .btn{
+    width:100%;
+    color:#000000;
+  }
+
+}

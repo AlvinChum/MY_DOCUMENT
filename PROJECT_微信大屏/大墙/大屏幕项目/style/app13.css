@@ -1,0 +1,44 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  box-shadow: 0px 0px 10px 3px #E8023C;
+  float: left;
+  width: 950px;
+  margin: 5px;
+  height: 490px;
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.container .header {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: left;
+  font-size: 25px;
+  color: #E8023C;
+  border-bottom: 1px solid #E8023C;
+}
+.container .header:before {
+  content: '打开微信扫描以下任意二维码，参与年会互动';
+}
+.container ul {
+  width: 100%;
+  height: 363px;
+  margin: 60px 0;
+}
+.container ul li {
+  display: inline-block;
+  padding: 4px;
+  background: #FFFFFF;
+  margin-right: 30px;
+}

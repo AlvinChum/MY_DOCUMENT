@@ -1,0 +1,33 @@
+html,
+body {
+  background: #ffffff;
+}
+header {
+  padding: 2rem 0;
+  text-align: center;
+}
+header .head {
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  background: #BBC2C5;
+  -webkit-border-radius: 4.5rem;
+  border-radius: 4.5rem;
+}
+.listBox {
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.listBox ul {
+  height: auto;
+}
+.listBox ul li {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  height: 5rem;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  background: url(../image/icon_next.png) no-repeat right center / 36px 36px;
+}

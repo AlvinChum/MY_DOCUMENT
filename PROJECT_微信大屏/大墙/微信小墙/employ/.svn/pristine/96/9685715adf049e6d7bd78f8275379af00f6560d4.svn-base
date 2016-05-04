@@ -1,0 +1,117 @@
+.radius(@a){
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  border-radius:@a;
+}
+html,body{
+  background:#EFEFF4;
+}
+#header{
+  width:100%;
+  height:44px;
+  line-height:44px;
+  font-size:1.6rem;
+  text-align:center;
+  position: fixed;
+  position:relative;
+  background:#12B8F6;
+  color:#ffffff;
+  &:after{
+    content:'订单详情';
+  }
+  span{
+   position:absolute;
+    left:0;
+    width:60px;
+    height:100%;
+  }
+}
+.content{
+  position:relative;
+  width:100%;
+  height:auto;
+  ul{
+    font-size:1.6rem;
+    li{
+      padding-left:2rem;
+      background:#ffffff;
+      line-height:3rem;
+      height:3rem;
+    }
+    li:nth-child(1),li:nth-child(3),li:nth-child(6),li:nth-child(9),li:nth-child(13){
+      margin-top:2rem;
+    }
+    li:before{
+      width:10rem;
+    }
+    li:nth-child(1):before{
+    content:'订单状态:';
+    }
+    li:nth-child(2):before{
+      content:'服务类型:';
+    }
+    li:nth-child(3):before{
+      content:'发件人姓名:';
+    }
+    li:nth-child(4):before{
+      content:'发件人电话:';
+    }
+    li:nth-child(5):before{
+      content:'发件人地址:';
+    }
+    li:nth-child(6):before{
+      content:'收件人姓名:';
+    }
+    li:nth-child(7):before{
+      content:'收件人电话:';
+    }
+    li:nth-child(8):before{
+      content:'收件人地址:';
+    }
+    li:nth-child(9):before{
+      content:'配送要求:';
+    }
+    li:nth-child(10):before{
+      content:'距离:';
+    }
+    li:nth-child(11):before{
+      content:'费用:';
+    }
+    li:nth-child(12):before{
+      content:'支付方式:';
+    }
+    li:last-child{
+      margin-bottom:5rem;
+    }
+  }
+}
+footer{
+  width:100%;
+  text-align:center;
+  font-size:1.6rem;
+  margin-bottom:20px;
+  span{
+    display:inline-block;
+    width:50%;
+    height:50px;
+  }
+  a{
+    display:inline-block;
+    width:80%;
+    padding:1.5rem 0;
+    background:#12B8F6;
+    color:#ffffff;
+    .radius(3px);
+    border:1px solid #12B8F6;
+  }
+  .accept:before{
+    content:'接单';
+  }
+  .cancel:before{
+    content:'取消订单';
+  }
+  .cancel{
+    background:#ffffff;
+    color:#12B8F6;
+  }
+}

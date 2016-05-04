@@ -1,0 +1,35 @@
+html,body{
+  background:#ffffff;
+}
+.radius(@a){
+  -webkit-border-radius:@a;
+  border-radius:@a;
+}
+header{
+  padding:2rem 0;
+  text-align:center;
+  .head{
+    display:inline-block;
+   width:9rem;
+    height:9rem;
+    background:#BBC2C5;
+   .radius(4.5rem);
+  }
+}
+.listBox{
+  padding:0 2rem;
+  width:100%;
+  box-sizing: border-box;
+  ul{
+    height:auto;
+    li{
+      text-align:center;
+      font-size:1.6rem;
+      line-height:5rem;
+      height:5rem;
+      width:100%;
+      border-bottom:1px solid #e4e4e4;
+      background:url(../image/icon_next.png) no-repeat right center/36px 36px;
+    }
+  }
+}

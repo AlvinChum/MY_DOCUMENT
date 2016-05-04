@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="style/app1.css" type="text/css" />
+    <script  src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/app1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                    <span class="count">
+                        520
+                    </span>
+            </div>
+            <div class="content">
+                <span class="pice"><img src=""  ></span>
+                <span class="text"></span>
+                    <span class="auto">
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select>
+                    </span>
+                    <span class="choujiang">
+                       <a href="javascript:void(0)">开始抽奖</a>
+                    </span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                    <span class="ranking">
+                    </span>
+            </div>
+            <div class="title"></div>
+            <div style="width:100%;height:325px;">
+                <ul class="place">
+                </ul>
+            </div>
+            <div class="bth_group">
+                <ul>
+                    <li class="Hidden">隐藏名单</li>
+                    <li class="Show" >显示名单</li>
+                    <li class="anew">重新抽取</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script >
+    $(function(){
+        $('.container .choujiang a').eq(0).choujian({
+            count:$(' .count').eq(0),
+            anew:$(' .anew').eq(0),
+            place:$(' .place').eq(0),
+            auto:$(' .auto select').eq(0),
+            pice:$(' .pice img').eq(0),
+            data:['https://p3.ssl.qhimg.com/t01417661f7bd6132c8.jpg','https://p3.ssl.qhimg.com/t0149890668c2fd2ec2.jpg',
+                'https://p0.ssl.qhimg.com/t014b7024b5e63313bd.jpg','https://p2.ssl.qhimg.com/t01503e73dc55cf4013.jpg',
+                'https://p2.ssl.qhimg.com/t015a108774f236160d.jpg','https://p2.ssl.qhimg.com/t0139fafb54659c0acf.jpg','https://p3.ssl.qhimg.com/t013c5ef21d3ebff786.jpg'],
+            txt:['wowowowow','111111111','d43534534da','54334534535sd','dasdadasd','ewrwerwerwerwerwer','ewrwerwerwerwerwe'],
+            text:$(' .text').eq(0),
+            ranking:$(' .ranking').eq(0),
+            hide:$('.Hidden'),
+            show:$('.Show')
+        });
+        $('.place').on('mouseover',function(event) {
+            if (event.target != this && event.target.tagName.toLowerCase()!='li'){
+                $(event.target).parent().find('.close').show()
+        }else{
+                return;
+            }
+            return false;
+        });
+        $('.place').on('mouseout',function(event){
+            if (event.target != this && event.target.tagName.toLowerCase()!='li'){
+                $(event.target).parent().find('.close').hide();
+            }
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,178 @@
+.textLine {
+  word-wrap: break-word;
+  word-break: normal;
+}
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #EFEFF4;
+}
+#header {
+  z-index: 2;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.9rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '订单详情';
+}
+#header span {
+  background: transparent url(../image/icon_close.png) no-repeat left center / 15px 25px;
+  position: absolute;
+  left: 2.5rem;
+  width: 40px;
+  height: 100%;
+}
+.content {
+  margin-top: 54px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #EFEFF4;
+}
+.content ul {
+  font-size: 1.5rem;
+  color: #666666;
+}
+.content ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: .5em 2.5rem .5em 2.5rem;
+  background: #ffffff;
+}
+.content ul li span {
+  word-wrap: break-word;
+  word-break: normal;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  display: inline-block;
+}
+.content ul li:nth-child(1),
+.content ul li:nth-child(3),
+.content ul li:nth-child(6),
+.content ul li:nth-child(9) {
+  margin-top: 1rem;
+  border-top: 1px solid #e2e3e8;
+}
+.content ul li:nth-child(2),
+.content ul li:nth-child(5),
+.content ul li:nth-child(8),
+.content ul li:last-child,
+.content ul li:nth-child(12) {
+  border-bottom: 1px solid #e2e3e8;
+}
+.content ul li:before {
+  width: 9rem;
+}
+.content ul li:nth-child(1):before {
+  content: '订单状态:';
+}
+.content ul li:nth-child(2):before {
+  content: '服务类型:';
+}
+.content ul li:nth-child(3):before {
+  content: '发件人姓名:';
+}
+.content ul li:nth-child(4):before {
+  content: '发件人电话:';
+}
+.content ul li:nth-child(5):before {
+  content: '发件人地址:';
+}
+.content ul li:nth-child(6):before {
+  content: '收件人姓名:';
+}
+.content ul li:nth-child(7):before {
+  content: '收件人电话:';
+}
+.content ul li:nth-child(8):before {
+  content: '收件人地址:';
+}
+.content ul li:nth-child(9):before {
+  content: '配送要求:';
+}
+.content ul li:nth-child(10):before {
+  content: '距离:';
+}
+.content ul li:nth-child(11):before {
+  content: '费用:';
+}
+.content ul li:nth-child(12):before {
+  content: '支付方式:';
+}
+.jxz {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  background: #ffffff;
+  margin-top: 1rem;
+  border-top: 1px solid #e2e3e8;
+  border-bottom: 1px solid #e2e3e8;
+  color: #666666;
+}
+.jxz div {
+  padding: 0 2.5rem;
+}
+.jxz .fjr,
+.jxz .sjr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 4rem;
+  line-height: 4rem;
+}
+.jxz .title {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e3e8;
+}
+.jxz div:nth-child(2) {
+  border-bottom: 1px solid #e2e3e8;
+}
+.jxz .fjr:before {
+  width: 9rem;
+  content: '发件人暗号';
+}
+.jxz .sjr:before {
+  width: 9rem;
+  content: '收件人暗号';
+}
+.jxz input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  outline: none;
+}
+.jxz label {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid #90defd;
+}

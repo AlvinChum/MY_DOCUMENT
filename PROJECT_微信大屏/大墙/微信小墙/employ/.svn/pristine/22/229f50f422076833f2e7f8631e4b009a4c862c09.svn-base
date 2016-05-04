@@ -1,0 +1,105 @@
+.textLine {
+  word-wrap: break-word;
+  word-break: normal;
+}
+.flex-con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+html,
+body {
+  background: #ffffff;
+}
+#header {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.9rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background: #12B8F6;
+  color: #ffffff;
+}
+#header:after {
+  content: '投诉与建议';
+}
+#header span {
+  background: transparent url(../image/icon_close.png) no-repeat left center / 15px 25px;
+  position: absolute;
+  left: 2.5rem;
+  width: 40px;
+  height: 100%;
+}
+.suggestRegion {
+  margin-top: 7rem;
+  font-size: 1.5rem;
+}
+.suggestRegion ul {
+  width: 100%;
+  height: auto;
+}
+.suggestRegion > div {
+  margin-top: 5rem;
+  text-align: center;
+}
+.suggestRegion .phone,
+.suggestRegion .QQ {
+  padding: 1.5rem 2.5rem 1.5rem 6.5rem;
+}
+.suggestRegion .phone {
+  background: url(../image/icon_phone.png) no-repeat 30px center / 25px 25px;
+  margin-top: -1px;
+}
+.suggestRegion .QQ {
+  background: url(../image/icon_QQ.png) no-repeat 30px center / 25px 25px;
+}
+.suggestRegion li {
+  padding: 1rem 2.5rem;
+  border-top: 1px solid #eaebed;
+  border-bottom: 1px solid #eaebed;
+}
+.suggestRegion li:last-child {
+  margin-top: 15px;
+  padding: 0 2.5rem;
+}
+.suggestRegion input {
+  color: #666666;
+  width: 100%;
+  outline: none;
+}
+.suggestRegion textarea {
+  color: #666666;
+  padding: 1rem 0;
+  width: 100%;
+  height: 10rem;
+  outline: none;
+  resize: none;
+  word-wrap: break-word;
+  text-indent: 5px;
+  font-size: 1.6rem;
+}
+.suggestRegion .btn {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  height: 3.6rem;
+  margin-bottom: 2rem;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 2px solid #12B8F6;
+  color: #ffffff;
+  background: #12B8F6;
+  display: inline-block;
+  width: 80%;
+}

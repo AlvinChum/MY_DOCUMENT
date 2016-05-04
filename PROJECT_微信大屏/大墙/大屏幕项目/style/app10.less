@@ -1,0 +1,186 @@
+.radius(@number){
+  -webkit-border-radius: @number;
+  -moz-border-radius: @number;
+  border-radius: @number;;
+}
+html,body{
+  height:503px;
+  overflow:hidden;
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+  width:100%;
+}
+
+.clearfix::after {
+  /*清除浮动*/
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.lunbo {
+  width: 960px;
+  height: 503px;
+  position: relative;
+  overflow: hidden;
+  margin:0 auto;
+  ul {
+    left:0;
+    width:auto;
+    height: 503px;
+    position: absolute;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      padding-top:91px;
+      width: 960px;
+      height: 320px;
+      float: left;
+    }
+  }
+}
+  .left{
+    display:inline-block;
+      width:350px;
+    text-align:center;
+    overflow:hidden;
+    height:320px;
+    span{
+      display:inline-block;
+      width:260px;
+      height:260px;
+      position:relative;
+      .radius(130px);
+      overflow:hidden;
+      img{
+        width:260px;
+        height:260px;
+        border:none;
+      }
+    }
+  }
+  .right{
+    display:inline-block;
+    width:550px;
+    margin-right:20px;
+    height:320px;
+  }
+  .header{
+    height:60px;
+    line-height:60px;
+    width:100%;
+    font-size:36px;
+    color:#FFFFFF;
+    & b:nth-child(2){
+      font-size:19px;
+      padding-left:20px;
+      &:after{
+        content:')';
+        padding-left:5px;
+      }
+      &:before{
+        padding-right:5px;
+        content:'(';
+      }
+    }
+  }
+  .content{
+    display:inline-block;
+    width:100%;
+    height:260px;
+    font-size:36px;
+    word-break: normal;
+    word-wrap: break-word;
+    color:#FFFFFF;
+    overflow: hidden;
+  }
+  .pre{
+      top:50%;
+      margin-top:-36px;
+      width:42px;
+      height:72px;
+      position:absolute;
+      z-index:4;
+    left:40px;
+    background:url(../app10/img/icon_pre.png) no-repeat center center;
+    -webkit-animation: sway 2s ease infinite;
+    -o-animation: sway 2s ease infinite;
+    animation: sway 2s ease infinite;
+  }
+  .next{
+    top:50%;
+    margin-top:-36px;
+    width:42px;
+    height:72px;
+    position:absolute;
+    z-index:4;
+   right:40px;
+    background:url(../app10/img/icon_next.png) no-repeat center center;
+    -webkit-animation: sways 2s ease infinite;
+    -o-animation: sways 2s ease infinite;
+    animation: sways 2s ease infinite;
+  }
+  .transform(@a){
+    -webkit-transform: @a;
+    -moz-transform: @a;
+    -ms-transform: @a;
+    -o-transform: @a;
+    transform: @a;
+  }
+@-webkit-keyframes sway {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(-15px,0))
+  }
+}
+@-moz-keyframes sway {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(-15px,0))
+  }
+}
+@keyframes sway {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(-15px,0))
+  }
+}
+@-webkit-keyframes sways {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(15px,0))
+  }
+}
+@-moz-keyframes sways {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(15px,0))
+  }
+}
+@keyframes sways {
+  0%{
+    .transform(translate(0,0))
+  }
+  100%{
+    .transform(translate(15px,0))
+  }
+}
+@media only screen and(min-width:1440px){
+  .pre{
+    left:20%;
+  }
+  .next{
+    right:20%;
+  }
+}

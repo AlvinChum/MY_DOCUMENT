@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/api.css" />
+    <style type="text/css">
+    html,body{
+        height: 100%;
+  
+    }
+    </style>
+    <link rel="stylesheet"  type="text/css" href="./css/index.css"  />
+</head>
+<body>
+	<div id="wrap">
+	<header id="header">
+	<ul>
+	<li class="" >接单</li>
+	<li class="hidden">订单中心</li>
+	<li class="hidden">个人中心</li>
+	</ul>
+	</header>
+	<div id="main"></div>
+	<footer id="footer">
+	<ul>
+	<li class="active" tapmode="hover" >接单</li>
+	<li tapmode="hover" >订单中心</li>
+	<li tapmode="hover"  >个人中心</li>
+	</ul>
+	</footer>
+	</div>
+</body>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+      $.fn.fixIos7Bar = function(el){
+        if(!$.isElement(el)){
+            console.warn('$api.fixIos7Bar Function need el param, el param must be DOM Element');
+            return;
+        }
+        var strDM = api.systemType;
+        if (strDM == 'ios') {
+            var strSV = api.systemVersion;
+            var numSV = parseInt(strSV,10);
+            var fullScreen = api.fullScreen;
+            var iOS7StatusBarAppearance = api.iOS7StatusBarAppearance;
+            if (numSV >= 7 && !fullScreen && iOS7StatusBarAppearance) {
+                el.style.paddingTop = '20px';
+            }
+        }
+    };
+    
+    	    $.fixStatusBar = function(el){
+        if(!!(el && el.nodeType == 1)){
+            console.warn('$api.fixStatusBar Function need el param, el param must be DOM Element');
+            return;
+        }
+        var sysType = api.systemType;
+        if(sysType == 'ios'){
+            $.fixIos7Bar(el);
+        }else if(sysType == 'android'){
+            var ver = api.systemVersion;
+            ver = parseFloat(ver);
+            if(ver >= 4.4){
+                el.style.paddingTop = '25px';
+            }
+        }
+    };
+    	var header=$('#header');
+        //适配iOS 7+，Android 4.4+状态栏
+       	$.fixStatusBar(header.get(0));
+        var footerLis=$('#header li');
+        var main = $('#main');
+        (function frameInGroup(){
+       	var frame=[];
+       	var leng=footerLis.length;
+       for(var i=0;i<leng;i++){
+       frame.push({
+         name: 'frame'+i, 
+       	url: './html/frame'+i+'.html', 
+         bgColor : 'rgba(0,0,0,.2)',
+         bounces:false
+       })}
+       api.openFrameGroup({
+	       name: 'group',
+	       rect:{
+	       x:0,
+	       y:header.height(),
+	       w:api.winWidth,
+	       h:main.height()
+	       },
+	       frames:frame,
+	        scrollEnabled:false,
+            index: 0,
+            frames: frame,
+            preload:1,
+            reload:true
+       },function(ret,err){
+       	//coding...
+       });
+       })();//下面部分的加载
+         $('#footer ul').click(function(event){
+       if(event.target.tagName.toLocaleLowerCase()=='li'){
+      		var headerLis=$('#header li:not(.hidden)');
+       		var footerLis=$('#footer li');
+       		var active=$('#footer .active');
+       		var leng=footerLis.length;
+       		var $this=$(event.target);
+       		var index=0;
+       		if(active.get(0)==event.target)return;
+       		for(var i=0;i<leng;i++){
+       			if(footerLis.get(i)==event.target){
+       			index=i;
+       			break;}
+       			}
+		     api.setFrameGroupIndex({
+		            name: 'group',
+		            index: index,
+		           bounces:false,
+		           reload:true
+		        })
+		   	headerLis.addClass('hidden').parent().find('li').eq(index).removeClass('hidden');
+		    active.removeClass('active');
+       		$this.addClass('active');
+       }else{
+       return;
+       }
+       });
+       
+       }
+ 
+       
+</script>
+</html>

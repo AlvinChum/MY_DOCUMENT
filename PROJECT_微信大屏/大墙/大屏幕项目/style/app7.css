@@ -1,0 +1,287 @@
+.container {
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+  width: 960px;
+  height: 100%;
+  overflow: hidden;
+}
+.container .left {
+  box-shadow: 0px 0px 10px  3px #E8023C;
+  margin: 3px;
+  float: left;
+  width: 484px;
+  height: 496px;
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .left .header {
+  background: #e8023c url(../app7/img/icon_header.png) no-repeat 16px center;
+  width: 100%;
+  height: 93px;
+  box-sizing: border-box;
+  line-height: 93px;
+  padding: 0 10px 0 20px;
+}
+.container .left .header:after {
+  padding-left: 55px;
+  content: '缘分对对碰';
+  color: #FFFFFF;
+  font-size: 33px;
+}
+.container .left .header .count {
+  float: right;
+  color: #F0C30F;
+  text-align: right;
+  display: block;
+  width: 224px;
+  font-size: 33px;
+}
+.container .left .header .count:before {
+  color: #ffffff;
+  font-size: 19px;
+  content: '参加配对人数';
+  padding-right: 10px;
+}
+.container .left .content {
+  width: 100%;
+  height: 330px;
+  padding-top: 70px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8) url(../app7/img/icon_big_love.png) no-repeat center 104px;
+}
+.container .left .content .text {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  color: #a07884;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.container .left .content .pice1 {
+  float: left;
+  margin-left: 57px;
+  width: 128px;
+  height: 158px;
+  background: url(../app7/img/icon_man.png) no-repeat top center;
+  background-size: 128px 128px;
+}
+.container .left .content .pice1 span:nth-child(1) {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+}
+.container .left .content .pice1 span:nth-child(1) img {
+  width: 128px;
+  height: 128px;
+  border: 0;
+}
+.container .left .content .pice1 .icon {
+  background: url(../app7/img/icon_pice_man.png) no-repeat 25px center;
+}
+.container .left .content .pice2 {
+  float: right;
+  margin-right: 57px;
+  width: 128px;
+  height: 158px;
+  background: url(../app7/img/icon_woman.png) no-repeat top center;
+  background-size: 128px 128px;
+  text-align: center;
+}
+.container .left .content .pice2 span:nth-child(1) {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+}
+.container .left .content .pice2 span:nth-child(1) img {
+  width: 128px;
+  height: 128px;
+  border: 0;
+}
+.container .left .content .pice2:after {
+  content: '';
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.container .left .content .icon {
+  text-align: left;
+  padding-left: 50px;
+  background: url(../app7/img/icon_pice_woman.png) no-repeat 25px center;
+}
+.container .left .content .icon:before {
+  content: '共';
+}
+.container .left .content .icon:after {
+  content: '位';
+}
+.container .left .content .choudui {
+  display: inline-block;
+  margin-top: 80px;
+  width: 200px;
+  height: 46px;
+}
+.container .left .content .choudui a {
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  background: #DF0A4E;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 19px;
+  text-decoration: none;
+}
+.container .right {
+  float: right;
+  width: 460px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 503px;
+}
+.container .right .header {
+  width: 424px;
+  height: 58px;
+  line-height: 58px;
+  color: #df0941;
+  font-size: 33px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .right .header:before {
+  content: '配对名单';
+  color: #fb5184;
+}
+.container .right .header .ranking {
+  float: right;
+  font-size: 19px;
+}
+.container .right .header .ranking:before {
+  color: #4f0019;
+  content: '配对组数:';
+}
+.container .right .title {
+  width: 424px;
+  height: 43px;
+  line-height: 43px;
+  color: #580e25;
+  font-size: 19px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .right .title:before {
+  content: '配对序号';
+}
+.container .right .title:after {
+  margin-left: 120px;
+  content: '配对组';
+}
+.container .right .place {
+  height: 325px;
+  width: 100%;
+  overflow: auto;
+}
+.container .right .place::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.container .right .place li {
+  margin-top: 5px;
+  height: 60px;
+  width: 100%;
+  float: left;
+  line-height: 60px;
+  position: relative;
+  background: url(../app7/img/icon_small_love.png) no-repeat 225px center;
+}
+.container .right .place li span {
+  display: inline-block;
+}
+.container .right .place li span:nth-child(1) {
+  float: left;
+  padding: 0 60px 0 50px;
+  color: #7c4555;
+  font-size: 19px;
+  width: 30px;
+}
+.container .right .place li span:nth-child(2),
+.container .right .place li span:nth-child(3) {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  border: 2px solid #FFFFFF;
+  background: url(http://demo.wxscreen.com/images/v6_girls/pair-default.png) no-repeat center center / 56px 56px;
+}
+.container .right .place li span:nth-child(2) img,
+.container .right .place li span:nth-child(3) img {
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.container .right .place li span:nth-child(2) .close,
+.container .right .place li span:nth-child(3) .close {
+  display: none;
+  left: 60px;
+}
+.container .right .place li span:nth-child(3) {
+  margin-left: 80px;
+}
+.container .right .place li .close {
+  background: url(../app7/img/iconfont-shanchu.png) center no-repeat;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+.container .right .place li .group {
+  display: none;
+  top: 19px;
+}
+.container .right .bth_group {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.container .right .bth_group a {
+  cursor: pointer;
+  display: inline-block;
+  width: 201px;
+  height: 44px;
+  background: #DF0A4E;
+  margin: 3px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 19px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.container .right:after {
+  content: '';
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.hide {
+  display: none;
+}

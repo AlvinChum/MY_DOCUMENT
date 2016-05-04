@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/frame1XQ.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+	<header id="header"><span class="close"></span></header>
+	<div class="content">
+	<ul>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	<li><span></span></li>
+	</ul>
+	</div>
+	<div class="jxz hidden">
+	<div class="title">暗号</div>
+	<div class="fjr"><input type="text" /><label>验证</label></div>
+	<div class="sjr"><input type="text" /><label>验证</label></div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+		var type=api.pageParam.type?api.pageParam.type:null;
+		if(type=='jxz'){
+		$('.jxz').removeClass('hidden');
+		$('.close').click(close);
+		}
+	};
+</script>
+</html>

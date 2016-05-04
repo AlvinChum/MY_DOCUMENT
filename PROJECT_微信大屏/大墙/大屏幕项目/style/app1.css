@@ -1,0 +1,254 @@
+.text_breviary {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container {
+  width: 960px;
+  height: 503px;
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.container .left {
+  box-shadow: 0px 0px 10px  3px #E8023C;
+  float: left;
+  width: 484px;
+  margin: 3px;
+  height: 496px;
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .left .header {
+  width: 100%;
+  height: 93px;
+  box-sizing: border-box;
+  line-height: 93px;
+  padding: 0 10px 0 20px;
+  background: #e8023c url(../app1/img/icon_header.png) no-repeat 16px center;
+}
+.container .left .header:after {
+  padding-left: 55px;
+  content: '现场抽奖';
+  color: #FFFFFF;
+  font-size: 33px;
+}
+.container .left .header .count {
+  float: right;
+  color: #F0C30F;
+  text-align: right;
+  display: block;
+  width: 224px;
+  font-size: 33px;
+}
+.container .left .header .count:before {
+  color: #ffffff;
+  font-size: 19px;
+  content: '参加抽奖人数';
+  padding-right: 10px;
+}
+.container .left .content {
+  width: 100%;
+  height: 370px;
+  padding-top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.container .left .content .pice {
+  margin: 0 auto;
+  width: 203px;
+  height: 203px;
+  display: block;
+  background: #FFFFFF;
+}
+.container .left .content .pice img {
+  width: 203px;
+  height: 203px;
+  border: 0;
+}
+.container .left .content .text {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #a07884;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+.container .left .content .auto {
+  margin-left: 47px;
+  width: 185px;
+  display: block;
+  float: left;
+  height: 46px;
+  line-height: 46px;
+  color: #69273a;
+}
+.container .left .content .auto select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.container .left .content .auto:before {
+  content: '1次抽取';
+}
+.container .left .content .auto:after {
+  content: '人';
+}
+.container .left .content .choujiang {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 203px;
+  padding-right: 43px;
+  height: 46px;
+}
+.container .left .content .choujiang a {
+  display: inline-block;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  background: #DF0A4E;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 19px;
+  text-decoration: none;
+}
+.container .right {
+  float: right;
+  width: 460px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+}
+.container .right .header {
+  width: 424px;
+  height: 58px;
+  line-height: 58px;
+  color: #df0941;
+  font-size: 33px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .right .header:before {
+  content: '获奖名单';
+}
+.container .right .header .ranking {
+  float: right;
+  font-size: 19px;
+}
+.container .right .header .ranking:before {
+  color: #4f0019;
+  content: '获奖人数:';
+}
+.container .right .title {
+  width: 424px;
+  height: 38px;
+  line-height: 38px;
+  color: #580e25;
+  font-size: 19px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .right .title:before {
+  content: '获奖序号';
+}
+.container .right .title:after {
+  margin-left: 120px;
+  content: '获奖人员';
+}
+.container .right .place {
+  height: 325px;
+  width: 100%;
+  overflow: auto;
+}
+.container .right .place::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.container .right .place li {
+  margin: -1px 0 5px 0;
+  height: 60px;
+  width: 100%;
+  float: left;
+  line-height: 60px;
+  position: relative;
+  border-top: 1px solid #ffffff;
+}
+.container .right .place li span {
+  display: block;
+  float: left;
+}
+.container .right .place li span:nth-child(1) {
+  float: left;
+  color: #7c4555;
+  font-size: 19px;
+  text-align: center;
+  width: 40px;
+}
+.container .right .place li span:nth-child(2) {
+  width: 60px;
+  height: 60px;
+}
+.container .right .place li span:nth-child(2) img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FFFFFF;
+}
+.container .right .place li span:nth-child(3) {
+  color: #4f0019;
+  font-size: 33px;
+  width: 320px;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.container .right .place li .close {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: url(../app1/img/iconfont-shanchu.png) center no-repeat;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+.container .right .bth_group {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.container .right .bth_group li {
+  cursor: pointer;
+  display: inline-block;
+  width: 98px;
+  height: 44px;
+  background: #DF0A4E;
+  margin: 3px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 19px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.container .right:after {
+  content: '';
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  display: block;
+}

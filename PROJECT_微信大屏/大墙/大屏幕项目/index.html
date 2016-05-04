@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="style/index.css" type="text/css" />
+    <script  src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+    <script src="js/slide_ad.js"></script>
+</head>
+<body>
+<div class="container fixed">
+    <div class="top">
+        <ul>
+            <li>图标</li>
+            <li><h1>大屏幕样式</h1></li>
+            <li>
+                <span class="message">
+                <span class="count">445</span>
+                </span>
+                <span class="qrcode"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="app_loading hidden">
+            <div>
+                <span class="progress"></span>
+            </div>
+        </div>
+       <ul >
+           <li class="app0 "><iframe src="app0.html" width="100%" height="100%;"></iframe></li>
+           <li class="app1 ">
+               <iframe src="app1.html" width="100%" height="100%" ></iframe>
+           </li>
+           <li class="app2 ">
+            <iframe src="app2.html" width="100%" height="100%;" ></iframe>
+           </li>
+           <li class="app3 ">
+               <iframe src="app3.html" width="100%" height="100%;" style="position:fixed;left:0;width:100%;height:503px"></iframe>
+           </li>
+           <li class="app4 ">
+               <iframe src="app4.html" width="100%" height="100%" style="overflow: hidden"></iframe>
+           </li>
+           <li class="app5 ">
+            <iframe src="app5.html" width="100%" height="100%" style="overflow: hidden"></iframe>
+           </li>
+           <li class="app6 ">
+               <iframe src="app6.html" width="100%" height="100%;"></iframe>
+           </li>
+           <li class="app7 ">
+               <iframe src="app7.html" width="100%" height="100%;"></iframe>
+           </li>
+           <li class="app8 ">
+               <iframe src="app8.html" width="100%" height="100%;"></iframe>
+           </li>
+           <li class="app9 ">
+               <iframe src="app9.html" width="100%" height="100%;" style="background:transparent;position:fixed;left:0;top:0;width:100%;height:100%"></iframe>
+           </li>
+           <li class="app10 ">
+               <iframe src="app10.html" width="100%" height="" style="position:fixed;left:0;height: 503px;"></iframe>
+           </li>
+           <li class="app11 ">
+               <iframe src="app11.html" width="100%" height="100%;"></iframe>
+           </li>
+           <li class="app12 ">
+               <iframe src="app12.html" width="100%" height="100%;" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:3"></iframe>
+           </li>
+           <li class="app13">
+               <iframe src="app13.html" width="100%" height="100%;" ></iframe>
+           </li>
+       </ul>
+    </div>
+    <div  class="bottom">
+        <div class="wrap">
+        <ul  class="menu">
+            <li data-tooltip="微信墙" class="big_wall"></li>
+            <li data-tooltip="二维码"   class="qrcode_wall"></li>
+            <li >
+                <div id="app_menu" class="hidden">
+                <ul >
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                 <div class="tip"></div>
+                </div>
+            </li>
+            <li data-tooltip="更换皮肤"></li>
+            <li data-tooltip="全屏"  class="full full_false "></li>
+        </ul>
+        </div>
+        <div class="slide_ad">
+            <ul  style="">
+                <li>广告一</li>
+                <li>广告二</li>
+                <li>广告三</li>
+                <li>广告四</li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftqrcode"></div>
+    <div class="rightqrcode"></div>
+</div>
+</body>
+<script src="js/index.js"></script>
+<script>
+    $(document).click(function(event){
+        if($(event.target)!=$('#app_menu').parent()){
+            $('#app_menu').addClass('hidden');
+        }
+        return false;
+    })
+    $(function(){
+        //$('.main li').addClass('hidden')
+        $('.main li').addClass('hidden')
+    });
+    function app12(){
+        $('.app12').addClass('hidden').parent().find('.app0').removeClass('hidden');
+        $('.leftqrcode').removeClass('hidden');
+        $('.rightqrcode').removeClass('hidden');
+    }
+    /*二维码*/
+    $('.qrcode').qrcode({
+        render:'canvas',
+        width:59,
+        height:59,
+        text:'http://www.baidu.com',
+        foreground:'#000',
+        background:'#fff'
+    }).click(function(){
+        $('.leftqrcode').removeClass('hidden');
+        $('.rightqrcode').removeClass('hidden');
+        $('.main li').addClass('hidden').parent().find('.app13').removeClass('hidden');
+    });
+    $('.slide_ad ul').slide_ad('margin-top','-44',1000);
+    $('.leftqrcode').qrcode({
+        render:'canvas',
+        width:200,
+        height:200,
+        text:'http://www.baidu.com',
+        foreground:'#000',
+        background:'#fff'
+    });
+    $('.rightqrcode').qrcode({
+        render:'canvas',
+        width:200,
+        height:200,
+        text:'http://www.baidu.com',
+        foreground:'#000',
+        background:'#fff'
+    });
+    /*微信大墙绑定*/
+    $('.big_wall').click(function(){
+        $('.leftqrcode').removeClass('hidden');
+        $('.rightqrcode').removeClass('hidden');
+        $('.main li').addClass('hidden').eq(0).removeClass('hidden');
+    })
+    $('.qrcode_wall').click(function(){
+        $('.leftqrcode').removeClass('hidden');
+        $('.rightqrcode').removeClass('hidden');
+        $('.main li').addClass('hidden').parent().find('.app13').removeClass('hidden');
+    })
+    /*全屏绑定start*/
+    $('.full').click(full_screen);
+    function full_screen(){
+        var element=$(this);
+        if(element.hasClass('full_false')){
+            element.removeClass('full_false');
+            var docElm = document.documentElement;
+            //W3C
+            if (docElm.requestFullscreen) {
+                docElm.requestFullscreen();
+            }
+//FireFox
+            else if (docElm.mozRequestFullScreen) {
+                docElm.mozRequestFullScreen();
+            }
+//Chrome等
+            else if (docElm.webkitRequestFullScreen) {
+                docElm.webkitRequestFullScreen();
+            }
+//IE11
+            else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+
+            }
+            return;
+        }else{
+            element.addClass('full_false');
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+            else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            }
+            else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+            else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+        }
+    /*全屏结束*/
+    $('#app_menu').parent().click(function(event){
+        var app_menu=$('#app_menu');
+        if(app_menu.hasClass('hidden')){
+            app_menu.removeClass('hidden');
+        }else{
+            app_menu.addClass('hidden');
+        }
+        if(event.target!=this){
+            $('.leftqrcode').addClass('hidden');
+            $('.rightqrcode').addClass('hidden');
+            var index=$.inArray(event.target,$(this).find('li'));
+            var main_li=$('.main li');
+            main_li.addClass('hidden');
+            main_li.eq(index+1).removeClass('hidden');
+        }
+        return false;
+    })
+    $(document).data('app_len',$('.main li').length);
+    /*
+    function app_load(){
+       var i= $(document).data('app')?$(document).data('app'):0;
+         i++;
+        $(document).data('app',i);
+        $('.main .progress').css({'width':(i/$(document).data('app_len')*100+'%')});
+        if(i==$('.main li').length){
+           $('.app_loading').addClass('hidden');
+            $('.main li').eq(0).removeClass('hidden');
+        }
+    }
+*/
+
+</script>
+</html>

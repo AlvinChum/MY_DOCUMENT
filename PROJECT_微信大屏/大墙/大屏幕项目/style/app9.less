@@ -1,0 +1,480 @@
+body,html{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+}
+.rotate(@deg){
+  -o-transform:rotate(@deg);
+  -moz-transform:rotate(@deg);
+  -webkit-transform:rotate(@deg);
+}
+.transform(@2d){
+  -webkit-transform: @2d;
+  -moz-transform: @2d;
+  -ms-transform: @2d;
+  -o-transform: @2d;
+  transform: @2d;
+}
+.scale(@a){
+  -webkit-transform: scale(@a);
+  -moz-transform: scale(@a);
+  -ms-transform: scale(@a);
+  -o-transform: scale(@a);
+  transform: scale(@a);
+}
+.radius(@number){
+  -webkit-border-radius: @number;
+  -moz-border-radius: @number;
+  border-radius: @number;;
+}
+.background_gradient(@start,@end){
+  background:-moz-linear-gradient(top,  @start 0%, @end 100%);
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@end));
+  background:-webkit-linear-gradient(top,  @start 0%,@end 100%);
+  background:-o-linear-gradient(top,  @start 0%,@end 100%);
+  background:-ms-linear-gradient(top,  @start 0%,@end 100%);
+  background:linear-gradient(to bottom,  @start 0%,@end 100%);
+}
+@media only screen and(min-height:768px){
+  .container.fixed{
+    position:absolute;top:50%;left:50%;margin-top:-384px;margin-left:-480px;
+  }
+}
+.text_clip(){
+  white-space:nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+.container{
+  width: 960px;
+  height:768px;
+  margin:0 auto;
+  .wait_page{
+    margin-top:100px;
+    font-weight: bold;
+    color:#FFE100;
+    ul{
+      background:url(../app9/img/icon_wait_bg.png) no-repeat center/100% 100% ;
+      width:960px;
+      height:503px;
+      margin:0 auto;
+    }
+    li{
+      margin:10px auto;
+      text-align:center;
+    }
+    li:nth-child(1){
+      &:before{
+        display:block;
+        text-align:center;
+        content:'摇一摇';
+        font-size:36px;
+      }
+      &:after{
+        display:block;
+        content:'抢红包';
+        font-size:100px;
+      }
+    }
+    li:nth-child(2){
+      padding:4px;
+      background:#FFFFFF;
+      margin-bottom:10px;
+      max-width:275px;
+    }
+    li:nth-child(3){
+      a {
+        display: inline-block;
+        width: 218px;
+        height: 44px;
+        line-height: 44px;
+        text-align:center;
+        background:#F09F0F;
+        .radius(5px);
+        .background_gradient(rgba(240,183,15,1),rgba(240,183,15,.8));
+        &:before{
+          font-size:19px;
+          color:#BA121A;
+          content:'开始抢红包';
+        }
+      }
+    }
+  }
+  .time_page {
+    top:50%;
+    margin:0 auto;
+    margin-top:-170px;
+    position: relative;
+    width: 340px;
+    height: 341px;
+    padding-top: 44px;
+    background-image: url(../app2/img/icon_time_big.png), url(../app2/img/icon_time_small.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, 270px 50px;
+    .bg {
+      position: relative;
+      width: 340px;
+      height: 340px;
+      border-radius: 340px;
+      background-color: #CB2E30;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      margin-top: -4px;
+    }
+    .text {
+      width: 280px;
+      height: 280px;
+      margin: 30px 0 0 30px;
+      background-color: #F9F1C2;
+      border-radius: 280px;
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      line-height: 300px;
+      font-size: 100px;
+      border: 2px solid #EBC50D;
+      color: #333333;
+    }
+    .hold {
+      width: 170px;
+      height: 340px;
+      position: absolute;
+      z-index: 1;
+      border-radius: 0 340px 340px 0;
+      background: #ffffff;
+      .rotate(0deg);
+    }
+    .hold:nth-child(1) {
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -ms-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+      right: 0;
+    }
+    .hold:nth-child(2) {
+      left: 0;
+      border-radius: 340px 0 0 340px;
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      -ms-transform-origin: right center;
+      -o-transform-origin: right center;
+      transform-origin: right center;
+    }
+    .on{
+      animation-duration: 2.5s;
+      animation-timing-function: linear;
+      animation-iteration-count:1;
+      animation-fill-mode: forwards;
+      animation-delay: initial;
+      animation-direction: initial;
+      animation-play-state: initial;
+      -webkit-animation-duration: 2.5s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count:1;
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-delay: initial;
+      -webkit-animation-direction: initial;
+      -webkit-animation-play-state: initial;
+    }
+    .on:nth-child(1){
+      animation-name:rect1;
+      animation-delay:0s;
+      -webkit-animation-name:rect1;
+      -webkit-animation-delay:0s;
+    }
+    .on:nth-child(2){
+      animation-name:rect2;
+      animation-delay:2.5s;
+      -webkit-animation-name:rect2;
+      -webkit-animation-delay:2.5s;
+    }
+  }
+  .start_page{
+    margin-top:100px;
+    width:960px;
+    height:503px;
+  background:url(../app9/img/icon_start_bg.png) no-repeat center ;
+    position:relative;
+    z-index:1;
+    div{
+      z-index:5;
+    position:absolute;
+      bottom:40px;
+      text-align:center;
+      left:370px;
+      span{
+        display:inline-block;
+        color:#FFE100;
+        font-size:60px;
+        margin:10px 0;
+        &:after{
+          content: '元';
+        }
+      }
+      a{
+        margin:0 auto;
+        display: block;
+        width: 218px;
+        height: 44px;
+        line-height: 44px;
+        text-align:center;
+        background:#F09F0F;
+        .radius(5px);
+        font-size:19px;
+        color:#BA121A;
+        .background_gradient(rgba(240,183,15,1),rgba(240,183,15,.8));
+      }
+    }
+  }
+  .end_page{
+    overflow:hidden;
+    width:960px;
+    height:503px;
+    margin-top:100px;
+    position:relative;
+    .btn{
+      position:absolute;
+      right:100px;
+      top:50%;
+      border:2px solid #fbd020;
+      color:#FFFFFF;
+      background:rgb(226,65,54);
+      display:inline-block;
+      width:20px;
+      padding:5px;
+      font-size:19px;
+      .radius(3px)
+    }
+    ul{
+      font-family: "微软雅黑", "华文细黑", Arial, Helvetica, sans-serif;
+      width:470px;
+      margin:0 auto;
+      border:5px solid #F7E788;
+      padding:0 20px;
+      background:rgb(226,65,54);
+      height:503px;
+      box-sizing: border-box;
+      .radius(5px);
+      &:before{
+        color:#fbd020;
+        display:block;
+        font-size:35px;
+        width:100%;
+        height:80px;
+        text-align:center;
+        line-height:80px;
+        content: '抢红包排行榜';
+      }
+    }
+    li:nth-child(1){
+      border-top:2px solid rgba(255,255,255,.2);
+    }
+    li:nth-child(2){
+      border-top:2px solid rgba(255,255,255,.2);
+    }
+    li:nth-child(3){
+      border-top:2px solid rgba(255,255,255,.2);
+    }
+    li{
+      display:table;
+      color:#FFFFFF;
+      font-size:19px;
+     text-align: left;
+      span{
+        display:table-cell;
+        vertical-align: middle;
+      }
+      span:nth-child(1){
+        padding-left:40px;
+        display:inline-block;
+        line-height:60px;
+        color:#F7E788;
+        width:100px;
+        text-align:center;
+        .text_clip;
+        &:after{
+          content:':';
+        }
+      }
+      span:nth-child(2){
+        width:50px;
+        text-align: center;
+        img{
+          border:4px solid #CE3433;
+          display:inline-block;
+          width:40px;
+          height:40px;
+          .radius(30px);
+        }
+      }
+      span:nth-child(3){
+        display:inline-block;
+        width:150px;
+        text-indent:5px;
+        .text_clip()
+      }
+      span:nth-child(4){
+        display:inline-block;
+        .text_clip();
+        text-align:right;
+        width:80px;
+        font-size:19px;
+        color:#F7E788;
+        &:after{
+          content:'元';
+        }
+      }
+    }
+  }
+}
+#hongbao{
+  width:100%;
+  height:100%;
+  ul{
+    width:100%;
+    height:100%;
+  }
+  .scale5{
+    .scale(0.5);
+  }
+  .scale6{
+    .scale(0.6);
+  }
+  .scale7{
+    .scale(0.7);
+  }
+  .scale8{
+    .scale(0.8);
+  }
+  .scale9{
+    .scale(0.9);
+  }
+  .scale10{
+    .scale(1.0);
+  }
+  .scale11{
+    .scale(1.1);
+  }
+  .scale12{
+    .scale(1.2);
+  }
+  .scale13{
+    .scale(1.3);
+  }
+  .scale14{
+    .scale(1.4);
+  }
+  li{
+    z-index:4;
+    top:-110px;
+    padding-left:110px;
+    position:absolute;
+    width:164px;
+    height:60px;
+    padding-top:40px;
+    background:url(../app9/img/icon_hongbao_bg.png) no-repeat center center /100% 100%;
+    span{
+      display:inline-block;
+      width:164px;
+      .text_clip;
+    }
+    span:nth-child(1){
+      color:#FFFFFF;
+      font-size:20px;
+    }
+    span:nth-child(2){
+      margin-top:-5px;
+      color:#FFE100;
+      font-size:25px;
+      letter-spacing: 1px;
+      &:before{
+        content:'抢到了';
+        color:#FFFFFF;
+        font-size:20px;
+      }
+      &:after{
+        content:'元';
+        color:#FFFFFF;
+        font-size:20px;
+      }
+    }
+  }
+}
+.hidden{
+  display:none!important;
+}
+@keyframes scale_{
+  0%{
+    .scale(1);
+  }
+  50%{
+    .scale(1.2)
+  }
+  100%{
+    .scale(1);
+  }
+}
+@-webkit-keyframes scale_ {
+  0%{
+    .scale(1);
+  }
+  50%{
+    .scale(1.2)
+  }
+  100%{
+    .scale(1);
+  }
+}
+@keyframes rect1{
+  0%{
+    .transform( rotate(0deg));
+  }
+  100%{
+    .transform( rotate(180deg))
+  }
+}
+@-webkit-keyframes  rect1{
+  0%{
+    .transform( rotate(0deg))
+  }
+  100%{
+    .transform( rotate(180deg))
+  }
+}
+@keyframes  rect2{
+  0%{
+    background-color:#CB2E30;
+    .transform( rotate(180deg))
+  }
+  100%{
+    background-color:#CB2E30;
+    .transform( rotate(360deg))
+  }
+}
+@keyframes progress-bar-stripes {
+  from {background-position:0 0;}
+  to {background-position:400px 0px;}
+
+}
+@-webkit-keyframes  progress-bar-stripes {
+  from {background-position:0 0;}
+  to {background-position:400px 0px;}
+}
+@-webkit-keyframes  rect2{
+  0%{
+    background-color:#CB2E30;
+    .transform( rotate(180deg))
+  }
+  100%{
+    background-color:#CB2E30;
+    .transform( rotate(360deg))
+  }
+}
+@keyframes progress-bar-stripes {
+  from {background-position:0 0;}
+  to {background-position:400px 0px;}
+
+}
+

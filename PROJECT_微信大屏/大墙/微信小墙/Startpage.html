@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="style/Startpage.css" />
+    <script src="js/zepto.min.js">
+    </script>
+    <title>Title</title>
+    <style type="text/css" id="zoom">
+    </style>
+</head>
+<body>
+    <div class="zoom">
+        <div class="loading "><div class="loading_rotate loading_animte"><div class="loading_clip"></div></div><div class="loading_text">100%</div></div>
+        <div class="loading_out loading_animte"></div>
+    <div class="container">
+        <div class="header">
+            <p>欢迎参加</p>
+            <p>什么什么演唱会</p>
+        </div>
+        <div class="content">
+            <div class="info">
+                <ul>
+                    <li>主办单位：</li>
+                    <li>11111</li>
+                    <li>主题：</li>
+                    <li>微俱聚有娱演示年会</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="details">
+            <ul>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+                <li><div>10:00-12:00</div><div>节目节目</div><div style="position:relative;clear:left;"></div></li>
+            </ul>
+            </div>
+        </div>
+        <a href="shangqiang.html" class="btn ">进入年会</a>
+        <div style="width:100%; height:20px;"></div>
+    </div>
+    </div>
+</body>
+<script>
+    var loading=$('.loading');
+    var loading_text=loading.find('.loading_text');
+    var loading_out=$('.loading_out');
+    $(function(){
+        setTimeout(function(){
+            loading.addClass('hidden').find('.loading_animte').removeClass('loading_animte');
+            loading_out.removeClass('loading_animte').addClass('hidden')
+        },2000);
+        var W=$(window).width();//屏幕宽度
+        var max_width=800;//最大宽度
+        var page_width=750;//实际宽度
+        var zoom=W>max_width?1:parseFloat(W/page_width);
+        $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        $(window).resize(function(){
+            var W=$(window).width();
+            var zoom=W>max_width?1:parseFloat(W/page_width);
+            $('#zoom').html('.zoom{zoom:'+zoom+';-webkit-text-size-adjust:auto!important;}');
+        })
+    })
+
+</script>
+</html>

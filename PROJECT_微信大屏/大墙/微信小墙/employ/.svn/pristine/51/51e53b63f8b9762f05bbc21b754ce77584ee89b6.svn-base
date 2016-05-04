@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/forgetPass.css"/>
+    <style>
+    	body{
+    		
+    	}
+    </style>
+</head>
+<body>
+			<header id="header"><span class="close"></span></header>
+	<div class="changePass">
+	<ul >
+	<li class="phone"><input type="text" placeholder="请输入手机号码" /></li>
+	<li class="test"><input type="text" placeholder="请输入验证码"  maxlength="6" /><a href="javascript:void(0)" class="validateBtn" >获取验证码</a></li>
+	<li class="password"><input type="password" placeholder="请输入密码"  /></li>
+	</ul>
+	<div><a href="javascript:void(0)" class="registerBtn" >修改密码</a></div>
+	</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		var close=function(){
+		api.closeWin({name:api.winName });}
+		$('.close').click(close);
+	};
+</script>
+</html>
