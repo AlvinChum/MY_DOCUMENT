@@ -2,7 +2,7 @@
 活动访问地址：http://域名/hid/32位活动ID
 
 功能名：	name=dq		微信大墙（默认）
-http://域名/hid/32位活动ID/name/dq	(以下类似)（get请求）
+http://域名/hid/32位活动ID/name/dq	(以下类似)（get请求） (WEB端显示)
 		name=cj 	抽奖
 		name=ddp 	对对碰
 		name=tm		弹幕

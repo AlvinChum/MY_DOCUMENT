@@ -1,0 +1,16 @@
+2016年4月29日
+		系统更新接口
+
+
+系统更新接口：http://api.yunzhuanla.com/general/myupdate
+POST参数:
+参数值：无参数
+返回参数：
+	{"ver":"数字版本号","text":"提示文案","url":"新版本的下载URL地址"}
+参数说明：	"ver":"1" 		数字版本号
+			"text":"提示文案"
+			"url":"新版本的下载URL地址"
+
+
+
+
