@@ -21,7 +21,10 @@ POST参数:
 	{"code":"200","uid":"用户ID","len":"训练计划的总数量","text":[{"dlid(USER_DAY|ID)":"锻炼计划的ID","type":"1","img":"锻炼计划的图标地址","text":"文本信息","state":"1","extra":"+5,+50KG"},{"dlid":"锻炼计划的ID","type":"2","img":"锻炼计划的图标地址","text":"文本信息","state":"1","extra":"+5,+50KG"}]}	
 	说明：	1.训练计划的总数量可能会大于7，因为中间存在热身计划
 			2.训练计划类型：	type:	1	主训练计划
-										2 	辅助训练计划
+										2 	跑步
+										3	划艇
+										4   登山
+										5   跳绳
 			2.状态值 state:	1	未完成
 							2 	已完成
 							3	超额了	（额外信息才有效）
@@ -80,8 +83,11 @@ POST参数:
 	2.安全码：          	  	sec:16位安全码
 	3.动作的ID:					dzid:动作的ID
 	4.UNIX时间戳：       	  	utime:发送的UNIX时间戳
-返回参数：
-	{"code":"200","dzid":"动作的ID",'name':'动作名称',"text":"动作文字介绍","imgurl":"gif的URL地址","weight":"重量值","frequency":"需要的次数"}
+
+    返回参数：
+     {"code":"200","dzid":"动作的ID",'name':'动作名称',"text":"动作文字介绍","imgurl":"gif的URL地址","weight":"重量值","frequency1":"需要的次数","frequency2":"需要的次数","frequency3":"需要的次数","frequency4":"需要的次数","times":"需要的时间","total_shift":"总位移","x_b_a":"x轴开始角度","y_b_a":"y轴开始角度","z_b_a":"z轴开始角度","x_e_a":"x轴终止角度","y_e_a":"y轴终止角度","z_e_a":"z轴终止角度","check_shift":"是否需要判断距离传感器":1为是2为否 }
+
+	frequency分四组
 	{"code":"400"}			传递参数异常
 	{"code":"4000"}			安全码验证不通过
 
@@ -90,7 +96,7 @@ POST参数:
 
 提交训练动作的信息接口：http://域名/exercise/postactioninfo
 POST参数:
-参数名："uid":"用户ID","sec":"16位安全码","dzid":"动作的ID","factweight":"实际重量值","factfrequency":"实际的次数","facttime":"锻炼的时间","utime":"12345678"
+参数名："uid":"用户ID","sec":"16位安全码","dzid":"动作的ID","factweight":"实际重量值","factfrequency1":"实际的次数","factfrequency2":"实际的次数","factfrequency3":"实际的次数","factfrequency4":"实际的次数","facttime":"锻炼的时间","utime":"12345678"，“”
 	1.用户ID：             		uid:用户ID
 	2.安全码：          	  	sec:16位安全码
 	3.动作的ID:					dzid:动作的ID
@@ -110,3 +116,24 @@ POST参数:
 	{"code":"4013"}			不在健身房范围内，无法开始
 
 
+
+更新训练计划接口：http://域名/exercise/updateplan
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"，“”
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+
+	4.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200"}			成功
+
+
+无力推送接口：http://域名/exercise/needhelp
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+	4.当前健身房的唯一标示		location:字符串
+返回参数：
+	{"code":"200"}			成功
