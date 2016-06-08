@@ -19,10 +19,11 @@ http://youyu.weijuju.com/screen/index.jsp?aid=f3kf5R1PkFE%3D
 
 
 
-var ws = new WebSocket('ws://123.59.43.119:8002');
+var ws = new WebSocket('ws://123.59.43.119:8000');
 ws.onopen = function(){
-    var uid = 'uid1';
-    ws.send(uid);
+        var login_data = '{"leixing":"login","client_name":"'+name.replace(/"/g, '\\"')+'","room_id":"753a52e736cf2019352d2a6ff2138783"}';
+        console.log("websocket握手成功，发送登录数据:"+login_data);
+        ws.send(login_data);
     alert('连接成功')
 };
 ws.onmessage = function(e){

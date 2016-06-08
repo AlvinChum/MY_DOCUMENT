@@ -171,7 +171,8 @@ POST参数:"uid":"用户ID","sec":"16位安全码","img":"用户头像","nicknam
 	6.地区： 				address:地区
 	7.邮箱地址：  			email:邮箱地址
 	8.个性签名： 			signature:个性签名的内容
-	9.UNIX时间戳：       	utime:发送的UNIX时间戳
+	9.性别                  1为男2为女
+	10.UNIX时间戳：       	utime:发送的UNIX时间戳
 重要说明：参数可以一个个的修改，如果传入"",则MYSQL数据表不修改当前值，当修改值时，昵称，邮箱，个性签名不可修改为""
 返回参数：
 	请求成功
@@ -183,11 +184,12 @@ POST参数:"uid":"用户ID","sec":"16位安全码","img":"用户头像","nicknam
 
 
 个人信息设置接口：http://域名/user/finishinfo
-POST参数:"uid":"用户ID","sec":"16位安全码","utime":"12345678","height":"身高","weight":"体重","bf":"体脂率","target":"健身目标","physical":"身体状况"
+POST参数:"uid":"用户ID","sec":"16位安全码","utime":"12345678","height":"身高","weight":"体重","bf":"体脂率","target":"健身目标","physical":"身体状况","experience":"健身经验"
 
 
 			target健身目标：1增肌，2健身，3塑形，4其他
 			physical身体状况：1关节炎2韧带拉伤3贫血4健康5低血糖6心脏病
+			experience : 健身经验 1有经验，2没有经验
 
 重要说明：参数可以一个个的修改，如果传入"",则MYSQL数据表不修改当前值
 返回参数：
