@@ -1,0 +1,245 @@
+
+我的市场接口：http://域名/order/myMarket
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	
+	{"code":"200","uid":"用户ID","len":"返回长度","lists":[{"user_id":"用户id"，'company_name':公司名称,'company_address':'公司地址','user_name':'联系人','phone':'联系电话'},{'company_name':公司名称,'company_address':'公司地址','user_name':'联系人','phone':'联系电话'}]}
+
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	
+
+
+2.推荐接口：http://域名/order/recommend
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","phone":"被推荐人手机号"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	
+	{"code":"200"}
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+	{"code":"4008"}			该号码已被推荐
+	{"code":"4009"}			该号码已被注册
+
+
+
+
+3.询盘（下单）接口：http://域名/order/placeAnOrder
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","start_port":"起运港","end_port":"目的港"
+		,"ship_company":"船公司","container_type":"货柜类型","cargo_name":"货物品名","cargo_weight":"货物重量","cargo_volume":"货物体积","eta":"预定到达时间时间戳",
+		"deliver_address":"发货地址","airline_company":"航空公司","express_company":"快递公司","order_type":"询盘类型","is_pick_up":"是否上门提货"
+
+
+		order_type:询盘类型，1：海运整柜，2海运拼柜，3空运，4快递
+		is_pick_up:是否上门提货  1是 2不是
+
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4010"}			询盘失败
+
+
+
+
+4.订单跟踪接口：http://域名/order/orderList
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"}]}	
+
+	order_status:1正在询盘等待报价2已报价等待确认，3以确定操作中，4已取消
+	is_account：1已结算2未结算
+
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+4.我的订单接口：http://域名/order/myOrderList
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"}]}	
+
+	order_status:1正在询盘等待报价2已报价等待确认，3以确定操作中，4已取消
+	is_account：1已结算2未结算
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+5.管理员用户询盘列表接口：http://域名/order/askLists
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_status":"订单状态"
+
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+	order_status:1正在询盘等待报价2已报价等待确认，3已确定操作中选司机，4已确定司机正在进行中
+
+返回参数：
+
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","start_port":"起始地","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"}]}	
+
+		is_account：1已结算2未结算
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+
+
+6.订单详情接口：http://域名/order/orderDetail
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+返回参数：
+	{"code":"200","order_type":"订单类型","ship_company":"船公司","container_type":"柜型","airline_company":"空运公司","express_company":"快递公司","start_port":"起始港","end_port":"目的港","cargo_name":"货物名称","cargo_weight":"货物重量","cargo_volume":"货物体积","eta":"预计到达时间时间戳","deliver_address":"详细位置","is_pick_up":"是否提货","c_time":"订单创建时间时间戳","order_status":"订单状态","driver_name":"司机名","driver_phone":"司机电话","car_plate":"车牌号","price":"报价","is_account":"是否已结算"}
+
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+
+	order_type:询盘类型1：海运整柜，2海运拼柜，3空运，4快递
+	order_status:1正在询盘等待报价2已报价等待确认，3已确定操作中选司机，4已确定司机正在进行中,5已完成订单，6取消订单
+	is_account:1已结算2未结算
+
+
+7.管理员报价接口：http://域名/order/priceTheOrder
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","price":"价格","ship_company":"船公司","container_type":"柜型"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+	{"code":"4012"}			订单非询盘状态
+
+
+8.管理员分派司机接口：http://域名/order/driverForOrder
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","driver_name":"司机名","driver_phone":"司机电话","car_plate":"车牌号"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+	{"code":"4013"}			订单非分派司机状态
+
+
+
+
+
+9.用户确认接口：http://域名/order/userConfirm
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+	{"code":"4014"}			订单非待确认状态
+
+
+
+10.获取物流信息 http://域名/order/getLogisticsInfo
+POST参数:
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id"
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+
+
+返回参数：
+	{"code":"200","len":"文本长度","text":[{'info':'物流信息文字描述','time':'时间戳'},{'info':'物流信息文字描述','time':'时间戳'}]}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+10.更新物流信息 http://域名/order/updateLogisticsInfo
+POST参数:
+参数名："uid":"管理员ID","sec":"16位安全码","utime":"12345678","order_id":"订单id",'info':"物流文字描述",'time':'物流时间'
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+
+11。 结算接口：http://域名/order/updateOrderAccount
+POST参数:
+参数名："uid":"管理员ID","sec":"16位安全码","utime":"12345678","order_id":"订单id",'is_account':"是否结算"
+
+	1.用户ID：             		uid:用户ID
+	2.安全码：          	  	sec:16位安全码
+	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
+	4.is_account：1已结算2未结算
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4011"}			非管理员
+
+
+
+12。 确认收货接口：http://域名/order/finishOrder
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678","order_id":"订单id"
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4015"}			订单非运送状态
+
+
+
+

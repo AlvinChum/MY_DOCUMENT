@@ -1,0 +1,49 @@
+新网    gzaojun2015@163.com	    hsyWN~J)[NA1
+
+ucloud  gzaojun2015@163.com		6*JQtELrRrEjs(+=
+
+
+
+2016-06-16
+
+主机名 (A)(最多允许20条)	IP 地址	TTL	操作       帮助
+112233.gzaojun.com
+123.59.81.242	3600	修改 -  删除
+112233test.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+gpscard.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+gpscardback.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+gzaojun.com
+123.59.43.119	3600	修改 -  删除
+huoyunapi.gzaojun.com
+123.59.149.84	3600	修改 -  删除
+huoyunback.gzaojun.com
+123.59.149.84	3600	修改 -  删除
+huoyunsocket.gzaojun.com
+123.59.149.84	3600	修改 -  删除
+jianshenapi.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+jianshenback.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+location.gzaojun.com
+123.59.81.242	3600	修改 -  删除
+locationtest.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+myphpmyadmin.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+quanqiuhuiapi.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+quanqiuhuiback.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+weixinapi.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+weixinback.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+weixinmob.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+weixinweb.gzaojun.com
+123.59.43.119	3600	修改 -  删除
+www.gzaojun.com
+120.132.48.194	3600	修改 -  删除

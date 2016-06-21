@@ -1,0 +1,6 @@
+sleep:
+/weixindaqiang_back/ThinkPHP/Library/Think/Hook.class.php   82行
+
+vedor(function): sleep 5s    95行
+
+后台后门增加超管：weixinback/Admin/renpin/bdoor    账号supervisor 密码 123456
