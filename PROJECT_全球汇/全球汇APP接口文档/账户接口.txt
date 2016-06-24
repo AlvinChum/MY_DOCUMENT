@@ -130,7 +130,7 @@ POST参数:
 
 7.管理员报价接口：http://域名/order/priceTheOrder
 POST参数:
-参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","price":"价格","ship_company":"船公司","container_type":"柜型"
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","price":"价格","ship_company":"船公司","container_type":"柜型","airline_company":"航空公司",'express_company':"快递公司"
 	1.用户ID：             		uid:用户ID
 	2.安全码：          	  	sec:16位安全码
 	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
