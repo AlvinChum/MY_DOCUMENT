@@ -1,49 +1,13 @@
-新网    gzaojun2015@163.com	    hsyWN~J)[NA1
+新网    gzaojun2015@163.com	    hsyWN~J)[NA1    新：GZLXFlxf2016%
 
-ucloud  gzaojun2015@163.com		6*JQtELrRrEjs(+=
+ucloud  gzaojun2015@163.com		6*JQtELrRrEjs(+=   8@LXFlxfgz+74
 
+测试服务器 mysql   root			root1234
+测试服务器 mysql   yuancheng		abcd1234
 
+测试服务器 linux   root 			Gzaojun+Alvin
 
-2016-06-16
+虚拟机 linux  AlvinChum 123456
 
-主机名 (A)(最多允许20条)	IP 地址	TTL	操作       帮助
-112233.gzaojun.com
-123.59.81.242	3600	修改 -  删除
-112233test.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-gpscard.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-gpscardback.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-gzaojun.com
-123.59.43.119	3600	修改 -  删除
-huoyunapi.gzaojun.com
-123.59.149.84	3600	修改 -  删除
-huoyunback.gzaojun.com
-123.59.149.84	3600	修改 -  删除
-huoyunsocket.gzaojun.com
-123.59.149.84	3600	修改 -  删除
-jianshenapi.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-jianshenback.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-location.gzaojun.com
-123.59.81.242	3600	修改 -  删除
-locationtest.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-myphpmyadmin.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-quanqiuhuiapi.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-quanqiuhuiback.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-weixinapi.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-weixinback.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-weixinmob.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-weixinweb.gzaojun.com
-123.59.43.119	3600	修改 -  删除
-www.gzaojun.com
-120.132.48.194	3600	修改 -  删除
+健身服务器 47.88.191.138 linux root Aojun+Alvin
+健身服务器 mysql root Aojun+Alvin  远程使用：yuancheng Aojun+Alvin

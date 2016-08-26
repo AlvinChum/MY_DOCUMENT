@@ -1,0 +1,26 @@
+1.获取航空公司列表 : 域名/port/airlineCompany
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+2.获取机场列表 : 域名/port/airport
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+3.获取港口列表 : 域名/port/port
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+4.获取船公司列表 : 域名/port/shipCompany
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+
+5.获取起运港列表 : 域名/port/startPort
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+
+6.获取起运机场列表 : 域名/port/startAirport
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+
+7.获取快递发货地列表 : 域名/port/startExpress
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}
+
+8.获取快递公司列表 : 域名/port/expressCompany
+返回：{"lists":[{"id":"id","chn":"中文名","eng":"英文名"}]}

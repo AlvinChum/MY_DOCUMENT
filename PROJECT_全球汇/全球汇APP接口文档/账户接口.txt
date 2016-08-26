@@ -51,6 +51,7 @@ POST参数:
 	{"code":"400"}			传递参数异常
 	{"code":"4000"}			安全码验证不通过
 	{"code":"4010"}			询盘失败
+	{"code":"4016"} 	    暂无客服
 
 
 
@@ -62,9 +63,9 @@ POST参数:
 	2.安全码：          	  	sec:16位安全码
 	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
 返回参数：
-	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"}]}	
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"end_port":"目的地","order_status":"订单状态","is_account":"是否结算","driver_name":"司机信息","driver_phone":"司机手机号"，"car_plate":"车牌号"，"order_no":"运单号"},{"order_id":"订单id"，"end_port":"目的地","order_status":"订单状态","is_account":"是否结算","driver_name":"司机信息","driver_phone":"司机手机号"，"car_plate":"车牌号"，"order_no":"运单号"}]}	
 
-	order_status:1正在询盘等待报价2已报价等待确认，3以确定操作中，4已取消
+	order_status:1正在询盘等待报价2已报价等待确认，3已确定操作中选司机，4已确定司机正在进行中,5已完成订单，6取消订单
 	is_account：1已结算2未结算
 
 
@@ -80,7 +81,7 @@ POST参数:
 	2.安全码：          	  	sec:16位安全码
 	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
 返回参数：
-	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","is_account":"是否结算"}]}	
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"运单号","end_port":"目的地","order_status":"订单状态","is_account":"是否结算","order_type":"运输","cargo_name":"品名","start_port":"起运港"}}	
 
 	order_status:1正在询盘等待报价2已报价等待确认，3以确定操作中，4已取消
 	is_account：1已结算2未结算
@@ -100,7 +101,7 @@ POST参数:
 
 返回参数：
 
-	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"奖励ID","start_port":"起始地","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"},{"order_no":"奖励ID","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"}]}	
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_no":"运单号","start_port":"起始地","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"},{"order_no":"运单号","end_port":"目的地","order_status":"订单状态","eta":"预计到达时间","is_account":"是否结算"}]}	
 
 		is_account：1已结算2未结算
 
@@ -145,7 +146,7 @@ POST参数:
 
 8.管理员分派司机接口：http://域名/order/driverForOrder
 POST参数:
-参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","driver_name":"司机名","driver_phone":"司机电话","car_plate":"车牌号"
+参数名："uid":"用户ID","sec":"16位安全码","utime":"12345678","order_id":"订单id","driver_name":"司机名","driver_phone":"司机电话","car_plate":"车牌号"，“order_no”:"运单号","express_code":"快递公司代码"
 	1.用户ID：             		uid:用户ID
 	2.安全码：          	  	sec:16位安全码
 	3.UNIX时间戳：       	  	utime:发送的UNIX时间戳
@@ -242,4 +243,82 @@ POST参数:
 
 
 
+13.用户询盘接口：http://域名/order/myPlace
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678"
 
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"start_port":"起始地","end_port":"目的地","order_status":"订单状态"},{"order_id":"订单id"，"start_port":"起始地","end_port":"目的地","order_status":"订单状态"}]}	
+
+	order_status:1正在询盘等待报价2已报价等待确认
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+14.订单记录接口：http://域名/order/orderStatus
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678"
+
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_type":"运输类型"，"start_port":"起始地","end_port":"目的地","cargo_name":"品名"}]}	
+
+	order_type:询盘类型 1 海运整柜，2海运拼柜，3空运，4快递
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+
+15.历史订单接口：http://域名/order/orderHistory
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678"
+
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_type":"运输类型"，"start_port":"起始地","end_port":"目的地","cargo_name":"品名"}]}	
+
+	order_type:询盘类型 1 海运整柜，2海运拼柜，3空运，4快递
+
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+
+
+16.查看下级订单  http://域名/order/checkMarketOrder
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678"
+
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[{"order_id":"订单id"，"order_type":"运输类型"，"company":"运输公司"，"start_port":"起始地","end_port":"目的地","cargo_name":"品名","cargo_weight":"重量","cargo_volume":"体积",'is_account':"是否结算","创建时间":"c_time","price":"报价"}]}	
+
+	order_type:询盘类型 1 海运整柜，2海运拼柜，3空运，4快递
+	is_account：1已结算2未结算
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+
+17.查询快递：http://域名/order/checkExpress
+POST参数:
+参数名："uid":"用户id","sec":"16位安全码","utime":"12345678","order_id":"订单id"
+
+返回参数：
+	{"code":"200","uid":"用户ID","len":"数量","text":[]}	
+
+	order_type:询盘类型 1 海运整柜，2海运拼柜，3空运，4快递
+	is_account：1已结算2未结算
+
+返回参数：
+	{"code":"200"}	
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过

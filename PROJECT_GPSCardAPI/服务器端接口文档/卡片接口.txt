@@ -30,7 +30,7 @@ POST参数:
 	5.UNIX时间戳：       	  utime:发送的UNIX时间戳
 返回参数：
 	请求成功
-	{"code":"200","cardid":"用户卡号","utime":"最后位置的时间","long":"经度带6位小数","lat":"纬度带6位小数"}
+	{"code":"200"}
 	请求错误
 	{"code":"400"}			传递参数异常
 	{"code":"4000"}			安全码验证不通过
@@ -91,23 +91,6 @@ POST参数:
 	{"code":"4000"}			安全码验证不通过
 	注：当调取当前接口，所有未读消息设置为已读
 
-
-/* 不需要
-	设置报警信息为已读：http://gpscard.gzaojun.com/card/setalarmread
-	POST参数:
-	参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678","text":[{"utime":"UNIX时间戳"},{"utime":"UNIX时间戳"}]
-		1.用户ID：             uid:用户ID
-		2.手机唯一号：          xid:32位(类似UUID)
-		3.用户安全码：			  sec:用户安全码
-		4.UNIX时间戳：       	  utime:发送的UNIX时间戳
-		5.已读的报警时间数组     text:
-	返回参数：
-		请求成功
-		{"code":"200"}
-		请求错误
-		{"code":"400"}			传递参数异常
-		{"code":"4000"}			安全码验证不通过
-	*/
 
 
 
@@ -285,7 +268,24 @@ POST参数:
 
 
 
- 获取所有卡片的地理位置 http://gpscard.gzaojun.com/card/getallcard
+
+ 获取所有卡片的详细 http://gpscard.gzaojun.com/card/getallcard
+参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"，'serverUrl':"对方服务器url地址"
+	1.用户ID：             uid:用户ID
+	2.手机唯一号：          xid:32位(类似UUID)
+	3.用户安全码：			  sec:用户安全码
+	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
+	5.serverUrl:			对方接收本服务器返回卡片参数的url地址
+返回参数：
+	请求成功
+	{"code":"200"}  //当所有卡片上传完毕后jpush地理信息与电量到app客户端
+	请求错误
+	{"code":"400"}			传递参数异常
+	{"code":"4000"}			安全码验证不通过
+	{"code":"4009"}			正在查询中
+
+
+获取所有卡片的电量信息  http://gpscard.gzaojun.com/card/getallcardBattery
 参数名："uid":"用户ID","xid":"12345678123456781234567812345678","sec":"用户的安全码","utime":"12345678"
 	1.用户ID：             uid:用户ID
 	2.手机唯一号：          xid:32位(类似UUID)
@@ -293,11 +293,11 @@ POST参数:
 	4.UNIX时间戳：       	  utime:发送的UNIX时间戳
 返回参数：
 	请求成功
-	{"code":"200","uid":"用户id"，"length":"卡片数组总长度","text":[{"cardid":"卡号",utime":"最后位置的时间","long":"经度带6位小数","lat":"纬度带6位小数"}]}
+	{"code":"200"}
 	请求错误
 	{"code":"400"}			传递参数异常
 	{"code":"4000"}			安全码验证不通过
-
+	{"code":"4009"}			正在查询中
 
 
 
@@ -315,5 +315,3 @@ POST参数:
 	请求错误
 	{"code":"400"}			传递参数异常
 	{"code":"4000"}			安全码验证不通过
-
-

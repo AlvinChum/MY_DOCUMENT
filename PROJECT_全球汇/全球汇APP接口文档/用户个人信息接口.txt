@@ -23,13 +23,11 @@ POST参数:"phone":"13390633695","xid":"12345678123456781234567812345678","yzm":
 	4.用户密码：			  pwd:用户密码md5
 	5.UNIX时间戳：       	  utime:发送的UNIX时间戳
 	请求成功，附带用户的信息
-	{"code":"200","uid":"用户ID","sec":"安全码","user_role":"用户角色","recommend_user_phone":"推荐人的手机号"}
+	{"code":"200","uid":"用户ID","sec":"安全码","user_role":"用户角色"}
 
 
 	user_role : 1 普通用户 
 				2 客服
-
-	recommend_user_phone : 无推荐人返回空	
 
 	请求错误
 	{"code":"400"}			传递参数异常
@@ -47,7 +45,7 @@ POST参数:"phone":"13390633695","xid":"12345678123456781234567812345678","yzm":
 
 4.修改详细资料接口：http://域名/user/regDetail
 重要说明：APP端注册好后不需要再登录
-POST参数:"uid":"用户id","sec":"安全码","utime":"时间戳","company_logo":"公司logo的url","company_name":"公司名称","company_address":"公司地址","user_name":"个人名称","identity_card":"身份证号码","qq_number":"qq号码"
+POST参数:"uid":"用户id","sec":"安全码","utime":"时间戳","company_logo":"公司logo的url","company_name":"公司名称","company_address":"公司地址","user_name":"个人名称","identity_card":"身份证号码","qq_number":"qq号码","recommend_user_id":"推荐人id"
 
 
 	请求成功，附带用户的信息
@@ -58,6 +56,7 @@ POST参数:"uid":"用户id","sec":"安全码","utime":"时间戳","company_logo"
 
 	user_role : 1 普通用户 
 				2 客服
+				3超级管理员
 
 
 	请求错误
@@ -75,8 +74,9 @@ POST参数:"phone":"13390633695","xid":"12345678123456781234567812345678","pwd":
 	请求成功，附带用户的信息
 	{"code":"200","uid":"用户ID","sec":"安全码","user_role":"用户角色"}
 
-	user_role : 1 普通用户 
-				2 客服
+	user_role : 1 普通用户   绑定alias=>uid
+				2 客服		 绑定alias=>uid
+				3超级管理员  绑定tag=>cj
 
 	请求错误
 	{"code":"400"}			传递参数异常

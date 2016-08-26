@@ -1,0 +1,190 @@
+桂林农机安监系统接口：
+
+
+注明：以下所有的utime都是时间戳。
+
+
+1.登录
+
+域名：http://域名/Index/login
+
+请求方式:POST
+POST参数:	{"phone":"手机号","password":"密码MD5加密","utime":"登录时间","xid":"硬件对应的唯一号 32位字符串"}
+
+返回结果：
+{"code":"200 成功  2001 不存在改用户 2002 密码错误","uid":"用户id",sec":"安全码 只有在200状态下才返回值"}	
+
+
+2、驾驶证查询
+
+域名：http://域名/Index/queryDriver
+
+请求方式:POST
+POST参数:{"uid":"用户id","sec":"安全码（登录接口中返回的安全码 服务器需要验证安全码是否正确）",key":"查询关键字（包含 驾驶员姓名、档号、身份证号）","utime":"查询的时间"}
+
+返回结果：
+{
+    "code": "200 成功  2003没有找到与key相关的记录 4000 安全码不通过 ",
+    "data":[{
+                "id":"用户id",
+                "jiashizhenghao":"驾驶证号",
+                "address":"地址",
+                "siji":"司机姓名"
+                }]  
+}
+
+驾驶证详情
+域名:http://Index/jiashizheng
+post:{"uid","sec","id":"司机uid"}
+返回：
+{
+    "data":{
+
+        "annual_end_date": "年检过期日期 格式:20160815",
+        "annual_start_date": "年检开始日期 格式:20160815",
+        "violation_scores": "违规总分",
+        "driver_name": "司机姓名",
+        "driver_sex": "性别 1 female, 2 male",
+        "driver_idcard": "司机身份证号",
+        "driver_add": "司机居住地址",
+        "driver_phone": "司机电话号",
+        "danganbianhao": "档案编号",
+        "driver_cartype": "准驾车型 （如：G）",
+        "driver_nationality": "司机国籍",
+        "driver_birthday": "司机出生日期 如：20160815",
+        "driver_getlicensedate": "取得驾照日期"，
+    },
+    "weizhang":{
+                "chepaihao",
+                "shijian",
+                "shuoming",
+                "siji",
+                "jiashizhenghao",
+                "didian",
+                "koufen",
+                "daima",
+                "beizhu",
+                "img1",
+                'img2',
+                'img3',
+                'img4',
+                'img5',
+                'img6'
+            }
+    "shumu"：“违章数目” 
+}
+
+3、违章录入
+域名：http://域名/Index/violationInsert
+
+请求方式:POST
+POST参数:	{
+   				 "uid": "用户id",
+   				 "sec": "安全码（登录接口中返回的安全码 服务器需要验证安全码是否正确）",
+  				 "violation_car_num": "车牌号",
+                 "siji":"司机"，
+                 "jiashizhenghao":"驾驶证号",
+  				 "violation_code": "违章代码",
+				 "violation_car_handpeople": "违章记录录入人姓名",
+    			 "violation_car_add": "违章地点",
+    			 "violation_car_date": "违章日期格式如：20160815（8位）",
+  			     "violation_car_time": "违章时间 格式xx:xx",
+    	         "violation_car_des": "违章说明(文字说明 ,
+                 500字以内的文字说明)",
+                 "koufen":"违章扣分",
+                 "beizhu":"备注",
+			     "violation_car_photos": [
+				        "http://xxx 图片1",
+				        "http://xxx 图片2",
+				        "http://xxx 图片3",
+				        "http://xxx 图片4",
+				        "http://xxx 图片5",
+				        "http://xxx 图片6 最多6张图片"
+				     ]
+
+}
+
+返回结果：
+{"code":"200 成功录入  4000 
+管理员账号验证错误（客户端提示管理员在其他地方登陆请重新登陆） 
+3001 无此车牌号
+"}	
+
+4、违章查询
+
+域名：http://Index/queryCars
+
+POST参数:{"uid":"用户id","sec":"安全码（登录接口中返回的安全码 服务器需要验证安全码是否正确）",key":"车牌号","utime":"查询的时间"}
+
+返回结果：
+{
+    "code": "200 成功  2003没有找到与key相关的记录 4000 安全码不通过 ",
+    "text": [
+        {
+            "violation_car_num": "车牌号",
+            "violation_car_id": "违章id",
+            "siji":"司机"
+            "violation_car_handpeople": "违章记录录入人姓名",
+            "violation_car_add": "违章地点",
+            "violation_car_date": "违章日期 格式如：20160815（8位）",
+            "violation_car_time": "违章时间 格式xx:xx",
+            "violation_car_des": "违章描述(文字说明 500字以内的文字说明)",
+            "beizhu":"违章备注",
+            "daima":"代码",
+            "violation_car_photos1": "http://xxx 图片1",
+            "violation_car_photos2": "http://xxx 图片1",
+                                        "http://xxx 图片2",
+                                        "http://xxx 图片3",
+                                        "http://xxx 图片4",
+                                        "http://xxx 图片5",
+                                        "http://xxx 图片6 最多6张图片"
+            ]
+        },
+        
+    ]
+}
+
+5.农机查询
+域名：http：//Index/checknongji
+POST参数:{"uid":"用户id","sec":"安全码（登录接口中返回的安全码 服务器需要验证安全码是否正确）",key":"车牌号","utime":"查询的时间"}
+返回结果：
+{
+    "code": "200 成功  2003没有找到与key相关的记录 4000 安全码不通过 ",
+    "data": 
+        {
+            "chepai": "车牌",
+            "siji":"所有人"
+            "address": "住址",
+            "jixieleixing": "机械类型",
+            "fadongjihao": "发动机型号",
+            "fadongjihaoma": "发动机号码",
+            "jishenhaoma": "机身号码",
+            "guachejiahao":"挂车架号",
+            "pinpaixinghao":"品牌型号",
+            "chengzuorenshu": "乘坐人数",
+            "zongzhiliang":"总质量",
+            "zaizhiliang":"载质量",
+            "baoxiangongsi":"保险公司",
+            "baoxianyouxiaoqi":"保险有效期",
+            "dengji":'登记日期'
+        
+        },
+    "weizhang":[{
+                    "chepaihao",
+                    "shijian",
+                    "shuoming",
+                    "siji",
+                    "jiashizhenghao",
+                    "didian",
+                    "koufen",
+                    "daima",
+                    "beizhu",
+                    "img1",
+                    'img2',
+                    'img3',
+                    'img4',
+                    'img5',
+                    'img6'
+                }]
+    "shumu"：“违章数目”
+}
